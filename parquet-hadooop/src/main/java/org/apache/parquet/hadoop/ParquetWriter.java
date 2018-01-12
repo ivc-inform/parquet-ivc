@@ -47,6 +47,9 @@ public class ParquetWriter<T> implements Closeable {
 
   // max size (bytes) to write as padding and the min size of a row group
   public static final int MAX_PADDING_SIZE_DEFAULT = 8 * 1024 * 1024; // 8MB
+  //<editor-fold desc="Fixed by Y.Andrew">
+  public static final int APPEND_BLOCK_SIZE_DEFAULT = 4096; // 8MB
+  //</editor-fold>
 
   private final InternalParquetRecordWriter<T> writer;
   private final CodecFactory codecFactory;
@@ -65,8 +68,7 @@ public class ParquetWriter<T> implements Closeable {
    */
   @Deprecated
   public ParquetWriter(Path file, WriteSupport<T> writeSupport, CompressionCodecName compressionCodecName, int blockSize, int pageSize) throws IOException {
-    this(file, writeSupport, compressionCodecName, blockSize, pageSize,
-            DEFAULT_IS_DICTIONARY_ENABLED, DEFAULT_IS_VALIDATING_ENABLED);
+    this(file, writeSupport, compressionCodecName, blockSize, pageSize, DEFAULT_IS_DICTIONARY_ENABLED, DEFAULT_IS_VALIDATING_ENABLED);
   }
 
   /**
@@ -118,9 +120,7 @@ public class ParquetWriter<T> implements Closeable {
           int dictionaryPageSize,
           boolean enableDictionary,
           boolean validating) throws IOException {
-    this(file, writeSupport, compressionCodecName, blockSize, pageSize,
-            dictionaryPageSize, enableDictionary, validating,
-            DEFAULT_WRITER_VERSION);
+    this(file, writeSupport, compressionCodecName, blockSize, pageSize, dictionaryPageSize, enableDictionary, validating, DEFAULT_WRITER_VERSION);
   }
 
   /**
@@ -182,9 +182,7 @@ public class ParquetWriter<T> implements Closeable {
           boolean validating,
           WriterVersion writerVersion,
           Configuration conf) throws IOException {
-    this(file, ParquetFileWriter.Mode.CREATE, writeSupport,
-            compressionCodecName, blockSize, pageSize, dictionaryPageSize,
-            enableDictionary, validating, writerVersion, conf);
+    this(file, ParquetFileWriter.Mode.CREATE, writeSupport, compressionCodecName, blockSize, pageSize, dictionaryPageSize, enableDictionary, validating, writerVersion, conf);
   }
 
   /**
@@ -268,7 +266,7 @@ public class ParquetWriter<T> implements Closeable {
     WriteSupport.WriteContext writeContext = writeSupport.init(conf);
     MessageType schema = writeContext.getSchema();
 
-    ParquetFileWriter fileWriter = new ParquetFileWriter(file, schema, mode, rowGroupSize, maxPaddingSize);
+    ParquetFileWriter fileWriter = new ParquetFileWriter(file, schema, mode, rowGroupSize, maxPaddingSize, APPEND_BLOCK_SIZE_DEFAULT);
     fileWriter.start();
 
     this.codecFactory = new CodecFactory(conf, encodingProps.getPageSizeThreshold());
