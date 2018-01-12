@@ -20,6 +20,7 @@
 package org.apache.parquet.hadoop.util;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.parquet.io.OutputFile;
@@ -35,6 +36,7 @@ public class HadoopOutputFile implements OutputFile {
   private static final int DFS_BUFFER_SIZE_DEFAULT = 4096;
 
   private static final Set<String> BLOCK_FS_SCHEMES = new HashSet<String>();
+
   static {
     BLOCK_FS_SCHEMES.add("hdfs");
     BLOCK_FS_SCHEMES.add("webhdfs");
@@ -55,7 +57,7 @@ public class HadoopOutputFile implements OutputFile {
   private final Configuration conf;
 
   public static HadoopOutputFile fromPath(Path path, Configuration conf)
-      throws IOException {
+          throws IOException {
     FileSystem fs = path.getFileSystem(conf);
     return new HadoopOutputFile(fs, fs.makeQualified(path), conf);
   }
@@ -73,15 +75,22 @@ public class HadoopOutputFile implements OutputFile {
   @Override
   public PositionOutputStream create(long blockSizeHint) throws IOException {
     return HadoopStreams.wrap(fs.create(path, false /* do not overwrite */,
-        DFS_BUFFER_SIZE_DEFAULT, fs.getDefaultReplication(path),
-        Math.max(fs.getDefaultBlockSize(path), blockSizeHint)));
+            DFS_BUFFER_SIZE_DEFAULT, fs.getDefaultReplication(path),
+            Math.max(fs.getDefaultBlockSize(path), blockSizeHint)));
   }
+
+  //<editor-fold desc="Fixed by Y.Andrew">
+  @Override
+  public PositionOutputStream append(int blockSizeHint) throws IOException {
+    return HadoopStreams.wrap(fs.append(path, Math.max(blockSizeHint, 4096)));
+  }
+  //</editor-fold>
 
   @Override
   public PositionOutputStream createOrOverwrite(long blockSizeHint) throws IOException {
     return HadoopStreams.wrap(fs.create(path, true /* overwrite if exists */,
-        DFS_BUFFER_SIZE_DEFAULT, fs.getDefaultReplication(path),
-        Math.max(fs.getDefaultBlockSize(path), blockSizeHint)));
+            DFS_BUFFER_SIZE_DEFAULT, fs.getDefaultReplication(path),
+            Math.max(fs.getDefaultBlockSize(path), blockSizeHint)));
   }
 
   @Override

@@ -25,7 +25,9 @@ public interface OutputFile {
 
   PositionOutputStream create(long blockSizeHint) throws IOException;
 
-  PositionOutputStream append(long blockSizeHint) throws IOException;
+  //<editor-fold desc="Fixed by Y.Andrew">
+  PositionOutputStream append(int blockSizeHint) throws IOException;
+  //</editor-fold>
 
   PositionOutputStream createOrOverwrite(long blockSizeHint) throws IOException;
 
