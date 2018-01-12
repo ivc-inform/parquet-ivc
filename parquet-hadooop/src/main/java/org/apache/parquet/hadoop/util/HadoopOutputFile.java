@@ -81,8 +81,8 @@ public class HadoopOutputFile implements OutputFile {
 
   //<editor-fold desc="Fixed by Y.Andrew">
   @Override
-  public PositionOutputStream append(int bufferSize) throws IOException {
-    return HadoopStreams.wrap(fs.append(path, Math.max(bufferSize, 4096)));
+  public PositionOutputStream append(int appendBufferSize) throws IOException {
+    return HadoopStreams.wrap(fs.append(path, Math.max(appendBufferSize, 4096)));
   }
   //</editor-fold>
 

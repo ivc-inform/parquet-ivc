@@ -380,7 +380,7 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
 
     WriteContext init = writeSupport.init(conf);
     //<editor-fold desc="Fixed by Y.Andrew">
-    ParquetFileWriter w = new ParquetFileWriter(HadoopOutputFile.fromPath(file, conf), init.getSchema(), Mode.CREATE, blockSize, maxPaddingSize, ParquetWriter.APPEND_BLOCK_SIZE_DEFAULT);
+    ParquetFileWriter w = new ParquetFileWriter(HadoopOutputFile.fromPath(file, conf), init.getSchema(), Mode.CREATE, blockSize, maxPaddingSize, ParquetWriter.APPEND_BUFFER_SIZE_DEFAULT);
     //</editor-fold>
     w.start();
 

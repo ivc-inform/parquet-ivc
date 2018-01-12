@@ -48,7 +48,7 @@ public class ParquetWriter<T> implements Closeable {
   // max size (bytes) to write as padding and the min size of a row group
   public static final int MAX_PADDING_SIZE_DEFAULT = 8 * 1024 * 1024; // 8MB
   //<editor-fold desc="Fixed by Y.Andrew">
-  public static final int APPEND_BLOCK_SIZE_DEFAULT = 4096; // 8MB
+  public static final int APPEND_BUFFER_SIZE_DEFAULT = 4096; // 8MB
   //</editor-fold>
 
   private final InternalParquetRecordWriter<T> writer;
@@ -222,7 +222,7 @@ public class ParquetWriter<T> implements Closeable {
                     .withDictionaryPageSize(dictionaryPageSize)
                     .withDictionaryEncoding(enableDictionary)
                     .withWriterVersion(writerVersion)
-                    .build(), APPEND_BLOCK_SIZE_DEFAULT);
+                    .build(), APPEND_BUFFER_SIZE_DEFAULT);
   }
 
   /**
@@ -330,7 +330,7 @@ public class ParquetWriter<T> implements Closeable {
     private int rowGroupSize = DEFAULT_BLOCK_SIZE;
     private int maxPaddingSize = MAX_PADDING_SIZE_DEFAULT;
     //<editor-fold desc="Fixed by Y.Andrew">
-    private int appendBlockSize = APPEND_BLOCK_SIZE_DEFAULT;
+    private int appendBlockSize = APPEND_BUFFER_SIZE_DEFAULT;
     //</editor-fold>
     private boolean enableValidation = DEFAULT_IS_VALIDATING_ENABLED;
     private ParquetProperties.Builder encodingPropsBuilder =

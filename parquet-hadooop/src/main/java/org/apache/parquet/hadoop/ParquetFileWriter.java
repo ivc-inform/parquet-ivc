@@ -50,7 +50,7 @@ import java.util.*;
 import java.util.Map.Entry;
 
 import static org.apache.parquet.format.Util.writeFileMetaData;
-import static org.apache.parquet.hadoop.ParquetWriter.APPEND_BLOCK_SIZE_DEFAULT;
+import static org.apache.parquet.hadoop.ParquetWriter.APPEND_BUFFER_SIZE_DEFAULT;
 import static org.apache.parquet.hadoop.ParquetWriter.DEFAULT_BLOCK_SIZE;
 import static org.apache.parquet.hadoop.ParquetWriter.MAX_PADDING_SIZE_DEFAULT;
 
@@ -196,7 +196,7 @@ public class ParquetFileWriter {
   public ParquetFileWriter(Configuration configuration, MessageType schema,
                            Path file) throws IOException {
     //<editor-fold desc="Fixed by Y.Andrew">
-    this(HadoopOutputFile.fromPath(file, configuration), schema, Mode.CREATE, DEFAULT_BLOCK_SIZE, MAX_PADDING_SIZE_DEFAULT, APPEND_BLOCK_SIZE_DEFAULT);
+    this(HadoopOutputFile.fromPath(file, configuration), schema, Mode.CREATE, DEFAULT_BLOCK_SIZE, MAX_PADDING_SIZE_DEFAULT, APPEND_BUFFER_SIZE_DEFAULT);
     //</editor-fold>
   }
 
@@ -213,7 +213,7 @@ public class ParquetFileWriter {
   public ParquetFileWriter(Configuration configuration, MessageType schema,
                            Path file, Mode mode) throws IOException {
     //<editor-fold desc="Fixed by Y.Andrew">
-    this(HadoopOutputFile.fromPath(file, configuration), schema, mode, DEFAULT_BLOCK_SIZE, MAX_PADDING_SIZE_DEFAULT, APPEND_BLOCK_SIZE_DEFAULT);
+    this(HadoopOutputFile.fromPath(file, configuration), schema, mode, DEFAULT_BLOCK_SIZE, MAX_PADDING_SIZE_DEFAULT, APPEND_BUFFER_SIZE_DEFAULT);
     //</editor-fold>
   }
 
@@ -234,7 +234,7 @@ public class ParquetFileWriter {
                            int maxPaddingSize)
           throws IOException {
     //<editor-fold desc="Fixed by Y.Andrew">
-    this(HadoopOutputFile.fromPath(file, configuration), schema, mode, rowGroupSize, maxPaddingSize, APPEND_BLOCK_SIZE_DEFAULT);
+    this(HadoopOutputFile.fromPath(file, configuration), schema, mode, rowGroupSize, maxPaddingSize, APPEND_BUFFER_SIZE_DEFAULT);
     //</editor-fold>
   }
 
@@ -246,7 +246,7 @@ public class ParquetFileWriter {
    * @param maxPaddingSize the maximum padding
    * @throws IOException if the file can not be created
    */
-  public ParquetFileWriter(OutputFile file, MessageType schema, Mode mode, long rowGroupSize, int maxPaddingSize, int appendBlockSize) throws IOException {
+  public ParquetFileWriter(OutputFile file, MessageType schema, Mode mode, long rowGroupSize, int maxPaddingSize, int appendBufferSize) throws IOException {
     TypeUtil.checkValidWriteSchema(schema);
 
     this.schema = schema;
@@ -265,7 +265,7 @@ public class ParquetFileWriter {
         file.create(blockSize);
         break;
       case APPEND:
-        file.append(appendBlockSize);
+        file.append(appendBufferSize);
         break;
       case OVERWRITE:
         file.createOrOverwrite(blockSize);
