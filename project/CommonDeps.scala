@@ -23,15 +23,12 @@ object CommonDeps {
     val logbackVersion = "1.2.3"
     val avroVersion = "1.8.2"
     val jacksonVersion = "1.9.13"
-    //val ssysCoreVersion = "1.5-SNAPSHOT"
 
     val scalaReflect = Def.setting("org.scala-lang" % "scala-reflect" % scalaVersion.value)
-    //val ssysCommon = "com.simplesys.core" %% "common" % ssysCoreVersion
 
     val configWrapper = "com.github.kxbmap" %% "configs" % configWrapperVersion
 
     val avro = "org.apache.avro" % "avro" % avroVersion
-    val parquetAvro = "org.apache.parquet" % "parquet-avro" % parquetVersion
     val parquetColumn = "org.apache.parquet" % "parquet-column" % parquetVersion
     val parquetJackson = "org.apache.parquet" % "parquet-jackson" % parquetVersion
     val jackson = "org.codehaus.jackson" % "jackson-mapper-asl" % jacksonVersion

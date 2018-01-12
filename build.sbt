@@ -45,6 +45,7 @@ lazy val parquetCommon = Project(id = "parquet-common", base = file("parquet-com
       libraryDependencies ++= Seq(
           CommonDeps.`org.slf4j`,
           CommonDeps.parquetFormat,
+          CommonDeps.parquetColumn,
           CommonDeps.scalaTest
       )
   )
@@ -55,7 +56,6 @@ lazy val parquetAvro = Project(id = "parquet-avro", base = file("parquet-avro"))
       libraryDependencies ++= Seq(
           CommonDeps.avro,
           CommonDeps.fastUtil,
-          CommonDeps.parquetColumn,
           CommonDeps.hadoopClient,
           CommonDeps.hadoopCommon,
           CommonDeps.scalaTest
@@ -66,17 +66,14 @@ lazy val parquetHadoop = Project(id = "parquet-hadooop", base = file("parquet-ha
   .dependsOn(common, parquetCommon)
   .settings(
       libraryDependencies ++= Seq(
-          CommonDeps.parquetColumn,
           CommonDeps.hadoopClient,
           CommonDeps.parquetJackson,
           CommonDeps.jackson,
           CommonDeps.jacksonCore,
           CommonDeps.`snappy-java`,
           CommonDeps.`commons-pool`,
-          //CommonDeps.`brotli-codec`,
           CommonDeps.scalaTest
-      ),
-      //resolvers += Resolver.url("jitpack.io", url("https://jitpack.io"))
+      )
   )
 
 lazy val test = Project(id = "test", base = file("test"))
