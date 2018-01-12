@@ -32,7 +32,6 @@ object CommonDeps {
 
     val avro = "org.apache.avro" % "avro" % avroVersion
     val parquetAvro = "org.apache.parquet" % "parquet-avro" % parquetVersion
-    val parquetCommon = "org.apache.parquet" % "parquet-common" % parquetVersion
     val parquetColumn = "org.apache.parquet" % "parquet-column" % parquetVersion
     val parquetHadoop = "org.apache.parquet" % "parquet-hadoop" % parquetVersion
     val parquetJackson = "org.apache.parquet" % "parquet-jackson" % parquetVersion
@@ -45,6 +44,7 @@ object CommonDeps {
     val `snappy-java` = "org.xerial.snappy" % "snappy-java" % "1.1.2.6" % Compile
     val `commons-pool` = "commons-pool" % "commons-pool" % "1.6"
     val `brotli-codec` = "com.github.rdblue" % "brotli-codec" % "0.1.1" % Optional
+    val `org.slf4j` = "org.slf4j" % "slf4j-api" % "1.7.22"
 
     val logging = "com.typesafe.scala-logging" %% "scala-logging" % loggingVersion
 

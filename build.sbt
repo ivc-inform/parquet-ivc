@@ -6,6 +6,7 @@ lazy val parquetIVC = (project in file("."))
   .enablePlugins(GitVersioning)
   .aggregate(
       common,
+      parquetCommon,
       parquetAvro,
       parquetHadoop,
       test
@@ -38,6 +39,16 @@ lazy val common = Project(id = "common", base = file("common"))
       )
   )
 
+lazy val parquetCommon = Project(id = "parquet-common", base = file("parquet-common"))
+  .dependsOn(common)
+  .settings(
+      libraryDependencies ++= Seq(
+          CommonDeps.`org.slf4j`,
+          CommonDeps.parquetFormat,
+          CommonDeps.scalaTest
+      )
+  )
+
 lazy val parquetAvro = Project(id = "parquet-avro", base = file("parquet-avro"))
   .dependsOn(common)
   .settings(
@@ -53,12 +64,10 @@ lazy val parquetAvro = Project(id = "parquet-avro", base = file("parquet-avro"))
   )
 
 lazy val parquetHadoop = Project(id = "parquet-hadooop", base = file("parquet-hadooop"))
-  .dependsOn(common)
+  .dependsOn(common, parquetCommon)
   .settings(
       libraryDependencies ++= Seq(
-          CommonDeps.parquetCommon,
           CommonDeps.parquetColumn,
-          CommonDeps.parquetFormat,
           CommonDeps.hadoopClient,
           CommonDeps.parquetJackson,
           CommonDeps.jackson,
