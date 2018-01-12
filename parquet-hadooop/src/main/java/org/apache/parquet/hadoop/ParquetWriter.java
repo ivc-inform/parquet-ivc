@@ -222,7 +222,7 @@ public class ParquetWriter<T> implements Closeable {
                     .withDictionaryPageSize(dictionaryPageSize)
                     .withDictionaryEncoding(enableDictionary)
                     .withWriterVersion(writerVersion)
-                    .build());
+                    .build(), APPEND_BLOCK_SIZE_DEFAULT);
   }
 
   /**
@@ -261,12 +261,13 @@ public class ParquetWriter<T> implements Closeable {
           boolean validating,
           Configuration conf,
           int maxPaddingSize,
-          ParquetProperties encodingProps) throws IOException {
+          ParquetProperties encodingProps,
+          int appendBlockSize) throws IOException {
 
     WriteSupport.WriteContext writeContext = writeSupport.init(conf);
     MessageType schema = writeContext.getSchema();
 
-    ParquetFileWriter fileWriter = new ParquetFileWriter(file, schema, mode, rowGroupSize, maxPaddingSize, APPEND_BLOCK_SIZE_DEFAULT);
+    ParquetFileWriter fileWriter = new ParquetFileWriter(file, schema, mode, rowGroupSize, maxPaddingSize, appendBlockSize);
     fileWriter.start();
 
     this.codecFactory = new CodecFactory(conf, encodingProps.getPageSizeThreshold());
@@ -509,12 +510,12 @@ public class ParquetWriter<T> implements Closeable {
       if (file != null) {
         return new ParquetWriter<>(file,
                 mode, getWriteSupport(conf), codecName, rowGroupSize, enableValidation, conf,
-                maxPaddingSize, encodingPropsBuilder.build());
+                maxPaddingSize, encodingPropsBuilder.build(), APPEND_BLOCK_SIZE_DEFAULT);
       } else {
         return new ParquetWriter<>(HadoopOutputFile.fromPath(path, conf),
                 mode, getWriteSupport(conf), codecName,
                 rowGroupSize, enableValidation, conf, maxPaddingSize,
-                encodingPropsBuilder.build());
+                encodingPropsBuilder.build(), APPEND_BLOCK_SIZE_DEFAULT);
       }
     }
   }
