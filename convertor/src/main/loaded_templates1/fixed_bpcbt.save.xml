@@ -1,0 +1,565 @@
+<fixedTemplaterActor acn="bpcbt">
+<fixedTemplateHolder>
+<fixedTmpl asString="oplata_$T{v}_magazine_$T{$VARSTRING}_$T{na}_summu_$MONEY_parol_$T{$STRING}_nikomy_$T{ne}_soobshaite_dannyii_parol_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PP"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="magazine" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nikomy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="soobshaite" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dannyii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>68446313029</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-03-09T14:16:45.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-03-09T14:16:50.000</dlv_status_at>
+            <address>79255115336</address>
+            <text>Oplata v magazine: PAW*SHTRAF GIBDD na summu 1744.00 RUB. Parol: 23243. Nikomy ne soobshaite dannyii parol. 3/9/17 11:16 AM</text>
+            
+            
+          </record><record>
+            <id>69255589980</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-03-22T17:14:31.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-03-22T17:14:34.000</dlv_status_at>
+            <address>79057535467</address>
+            <text>Oplata v magazine: PMR*SPECIALIST na summu 350.00 RUB. Parol: 78620. Nikomy ne soobshaite dannyii parol. 3/22/17 2:14 PM</text>
+            
+            
+          </record><record>
+            <id>65414972232</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-01-16T23:23:05.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-16T23:23:06.000</dlv_status_at>
+            <address>79857677604</address>
+            <text>Oplata v magazine: VYMPELKOM-SHPD na summu 1300.00 RUB. Parol: 38989. Nikomy ne soobshaite dannyii parol. 1/16/17 11:23 PM</text>
+            
+            
+          </record><record>
+            <id>73491960674</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-05-30T21:16:08.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-05-30T21:16:11.000</dlv_status_at>
+            <address>79197662800</address>
+            <text>Oplata v magazine: JCS INSURANCE COMP PARI na summu 4199.42 RUB. Parol: 22896. Nikomy ne soobshaite dannyii parol. 5/30/17 9:16 PM</text>
+            
+            
+          </record><record>
+            <id>65805532121</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-01-23T18:13:06.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-23T18:13:10.000</dlv_status_at>
+            <address>79055628422</address>
+            <text>Oplata v magazine: VSE PLATEZHI SVYAZ na summu 10370.77 RUB. Parol: 10275. Nikomy ne soobshaite dannyii parol. 1/23/17 8:12 PM</text>
+            
+            
+          </record><record>
+            <id>59998726722</id>
+            <cnr>2373</cnr>
+            <cnrCode>bpcbt0</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2016-10-11T11:09:54.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-11T11:09:57.000</dlv_status_at>
+            <address>79163251827</address>
+            <text>Oplata v magazine: LLC TELESERVIS na summu 900.00 RUB. Parol: 37256. Nikomy ne soobshaite dannyii parol. 10/11/16 8:09 AM</text>
+            
+            
+          </record><record>
+            <id>69234404719</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-03-22T12:31:16.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-03-22T12:31:18.000</dlv_status_at>
+            <address>79030602646</address>
+            <text>Oplata v magazine: PAW*Oplata DOU na summu 412.01 RUB. Parol: 31867. Nikomy ne soobshaite dannyii parol. 3/22/17 9:31 AM</text>
+            
+            
+          </record><record>
+            <id>62668916850</id>
+            <cnr>2373</cnr>
+            <cnrCode>bpcbt0</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2016-11-28T15:20:11.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-28T15:21:51.000</dlv_status_at>
+            <address>79264909719</address>
+            <text>Oplata v magazine: MLADENEC.RU na summu 13139.00 RUB. Parol: 61522. Nikomy ne soobshaite dannyii parol. 11/28/16 12:20 PM</text>
+            
+            
+          </record><record>
+            <id>65596203317</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-01-19T23:57:45.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-19T23:57:50.000</dlv_status_at>
+            <address>79055135882</address>
+            <text>Oplata v magazine: Russian Railways na summu 2369.40 RUB. Parol: 61085. Nikomy ne soobshaite dannyii parol. 1/19/17 11:57 PM</text>
+            
+            
+          </record><record>
+            <id>64907382707</id>
+            <cnr>2373</cnr>
+            <cnrCode>bpcbt0</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-01-07T15:43:44.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-07T15:43:50.000</dlv_status_at>
+            <address>79152114879</address>
+            <text>Oplata v magazine: WARGAMING na summu 220.00 RUB. Parol: 19568. Nikomy ne soobshaite dannyii parol. 1/7/17 12:43 PM</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2017-07-19T17:03:10.515+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T10:31:17.920+03:00"/><ed user="anton" at="2017-07-19T17:03:10.515+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="oplata_$T{v}_magazine_$T{$VARSTRING}_$T{na}_summu_$T{$DOUBLE}_$STRING_parol_$T{$STRING}_nikomy_$T{ne}_soobshaite_dannyii_parol_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PP"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="magazine" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nikomy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="soobshaite" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dannyii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>69081193712</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-03-20T04:06:39.000</timestamp>
+            <subject>TKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-03-20T04:06:45.000</dlv_status_at>
+            <address>79052110000</address>
+            <text>Oplata v magazine: WP*WWW.E-PAY.BY na summu 1.00 BYN. Parol: 59682. Nikomy ne soobshaite dannyii parol. 3/20/17 1:06 AM</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T10:32:08.147+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T10:32:08.147+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_oplata_summa_$MONEY_mesto_$T{$VARSTRING}_card_$T{$CARDNUMBER}_$T{$VARSTRING}_balance_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="card" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>74192617088</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-10T21:42:46.000</timestamp>
+            <subject>RosEvroBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-10T21:42:47.000</dlv_status_at>
+            <address>SEX79647114555</address>
+            <text>10.06.17 21:42
+OPLATA
+SUMMA 240.00 RUB
+MESTO FORMULA KINO SITI, RUS
+CARD 518774******9121
+GRIGORIY PEKANOV
+BALANCE 3 827.56</text>
+            
+            
+          </record><record>
+            <id>74114806391</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-09T16:21:47.000</timestamp>
+            <subject>RosEvroBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-09T16:21:49.000</dlv_status_at>
+            <address>SEX79651265314</address>
+            <text>09.06.17 16:21
+OPLATA
+SUMMA 468.00 RUB
+MESTO KC WAYPARK MO, Krasnog, RUS
+CARD 518774******5596
+KHAN VITALIY
+BALANCE 14 112.66</text>
+            
+            
+          </record><record>
+            <id>74219910676</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-11T14:20:37.000</timestamp>
+            <subject>RosEvroBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-11T14:20:40.000</dlv_status_at>
+            <address>SEX79998069294</address>
+            <text>11.06.17 14:20
+OPLATA
+SUMMA 936.00 RUB
+MESTO FK NA LUBYANKE (109012, RUS
+CARD 518774******7140
+ALEKSEY SHEKHOVTSOV
+BALANCE 571.81</text>
+            
+            
+          </record><record>
+            <id>75554640697</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-29T18:29:51.000</timestamp>
+            <subject>RosEvroBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-29T18:29:54.000</dlv_status_at>
+            <address>SEX79055422515</address>
+            <text>29.06.17 18:29
+OPLATA
+SUMMA 460.00 RUB
+MESTO FORMULA KINO LADOGA, RUS
+CARD 418906******9873
+SERGEY KOMPANETS
+BALANCE 52 767.65</text>
+            
+            
+          </record><record>
+            <id>74225727584</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-11T16:36:15.000</timestamp>
+            <subject>RosEvroBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-11T16:36:17.000</dlv_status_at>
+            <address>SEX79684359481</address>
+            <text>11.06.17 16:36
+OPLATA
+SUMMA 1 130.00 RUB
+MESTO KC OBLAKA, RUS
+CARD 418906******6800
+DMITRIY IVANOV
+BALANCE 32 408.97</text>
+            
+            
+          </record><record>
+            <id>75064433452</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-23T12:48:16.000</timestamp>
+            <subject>RosEvroBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-23T12:48:17.000</dlv_status_at>
+            <address>SEX79035577482</address>
+            <text>23.06.17 12:48
+OPLATA
+SUMMA 756.00 RUB
+MESTO FK NA KUTUZOVSKOM (121, RUS
+CARD 518774******6182
+MARIYA BEDRETDINOVA
+BALANCE 9 565.99</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2017-07-19T17:02:11.012+03:00"/></created>
+        <edited><ed user="anton" at="2017-07-19T17:02:11.012+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_$T{$CARDNUMBER}_pokupka_uspeshno_$MONEY_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>74505706453</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-15T20:19:41.000</timestamp>
+            <subject>METIB_CARD</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-15T20:19:43.000</dlv_status_at>
+            <address>SEX79163019613</address>
+            <text>MasterCard Standard EMV ****3935;POKUPKA;USPESHNO;280.00 RUR;KC LEFORTOVO Moskva, S, MOSKVA, ;15.06.17 20:19;DOSTUPNO:69.45 RUR</text>
+            
+            
+          </record><record>
+            <id>75319094372</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-26T22:21:20.000</timestamp>
+            <subject>INGBankInfo</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-26T22:21:24.000</dlv_status_at>
+            <address>SEX79032655199</address>
+            <text>ING VISA Classic ****5728;POKUPKA;USPESHNO;580.00 RUR;KC OBLAKA, MOSKVA, ;26.06.17 22:21;DOSTUPNO:5254.55 RUR</text>
+            
+            
+          </record><record>
+            <id>73789157383</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-04T22:49:25.000</timestamp>
+            <subject>METIB_CARD</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-04T22:49:27.000</dlv_status_at>
+            <address>SEX79857652643</address>
+            <text>VISA Gold EMV ****3649;POKUPKA;USPESHNO;980.00 RUR;FK NA KUTUZOVSKOM, MOSKVA, ;04.06.17 22:49;DOSTUPNO:16034.29 RUR</text>
+            
+            
+          </record><record>
+            <id>74266602642</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-12T14:50:43.000</timestamp>
+            <subject>NMBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-12T14:50:45.000</dlv_status_at>
+            <address>SEX79067441178</address>
+            <text>MasterCard Unembossed ****7096;POKUPKA;USPESHNO;660.00 RUR;FK NA KUTUZOVSKOM (121, MOSKVA, ;12.06.17 14:50;DOSTUPNO:2528.15 RUR</text>
+            
+            
+          </record><record>
+            <id>75176034925</id>
+            <cnr>2782</cnr>
+            <cnrCode>bpcbt2</cnrCode>
+            <acn>636</acn>
+            <acnCode>bpcbt</acnCode>
+            <timestamp>2017-06-24T20:45:16.000</timestamp>
+            <subject>NMBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-06-24T20:45:18.000</dlv_status_at>
+            <address>SEX79853857775</address>
+            <text>MasterCard Unembossed ****7914;POKUPKA;USPESHNO;1120.00 RUR;FORMULA KINO POLEZHAEV, MOSKVA, ;24.06.17 20:45;DOSTUPNO:22248.10 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2017-07-19T17:04:53.709+03:00"/></created>
+        <edited><ed user="anton" at="2017-07-19T17:04:53.709+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

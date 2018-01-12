@@ -1,0 +1,244 @@
+<fixedTemplaterActor acn="euroaxis">
+<fixedTemplateHolder>
+<fixedTmpl asString="перевод_$T{$LONG}_$T{на}_сумму_$MONEY_исполнен" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50446256215</id>
+            <cnr>1413</cnr>
+            <cnrCode>euroaxis0</cnrCode>
+            <acn>330</acn>
+            <acnCode>euroaxis</acnCode>
+            <timestamp>2016-04-06T16:45:01.000</timestamp>
+            <subject>EUROAXIS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T16:45:09.000</dlv_status_at>
+            <address>79055040316</address>
+            <text>Перевод 31 на сумму 375,00 EUR. Исполнен. </text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-28T18:15:19.029+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-28T18:15:19.029+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="платеж_$T{$LONG}_$T{на}_сумму_$MONEY_исполнен" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19869366568</id>
+            <cnr>1413</cnr>
+            <cnrCode>euroaxis0</cnrCode>
+            <acn>330</acn>
+            <acnCode>euroaxis</acnCode>
+            <timestamp>2014-04-02T16:28:01.000</timestamp>
+            <subject>EUROAXIS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-02T16:28:05.000</dlv_status_at>
+            <address>79261389024</address>
+            <text>Платеж 24 на сумму 2 600,00р. исполнен. </text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-28T18:14:18.157+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-28T18:14:18.157+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_интернет_клиент_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>45386354207</id>
+            <cnr>1413</cnr>
+            <cnrCode>euroaxis0</cnrCode>
+            <acn>330</acn>
+            <acnCode>euroaxis</acnCode>
+            <timestamp>2015-12-29T09:03:04.000</timestamp>
+            <subject>EUROAXIS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-29T09:03:06.000</dlv_status_at>
+            <address>79153139561</address>
+            <text>Вход в Интернет Клиент. тел. +7(495)232-0440</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-19T12:57:36.811+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-19T12:57:36.811+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="платеж_$T{$LONG}_$T{на}_сумму_$MONEY_принят" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="принят" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19869366492</id>
+            <cnr>1413</cnr>
+            <cnrCode>euroaxis0</cnrCode>
+            <acn>330</acn>
+            <acnCode>euroaxis</acnCode>
+            <timestamp>2014-04-02T15:14:00.000</timestamp>
+            <subject>EUROAXIS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-02T15:14:09.000</dlv_status_at>
+            <address>79261389024</address>
+            <text>Платеж 25 на сумму 580,00р. принят. </text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-28T18:14:48.487+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-28T18:14:48.487+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{$LONG}_$T{на}_сумму_$MONEY_принят" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="принят" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50446256225</id>
+            <cnr>1413</cnr>
+            <cnrCode>euroaxis0</cnrCode>
+            <acn>330</acn>
+            <acnCode>euroaxis</acnCode>
+            <timestamp>2016-04-06T21:35:31.000</timestamp>
+            <subject>EUROAXIS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T21:35:34.000</dlv_status_at>
+            <address>79251202824</address>
+            <text>Перевод 16 на сумму 500 000,00 EUR. Принят. </text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-28T18:15:52.528+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-28T18:15:52.528+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

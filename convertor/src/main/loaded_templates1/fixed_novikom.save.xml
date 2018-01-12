@@ -1,0 +1,163 @@
+<fixedTemplaterActor acn="novikom">
+<fixedTemplateHolder>
+<fixedTmpl asString="uvazhaemiy_klient_napominaem_vam_$T{ob}_oplate_ocherednogo_platezha_$T{po}_kreditu_$LOCALDATE_summa_$T{k}_oplate_$MONEY_$T{s}_uvazheniem_zao_akb_novikombank_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemiy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="klient" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ob" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplate" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ocherednogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="k" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplate" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uvazheniem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="akb" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="novikombank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17642483227</id>
+            <cnr>1642</cnr>
+            <cnrCode>novikom0</cnrCode>
+            <acn>437</acn>
+            <acnCode>novikom</acnCode>
+            <timestamp>2014-02-04T16:21:21.000</timestamp>
+            <subject>NOVIKOMBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-04T16:21:21.000</dlv_status_at>
+            <address>79600544955</address>
+            <text>Uvazhaemiy Klient! Napominaem Vam ob oplate ocherednogo platezha po kreditu 07.02.2014. Summa k oplate-22030.92 RUB. S uvazheniem, ZAO AKB NOVIKOMBANK. Tel.88002507007.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-24T13:25:50.331+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-24T13:25:50.331+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="wy_voshli_$T{v}_sistemu_internet_bankinga_$LOCALDATETIME_spravka_$T{po}_telefonu_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="wy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="voshli" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sistemu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="internet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bankinga" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="telefonu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>36611075981</id>
+            <cnr>1642</cnr>
+            <cnrCode>novikom0</cnrCode>
+            <acn>437</acn>
+            <acnCode>novikom</acnCode>
+            <timestamp>2015-06-02T08:44:58.000</timestamp>
+            <subject>NOVIKOMBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-02T08:45:00.000</dlv_status_at>
+            <address>79202524631</address>
+            <text>Wy voshli v sistemu Internet-Bankinga. 02.06.2015 08:43:49. Spravka po telefonu: (495)777-74-87</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-11T21:16:45.858+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-11T21:16:45.858+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

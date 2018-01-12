@@ -1,0 +1,4271 @@
+<fixedTemplaterActor acn="rgsbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="popolnenie_scheta_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8882475496</id>
+            <cnr>764</cnr>
+            <cnrCode>rgsbank1</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-04-01T12:36:50.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-01T12:36:54.000</dlv_status_at>
+            <address>79030869181</address>
+            <text>Popolnenie scheta: 01.04.13 12:35,karta 5211***9108. summa:4538.59 RUB, balance:4667.87 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.576+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_заявка_$T{на}_карту_$T{$CARDNUMBER}_отклонена_$T{с}_уважением_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заявка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уважением" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7093120018</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-12-24T10:19:19.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-24T10:19:25.000</dlv_status_at>
+            <address>79193331290</address>
+            <text>Ваша заявка на карту 5211****0205 отклонена. С уважением, РГС Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:23:03.247+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:23:03.247+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25198519097</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-27T10:02:40.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-27T10:02:43.000</dlv_status_at>
+            <address>79180331031</address>
+            <text>Otmena: MEGAFON TOP UP PAYMENT, KRASNODAR, ,27.08.14 10:02, karta*5284. summa:7.87RUB, balans 41659.00RUB(cred. limit: 60000.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:35:12.333+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T15:00:03.159+03:00"/><ed user="lkovaleva" at="2015-08-31T19:35:12.333+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="pokupka_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23305763758</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-10T03:59:05.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-10T03:59:09.000</dlv_status_at>
+            <address>79246547058</address>
+            <text>Pokupka: SANTEKHNIKA, ULAN-UDE, ,10.07.14 03:58, karta*5840. summa:1094.40RUB,balans 35870.29RUB(cred. limit: 80000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>25564949826</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-05T09:04:43.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-05T09:04:48.000</dlv_status_at>
+            <address>79373161366</address>
+            <text>Pokupka: METALLSERVIS            &gt;, UFA, ,05.09.14 09:04, karta*8423. summa:726.60RUB,balans 2075.00RUB(cred. limit: 70000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>25532600698</id>
+            <cnr>1905</cnr>
+            <cnrCode>devinobnk0</cnrCode>
+            <acn>516</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-04T11:47:18.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-04T11:47:23.000</dlv_status_at>
+            <address>79053924508</address>
+            <text>Pokupka: PERVYY UNIVERSAM, OKTYABRSKIY P, ,04.09.14 11:47, karta*2186. summa:977.05RUB,balans 42111.35RUB(cred. limit: 50000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>25574165996</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-05T11:30:03.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-05T11:30:09.000</dlv_status_at>
+            <address>79221465453</address>
+            <text>Pokupka: MAGNIT U DOMA PREIMUSCHES, TALITSA, ,05.09.14 11:29, karta*8627. summa:152.50RUB,balans 476.09RUB(cred. limit: 60000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>23109013980</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-04T09:40:58.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-04T09:41:02.000</dlv_status_at>
+            <address>79246547058</address>
+            <text>Pokupka: RESTORAN, ULAN-UDE, ,04.07.14 09:40, karta*5840. summa:199.00RUB,balans 67552.56RUB(cred. limit: 80000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>23275476173</id>
+            <cnr>1906</cnr>
+            <cnrCode>devinobnk1</cnrCode>
+            <acn>516</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-09T10:46:21.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-09T10:46:27.000</dlv_status_at>
+            <address>79612739664</address>
+            <text>Pokupka: STINNER 18, ROSTOV-NA-DON, ,09.07.14 10:46, karta*0459. summa:21490.00RUB,balans 47423.00RUB(cred. limit: 90000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>24630836600</id>
+            <cnr>1590</cnr>
+            <cnrCode>devino5</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-13T14:16:15.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-13T14:16:20.000</dlv_status_at>
+            <address>79107735317</address>
+            <text>Pokupka: PULL AND BEAR SNG 61, VLADIMIR, ,13.08.14 14:16, karta*7650. summa:2397.00RUB,balans 19624.12RUB(cred. limit: 40000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>25733967631</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-09T19:19:26.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-09T19:19:30.000</dlv_status_at>
+            <address>79168576408</address>
+            <text>Pokupka: TARELOCHKA PROL. 18, KUROVSKOE, ,09.09.14 19:19, karta*6380. summa:477.50RUB,balans 3085.98RUB(cred. limit: 60000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>26679865089</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-02T08:35:45.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-02T08:35:50.000</dlv_status_at>
+            <address>79221465453</address>
+            <text>Pokupka: MAGAZIN PRODUKTY, TALITSA, ,02.10.14 08:35, karta*8627. summa:67.00RUB,balans 3009.64RUB(cred. limit: 60000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>25163427993</id>
+            <cnr>1954</cnr>
+            <cnrCode>devino11</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-26T11:17:06.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-08-27T11:17:07.000</dlv_status_at>
+            <address>79025314400</address>
+            <text>Pokupka: MTS DIAMED, ULAN-UDE, ,26.08.14 11:17, karta*3660. summa:850.00RUB,balans 59047.88RUB(cred. limit: 70000.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:41:08.036+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T14:58:32.287+03:00"/><ed user="lkovaleva" at="2015-08-31T19:41:08.036+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_$T{na}_kartu_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_budet_dostupna_$T{cherez}_$T{$LONG}_rabochiy_den" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="budet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupna" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cherez" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rabochiy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="den" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1688384.002</id>
+            
+            
+            
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-03-04T08:21:06.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-03-04T08:21:06.000</dlv_status_at>
+            <address>79243516601</address>
+            <text>Perevod na kartu: 04.03.13 08:21,karta 4169***7734. summa:300.00 RUB budet dostupna cherez 1 rabochiy den.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:33:56.708+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-31T19:33:56.708+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="spisanie_$T{so}_scheta_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="so" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13279239156</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-09-12T09:00:29.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-12T09:00:34.000</dlv_status_at>
+            <address>79213326620</address>
+            <text>Spisanie so scheta: 12.09.13 07:26,karta 5268***6512. summa:2004.24 RUB, balance:14645.86 .</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.581+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="spisanie_$T{so}_scheta_summa_$MONEY_$LOCALDATETIME_karta_$T{$CARDNUMBER}_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="so" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26680768965</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-02T09:00:20.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-02T09:00:43.000</dlv_status_at>
+            <address>79281316871</address>
+            <text>Spisanie so scheta. Summa:6250.00RUB, 02.10.14 00:39, karta*5395. balans 0.00RUB(cred. limit: 50000.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T20:01:47.484+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T14:56:37.038+03:00"/><ed user="lkovaleva" at="2015-08-31T20:01:47.484+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_вашу_карту_$T{$CARDNUMBER}_установлен_кредитный_лимит_$MONEY_оао_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашу" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="установлен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредитный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="лимит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17409707486</id>
+            <cnr>1547</cnr>
+            <cnrCode>rapportobsl0</cnrCode>
+            <acn>392</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-01-27T14:58:31.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-27T14:58:40.000</dlv_status_at>
+            <address>79613577913</address>
+            <text>На Вашу карту 5211****3243 установлен кредитный лимит 10000 руб. ОАО РГС Банк</text>
+            <start_time>2014-01-27T14:58:31.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:00:31.466+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:00:31.466+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="напоминаем_вам_$T{о}_необходимости_внести_очередной_платеж_$T{по}_кредиту_$T{в}_оао_ргс_банк_$T{не}_позднее_$T{$STRING}_мая_$T{$STRING}_г_телефон_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="напоминаем" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="необходимости" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="внести" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="очередной" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="позднее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мая" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="г" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="телефон" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1660325.001</id>
+            
+            
+            
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-05-04T08:12:43.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-04T08:12:43.000</dlv_status_at>
+            <address>79278859888</address>
+            <text>Напоминаем Вам о необходимости внести очередной платеж по кредиту в ОАО РГС Банк не позднее 6 мая 2013 г. Телефон 88007004040</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-24T19:14:14.271+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-24T19:14:14.271+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_vydachi_$MONEY_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vydachi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>24128332722</id>
+            <cnr>1512</cnr>
+            <cnrCode>devino1</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-31T12:03:56.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-31T12:04:01.000</dlv_status_at>
+            <address>79372238100</address>
+            <text>Otmena vydachi 8000.00RUB.CEB408 TC CITY MOLL, SARATOV, ,31.07.14 12:03, karta*3780.balans 29711.00RUB(cred. limit: 50000.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:38:18.598+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T14:59:23.064+03:00"/><ed user="lkovaleva" at="2015-08-31T19:38:18.598+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="popolnenie_karti_$T{$CARDNUMBER}_$T{v}_$T{$VARSTRING}_$LOCALDATETIME_summa_$MONEY_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26625176679</id>
+            <cnr>427</cnr>
+            <cnrCode>rapporto0</cnrCode>
+            <acn>126</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-01T06:20:15.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-01T06:20:20.000</dlv_status_at>
+            <address>79502925968</address>
+            <text>Popolnenie karti*9273 v FRUNZE, 52              &gt;, ARTEM, , 01.10.14 06:20. Summa: 500.00RUB, balans 63375.00RUB(cred. limit: 70000.00 RUB)</text>
+            <start_time>2014-10-01T06:20:15.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:43:07.719+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T14:58:09.728+03:00"/><ed user="lkovaleva" at="2015-08-31T19:43:07.719+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="karta_$T{$CARDNUMBER}_$STRING_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14883990544</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-11-05T09:45:35.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-05T09:45:37.000</dlv_status_at>
+            <address>79371520600</address>
+            <text>Karta 4169***1547 razblokirovanna 05.11.13 09:44.</text>
+            
+            
+          </record><record>
+            <id>25445189357</id>
+            <cnr>1954</cnr>
+            <cnrCode>devino11</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-02T09:37:49.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-02T09:37:52.000</dlv_status_at>
+            <address>79029429953</address>
+            <text>Karta 5268***5298 razblokirovana 02.09.14 09:37.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:01:11.544+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:01:11.544+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="pokupka_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8853105450</id>
+            <cnr>764</cnr>
+            <cnrCode>rgsbank1</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-03-31T09:31:51.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-31T09:31:56.000</dlv_status_at>
+            <address>79044435573</address>
+            <text>Pokupka: TSENTR SEMYA, ROSTOV-NA-DON, ,31.03.13 09:31,karta 5268***1909. summa:900.00 RUB, balance:75127.21 RUB.</text>
+            
+            
+          </record><record>
+            <id>14807869934</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-11-01T18:39:28.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-01T18:40:08.000</dlv_status_at>
+            <address>79224716741</address>
+            <text>Pokupka: ZHIVAYA PLANETA, TYUMEN, ,01.11.13 18:39,karta 5268***7169. summa:895.00 RUB, balance:8048.08 RUB.</text>
+            
+            
+          </record><record>
+            <id>12973119162</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-31T08:36:24.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-31T08:36:29.000</dlv_status_at>
+            <address>79025495118</address>
+            <text>Pokupka: PRODALIT  SHOP, IRKUTSK, ,31.08.13 08:35,karta 5124***3660. summa:318.00 RUB, balance:11299.56 RUB.</text>
+            
+            
+          </record><record>
+            <id>12701076294</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-20T15:07:09.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-20T15:07:16.000</dlv_status_at>
+            <address>79922009777</address>
+            <text>Pokupka: BON MARSHE, PERM, ,20.08.13 15:06,karta 4169***2659. summa:2300.00 RUB, balance:8811.36 RUB.</text>
+            
+            
+          </record><record>
+            <id>8854272628</id>
+            <cnr>764</cnr>
+            <cnrCode>rgsbank1</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-03-31T11:40:17.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-31T11:40:21.000</dlv_status_at>
+            <address>79199361381</address>
+            <text>Pokupka: POSUDA TSENTR, TYUMEN, ,31.03.13 11:39,karta 5268***8628. summa:2219.00 RUB, balance:25554.80 RUB.</text>
+            
+            
+          </record><record>
+            <id>12974263686</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-31T09:21:33.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-31T09:21:45.000</dlv_status_at>
+            <address>79224716741</address>
+            <text>Pokupka: OOO BETA, TJUMEN, ,31.08.13 09:20,karta 5268***7169. summa:591.00 RUB, balance:127.21 RUB.</text>
+            
+            
+          </record><record>
+            <id>12549026586</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-15T08:32:55.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-15T08:33:01.000</dlv_status_at>
+            <address>79200811121</address>
+            <text>Pokupka: APTEKA BUD ZDOROV, OREL, ,15.08.13 08:32,karta 4169***0008. summa:237.30 RUB, balance:790.73 RUB.</text>
+            
+            
+          </record><record>
+            <id>12645967480</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-18T14:45:02.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-18T14:45:08.000</dlv_status_at>
+            <address>79535052780</address>
+            <text>Pokupka: KUPI MAMA DALNYAYA, VOLOGDA, ,18.08.13 14:44,karta 5268***4172. summa:3787.00 RUB, balance:72050.75 RUB.</text>
+            
+            
+          </record><record>
+            <id>13906131624</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-10-03T12:48:14.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-03T12:48:20.000</dlv_status_at>
+            <address>79628266762</address>
+            <text>Pokupka: AUCHAN CITY SIBIRSKIY MOL, NOVOSIBIRSK, ,03.10.13 12:47,karta 4169***5495. summa:1429.40 RUB, balance:2367.85 RUB.</text>
+            
+            
+          </record><record>
+            <id>8884202924</id>
+            <cnr>764</cnr>
+            <cnrCode>rgsbank1</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-04-01T13:06:16.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-01T13:08:47.000</dlv_status_at>
+            <address>79199361381</address>
+            <text>Pokupka: TORGOVAJA SET IRINA 21, TJUMEN, ,01.04.13 13:00,karta 5268***8628. summa:919.00 RUB, balance:21281.40 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.593+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="napominaem_vam_neobhodimo_vnesti_min_platezh_$T{$DOUBLE}_$T{do}_$LOCALDATE_zadolgennost_$T{na}_$LOCALDATE_$MONEY_$T{$PHONE}_rgsbank" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="min" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolgennost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rgsbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5762058310</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-09-26T08:01:57.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-26T08:02:06.000</dlv_status_at>
+            <address>79063887985</address>
+            <text>Napominaem, Vam neobhodimo vnesti min platezh: 216.40 do 01.10.2012; Zadolgennost na 25.09.2012: 24,055.16 руб. 8 800 700 40 40 RGSBANK</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:14:22.061+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:14:22.061+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_карта_номер_$T{$CARDNUMBER}_$T{$VARSTRING}_оао_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="номер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23246125366</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-08T13:36:34.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-08T13:36:39.000</dlv_status_at>
+            <address>79373023250</address>
+            <text>Ваша карта номер 0509 не активирована. ОАО РГС Банк</text>
+            
+            
+          </record><record>
+            <id>25452048375</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-02T11:42:55.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-02T11:43:06.000</dlv_status_at>
+            <address>79169255573</address>
+            <text>Ваша карта номер *7373 не активирована. ОАО РГС Банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T20:58:22.357+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T20:58:22.357+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_заявка_$T{на}_закрытие_карты_$T{$CARDNUMBER}_принята_$STRING_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заявка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="закрытие" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="принята" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28804933539</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-11-21T15:55:28.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-21T16:45:51.000</dlv_status_at>
+            <address>79184390378</address>
+            <text>Ваша заявка на закрытие карты *0143 принята. ОАО &quot;РГС Банк&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:22:21.590+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:22:21.590+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_заявка_одобрена_кредит_выдан_$T{на}_карту_$T{$CARDNUMBER}_ваш_росгосстрах_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CA"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заявка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобрена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выдан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="росгосстрах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5808033642</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-09-28T15:26:40.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-28T15:26:46.000</dlv_status_at>
+            <address>79324177007</address>
+            <text>Ваша заявка одобрена.Кредит выдан на карту *8341. Ваш РОСГОССТРАХ Банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:13:23.731+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:13:23.731+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="poluchenie_nalichnykh_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="poluchenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnykh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1983284.001</id>
+            
+            
+            
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-06-11T13:46:25.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-11T13:46:25.000</dlv_status_at>
+            <address>79604517790</address>
+            <text>Poluchenie nalichnykh: POS GORODA VOLOS PVN, ROSTOV-NA-DONU, GORODA VOLOS STR. 11/81-83/34,11.06.13 17:46,karta 4169***0718. summa:14000.00 RUB, balance:1455.59</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-02T15:17:58.251+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-02T15:17:58.251+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{по}_вашей_карте_$T{$CARDNUMBER}_отказано_$T{в}_кредитном_лимите_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CR"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашей" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отказано" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредитном" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="лимите" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25283387502</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-28T17:31:50.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-28T17:32:15.000</dlv_status_at>
+            <address>79188550467</address>
+            <text>По Вашей карте *5985 отказано в кредитном лимите. ОАО РГС Банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:03:01.320+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:03:01.320+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_$T{na}_kartu_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25714181845</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-09T11:59:00.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-09T11:59:03.000</dlv_status_at>
+            <address>79184178507</address>
+            <text>Perevod na kartu: 09.09.14 11:58,karta 4169***6238. summa:3000.00 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:32:58.616+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-31T19:32:58.616+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="spisanie_$T{so}_scheta_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="so" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>59680554555</id>
+            <cnr>2050</cnr>
+            <cnrCode>mobiservice4</cnrCode>
+            <acn>546</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2016-10-05T12:02:37.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-05T12:03:03.000</dlv_status_at>
+            <address>79042325177</address>
+            <text>Spisanie so scheta: 05.10.16 12:01,karta 4169***7443. summa:6470.00 RUB, balance:0.00 RUB</text>
+            <start_time>2016-10-05T12:02:37.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:12:22.665+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:12:22.665+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="oplata_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23892938636</id>
+            <cnr>1906</cnr>
+            <cnrCode>devinobnk1</cnrCode>
+            <acn>516</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-25T04:58:22.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-25T04:58:27.000</dlv_status_at>
+            <address>79656448814</address>
+            <text>Oplata: ATM KRYLOVA DO, UFA, PR. OKTYABRYA,31,25.07.14 04:56, karta*0125, summa:9.20RUB, balans 100.00RUB(cred. limit: 0.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:12:20.725+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:12:20.725+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_$T{s}_karti_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_perevedena" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="perevedena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13786053048</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-09-29T23:33:30.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-29T23:33:33.000</dlv_status_at>
+            <address>79127449508</address>
+            <text>Perevod s karti: 29.09.13 23:33,karta 5268***1998. summa:4300.00 RUB perevedena.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:09:52.426+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:09:52.426+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="poluchenie_nalichnykh_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="poluchenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnykh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11505198110</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-07-09T12:03:07.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-09T12:03:18.000</dlv_status_at>
+            <address>79086160676</address>
+            <text>Poluchenie nalichnykh: RGS BANK RND ATM, ASTRAKHAN, N. OSTROVSKOGO 128,09.07.13 12:02,karta 5211***0588. summa:6000.00 RUB, balance:13336.32 RUB.</text>
+            
+            
+          </record><record>
+            <id>8826823808</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-03-29T18:57:44.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-29T18:57:48.000</dlv_status_at>
+            <address>79281561616</address>
+            <text>Poluchenie nalichnykh: RGS BANK RND ATM, ROSTOV-NA-DON, ZORGE 58A/8,29.03.13 18:57,karta 6771***5083. summa:10350.00 RUB, balance:10.06 RUB.</text>
+            
+            
+          </record><record>
+            <id>12353468502</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-07T21:05:42.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-07T21:05:49.000</dlv_status_at>
+            <address>79049852884</address>
+            <text>Poluchenie nalichnykh: 00026027       , EKATERINBURG, SHOP ELEKTRONNYY MIR,07.08.13 21:05,karta 5211***6345. summa:9000.00 RUB, balance:4334.02 RUB.</text>
+            
+            
+          </record><record>
+            <id>12499524262</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-13T11:19:25.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-13T11:19:31.000</dlv_status_at>
+            <address>79094140405</address>
+            <text>Poluchenie nalichnykh: RGS BANK RND ATM, KAMENSK-SHAKH, PR. K.MARKSA 71,13.08.13 11:19,karta 6771***9557. summa:19500.00 RUB, balance:36.56 RUB.</text>
+            
+            
+          </record><record>
+            <id>8682531374</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-03-24T12:57:57.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-24T12:58:05.000</dlv_status_at>
+            <address>79082768730</address>
+            <text>Poluchenie nalichnykh: RGS BANK NND ATM, PERM, UINSKAYA  9,24.03.13 12:57,karta 5268***7737. summa:5000.00 RUB, balance:16825.00 RUB.</text>
+            
+            
+          </record><record>
+            <id>12971457384</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-31T06:42:23.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-31T06:42:29.000</dlv_status_at>
+            <address>79021602954</address>
+            <text>Poluchenie nalichnykh: RGS BANK NSB ATM, ULAN-UDE, KLYUCHEVSKAYA 74,31.08.13 06:42,karta 4169***4556. summa:4000.00 RUB, balance:763.81 RUB.</text>
+            
+            
+          </record><record>
+            <id>14706729554</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-10-30T11:37:42.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-30T11:38:01.000</dlv_status_at>
+            <address>79176602004</address>
+            <text>Poluchenie nalichnykh: ABB 39  2 MOSKOVSKIJ PR.&gt;, CHEBOKSARY, ,30.10.13 11:37,karta 5268***4429. summa:3000.00 RUB, balance:16342.19 RUB.</text>
+            
+            
+          </record><record>
+            <id>12030097316</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-07-26T18:52:28.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-26T18:52:33.000</dlv_status_at>
+            <address>79085130262</address>
+            <text>Poluchenie nalichnykh: Mira street 20, G AZOV, ,26.07.13 18:52,karta 6771***3766. summa:17000.00 RUB, balance:814.61 RUB.</text>
+            
+            
+          </record><record>
+            <id>12549025840</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-15T08:13:01.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-15T08:13:04.000</dlv_status_at>
+            <address>79144721600</address>
+            <text>Poluchenie nalichnykh: BANKOMAT 740195 8600, CHITAW, ,15.08.13 08:12,karta 4169***8840. summa:2000.00 RUB, balance:66.58 RUB.</text>
+            
+            
+          </record><record>
+            <id>12997781586</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-09-01T17:03:18.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-01T17:03:25.000</dlv_status_at>
+            <address>79503779691</address>
+            <text>Poluchenie nalichnykh: MOH0           , KSTOVO, MOH0 40 let Oktyabrya,01.09.13 17:03,karta 5268***9847. summa:10000.00 RUB, balance:129610.00 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.310+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_$T{na}_kartu_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_budet_dostupna_$T{cherez}_$T{$LONG}_rabochih_dnya" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="budet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupna" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cherez" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rabochih" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dnya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25382247800</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-31T13:23:43.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-31T13:23:50.000</dlv_status_at>
+            <address>79107470045</address>
+            <text>Perevod na kartu: 31.08.14 13:23,karta 5211***0989. summa:2500.00 RUB budet dostupna cherez 3 rabochih dnya.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-24T14:49:20.854+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-24T14:49:20.854+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_клиент_карта_ргс_кредит_$T{$CARDNUMBER}_успешно_активирована_дарите_$T{себе}_$T{и}_своим_близким_подарки_$T{уже}_сейчас_ваш_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="активирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дарите" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="себе" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="и" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="своим" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="близким" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подарки" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уже" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сейчас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5681202022</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-09-19T08:50:04.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-19T08:50:16.000</dlv_status_at>
+            <address>79649542025</address>
+            <text>Уважаемый клиент, Карта РГС кредит №5211****2463 успешно активирована, дарите себе и своим близким подарки уже сейчас! Ваш РГС Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:06:03.954+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:06:03.954+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="popolnenie_karti_$T{$CARDNUMBER}_$T{v}_pos_$T{$VARSTRING}_$LOCALDATETIME_summa_$MONEY_balans_$MONEY_cred_limit_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pos" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25362036840</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-30T16:15:13.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-30T16:15:18.000</dlv_status_at>
+            <address>79600070770</address>
+            <text>Popolnenie karti*3588 v POS GORODA VOLOS PVN, ROSTOV-NA-DONU, GORODA VOLOS STR. 11/81-83/34, 30.08.14 16:14, summa:55000.00RUB,balans 55000.00RUB(cred. limit: 5</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:26:46.042+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:26:46.042+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="usluga_sms_informirovanie_$T{po}_karte_$T{$CARDNUMBER}_$STRING_$DATETIME" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="usluga" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sms" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="informirovanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25412073066</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-01T11:31:18.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-01T11:32:50.000</dlv_status_at>
+            <address>79122462884</address>
+            <text>Usluga SMS informirovanie po karte*5145 otkluchena 01.09.14 11:31 (MSK).</text>
+            
+            
+          </record><record>
+            <id>25471293056</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-02T19:29:24.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-02T19:29:29.000</dlv_status_at>
+            <address>79139438247</address>
+            <text>Usluga SMS informirovanie po karte*8565 aktivirovana 02.09.14 19:28 (MSK).</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:09:16.020+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:09:16.020+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_заявка_$T{на}_карту_$T{$CARDNUMBER}_предварительно_одобрена_$T{с}_уважением_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заявка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предварительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобрена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уважением" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5677160661</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-09-18T14:01:13.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-18T14:01:21.000</dlv_status_at>
+            <address>79649542025</address>
+            <text>Ваша заявка на карту 5211****2463 предварительно одобрена. С уважением, РГС Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:23:26.527+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:23:26.527+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_заявка_$T{на}_карту_$T{$CARDNUMBER}_одобрена_$T{с}_уважением_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заявка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобрена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уважением" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5677160776</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-09-18T14:18:47.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-18T14:18:52.000</dlv_status_at>
+            <address>79649542025</address>
+            <text>Ваша заявка на карту 5211****2463 одобрена. С уважением, РГС Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:22:42.070+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:22:42.070+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="popolnenie_scheta_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26692595206</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-02T11:51:32.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-02T11:51:36.000</dlv_status_at>
+            <address>79126480029</address>
+            <text>Popolnenie scheta: 02.10.14 11:50,karta 4169***0880. summa:835.51 RUB, balance:71015.30 .</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:47:19.836+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-31T19:47:19.836+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_карта_$T{$CARDNUMBER}_активирована_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="активирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28902374504</id>
+            <cnr>1905</cnr>
+            <cnrCode>devinobnk0</cnrCode>
+            <acn>516</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-11-24T13:52:07.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-24T13:52:13.000</dlv_status_at>
+            <address>79639207214</address>
+            <text>Ваша карта 4169****4682 активирована. РГС  Банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:21:39.362+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:21:39.362+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="spisanie_$T{so}_scheta_summa_$MONEY_$LOCALDATETIME_karta_$T{$CARDNUMBER}_balans_$T{$DOUBLE}_cred_limit" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="so" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>24039287721</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-29T11:15:29.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-29T11:15:34.000</dlv_status_at>
+            <address>79600070770</address>
+            <text>Spisanie so scheta.Summa:1183.36RUB,29.07.14 11:15, karta*3588,balans -1168.36(cred. limit: </text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:24:18.540+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:24:18.540+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="oplata_$T{$VARSTRING}_$T{$LOCALDATETIME}_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>12230679448</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-03T07:08:00.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-03T07:08:06.000</dlv_status_at>
+            <address>79516268567</address>
+            <text>Oplata: RGS BANK NSB ATM, ULAN-UDE, AVTOMOBILISTOV 19,03.08.13 07:07,karta 5268***0250. summa:30.00 RUB, balance:6958.21 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.314+03:00"/></created>
+        <edited><ed user="Люстров Антон Юрьевич" at="2015-07-10T02:50:16.549+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otzyv_sredstv_$T{na}_schet_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otzyv" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sredstv" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="schet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25449144591</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-02T10:40:57.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-02T10:40:59.000</dlv_status_at>
+            <address>79128866306</address>
+            <text>Otzyv sredstv na schet: 02.09.14 10:40,karta 5211***9669. summa:500.00 RUB, balance:30975.09 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-24T09:36:45.892+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-24T09:36:45.892+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="pin_kod_uspeshno_izmenen_$LOCALDATETIME_karta_$T{$CARDNUMBER}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="pin" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="izmenen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25507440249</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-03T18:31:33.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-03T18:31:39.000</dlv_status_at>
+            <address>79217703667</address>
+            <text>PIN-KOD uspeshno izmenen.03.09.14 18:31,karta 4169***6217.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:12:49.170+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:12:49.170+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="popolnenie_scheta_summa_$MONEY_$LOCALDATETIME_karta_$T{$CARDNUMBER}_balans_$T{$DOUBLE}_cred_limit" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25444987287</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-02T09:03:21.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-02T09:03:29.000</dlv_status_at>
+            <address>79876267177</address>
+            <text>Popolnenie scheta. Summa:93887.85RUB,02.09.14 08:27.karta*1011.balans 93887.85 (cred. limit: </text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T20:55:43.160+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T20:55:43.160+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="napominaem_vam_neobhodimo_vnesti_min_platezh_$MONEY_$T{do}_$LOCALDATE_zadolgennost_$T{na}_$LOCALDATE_$MONEY_$T{$PHONE}_rgsbank" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="min" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolgennost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rgsbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27808020560</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-29T09:12:17.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-29T09:12:20.000</dlv_status_at>
+            <address>79132571528</address>
+            <text>Napominaem, Vam neobhodimo vnesti min platezh: 8406.55 RUR do 31/10/2014; Zadolgennost na 29/10/2014: 79656.18 RUR 8 800 700 40 40 RGSBANK</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T20:57:09.447+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T20:57:09.447+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_$T{na}_kartu_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="IT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>68978405742</id>
+            <cnr>2875</cnr>
+            <cnrCode>mobiservice9</cnrCode>
+            <acn>546</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2017-03-17T20:05:34.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-03-17T20:05:36.000</dlv_status_at>
+            <address>79313134594</address>
+            <text>Perevod na kartu: 17.03.17 20:04,karta 4169***5057. summa:14500.00 RUB  balance: 100000.75 RUB</text>
+            <start_time>2017-03-17T20:05:34.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:00:37.754+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:01:56.897+03:00"/><ed user="lkovaleva" at="2017-05-02T13:00:37.754+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_карта_$T{$CARDNUMBER}_активирована_пао_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="активирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>41616774654</id>
+            <cnr>1725</cnr>
+            <cnrCode>streamtelecom0</cnrCode>
+            <acn>466</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2015-10-01T13:09:41.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-01T13:10:00.000</dlv_status_at>
+            <address>79084104224</address>
+            <text>Ваша карта *4170 активирована. ПАО &quot;РГС Банк&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-24T09:37:54.805+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-24T09:37:54.805+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_$T{$VARSTRING}_$T{на}_вашу_карту_$T{$CARDNUMBER}_зачислено_$MONEY_$T{по}_программе_cashback_$T{за}_$STRING_$T{$LONG}_подробнее_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашу" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачислено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="программе" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cashback" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="за" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробнее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>66745095265</id>
+            <cnr>2046</cnr>
+            <cnrCode>mobiservice0</cnrCode>
+            <acn>546</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2017-02-09T10:55:11.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-09T10:55:17.000</dlv_status_at>
+            <address>79218238066</address>
+            <text>Уважаемый Игорь Владимирович! На Вашу карту *9958 зачислено 20,03 руб. по Программе CashBack за январь 2017. Подробнее: www.rgsbank.ru, 88007004040. РОСГОССТРАХ БАНК.</text>
+            <start_time>2017-02-09T10:55:11.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:05:37.874+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:05:37.874+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="karta_$T{$CARDNUMBER}_aktivirovana_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="aktivirovana" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23918541331</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-25T14:34:36.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-25T14:34:38.000</dlv_status_at>
+            <address>79878762881</address>
+            <text>Karta*8539 aktivirovana 25.07.14 14:34.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T20:59:50.087+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T20:59:50.087+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="balance_$T{po}_schetu_$T{$CARDNUMBER}_$T{na}_$LOCALDATETIME_sostavlyaet_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="B"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="schetu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sostavlyaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>56260602030</id>
+            <cnr>1946</cnr>
+            <cnrCode>beeline4</cnrCode>
+            <acn>320</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2016-07-27T07:00:26.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-27T07:00:31.000</dlv_status_at>
+            <address>F134DE1FC03192CE663F2C0E5B4C6521</address>
+            <text>Balance po schetu *02886 na 27.07.2016 09:00 sostavlyaet 3 344.43 RUB</text>
+            <start_time>2016-07-27T07:00:26.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:11:11.898+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:11:11.898+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_operacii_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="operacii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11658387010</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-07-14T15:50:46.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-14T15:50:49.000</dlv_status_at>
+            <address>79217239718</address>
+            <text>Otmena operacii: M. GORKOGO, 32          &gt;, CHEREPOVETS, ,14.07.13 15:50,karta 4169***8826. summa:16000.00 RUB, balance:16154.15 RUB.</text>
+            
+            
+          </record><record>
+            <id>12433747980</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-10T14:01:10.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-10T14:01:14.000</dlv_status_at>
+            <address>79025495118</address>
+            <text>Otmena operacii: ANTILOPA, IRKUTSK, ,10.08.13 13:32,karta 5124***3660. summa:1790.00 RUB, balance:48896.51 RUB.</text>
+            
+            
+          </record><record>
+            <id>13947410972</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-10-04T16:55:48.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-04T16:56:36.000</dlv_status_at>
+            <address>79628266762</address>
+            <text>Otmena operacii: AUCHAN CITY SIBIRSKIY MOL, NOVOSIBIRSK, ,04.10.13 16:55,karta 4169***5495. summa:2295.93 RUB, balance:2367.85 RUB.</text>
+            
+            
+          </record><record>
+            <id>11927735094</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-07-23T21:55:44.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-23T21:56:31.000</dlv_status_at>
+            <address>79671202667</address>
+            <text>Otmena operacii: MTS PAY REGISTRATION, MOSCOW, ,23.07.13 21:55,karta 4169***4341. summa:4.20 RUB, balance:32026.54 RUB.</text>
+            
+            
+          </record><record>
+            <id>12804045786</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-08-24T04:45:40.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-24T04:45:59.000</dlv_status_at>
+            <address>79503917185</address>
+            <text>Otmena operacii: RGS BANK NSB ATM, S.KYREN, LENINA 136,24.08.13 04:45,karta 4169***5376. summa:5000.00 RUB, balance:27012.56 RUB.</text>
+            
+            
+          </record><record>
+            <id>12141762866</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-07-31T14:09:32.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-31T14:09:38.000</dlv_status_at>
+            <address>79044435573</address>
+            <text>Otmena operacii: PAYPAL, 4029357733, ,31.07.13 14:05,karta 5268***1909. summa:1.00 USD, balance:86848.44 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.318+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="popolnenie_scheta_summa_$MONEY_$LOCALDATETIME_karta_$T{$CARDNUMBER}_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26685122030</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-02T10:15:23.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-02T10:15:28.000</dlv_status_at>
+            <address>79265521328</address>
+            <text>Popolnenie scheta. Summa:3883.14RUB, 02.10.14 10:15.karta*3064. balans 3883.14RUB(cred. limit: 0.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:50:38.565+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T14:57:00.624+03:00"/><ed user="lkovaleva" at="2015-08-31T19:50:38.565+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balans_$MONEY_dep_$T{$DOUBLE}_cred_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dep" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>24015778391</id>
+            <cnr>1906</cnr>
+            <cnrCode>devinobnk1</cnrCode>
+            <acn>516</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-28T16:18:08.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-28T16:18:16.000</dlv_status_at>
+            <address>79053545285</address>
+            <text>Otmena: AGZS 16 EKOSISTEMZ, BAYMAK, ,28.07.14 16:18, karta*3021. summa:400.00RUB,balans 69538.58 RUB.(dep: -10461.42 ,cred: 80000.00 )</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-24T09:39:37.532+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-24T09:39:37.532+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="напоминаем_вам_$T{о}_необходимости_внести_очередной_платеж_$T{по}_кредиту_$T{в}_оао_ргс_банк_$LOCALDATE_телефон_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="напоминаем" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="необходимости" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="внести" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="очередной" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="телефон" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19170592929</id>
+            <cnr>1584</cnr>
+            <cnrCode>rapportoml1</cnrCode>
+            <acn>361</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-03-15T10:13:57.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-15T10:13:57.000</dlv_status_at>
+            <address>79225771816</address>
+            <text>Напоминаем Вам о необходимости внести очередной платеж по кредиту в ОАО РГС Банк 17/03/2014. Телефон 88007004040</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-24T19:15:00.852+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-24T19:15:00.852+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_клиент_ваша_карта_$T{$CARDNUMBER}_$STRING_$T{с}_уважением_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уважением" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4005022909</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2012-04-26T12:40:06.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-04-26T12:40:15.000</dlv_status_at>
+            <address>79063733726</address>
+            <text>Уважаемый клиент, Ваша карта 5211****3592 активна. С уважением, РГС Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T20:54:34.049+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T20:54:34.049+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_operacii_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="operacii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8728304538</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-03-26T10:37:56.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-26T10:38:02.000</dlv_status_at>
+            <address>79539102806</address>
+            <text>Otmena operacii: , , ,26.03.13 10:37,karta 4169***0940. summa:500.00 RUB, balance:830.41 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.321+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="poluchen_zapros_aktivnosti_karty_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="poluchen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zapros" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="aktivnosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karty" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25821321111</id>
+            <cnr>1374</cnr>
+            <cnrCode>beeline0</cnrCode>
+            <acn>320</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-11T17:50:44.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-11T17:50:48.000</dlv_status_at>
+            <address>79258011778</address>
+            <text>Poluchen zapros aktivnosti karty:Uber BV, Vorden, , 11.09.14 17:50 karta 4169***5699</text>
+            
+            
+          </record><record>
+            <id>25385246987</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-08-31T14:56:56.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-31T14:56:58.000</dlv_status_at>
+            <address>79268713774</address>
+            <text>Poluchen zapros aktivnosti karty:AMAZON.COM, AMZN.COM/BILL, , 31.08.14 14:56 karta 4169***4653</text>
+            
+            
+          </record><record>
+            <id>25531263271</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-04T11:17:15.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-04T11:17:17.000</dlv_status_at>
+            <address>79859918702</address>
+            <text>Poluchen zapros aktivnosti karty:STARBUCKS RUSSIA, 74956489580, , 04.09.14 11:17 karta 4169***1656</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T13:27:33.556+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T13:27:33.556+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vydacha_nalichnykh_$MONEY_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_balans_$MONEY_cred_limit_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/><paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vydacha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnykh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cred" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23720885970</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-20T20:39:34.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-20T20:39:42.000</dlv_status_at>
+            <address>79221465453</address>
+            <text>Vydacha nalichnykh 1000.00RUB.BANKOMAT 829986 7003, TALITSA, ,20.07.14 20:39, karta*8627.balans 13964.77RUB(cred. limit: 60000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>23770254161</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-22T10:34:58.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-22T10:35:06.000</dlv_status_at>
+            <address>79834250698</address>
+            <text>Vydacha nalichnykh 7500.00RUB.ATM 090124, SEVEROBAYKALS, ,22.07.14 10:34, karta*1762.balans 54415.00RUB(cred. limit: 70000.00 RUB)</text>
+            
+            
+          </record><record>
+            <id>25542537452</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-04T15:04:18.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-04T15:04:23.000</dlv_status_at>
+            <address>79180050104</address>
+            <text>Vydacha nalichnykh 10000.00RUB.ATM-00489199 URALSIB    &gt;, SOCHI, ,04.09.14 15:04, karta*8212.balans 6413.21RUB(cred. limit: 0.00 RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:53:17.085+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-08T14:56:04.835+03:00"/><ed user="lkovaleva" at="2015-08-31T19:58:16.546+03:00"/><ed user="lkovaleva" at="2015-08-31T19:55:41.127+03:00"/><ed user="lkovaleva" at="2015-08-31T19:53:17.085+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_$STRING_ваша_заявка_$T{$STRING}_предварительно_одобрена_$T{для}_оформления_кредита_обратитесь_$T{в}_офис_банка_г_набережные_челны_ул_беляева_$T{$STRING}_предварительное_решение_$T{действительно}_$T{$STRING}_дней_росгосстрах_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CA"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заявка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предварительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобрена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оформления" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредита" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратитесь" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="офис" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="г" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="набережные" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="челны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ул" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="беляева" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предварительное" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="решение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="действительно" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дней" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="росгосстрах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14868291112</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-11-04T14:30:15.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-04T14:30:15.000</dlv_status_at>
+            <address>79270386888</address>
+            <text>Гульназ Нургаязовна, Ваша заявка 484476 предварительно одобрена. Для оформления кредита обратитесь в офис Банка: г Набережные Челны, ул. Беляева, 27. Предварительное решение действительно 14 дней РОСГОССТРАХ БАНК</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-24T19:11:45.403+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-18T21:52:20.172+03:00"/><ed user="lkovaleva" at="2015-08-24T19:11:45.403+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_карта_$T{$CARDNUMBER}_$T{$VARSTRING}_оао_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25469296600</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-02T18:22:58.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-02T18:23:03.000</dlv_status_at>
+            <address>79130125750</address>
+            <text>Ваша карта *1356 активирована. ОАО РГС Банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T20:57:59.764+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T20:57:59.764+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17047448883</id>
+            <cnr>1485</cnr>
+            <cnrCode>rapportoml0</cnrCode>
+            <acn>361</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-01-15T15:52:19.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-01-15T15:52:20.000</dlv_status_at>
+            <address>79258011778</address>
+            <text>Test4</text>
+            <start_time>2014-01-15T15:52:19.000</start_time>
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-24T09:37:07.350+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-24T09:37:07.350+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="popolnenie_karti_$T{$CARDNUMBER}_$T{v}_$T{$VARSTRING}_$LOCALDATETIME_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13904080174</id>
+            <cnr>763</cnr>
+            <cnrCode>rgsbank0</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-10-03T12:24:09.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-03T12:24:17.000</dlv_status_at>
+            <address>79173827999</address>
+            <text>Popolnenie karti 4169***2028 v POS TSYURUPY PVN, UFA, TSYURUPY STR. 79, 03.10.13 12:23, summa:8000.00 RUB, balance:8000.00 RUB.</text>
+            
+            
+          </record><record>
+            <id>8871104544</id>
+            <cnr>764</cnr>
+            <cnrCode>rgsbank1</cnrCode>
+            <acn>223</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-04-01T09:15:19.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-01T09:15:25.000</dlv_status_at>
+            <address>79098776715</address>
+            <text>Popolnenie karti 5268***7059 v RGS BANK HBR POS, KHABAROVSK, KOMSOMOLSKAJA 98, 01.04.13 09:15, summa:5500.00 RUB, balance:92857.50 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.325+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_operacii_popolnenie_karti_$T{$CARDNUMBER}_$T{v}_$T{$VARSTRING}_$LOCALDATETIME_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="operacii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>2086945.001</id>
+            
+            
+            
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2013-06-03T12:58:24.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-03T12:58:24.000</dlv_status_at>
+            <address>79535052780</address>
+            <text>Otmena operacii popolnenie karti 5268***4172 v POS VOLOGODSKII PVN, VOLOGDA, SOVETSKII PR, 6, 03.06.13 16:56, summa:5000.00 RUB, balance:73502.60 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-31T19:36:25.602+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-31T19:36:25.602+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="ваша_карта_номер_$T{$CARDNUMBER}_$T{не}_активирована_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="номер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="активирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27452787475</id>
+            <cnr>1905</cnr>
+            <cnrCode>devinobnk0</cnrCode>
+            <acn>516</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-10-20T16:33:00.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-20T16:33:06.000</dlv_status_at>
+            <address>79658456574</address>
+            <text>Ваша карта номер *4841 не активирована. ОАО РГС Банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T13:03:55.246+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T13:03:55.246+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_клиент_вам_установлен_кредитный_лимит_$T{по}_карте_$T{$CARDNUMBER}_$T{на}_сумму_$MONEY_оао_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="установлен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредитный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="лимит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26559533835</id>
+            <cnr>1511</cnr>
+            <cnrCode>devino0</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-09-29T13:01:36.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-29T13:01:46.000</dlv_status_at>
+            <address>79278125823</address>
+            <text>Уважаемый клиент! Вам установлен кредитный лимит по карте *0103 на сумму 10 000 руб. ОАО &quot;РГС Банк&quot;.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-14T21:10:43.479+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-14T21:10:43.479+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="банк_требует_погасить_задолженность_$T{в}_трехдневный_срок_$T{в}_противном_случае_ваш_долг_будет_взыскан_$T{через}_суд_$T{или}_передан_$T{в}_коллекторское_агентство_$T{$PHONE}_оао_ргс_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CF"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="требует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="погасить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="задолженность" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="трехдневный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="срок" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="противном" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="случае" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="долг" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="будет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="взыскан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="через" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="или" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="передан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="коллекторское" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="агентство" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ргс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23771287121</id>
+            <cnr>1512</cnr>
+            <cnrCode>devino1</cnrCode>
+            <acn>370</acn>
+            <acnCode>rgsbank</acnCode>
+            <timestamp>2014-07-22T11:00:02.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-22T11:55:21.000</dlv_status_at>
+            <address>79226042227</address>
+            <text>БАНК ТРЕБУЕТ ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ В ТРЕХДНЕВНЫЙ СРОК. В ПРОТИВНОМ СЛУЧАЕ ВАШ ДОЛГ БУДЕТ ВЗЫСКАН ЧЕРЕЗ СУД ИЛИ ПЕРЕДАН В КОЛЛЕКТОРСКОЕ АГЕНТСТВО. 8-800-700-40-40 ОАО &quot;РГС Банк&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-24T19:13:09.886+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-24T19:13:09.886+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

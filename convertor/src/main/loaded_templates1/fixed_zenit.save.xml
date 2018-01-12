@@ -1,0 +1,2478 @@
+<fixedTemplaterActor acn="zenit">
+<fixedTemplateHolder>
+<fixedTmpl asString="uvazhaemyi_klient_napominaem_$T{o}_neobhodimosti_vnesenia_ocherednogo_platezha_$T{v}_pogashenie_kredita_$T{do}_$LOCALDATE_oao_bank_zenit" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemyi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="klient" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="o" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesenia" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ocherednogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogashenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kredita" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4907293753</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-07-16T11:00:14.000</timestamp>
+            <subject>BankZenit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-07-16T11:00:34.000</dlv_status_at>
+            <address>79191114499</address>
+            <text>Uvazhaemyi klient! Napominaem o neobhodimosti vnesenia ocherednogo platezha v pogashenie kredita do 20.07.2012.  OAO Bank ZENIT.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:37:41.083+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:37:41.083+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_oplata_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9347017618</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-04-18T18:37:30.000</timestamp>
+            <subject>BankZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-18T18:37:34.000</dlv_status_at>
+            <address>79379987545</address>
+            <text>18.04.13 18:37:17 KAPTA 4146*3739 OPLATA   5020 RUR TYRE PLUS SAMARA RUS</text>
+            
+            
+          </record><record>
+            <id>9349470088</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-04-18T20:04:12.000</timestamp>
+            <subject>BankZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-18T20:04:14.000</dlv_status_at>
+            <address>79600321424</address>
+            <text>18.04.13 20:03:55 KAPTA 4146*3801 OPLATA   100 RUR BEELINE MOSCOW RUS</text>
+            
+            
+          </record><record>
+            <id>9318183306</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-04-17T17:29:58.000</timestamp>
+            <subject>BankZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-17T17:30:02.000</dlv_status_at>
+            <address>79379987545</address>
+            <text>17.04.13 17:29:41 KAPTA 4146*3739 OPLATA   1670,58 RUR AZK 115 SNP SAMARA RUS</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.842+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_spisanie_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9318183424</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-04-17T17:33:42.000</timestamp>
+            <subject>BankZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-17T17:33:49.000</dlv_status_at>
+            <address>79161753917</address>
+            <text>17.04.13 17:33:25 KAPTA 4146*3334 SPISANIE -   19610 RUR WAY4U REQUEST MOSCOW RUS / DOSTUPNO 16273,61 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.843+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$T{do}_$LOCALDATE_neobhodimo_vnesti_ocherednoy_platezh_$T{po}_predostavlennomu_vam_kreditu" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ocherednoy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="predostavlennomu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>2580404822</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2011-11-23T09:11:00.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-11-23T09:11:07.000</dlv_status_at>
+            <address>79262695326</address>
+            <text>Bank ZENIT napominaet, do 25.11.2011 neobhodimo vnesti ocherednoy platezh po predostavlennomu Vam kreditu</text>
+            
+            
+          </record><record>
+            <id>2351205166</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2011-10-21T10:50:18.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-10-21T10:50:46.000</dlv_status_at>
+            <address>79099646563</address>
+            <text>Bank ZENIT napominaet, do 25.10.2011 neobhodimo vnesti ocherednoy platezh po predostavlennomu Vam kreditu</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-30T22:42:16.888+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:50:50.794+03:00"/><ed user="lkovaleva" at="2015-09-30T22:42:16.888+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="uvazhaemye_klienty_predlagaem_vam_oformit_kreditnuyu_kartu_$T{na}_lgotnyh_usloviah_$T{bez}_spravok_$T{s}_minimalnym_limitom_$MONEY_oao_bank_zenit_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="MO"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="klienty" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="predlagaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oformit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnuyu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="lgotnyh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="usloviah" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bez" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="minimalnym" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limitom" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4341114417</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-05-25T16:01:30.000</timestamp>
+            <subject>BankZenit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-25T16:01:46.000</dlv_status_at>
+            <address>79507357888</address>
+            <text>Uvazhaemye Klienty! Predlagaem vam oformit KREDITNUYU KARTU na lgotnyh usloviah bez spravok s minimalnym limitom 3000 rubley. OAO Bank ZENIT. 247-91-66</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:44:10.262+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:44:10.262+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_nalichnye_bo3bpat_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bo3bpat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13419309174</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-17T15:35:50.000</timestamp>
+            <subject>BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-17T15:35:50.000</dlv_status_at>
+            <address>79186284106</address>
+            <text>17.09.13 15:35:22 KAPTA 4124*9495 NALICHNYE  BO3BPAT + 4000 RUR BANKOMAT 634579 86190083 KALININSKAYA RUS / DOSTUPNO 31081,47 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2015-08-06T16:08:38.337+03:00"/></created>
+        <edited><ed user="anton" at="2015-08-06T16:08:38.337+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="voznikla_procrochka_srochno_oplatite_$T{do}_$LOCALDATE_spravki_$T{po}_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="voznikla" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="procrochka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srochno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplatite" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4312838537</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-05-23T12:42:25.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-23T12:42:42.000</dlv_status_at>
+            <address>79637376237</address>
+            <text>Voznikla procrochka. Srochno oplatite do 30.05.2012. Spravki po tel. 92-00-01.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-06T21:27:14.801+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:27:14.801+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_oplata_otka3_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otka3" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10451035228</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-05-31T10:40:08.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-31T10:40:15.000</dlv_status_at>
+            <address>79207483483</address>
+            <text>31.05.13 10:39:46 KAPTA 5547*7883 OPLATA OTKA3  137874 RUR AUTOKLASS COLOR TULA RUS / DOSTUPNO 129113,72 RUR</text>
+            
+            
+          </record><record>
+            <id>16304652514</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-19T16:21:45.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-19T16:21:54.000</dlv_status_at>
+            <address>79503132776</address>
+            <text>19.12.13 16:21:32 KAPTA 4751*9717 OPLATA OTKA3  2,57 RUR PLATIZA RU VERIFY MOSKVA RUS / DOSTUPNO 70 RUR</text>
+            
+            
+          </record><record>
+            <id>15523910162</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-26T12:39:09.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-26T12:39:23.000</dlv_status_at>
+            <address>79183046199</address>
+            <text>26.11.13 12:37:43 KAPTA 6776*8963 OPLATA OTKA3  146,57 RUR MAGNIT U DOMA LILIYA DAGOMYS RUS / DOSTUPNO 10698 RUR</text>
+            
+            
+          </record><record>
+            <id>17418491380</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2014-01-27T22:17:58.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-01-27T22:17:58.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>27.01.14 22:17:40 KAPTA 4116*8683 OPLATA OTKA3  1 RUR ODNOKLASSNIKI MOSCOW RUS / DOSTUPNO 1253,75 RUR</text>
+            
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record><record>
+            <id>15264458884</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-18T20:12:47.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-18T20:13:58.000</dlv_status_at>
+            <address>79276517869</address>
+            <text>18.11.13 20:12:32 KAPTA 5494*6946 OPLATA OTKA3  325 RUR RESTAURANT KFC MOSKOVS SAMARA RUS / DOSTUPNO 582,1 RUR</text>
+            
+            
+          </record><record>
+            <id>13813219036</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-30T19:16:01.000</timestamp>
+            <subject>obrbank.ru</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-30T19:16:04.000</dlv_status_at>
+            <address>79168123762</address>
+            <text>30.09.13 19:15:36 KAPTA 4268*9783 OPLATA OTKA3  1040 RUR SOFTKEY  SHOP MOSCOW RUS / DOSTUPNO 15240,46 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.846+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_popolnenie_$MONEY_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15986266022</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-11T16:27:17.000</timestamp>
+            <subject>BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-11T16:27:21.000</dlv_status_at>
+            <address>79037202296</address>
+            <text>11.12.13 16:26:17 KAPTA 5459*3236 POPOLNENIE +   3000 RUR   / DOSTUPNO 4033,2 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:23:26.320+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:23:26.320+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_oplata_otka_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      <userComments>не цветное</userComments>
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6308211834</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-11-05T11:18:19.000</timestamp>
+            <subject>BankZenit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-05T11:18:22.000</dlv_status_at>
+            <address>79095113425</address>
+            <text>05.11.12 11:18:02 KAPTA 4146*4720 OPLATA OTKA3 500 RUR BEELINE SOTOVAYA SVYAZ MOSKVA RUS / DOSTUPNO 113,91 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:42:43.799+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-18T23:01:44.209+03:00"/><ed user="lkovaleva" at="2015-08-25T21:42:43.799+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_oplata_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      <userComments>не цветное</userComments>
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13739916416</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-27T19:01:41.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-27T19:01:46.000</dlv_status_at>
+            <address>79105514544</address>
+            <text>27.09.13 19:01:21 KAPTA 5547*9050 OPLATA   2586,53 RUR MAGNIT GM TULA 1 TULA RUS / DOSTUPNO 6608,14 RUR</text>
+            
+            
+          </record><record>
+            <id>15280762538</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-19T14:54:49.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-19T14:54:53.000</dlv_status_at>
+            <address>79207483483</address>
+            <text>19.11.13 14:54:33 KAPTA 5547*7883 OPLATA   3300 RUR IP SPULGIS MM TULA RUS / DOSTUPNO 40696,53 RUR</text>
+            
+            
+          </record><record>
+            <id>12996074566</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-01T16:28:40.000</timestamp>
+            <subject>obrbank.ru</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-01T16:28:46.000</dlv_status_at>
+            <address>79165234690</address>
+            <text>01.09.13 16:28:28 KAPTA 4268*4742 OPLATA   2850 RUR RABBIT-ORTOPEDIK MOSKVA RUS / DOSTUPNO 34819,22 RUR</text>
+            
+            
+          </record><record>
+            <id>16217223328</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-17T19:55:29.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-17T19:55:34.000</dlv_status_at>
+            <address>79183046199</address>
+            <text>17.12.13 19:55:03 KAPTA 6776*8963 OPLATA   292 RUR KAYROS SOCHI RUS / DOSTUPNO 13529,43 RUR</text>
+            
+            
+          </record><record>
+            <id>15687139040</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-30T17:42:27.000</timestamp>
+            <subject>ACBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-30T17:42:34.000</dlv_status_at>
+            <address>79272082779</address>
+            <text>30.11.13 17:42:06 KAPTA 5448*6436 OPLATA   605,9 RUR SEM YA SAMARA RUS / DOSTUPNO 13205,93 RUR</text>
+            
+            
+          </record><record>
+            <id>10329690310</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-05-26T20:05:35.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-26T20:05:41.000</dlv_status_at>
+            <address>79207483483</address>
+            <text>26.05.13 20:05:20 KAPTA 5547*7883 OPLATA   3760 RUR BELL DE ZHUR TULA RUS / DOSTUPNO 130593,72 RUR</text>
+            
+            
+          </record><record>
+            <id>10741073678</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-06-11T18:10:21.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-11T18:10:27.000</dlv_status_at>
+            <address>79105514544</address>
+            <text>11.06.13 18:10:09 KAPTA 5547*9050 OPLATA   949,3 RUR SPAR 14 TULA RUS / DOSTUPNO 13575,31 RUR</text>
+            
+            
+          </record><record>
+            <id>16847494296</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2014-01-08T05:10:01.000</timestamp>
+            <subject>ACBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-08T05:45:51.000</dlv_status_at>
+            <address>79272082779</address>
+            <text>08.01.14 05:08:51 KAPTA 5448*6436 OPLATA   600 RUR PAUTINA SAMARA RUS / DOSTUPNO 3543,92 RUR</text>
+            
+            
+          </record><record>
+            <id>13119152346</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-05T18:02:19.000</timestamp>
+            <subject>obrbank.ru</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-05T18:02:25.000</dlv_status_at>
+            <address>79165234690</address>
+            <text>05.09.13 18:01:51 KAPTA 4268*4742 OPLATA   342 RUR GROSSKHAUS ZHULEBINO MOSCOW RUS / DOSTUPNO 7637,31 RUR</text>
+            
+            
+          </record><record>
+            <id>15422090254</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-22T16:23:44.000</timestamp>
+            <subject>obrbank.ru</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-22T16:23:48.000</dlv_status_at>
+            <address>79035986114</address>
+            <text>22.11.13 16:23:20 KAPTA 4268*8771 OPLATA   500 RUR KFC LADYA  RESTAURANT MOSCOW RUS / DOSTUPNO 68987,94 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.175+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-19T20:35:24.552+03:00"/><ed user="lkovaleva" at="2015-08-19T20:33:23.815+03:00"/><ed user="lkovaleva" at="2015-08-19T15:02:04.003+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_popolnenie_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13396870512</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-16T19:08:37.000</timestamp>
+            <subject>obrbank.ru</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-16T19:08:41.000</dlv_status_at>
+            <address>79035986114</address>
+            <text>16.09.13 19:06:19 KAPTA 4268*8771 POPOLNENIE +   7125 RUR   / DOSTUPNO 7594,86 RUR</text>
+            
+            
+          </record><record>
+            <id>9318183432</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-04-17T17:33:43.000</timestamp>
+            <subject>BankZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-17T17:33:56.000</dlv_status_at>
+            <address>79161753917</address>
+            <text>17.04.13 17:33:26 KAPTA 4146*7552 POPOLNENIE +   19610 RUR WAY4U REQUEST MOSCOW RUS</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.177+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="uvazhaemyi_klient_napominaem_$T{o}_neobhodimosti_vnesenia_platezha_$T{po}_kreditu_$T{do}_$LOCALDATE_oao_bank_zenit" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemyi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="klient" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="o" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesenia" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1031452538</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2011-02-22T13:39:21.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2011-02-23T02:23:09.000</dlv_status_at>
+            <address>79234881314</address>
+            <text>Uvazhaemyi klient! Napominaem o neobhodimosti vnesenia platezha po kreditu do 25.02.2011.  OAO Bank ZENIT. </text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:49:03.761+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:49:03.761+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$LOCALDATE_$T{v}_$LOCALTIME_istekaet_srok_pogasheniya_obyazatel_nogo_platezha_$T{po}_vashei_kreditnoi_karte_$T{$CARDNUMBER}_spravki_$T{po}_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="istekaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="obyazatel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vashei" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnoi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>3913521014</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-04-16T13:34:23.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-04-16T13:34:46.000</dlv_status_at>
+            <address>79050125240</address>
+            <text>Bank ZENIT napominaet- 16.04.2012 v 21:00 istekaet srok pogasheniya Obyazatel`nogo platezha po Vashei kreditnoi karte*8813.Spravki po tel.88002006677</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:47:53.499+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:47:53.499+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$LOCALDATE_$T{v}_$LOCALTIME_istekaet_srok_pogasheniya_obyazatel_nogo_platezha_$T{po}_vashei_kreditnoi_karte_spravki_$T{po}_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="istekaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="obyazatel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vashei" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnoi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4290476901</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-05-21T14:50:13.000</timestamp>
+            <subject>BankZenit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-21T14:50:38.000</dlv_status_at>
+            <address>79039192777</address>
+            <text>Bank ZENIT napominaet -28.05.12 v 12:00 istekaet srok pogasheniya Obyazatel’nogo platezha po Vashei kreditnoi karte.Spravki po tel.88002006677</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:40:34.989+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:40:34.989+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_kreditnyi_limit_ustanovlen_$MONEY_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="C"/><paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="B"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnyi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ustanovlen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10585061990</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-06-05T16:09:19.000</timestamp>
+            <subject>ACBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-05T16:09:25.000</dlv_status_at>
+            <address>79272082779</address>
+            <text>05.06.13 16:08:55 KAPTA 5448*6436 KREDITNYI LIMIT USTANOVLEN   25000 RUR    / DOSTUPNO 25061,97 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.178+03:00"/></created>
+        <edited><ed user="anton" at="2015-12-02T21:52:19.698+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_spisanie_$MONEY_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      <userComments>не цветное</userComments>
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13016772954</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-02T13:37:27.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-02T13:37:34.000</dlv_status_at>
+            <address>79276517869</address>
+            <text>02.09.13 13:24:48 KAPTA 5494*6946 SPISANIE -   50 RUR   / DOSTUPNO 4250 RUR</text>
+            
+            
+          </record><record>
+            <id>14725941008</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-10-31T10:20:24.000</timestamp>
+            <subject>OGNIMOSKVY</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-31T10:20:24.000</dlv_status_at>
+            <address>79112177630</address>
+            <text>31.10.13 10:18:07 KAPTA 5433*2734 SPISANIE -   181,08 RUR   / DOSTUPNO 1476,24 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.179+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-19T20:35:44.050+03:00"/><ed user="lkovaleva" at="2015-08-19T14:57:27.318+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_nalichnye_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13856214036</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-10-01T19:28:35.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-01T19:28:39.000</dlv_status_at>
+            <address>79186284106</address>
+            <text>01.10.13 19:28:17 KAPTA 4124*9495 NALICHNYE   1000 RUR ATM00306858 VBRR SLAVYANS-NA-K RUS / DOSTUPNO 1436,15 RUR</text>
+            
+            
+          </record><record>
+            <id>16681717480</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-30T12:48:02.000</timestamp>
+            <subject>ACBank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-30T12:48:07.000</dlv_status_at>
+            <address>79276047029</address>
+            <text>30.12.13 12:47:39 KAPTA 6705*1588 NALICHNYE   500 RUR ATM 999 AK BANK SAMARA RUS / DOSTUPNO 29254,18 RUR</text>
+            
+            
+          </record><record>
+            <id>12958932034</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-08-30T14:47:38.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-30T14:47:42.000</dlv_status_at>
+            <address>79184077087</address>
+            <text>30.08.13 14:47:13 KAPTA 5324*4960 NALICHNYE   1000 RUR TLC SOCHI SOCHI RUS / DOSTUPNO 1583,66 RUR</text>
+            
+            
+          </record><record>
+            <id>16556280750</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-26T14:16:00.000</timestamp>
+            <subject>OgniMoskvy</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-26T14:16:03.000</dlv_status_at>
+            <address>79112177630</address>
+            <text>26.12.13 14:15:39 KAPTA 5433*2734 NALICHNYE   2000 RUR FILIAL OGNI RETERBURGA ST.PETERBURG RUS / DOSTUPNO 1203,98 RUR</text>
+            
+            
+          </record><record>
+            <id>16515250436</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-25T14:52:21.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-25T14:52:32.000</dlv_status_at>
+            <address>79037939648</address>
+            <text>25.12.13 14:52:04 KAPTA 6773*9050 NALICHNYE   7000 RUR ATM 345 MKB MOSCOW RUS / DOSTUPNO 594,94 RUR</text>
+            
+            
+          </record><record>
+            <id>16610035028</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-27T17:43:54.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-27T17:43:59.000</dlv_status_at>
+            <address>79186284106</address>
+            <text>27.12.13 17:43:32 KAPTA 4124*9495 NALICHNYE   8700 RUR ATM 958 ZENITSOCHI SLAVYANSK-NA- RUS / DOSTUPNO 43,81 RUR</text>
+            
+            
+          </record><record>
+            <id>16638021290</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-28T15:40:45.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-28T15:40:50.000</dlv_status_at>
+            <address>79182155491</address>
+            <text>28.12.13 15:40:29 KAPTA 4124*1895 NALICHNYE   5000 RUR BANKOMAT 960500 86190082 IVANOVSKAYA RUS / DOSTUPNO 8329,27 RUR</text>
+            
+            
+          </record><record>
+            <id>15398435788</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-22T10:55:05.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-22T10:55:10.000</dlv_status_at>
+            <address>79186284106</address>
+            <text>22.11.13 10:54:30 KAPTA 4124*9495 NALICHNYE   450 RUR ATM 74 KUBAN-CREDIT TRDBEL RUS / DOSTUPNO 32,35 RUR</text>
+            
+            
+          </record><record>
+            <id>16649245276</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-29T11:46:08.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-29T11:46:13.000</dlv_status_at>
+            <address>79182155491</address>
+            <text>29.12.13 11:45:55 KAPTA 4124*1895 NALICHNYE   3000 RUR BANKOMAT 961118 1818 SLAVYANSK-NA- RUS / DOSTUPNO 5198,76 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.181+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_nalichnye_otka3_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otka3" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15398435776</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-11-22T10:54:30.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-22T10:54:34.000</dlv_status_at>
+            <address>79186284106</address>
+            <text>22.11.13 10:54:04 KAPTA 4124*9495 NALICHNYE OTKA3  500 RUR ATM 74 KUBAN-CREDIT TRDBEL RUS / DOSTUPNO 614,42 RUR</text>
+            
+            
+          </record><record>
+            <id>16631119010</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-28T14:45:12.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-28T14:45:16.000</dlv_status_at>
+            <address>79182155491</address>
+            <text>28.12.13 14:44:44 KAPTA 4124*1895 NALICHNYE OTKA3  5000 RUR BANKOMAT 634578 86190083 OKTYABRSKIY RUS / DOSTUPNO 13459,78 RUR</text>
+            
+            
+          </record><record>
+            <id>16868623388</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2014-01-09T08:40:33.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-09T08:40:37.000</dlv_status_at>
+            <address>79182155491</address>
+            <text>09.01.14 08:13:34 KAPTA 4124*1895 NALICHNYE OTKA3  3500 RUR BANKOMAT 960528 8619 SLAVYANSK-NA- RUS / DOSTUPNO 3568,13 RUR</text>
+            
+            
+          </record><record>
+            <id>16610035014</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-27T17:42:54.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-27T17:42:58.000</dlv_status_at>
+            <address>79186284106</address>
+            <text>27.12.13 17:42:28 KAPTA 4124*9495 NALICHNYE OTKA3  8700 RUR ATM 958 ZENITSOCHI SLAVYANSK-NA- RUS / DOSTUPNO 8743,81 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.184+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_soobshaet_$T{o}_neobhodimosti_pogasheniya_prosrochennoi_zadolzhennosti_$T{po}_$T{$VARSTRING}_spravki_$T{po}_tel_$T{$PHONE}" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="soobshaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="o" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prosrochennoi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolzhennosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="spravki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4984333510</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-07-23T12:15:01.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-07-23T12:25:29.000</dlv_status_at>
+            <address>79517713101</address>
+            <text>Bank ZENIT soobshaet o neobhodimosti pogasheniya prosrochennoi zadolzhennosti po kreditnomu dogovoru.Spravki po tel. 247-91-66.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:49:45.456+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:49:45.456+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$LOCALDATE_istekaet_srok_pogasheniya_obyazatel_nogo_platezha_$T{po}_vashei_kreditnoi_karte_spravki_$T{po}_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="istekaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="obyazatel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vashei" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnoi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4586321765</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-06-19T17:36:01.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-06-19T17:36:13.000</dlv_status_at>
+            <address>79504426199</address>
+            <text>Bank ZENIT napominaet- 20.06.2012 istekaet srok pogasheniya Obyazatel`nogo platezha po Vashei kreditnoi karte.Spravki po tel.88002006677												</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-06T21:25:35.045+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:25:35.045+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_spisanie_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>3848047626</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-04-10T10:11:39.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-04-10T10:11:45.000</dlv_status_at>
+            <address>79032157808</address>
+            <text>10.04.12 10:09:49 KAPTA 5570*2468 SPISANIE - 2000 RUR WAY4U REQUEST MOSCOW RUS</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-28T17:38:17.973+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-28T17:38:17.973+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_uvedomlyaet_vas_$T{chto}_$T{po}_$T{$VARSTRING}_obrazovalas_prosrochennaya_zadolzhennost_uznat_summu_dolga_$T{i}_shtrafnie_mozhno_$T{po}_telefonu_$T{$PHONE}" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uvedomlyaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vas" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="chto" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="obrazovalas" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prosrochennaya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolzhennost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uznat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dolga" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="i" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="shtrafnie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mozhno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="telefonu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4025792590</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-04-26T17:45:10.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-04-26T17:45:30.000</dlv_status_at>
+            <address>79099646563</address>
+            <text>Bank Zenit uvedomlyaet Vas, chto po kreditu obrazovalas' prosrochennaya zadolzhennost'. Uznat' summu dolga i shtrafnie % mozhno po telefonu 777-57-05.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:50:10.284+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:50:10.284+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_popolnenie_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14614477942</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-10-27T12:19:09.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-27T12:19:14.000</dlv_status_at>
+            <address>79183046199</address>
+            <text>27.10.13 12:18:57 KAPTA 6776*8963 POPOLNENIE +   3000 RUR ATM 291 ZENITSOCHI SOCHI RUS / DOSTUPNO 4355 RUR</text>
+            
+            
+          </record><record>
+            <id>13043003932</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-09-03T15:21:23.000</timestamp>
+            <subject>obrbank.ru</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-03T15:21:29.000</dlv_status_at>
+            <address>79168123762</address>
+            <text>03.09.13 15:07:32 KAPTA 4268*9783 POPOLNENIE +   98000 RUR MOSCOW RUS / DOSTUPNO 120892,69 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.186+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$LOCALDATE_istekaet_srok_pogasheniya_ocherednogo_platezha_$T{po}_kreditnomu_dogovoru_spravki_$T{po}_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="istekaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ocherednogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnomu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dogovoru" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4300528367</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-05-22T11:39:42.000</timestamp>
+            <subject>BankZenit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-22T11:39:59.000</dlv_status_at>
+            <address>79038702630</address>
+            <text>Bank ZENIT napominaet: 25.05.2012 istekaet srok pogasheniya ocherednogo platezha po kreditnomu dogovoru.Spravki po tel. 51-26-56.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:39:27.941+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:39:27.941+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$LOCALDATE_neobhodimo_vnesti_ocherednoy_platezh_$T{po}_predostavlennomu_vam_kreditu" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ocherednoy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="predostavlennomu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>2874444818</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2011-12-26T14:01:08.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-12-26T14:01:15.000</dlv_status_at>
+            <address>79099646563</address>
+            <text>Bank ZENIT napominaet, 26.12.2011 neobhodimo vnesti ocherednoy platezh po predostavlennomu Vam kreditu</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-06T21:24:02.068+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:24:02.068+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="napominaem_$T{o}_neobhodimosti_vnesenia_ocherednogo_platezha_$T{v}_pogashenie_kredita_$T{do}_$LOCALDATE_oao_bank_zenit" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="o" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesenia" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ocherednogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogashenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kredita" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5355466665</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-08-22T17:01:16.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-22T17:01:28.000</dlv_status_at>
+            <address>79607843993</address>
+            <text>Napominaem o neobhodimosti vnesenia ocherednogo platezha v pogashenie kredita do 27.08.2012  OAO Bank ZENIT.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-06T21:26:36.275+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:26:36.275+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_oplata_bo3bpat_$MONEY_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bo3bpat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15843346624</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2013-12-06T12:08:40.000</timestamp>
+            <subject>Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-06T12:09:54.000</dlv_status_at>
+            <address>79184077087</address>
+            <text>06.12.13 12:08:21 KAPTA 5324*4688 OPLATA  BO3BPAT + 300 RUR CAFETERIA 1 SOCHI RUS / DOSTUPNO 616,65 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:04.711+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_kapta_$T{$CARDNUMBER}_nalichnye_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="IT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kapta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>80506227</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2008-09-08T15:37:30.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2008-09-08T15:37:36.000</dlv_status_at>
+            <address>79857677622</address>
+            <text>08.09.08 15:37:26 KAPTA 5570*5315 NALICHNYE 1000 RUR SHER2 ET 1 PRAV VKH TSV MOSCOW REG RUS</text>
+            
+            
+          </record><record>
+            <id>4613849970</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-06-21T12:28:05.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-06-21T12:28:11.000</dlv_status_at>
+            <address>79162356855</address>
+            <text>21.06.12 12:27:41 KAPTA 4146*6311 NALICHNYE 100 EUR MASSOUTIS CHANIOTIS THESSALONIKI GRC</text>
+            
+            
+          </record><record>
+            <id>6141227040</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-10-24T08:43:12.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-24T08:43:17.000</dlv_status_at>
+            <address>79055628471</address>
+            <text>24.10.12 08:42:37 KAPTA 4146*0977 NALICHNYE 100 RUR ZENIT ATM 191 MOSCOW RUS</text>
+            
+            
+          </record><record>
+            <id>5558027045</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-09-08T10:37:06.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-08T10:37:10.000</dlv_status_at>
+            <address>79162961852</address>
+            <text>08.09.12 10:36:53 KAPTA 4146*6828 NALICHNYE 8000 RUR MMB ATM 1094-TOREKS MOSCOW RUS</text>
+            
+            
+          </record><record>
+            <id>5498979703</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-09-03T14:17:18.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-03T14:17:25.000</dlv_status_at>
+            <address>79035410311</address>
+            <text>03.09.12 14:17:14 KAPTA 4146*1522 NALICHNYE 200000 RUR ZENIT GOLOVNOY OFIS MOSCOW RUS</text>
+            
+            
+          </record><record>
+            <id>6535609223</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-11-20T19:13:14.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-20T19:13:24.000</dlv_status_at>
+            <address>79171484414</address>
+            <text>20.11.12 19:12:52 KAPTA 4146*1504 NALICHNYE 400 RUR 41,Clinical str. Samara RUS</text>
+            
+            
+          </record><record>
+            <id>2966902447</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-01-08T21:28:24.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-01-08T21:28:28.000</dlv_status_at>
+            <address>79263517562</address>
+            <text>08.01.12 21:28:01 KAPTA 5570*9777 NALICHNYE 3000 CZK CZECH SAVINGS BANK PRAHA CZE</text>
+            
+            
+          </record><record>
+            <id>4082699562</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-05-01T22:05:57.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-01T22:06:00.000</dlv_status_at>
+            <address>79162356855</address>
+            <text>01.05.12 22:06:45 KAPTA 4146*6311 NALICHNYE 2500 RUR ATM357 SHOKOLADNICA SOLYA MOSCOW RUS</text>
+            
+            
+          </record><record>
+            <id>74439106</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2008-08-18T17:49:42.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2008-08-18T17:49:47.000</dlv_status_at>
+            <address>79161696790</address>
+            <text>18.08.08 17:49:42 KAPTA 4146*9701 NALICHNYE 7000 RUR TC &quot;CHISTYE MATERIALY&quot; ELEKTROSTAL RUS</text>
+            
+            
+          </record><record>
+            <id>2420628873</id>
+            <cnr>41</cnr>
+            <cnrCode>zenit0</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2011-10-31T14:16:02.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-10-31T14:16:07.000</dlv_status_at>
+            <address>79262452264</address>
+            <text>31.10.11 14:15:42 KAPTA 4146*7790 NALICHNYE 500 RUR AZBUKA VKUSA PR MIRA MOSCOW RUS</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-28T17:34:43.021+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-28T17:34:43.021+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_zenit_napominaet_$T{o}_platezhe_$T{po}_kreditnomu_dogovoru_$LOCALDATE" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zenit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="o" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezhe" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kreditnomu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dogovoru" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4311558238</id>
+            <cnr>34</cnr>
+            <cnrCode>zenit-web</cnrCode>
+            <acn>19</acn>
+            <acnCode>zenit</acnCode>
+            <timestamp>2012-05-23T10:09:40.000</timestamp>
+            <subject>BANKZENIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-23T10:09:52.000</dlv_status_at>
+            <address>79024722900</address>
+            <text>Bank ZENIT napominaet o platezhe po kreditnomu dogovoru 25.05.2012</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-30T22:43:56.154+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-30T22:43:56.154+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,536 @@
+<fixedTemplaterActor acn="bccmsk">
+<fixedTemplateHolder>
+<fixedTmpl asString="$LOCALDATE_$STRING_$T{$DOUBLE}_вход_$T{в}_систему_интернет_клиент" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>22671399210</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-07-01T09:28:48.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-01T09:28:53.000</dlv_status_at>
+            <address>79161287402</address>
+            <text>01.07.2014 09.28.42 Вход в систему Интернет-Клиент.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-23T22:22:43.769+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-23T22:22:43.769+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_$LOCALDATE_вход_$T{в}_систему_интернет_клиент" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18592130661</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-03-11T13:02:38.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-11T13:02:42.000</dlv_status_at>
+            <address>79175519936</address>
+            <text>11.03.2014 13.04.14 Вход в систему Интернет-Клиент.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-23T22:21:25.324+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-23T22:21:25.324+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_клиент_sms_сервис_$T{по}_карте_$T{$CARDNUMBER}_действует_$T{до}_$LOCALDATE" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sms" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сервис" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="действует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28857508228</id>
+            <cnr>1590</cnr>
+            <cnrCode>devino5</cnrCode>
+            <acn>370</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-11-23T09:00:06.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-23T09:00:09.000</dlv_status_at>
+            <address>79104957831</address>
+            <text>Уважаемый клиент! SMS-Сервис по карте *0756 действует до 30.11.2014</text>
+            <start_time>2014-11-23T09:00:06.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-31T12:31:48.075+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-31T12:31:48.075+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_$STRING_$STRING_$STRING_вход_$T{в}_систему_интернет_клиент" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>22857942649</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-07-08T15:00:41.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-08T15:00:44.000</dlv_status_at>
+            <address>79161287402</address>
+            <text>08.07.2014 15.00.31 Вход в систему Интернет-Клиент.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T10:21:41.586+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T10:21:41.586+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_исполнено_пп_$T{$LONG}_$T{на}_сумму_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пп" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16742400806</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-01-14T00:00:14.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-14T00:00:39.000</dlv_status_at>
+            <address>79266138355</address>
+            <text>13.01.2014 ИСПОЛНЕНО пп    15 на сумму 7 200.00 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-31T12:31:21.922+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-31T12:31:21.922+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_$STRING_$T{$DOUBLE}_вы_вошли_$T{в}_систему_internet_client_банк_бцк_москва" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вошли" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="internet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="client" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="бцк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="москва" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16742399902</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-01-09T22:48:52.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-09T22:48:57.000</dlv_status_at>
+            <address>79175519936</address>
+            <text>09.01.2014 14.42.35 Вы вошли в систему Internet-Client. Банк БЦК-Москва</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T10:21:12.502+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T10:21:12.502+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_$STRING_$STRING_$STRING_вы_вошли_$T{в}_систему_internet_client_банк_бцк_москва" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вошли" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="internet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="client" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="бцк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="москва" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16742400054</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-01-10T10:03:32.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-10T10:03:37.000</dlv_status_at>
+            <address>79266138355</address>
+            <text>10.01.2014 10.03.52 Вы вошли в систему Internet-Client. Банк БЦК-Москва</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-31T12:32:42.754+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-31T12:32:42.754+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_$LOCALDATE_вы_вошли_$T{в}_систему_internet_client_банк_бцк_москва" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вошли" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="internet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="client" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="бцк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="москва" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16742399926</id>
+            <cnr>1630</cnr>
+            <cnrCode>bccmsk0</cnrCode>
+            <acn>433</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-01-10T00:00:08.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-10T00:00:19.000</dlv_status_at>
+            <address>79175519936</address>
+            <text>09.01.2014 15.19.10 Вы вошли в систему Internet-Client. Банк БЦК-Москва</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-23T22:21:59.675+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-23T22:21:59.675+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="auth_$T{$VARSTRING}_$T{$CURRENCY}_n_$T{$CARDNUMBER}_sum_$MONEY_$T{$VARSTRING}_$DATETIME_lim_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="auth" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sum" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="lim" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18712347329</id>
+            <cnr>1584</cnr>
+            <cnrCode>rapportoml1</cnrCode>
+            <acn>361</acn>
+            <acnCode>bccmsk</acnCode>
+            <timestamp>2014-03-04T09:03:29.000</timestamp>
+            <subject>BCC-MOSCOW</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-04T09:03:32.000</dlv_status_at>
+            <address>79253784562</address>
+            <text>Auth: VISA GOLD (USD) N: *0640 SUM: -1,000.00 USD; ATM-REZIDENTSIYAPOSOLSTVAK/CHISTOPRU; 04.03.2014 09:03 (UTC+4); LIM: 1,806.51 USD</text>
+            <start_time>2014-03-04T09:03:29.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T10:19:09.311+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T10:19:09.311+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

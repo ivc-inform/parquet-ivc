@@ -1,0 +1,301 @@
+<fixedTemplaterActor acn="rublev">
+<fixedTemplateHolder>
+<fixedTmpl asString="vhod_$T{v}_sistemu_dbo_vremya_$LOCALDATETIME_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vhod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sistemu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dbo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vremya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>36487764162</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2015-05-29T22:02:37.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-29T22:02:40.000</dlv_status_at>
+            <address>79852100437</address>
+            <text>Vhod v sistemu DBO. Vremya: 29.05.2015 22:05:05.000</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T15:45:08.222+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T15:45:08.222+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="podtvergdenie_vkhod_$T{v}_sistemu_$LOCALDATETIME_$T{$URL}_parol_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="podtvergdenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vkhod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sistemu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>36487764160</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2015-05-29T22:02:10.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-29T22:02:14.000</dlv_status_at>
+            <address>79852100437</address>
+            <text>Podtvergdenie. Vkhod v sistemu. 29.05.2015 22:05:18 188.123.231.71. Parol 528720</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T15:44:39.356+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T15:44:39.356+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_систему_дбо_время_$LOCALDATETIME_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дбо" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="время" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39412719518</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2015-08-11T21:07:28.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-11T21:07:29.000</dlv_status_at>
+            <address>79651584922</address>
+            <text>Вход в систему ДБО. Время: 11.08.2015 21:07:14.000</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T15:45:56.470+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T15:45:56.470+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_$STRING" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>33447856393</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2015-03-17T15:27:46.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-17T15:27:50.000</dlv_status_at>
+            <address>79209381007</address>
+            <text>Пароль 330010-1</text>
+            
+            
+          </record><record>
+            <id>29495318894</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2014-12-09T17:10:21.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-09T17:10:24.000</dlv_status_at>
+            <address>79262115180</address>
+            <text>Parol rfntymrf</text>
+            
+            
+          </record><record>
+            <id>25859828750</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2014-09-22T13:37:05.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-22T13:37:08.000</dlv_status_at>
+            <address>79262115180</address>
+            <text>Parol 123456789</text>
+            
+            
+          </record><record>
+            <id>25859828750</id>
+            <cnr>1395</cnr>
+            <cnrCode>rublev0</cnrCode>
+            <acn>326</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2014-09-22T13:37:05.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-22T13:37:08.000</dlv_status_at>
+            <address>79262115180</address>
+            <text>Parol 123456789</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T15:41:21.445+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T15:41:21.445+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="izmenenie_ostatka_payment_$MONEY_cardn_$T{$CARDNUMBER}_$T{$VARSTRING}_bal_$T{$DOUBLE}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="izmenenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ostatka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="payment" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cardn" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="bal" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18695994638</id>
+            <cnr>1584</cnr>
+            <cnrCode>rapportoml1</cnrCode>
+            <acn>361</acn>
+            <acnCode>rublev</acnCode>
+            <timestamp>2014-03-03T16:20:05.000</timestamp>
+            <subject>RUBLEV</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-03T16:20:08.000</dlv_status_at>
+            <address>79268379357</address>
+            <text>Izmenenie ostatka: PAYMENT
+21 950.00RUR
+CardN**3972
+LYUDMILA AFONINA 
+BAL: 9 978.68 
+2014-03-03 00:00:00</text>
+            <start_time>2014-03-03T16:20:05.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T15:43:05.685+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T15:43:05.685+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,164 @@
+<fixedTemplaterActor acn="roseuro">
+<fixedTemplateHolder>
+<fixedTmpl asString="spisano_$MONEY_$T{v}_pol_zu_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      <userComments>Вероятно ЮрЛицо</userComments>
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="spisano" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1413891.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-05-22T13:10:05.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-22T13:10:05.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 40000 RUR v pol'zu OOO &quot;PROFTRANS-KONSALT&quot;.</text>
+            
+            
+          </record><record>
+            <id>3347604.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-09-06T11:57:25.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-06T11:57:25.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 1400 EUR v pol'zu ROLINE INTERNATIONALE SPEDITION S.R.O. LOGISTICS PARK RUDNA, HALA 2, K VYPICHU 1119, 25219, RUDNA, CZECH REPUBLIC PRAGUE 203.</text>
+            
+            
+          </record><record>
+            <id>2550328.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-08-30T11:39:00.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-30T11:39:00.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 30000 RUR v pol'zu OOO &quot;YUNAYTED LAYNS&quot;.</text>
+            
+            
+          </record><record>
+            <id>3256057.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-09-13T11:13:23.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-13T11:13:23.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 1029.54 RUR v pol'zu OOO &amp;quot;YUNAYTED PARSEL SERVIS (RUS)&amp;quot;.</text>
+            
+            
+          </record><record>
+            <id>1404003.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-05-23T11:17:21.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-23T11:17:21.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 5300 RUR v pol'zu OOO &quot;YURIDICHESKOE AGENTSTVO&quot;BIZNES KONSALTING&quot;.</text>
+            
+            
+          </record><record>
+            <id>2068386.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-06-04T11:52:31.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-04T11:52:31.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 1530000 RUR v pol'zu OOO &quot;ULOTANA PROEKT&quot;.</text>
+            
+            
+          </record><record>
+            <id>1916171.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-06-17T13:00:16.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-17T13:00:16.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 3866.6 RUR v pol'zu OOO &quot;TSKS&quot;.</text>
+            
+            
+          </record><record>
+            <id>2582253.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-08-29T13:48:42.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-29T13:48:42.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 17400 RUR v pol'zu DOPOLNITELNYY OFIS № 01136 G.MOSKVY NESTEROVA TAMARA IVANOVNA.</text>
+            
+            
+          </record><record>
+            <id>569034.001</id>
+            
+            
+            
+            <acnCode>roseuro</acnCode>
+            <timestamp>2013-02-26T05:25:20.000</timestamp>
+            <subject>ROSEVRO</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-26T05:25:20.000</dlv_status_at>
+            <address>79857745648</address>
+            <text>Spisano 4971.15 RUR v pol'zu FILIAL OOO SK &quot;VTB STRAKHOVANIE&quot; V G.NOGINSKE.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2015-08-14T18:56:07.687+03:00"/></created>
+        <edited><ed user="anton" at="2015-08-14T18:56:07.687+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,3 @@
+docker run -dit --network=hadoop -p 8085:8085 --restart on-failure:5 --name tss_0011 ivcinform/template-storage-service:0.0.1-SNAPSHOT
+
+

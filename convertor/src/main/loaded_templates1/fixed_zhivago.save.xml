@@ -1,0 +1,1305 @@
+<fixedTemplaterActor acn="zhivago">
+<fixedTemplateHolder>
+<fixedTmpl asString="перевод_на_сумму_$MONEY_оплачен_$T{$VARSTRING}_комиссия_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплачен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="комиссия" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28169620142</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-20T19:02:18.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T19:02:31.000</dlv_status_at>
+            <address>79209927654</address>
+            <text>Перевод на сумму 100,89 RUR оплачен
+Услуга Теле 2  [9009031400], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>27465597435</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-14T12:10:25.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T12:10:28.000</dlv_status_at>
+            <address>79206369964</address>
+            <text>Перевод на сумму 3 180,00 RUR оплачен
+Услуга Оплата ЖКУ г.Рязань (МП &quot;КВЦ&quot;) [73601200054077], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>27465596091</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-01T15:42:21.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T15:42:35.000</dlv_status_at>
+            <address>79209652413</address>
+            <text>Перевод на сумму 900,00 RUR оплачен
+Услуга МТС интернет Регионы [11901310153], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>28169620026</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-20T07:28:11.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T07:28:28.000</dlv_status_at>
+            <address>79206378189</address>
+            <text>Перевод на сумму 300,00 RUR оплачен
+Услуга МТС  [9109020194], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>27465597431</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-14T12:00:15.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T12:00:23.000</dlv_status_at>
+            <address>79156051933</address>
+            <text>Перевод на сумму 217,69 RUR оплачен
+Услуга Ростелеком Рязанский филиал Интернет [240010147230], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>27465596321</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-04T20:22:15.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-04T20:25:11.000</dlv_status_at>
+            <address>79206378189</address>
+            <text>Перевод на сумму 550,00 RUR оплачен
+Услуга Домашний телефон ДОМ.RU Рязань [620002576549], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>28169619994</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-19T19:06:40.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T19:06:43.000</dlv_status_at>
+            <address>79056902309</address>
+            <text>Перевод на сумму 600,00 RUR оплачен
+Услуга Оптимум/Супер-Оптимум/Максимум HD [281103147290], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>27465597411</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-14T11:44:15.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T11:44:25.000</dlv_status_at>
+            <address>79106448323</address>
+            <text>Перевод на сумму 140,00 RUR оплачен
+Услуга МТС КТВ Регионы [11901249136], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>28169620130</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-20T16:36:12.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T16:36:25.000</dlv_status_at>
+            <address>79521276053</address>
+            <text>Перевод на сумму 60,00 RUR оплачен
+Услуга Одноклассники [79521276053], комиссия 0,00 RUR
+</text>
+            
+            
+          </record><record>
+            <id>27465596875</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-09T17:46:42.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-09T17:46:53.000</dlv_status_at>
+            <address>79036938222</address>
+            <text>Перевод на сумму 2 100,00 RUR оплачен
+Услуга Avon [23083545], комиссия 0,00 RUR
+</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.342+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемая_$STRING_$STRING_живаго_банк_предлагает_вам_оформить_кредит_$T{в}_сумме_$T{до}_$MONEY_ежемесячный_платёж_$T{до}_$MONEY_подробнее_$T{по}_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="MO"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемая" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="живаго" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предлагает" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оформить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумме" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ежемесячный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платёж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробнее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>29259357375</id>
+            <cnr>1225</cnr>
+            <cnrCode>zhivago-web1</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-12-02T15:12:51.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-02T15:13:15.000</dlv_status_at>
+            <address>79521228609</address>
+            <text>Уважаемая Ирина Валентиновна! Живаго-банк предлагает Вам оформить кредит в сумме до 129500р. Ежемесячный платёж до 3651р. Подробнее по тел. 21-80-26.</text>
+            <start_time>2014-12-02T15:12:51.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:33:03.863+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:33:03.863+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="код_$T{для}_входа_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>32431752273</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2015-03-05T18:29:02.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-05T18:29:05.000</dlv_status_at>
+            <address>79109077232</address>
+            <text>Код для входа
+8045</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:54:37.386+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:54:37.386+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_$STRING_$STRING_необходимо_произвести_оплату_просроченной_задолженности_$T{по}_кредиту_долг_$T{$DOUBLE}_$T{плюс}_пени_просрочка_$T{$LONG}_$STRING_т_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="необходимо" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="произвести" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплату" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просроченной" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="задолженности" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="долг" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="плюс" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пени" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просрочка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="т" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>38429264431</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2015-07-16T11:24:09.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-16T11:24:43.000</dlv_status_at>
+            <address>79105093575</address>
+            <text>Уважаемый Игорь Николаевич! Необходимо произвести оплату просроченной задолженности по кредиту. Долг 13,967.02 плюс пени, просрочка 1 день. т.:+7(4912)21-80-26.</text>
+            <start_time>2015-07-16T11:24:09.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-06T21:18:50.131+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:20:24.600+03:00"/><ed user="lkovaleva" at="2015-10-06T21:18:50.131+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемая_$STRING_$STRING_незамедлительно_произведите_оплату_просроченной_задолженности_$T{по}_кредиту_долг_$T{$DOUBLE}_$T{плюс}_пени_просрочка_$T{$LONG}_$STRING_т_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемая" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="незамедлительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="произведите" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплату" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просроченной" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="задолженности" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="долг" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="плюс" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пени" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просрочка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="т" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>30159372879</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-12-22T11:00:26.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-22T11:00:44.000</dlv_status_at>
+            <address>79106215858</address>
+            <text>Уважаемая Екатерина Владимировна! Незамедлительно произведите оплату просроченной задолженности по кредиту. Долг 9,436.80 плюс пени, просрочка 5 дней. т.:+7(4912)21-80-26.</text>
+            <start_time>2014-12-22T11:00:26.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-29T21:12:34.324+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:21:21.142+03:00"/><ed user="lkovaleva" at="2015-09-29T21:12:34.324+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_$STRING_$STRING_живаго_банк_предлагает_вам_оформить_кредит_$T{в}_сумме_$T{до}_$MONEY_ежемесячный_платёж_$T{до}_$MONEY_подробнее_$T{по}_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="MO"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="живаго" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предлагает" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оформить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумме" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ежемесячный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платёж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробнее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>29260313098</id>
+            <cnr>1225</cnr>
+            <cnrCode>zhivago-web1</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-12-02T15:33:21.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-02T15:33:30.000</dlv_status_at>
+            <address>79065406936</address>
+            <text>Уважаемый Алексей Михайлович! Живаго-банк предлагает Вам оформить кредит в сумме до 146500р. Ежемесячный платёж до 4130р. Подробнее по тел. 21-80-26.</text>
+            <start_time>2014-12-02T15:33:21.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:35:49.650+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:35:49.650+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_на_сумму_$MONEY_оплачен_на_счет_$CARDNUMBER_$T{$VARSTRING}_комиссия_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплачен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="комиссия" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27465597485</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-14T15:40:40.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T15:40:43.000</dlv_status_at>
+            <address>79156007070</address>
+            <text>Перевод на сумму 90 228,00 RUR оплачен
+На счет 40817810653000305833 в ОТДЕЛЕНИЕ N 8606 СБЕРБАНКА РОССИИ, комиссия 270,68 RUR</text>
+            
+            
+          </record><record>
+            <id>27465597419</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-14T11:50:55.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T11:51:01.000</dlv_status_at>
+            <address>79162628459</address>
+            <text>Перевод на сумму 13 500,00 RUR оплачен
+На счет 40817810304260046746 в ОАО &quot;АЛЬФА-БАНК&quot;, комиссия 40,50 RUR</text>
+            
+            
+          </record><record>
+            <id>27465597417</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-14T11:50:45.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T11:50:52.000</dlv_status_at>
+            <address>79265674256</address>
+            <text>Перевод на сумму 29 000,00 RUR оплачен
+На счет 40817810238119863232 в ОАО &quot;СБЕРБАНК РОССИИ&quot;, комиссия 87,00 RUR</text>
+            
+            
+          </record><record>
+            <id>28169620096</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-20T13:19:37.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T13:19:39.000</dlv_status_at>
+            <address>79308744444</address>
+            <text>Перевод на сумму 14 500,00 RUR оплачен
+На счет 40817810500003018704 в ООО &quot;МКБ ИМ.С.ЖИВАГО&quot;, комиссия 0,00 RUR</text>
+            
+            
+          </record><record>
+            <id>27465596513</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-06T11:01:09.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-06T11:01:12.000</dlv_status_at>
+            <address>79106444124</address>
+            <text>Перевод на сумму 20 741,00 RUR оплачен
+На счет 40702810700000071821 в ВТБ 24 (ЗАО), комиссия 62,22 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.346+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="живаго_банк_счет_пополнен_$T{на}_сумму_$MONEY_денежные_средства_можно_получить_$T{в}_любом_отделении_банка_$T{при}_предъявлении_паспорта" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="живаго" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пополнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="денежные" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="средства" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="можно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="любом" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отделении" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="при" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предъявлении" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="паспорта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16303574303</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2013-12-19T14:52:35.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-12-20T03:39:53.000</dlv_status_at>
+            <address>79537391752</address>
+            <text>Живаго-банк: Счет пополнен на сумму 4,472.25 р. Денежные средства можно получить в любом отделении Банка при предъявлении паспорта.</text>
+            <start_time>2013-12-19T14:52:35.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.349+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="живаго_банк_счет_пополнен_на_сумму_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="живаго" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пополнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16611923584</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2013-12-27T17:10:08.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-27T17:10:16.000</dlv_status_at>
+            <address>79206375972</address>
+            <text>Живаго-банк: Счет пополнен на сумму 3,346.90 р.</text>
+            <start_time>2013-12-27T17:10:08.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.350+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="живаго_логин_$T{$VARSTRING}_пароль_$T{$VARSTRING}_адрес_$T{для}_входа_https_online_zhivagobank_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="живаго" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="логин" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="адрес" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="https" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="online" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zhivagobank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20212391644</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-04-30T09:57:58.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-30T09:58:14.000</dlv_status_at>
+            <address>79109007105</address>
+            <text>ЖИВАГО
+Логин: clnt9Wusu Пароль: HQZsP Адрес для входа: https://online.zhivagobank.ru</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:53:28.100+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:53:28.100+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="отказан_перевод_на_сумму_$MONEY_причина_отказа_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="отказан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="причина" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отказа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27465596999</id>
+            <cnr>918</cnr>
+            <cnrCode>zhivago0</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-10T17:55:00.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-10T17:55:10.000</dlv_status_at>
+            <address>79209585067</address>
+            <text>Отказан перевод на сумму 100,00 RUR
+Причина отказа: Сумма перевода превышает свободные по счету Дт</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.838+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_$STRING_$STRING_предварительно_одобренная_сумма_кредита_$T{для}_вас_$MONEY_ежемесячный_платёж_$MONEY_подробнее_$T{по}_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CA"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предварительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобренная" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредита" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ежемесячный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платёж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробнее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10782552345</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2013-06-13T12:14:24.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-13T12:14:24.000</dlv_status_at>
+            <address>79537309731</address>
+            <text>Уважаемый Владимир Викторович! Предварительно одобренная сумма кредита для Вас 414000р. Ежемесячный платёж 11434р. Подробнее по тел. 21-80-26.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:34:25.602+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:34:25.602+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемая_$STRING_$STRING_предварительно_одобренная_сумма_кредита_$T{для}_вас_$MONEY_ежемесячный_платёж_$MONEY_подробнее_$T{по}_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CA"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемая" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="предварительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобренная" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредита" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ежемесячный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платёж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробнее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10889535374</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2013-06-17T15:17:24.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-06-18T03:17:31.000</dlv_status_at>
+            <address>79106434541</address>
+            <text>Уважаемая Светлана Вячеславовна! Предварительно одобренная сумма кредита для Вас 339000р. Ежемесячный платёж 9363р. Подробнее по тел. 21-80-26.</text>
+            <start_time>2013-06-17T15:17:24.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-25T21:31:13.921+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-25T21:31:13.921+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_$STRING_$STRING_незамедлительно_произведите_оплату_просроченной_задолженности_$T{по}_кредиту_долг_$T{$DOUBLE}_$T{плюс}_пени_просрочка_$T{$LONG}_$STRING_т_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="незамедлительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="произведите" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплату" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просроченной" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="задолженности" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="долг" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="плюс" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пени" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просрочка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="т" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28417802970</id>
+            <cnr>1226</cnr>
+            <cnrCode>zhivago-web2</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2014-11-13T10:58:50.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T10:59:11.000</dlv_status_at>
+            <address>79167597171</address>
+            <text>Уважаемый Константин Алексеевич! Незамедлительно произведите оплату просроченной задолженности по кредиту. Долг 40,757.16 плюс пени, просрочка 45 дней. т.:+7(499)963-80-64.</text>
+            <start_time>2014-11-13T10:58:50.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-06T21:17:31.954+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-06T21:20:00.811+03:00"/><ed user="lkovaleva" at="2015-10-06T21:17:31.954+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_$T{$VARSTRING}_предварительно_одобренная_сумма_кредита_$T{для}_вас_$MONEY_ежемесячный_платёж_$MONEY_подробнее_$T{по}_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="CA"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="предварительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одобренная" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредита" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ежемесячный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платёж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробнее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10344358856</id>
+            <cnr>1225</cnr>
+            <cnrCode>zhivago-web1</cnrCode>
+            <acn>252</acn>
+            <acnCode>zhivago</acnCode>
+            <timestamp>2013-05-27T11:13:52.000</timestamp>
+            <subject>ZHIVAGOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-27T11:14:17.000</dlv_status_at>
+            <address>79209732408</address>
+            <text>Уважаемая Екатерина Юрьевна! Предварительно одобренная сумма кредита для Вас 420000р. Ежемесячный платёж 11600р. Подробнее по тел. 21-80-26.</text>
+            <start_time>2013-05-27T11:13:52.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T13:56:52.927+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T13:56:52.927+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

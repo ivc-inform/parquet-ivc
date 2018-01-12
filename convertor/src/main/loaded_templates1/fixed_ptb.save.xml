@@ -1,0 +1,3822 @@
+<fixedTemplaterActor acn="ptb">
+<fixedTemplateHolder>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_операция_$MONEY_$T{$VARSTRING}_отклонена_недостаточно_средств_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="недостаточно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="средств" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>38740371008</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-23T20:36:13.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2015-07-23T20:50:20.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>Карта 9716: 23.07.2015 20:35 операция 0.00 RUR OOO AZS KPD, BIRSK отклонена. Недостаточно средств, доступно -27972.78 RUR.</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T14:03:19.155+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T14:03:19.155+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_выдача_наличных_$MONEY_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выдача" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="наличных" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39049936556</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-31T16:59:31.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-31T16:59:43.000</dlv_status_at>
+            <address>79279634843</address>
+            <text>Карта 5473: 31.07.2015 15:23, выдача наличных 900.00 RUR. Доступно 4697.54 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T14:00:02.193+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T14:00:02.193+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_недостаточно_средств_$T{для}_совершения_операции_дата_00_00_0000_$LOCALTIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="недостаточно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="средств" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="совершения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="операции" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15226575632</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-11-18T09:13:56.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-18T09:14:09.000</dlv_status_at>
+            <address>79373465492</address>
+            <text>Операция по карте *6991 не успешна, недостаточно средств для совершения операции; Дата: 00.00.0000 00:00; Доступный остаток: 20.00 руб..</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T14:11:47.702+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T14:11:47.702+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$DATETIME_совершен_платеж_$MONEY_$T{со}_счета_$STRING_$T{на}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="совершен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>42392520390</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-10-19T09:42:52.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-19T09:43:38.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>19.10 09:42 МСК совершен платеж 309626 р. со счета 0004 на УФК по Республике Башкортостан (МРИ ФНС России № 40 по Республике Башкортостан).</text>
+            
+            
+          </record><record>
+            <id>40760817971</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-09-11T14:25:07.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-11T14:25:18.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>11.09 14:25 МСК совершен платеж 4826384 р. со счета 0004 на БФ Татышлинского района РБ.</text>
+            
+            
+          </record><record>
+            <id>40129184033</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-27T09:58:49.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-27T09:58:55.000</dlv_status_at>
+            <address>79613633555</address>
+            <text>27.08 09:58 МСК совершен платеж 37020 р. со счета 0046 на УФК по Республике Башкортостан (ИФНС России по Советскому району г. Уфы).</text>
+            
+            
+          </record><record>
+            <id>41186340010</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-09-21T13:54:55.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-21T13:55:07.000</dlv_status_at>
+            <address>79872411373</address>
+            <text>21.09 13:54 МСК совершен платеж 39200 р. со счета 0049 на ООО &quot;Алексинский семеноводческий центр &quot;Гавриш&quot;.</text>
+            
+            
+          </record><record>
+            <id>38997433114</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-30T14:08:35.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-30T14:08:58.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>30.07 14:08 МСК совершен платеж 72000 р. со счета 0004 на ООО &quot;Стандарт-Аудит&quot;.</text>
+            
+            
+          </record><record>
+            <id>39618775214</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-14T16:36:50.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-14T16:37:01.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>14.08 16:36 МСК совершен платеж 2654867 р. со счета 0004 на Местная религиозная организация православного Прихода кафедрального соборного храма Рождества Богородицы г.Уфы РБ.</text>
+            
+            
+          </record><record>
+            <id>41069178443</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-09-18T13:26:25.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-18T13:26:31.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>18.09 13:26 МСК совершен платеж 2500000 р. со счета 0004 на Фонд поддержки и развития науки Республики Башкортостан.</text>
+            
+            
+          </record><record>
+            <id>43015443561</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-11-02T10:19:57.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-11-02T10:20:09.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>02.11 10:19 МСК совершен платеж 417009 р. со счета 0004 на Муниципальное унитарное предприятие Инвестиционно-строительный комитет городского округа город Уфа РБ.</text>
+            
+            
+          </record><record>
+            <id>40909236113</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-09-15T09:33:07.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-15T09:33:14.000</dlv_status_at>
+            <address>79872411373</address>
+            <text>15.09 09:33 МСК совершен платеж 250 р. со счета 0049 на Акционерное общество &quot;Уфанет&quot;.</text>
+            
+            
+          </record><record>
+            <id>40136715563</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-27T12:24:38.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-27T12:24:49.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>27.08 12:24 МСК совершен платеж 303540 р. со счета 0004 на Благотворительный фонд Мишкинский район.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-18T14:26:12.025+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-18T14:26:12.025+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_операция_$MONEY_$T{$VARSTRING}_отклонена_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39301110423</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-07T09:05:57.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-07T09:06:05.000</dlv_status_at>
+            <address>79273355853</address>
+            <text>Карта 2071: 07.08.2015 09:05 операция 0.00 RUR MAGAZIN ARZAN, KUSHNARENKOVO отклонена. Превышен лимит ввода неверного PIN-кода, обратитесь в банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-29T12:25:21.167+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-29T12:25:21.167+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$STRING_дата_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23594805186</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-17T15:47:50.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-17T15:47:54.000</dlv_status_at>
+            <address>79177544076</address>
+            <text>Карта: *8333; Заблокирована; Дата: 17.07.2014 15:47</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-13T21:33:21.242+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-13T21:33:21.242+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATE_списание_$MONEY_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>38170822158</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-10T09:12:29.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-10T09:12:35.000</dlv_status_at>
+            <address>79033509090</address>
+            <text>Карта 1958: 10.07.2015, списание 968.66 RUR. Доступно 10510.99 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T14:00:57.839+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T14:00:57.839+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_00_00_0000_$LOCALTIME_списание_$MONEY_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17588661001</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-03T13:35:11.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-03T13:35:19.000</dlv_status_at>
+            <address>79273202006</address>
+            <text>*0698: 00.00.0000 00:00 Списание: 178.00 EUR, HOTEL MONTECARLO, VENEZIA. Остаток 91791.23 руб.</text>
+            
+            
+          </record><record>
+            <id>17588661001</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-03T13:35:11.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-03T13:35:19.000</dlv_status_at>
+            <address>79273202006</address>
+            <text>*0698: 00.00.0000 00:00 Списание: 178.00 EUR, HOTEL MONTECARLO, VENEZIA. Остаток 91791.23 руб.</text>
+            
+            
+          </record><record>
+            <id>17588661001</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-03T13:35:11.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-03T13:35:19.000</dlv_status_at>
+            <address>79273202006</address>
+            <text>*0698: 00.00.0000 00:00 Списание: 178.00 EUR, HOTEL MONTECARLO, VENEZIA. Остаток 91791.23 руб.</text>
+            
+            
+          </record><record>
+            <id>13659865580</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-25T14:59:51.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-25T14:59:58.000</dlv_status_at>
+            <address>79196116166</address>
+            <text>*0020: 00.00.0000 00:00 Списание: 1.50 руб., RNKO-REG-KYKYRYZA, NOVOSIBIRSK. Остаток 5687.69 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-16T20:51:01.224+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T11:57:44.472+03:00"/><ed user="lkovaleva" at="2015-12-13T21:34:52.821+03:00"/><ed user="lkovaleva" at="2015-10-24T13:56:17.654+03:00"/><ed user="lkovaleva" at="2015-10-16T20:51:01.224+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_активирована_дата_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="активирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>24815643511</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-08-18T14:05:06.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-18T14:05:12.000</dlv_status_at>
+            <address>79373671000</address>
+            <text>Карта: *4590; Активирована; Дата: 18.08.2014 14:04</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T21:02:55.821+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T21:02:55.821+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_$T{$VARSTRING}_дата_00_00_0000_$LOCALTIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23385564532</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-12T17:01:52.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-12T17:01:57.000</dlv_status_at>
+            <address>79174917345</address>
+            <text>Операция по карте *6122 не успешна, в запросе неверный срок действия; Дата: 00.00.0000 00:00; Место: 3DI CARD2CARD ALFACLIC, MOSCOW.</text>
+            
+            
+          </record><record>
+            <id>23385564532</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-12T17:01:52.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-12T17:01:57.000</dlv_status_at>
+            <address>79174917345</address>
+            <text>Операция по карте *6122 не успешна, в запросе неверный срок действия; Дата: 00.00.0000 00:00; Место: 3DI CARD2CARD ALFACLIC, MOSCOW.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-07T13:07:24.074+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T11:24:14.515+03:00"/><ed user="lkovaleva" at="2016-02-07T13:07:24.074+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_$T{$VARSTRING}_операция_отклонена_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>48994475231</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2016-03-07T15:32:54.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-03-07T15:33:13.000</dlv_status_at>
+            <address>79273003030</address>
+            <text>Карта 6692: 07.03.2016 15:32 MAGNIT MM KARTON, UFA операция отклонена. Недостаточно средств, доступно 76.43 RUR.</text>
+            
+            
+          </record><record>
+            <id>44337265943</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-12-01T09:05:08.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-01T09:05:19.000</dlv_status_at>
+            <address>B0EB8B2BE3EC3EC2FC04A37DBF031230</address>
+            <text>Карта 5514: 01.12.2015 09:04 POLUSHKA 227, ASKINO операция отклонена. Недостаточно средств, доступно 11.84 RUR.</text>
+            
+            
+          </record><record>
+            <id>46114426098</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2016-01-07T09:50:49.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-07T09:51:12.000</dlv_status_at>
+            <address>7883788D1639B08E85AB2680F5AC5233</address>
+            <text>Карта 7927: 07.01.2016 09:50 SKAZKA, MELEUZ операция отклонена. Недостаточно средств, доступно 841.64 RUR.</text>
+            
+            
+          </record><record>
+            <id>47186863323</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2016-01-30T18:31:35.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-30T18:31:44.000</dlv_status_at>
+            <address>79273388966</address>
+            <text>Карта 3037: 30.01.2016 20:31 ATM113116, SIBAY, 46 ZAKI VALIDI операция отклонена. Недостаточно средств, доступно 2553.32 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:18:56.754+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-18T14:28:22.562+03:00"/><ed user="lkovaleva" at="2017-05-02T12:00:26.269+03:00"/><ed user="lkovaleva" at="2016-10-23T21:18:56.754+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATE_списание_$MONEY_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13659866614</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-25T16:26:00.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-25T16:26:00.000</dlv_status_at>
+            <address>79053504508</address>
+            <text>*6041: 25.09.2013 Списание: 12.00 руб. Остаток 11906.33 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:18:16.359+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:18:16.359+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_сервис_информирования_$STRING" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сервис" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирования" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>40141698037</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-27T14:01:09.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-27T14:01:14.000</dlv_status_at>
+            <address>79273353539</address>
+            <text>Карта 6814: сервис информирования отключен.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T10:59:01.529+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T10:59:01.529+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_введен_неверный_пин_код_дата_$LOCALDATETIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="введен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="неверный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пин" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15722729546</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-12-02T16:47:28.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-02T16:47:28.000</dlv_status_at>
+            <address>79177393593</address>
+            <text>Операция по карте *4376 не успешна, введен неверный ПИН-код; Дата: 02.12.2013 16:47; Место: APTEKA SHALFEY 73, UFA.</text>
+            
+            
+          </record><record>
+            <id>14476154096</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-10-22T18:15:06.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-22T18:15:06.000</dlv_status_at>
+            <address>79373665003</address>
+            <text>Операция по карте *2420 не успешна, введен неверный ПИН-код; Дата: 22.10.2013 18:14; Место: 950000004196, STAROBALTACHE, BANKOMAT 950886 8598 3.</text>
+            
+            
+          </record><record>
+            <id>13553213568</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-21T16:07:33.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-21T16:07:33.000</dlv_status_at>
+            <address>79174055095</address>
+            <text>Операция по карте *0381 не успешна, введен неверный ПИН-код; Дата: 21.09.2013 16:07; Место: MATRITSA 2, UFA.</text>
+            
+            
+          </record><record>
+            <id>17869300210</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-11T16:30:11.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-11T16:30:11.000</dlv_status_at>
+            <address>79174214727</address>
+            <text>Операция по карте *3313 не успешна, введен неверный ПИН-код; Дата: 11.02.2014 18:30; Место: 7 KOPEEK SHAFIEVA K1, STERLITAMAK.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:20:05.936+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:20:05.936+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_$T{$VARSTRING}_отклонена_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>45051009078</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-12-15T18:01:08.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-15T18:01:17.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>Карта 1710: 15.12.2015 18:00 MATRITSA, UFA операция отклонена. Недостаточно средств, доступно 679.55 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T11:17:45.729+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T11:17:45.729+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{на}_$T{$VARSTRING}_$MONEY_пароль_$T{$STRING}_никому_$T{не}_сообщайте" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16166710858</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-12-16T19:26:57.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-16T19:27:03.000</dlv_status_at>
+            <address>79174994913</address>
+            <text>Перевод на мой счет 4393.15р. Пароль 461366 никому не сообщайте</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-07T13:12:21.000+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-07T13:12:21.000+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_операция_$MONEY_$T{$VARSTRING}_отклонена_введен_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="введен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39241960214</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-05T18:50:21.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-05T18:50:30.000</dlv_status_at>
+            <address>79273353539</address>
+            <text>Карта 6814: 05.08.2015 20:49 операция 0.00 RUR ATM102275, UFA, 44, PERVOMAYSKAYA отклонена. Введен неверный PIN-код.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T10:58:20.004+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T10:58:20.004+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="получено_$MONEY_карта_$T{$CARDNUMBER}_адрес_$T{$VARSTRING}_дата_00_00_0000_$LOCALTIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="получено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="адрес" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27706319496</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-10-27T11:34:59.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-27T11:35:09.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>Получено: 2000.00 руб.; Карта: *9716; Адрес: ITT 956093, BIRSKW Дата: 00.00.0000 00:00; Доступный остаток: 2131.19 руб.</text>
+            
+            
+          </record><record>
+            <id>24269276412</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-08-04T21:56:26.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-04T21:56:38.000</dlv_status_at>
+            <address>79659488179</address>
+            <text>Получено: 400.00 руб.; Карта: *6464; Адрес: 0QIWI, MOSCOW Дата: 00.00.0000 00:00; Доступный остаток: 2049.81 руб.</text>
+            
+            
+          </record><record>
+            <id>13358657292</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-15T13:13:01.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-15T13:13:14.000</dlv_status_at>
+            <address>79374912143</address>
+            <text>Получено: 1500.00 руб..; Карта: *6251; Адрес: BANKOMAT 793422 8598, TUYMAZY Дата: 00.00.0000 00:00; Доступный остаток: 23100.00 руб.</text>
+            
+            
+          </record><record>
+            <id>32001135328</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-02-10T15:24:50.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-02-10T15:24:59.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>Получено: 2000.00 руб.; Карта: *9716; Адрес: BANKOMAT 496778 8598, BIRSKW Дата: 00.00.0000 00:00; Доступный остаток: 2172.07 руб.</text>
+            
+            
+          </record><record>
+            <id>35866383130</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-05-14T15:49:42.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-14T15:49:49.000</dlv_status_at>
+            <address>79608012715</address>
+            <text>Получено: 2900.00 руб.; Карта: *1593; Адрес: 9671397QIWI, MOSCOW Дата: 00.00.0000 00:00; Доступный остаток: -35523.83 руб.</text>
+            
+            
+          </record><record>
+            <id>34106486713</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-04-03T08:50:09.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-03T08:50:23.000</dlv_status_at>
+            <address>79279316500</address>
+            <text>Получено: 1500.00 руб.; Карта: *6581; Адрес: GAZPROMBANK, URENGOJ Дата: 00.00.0000 00:00; Доступный остаток: -8460.89 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:24:34.159+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-23T21:25:12.203+03:00"/><ed user="lkovaleva" at="2016-10-23T21:24:34.159+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_$T{$VARSTRING}_дата_$DATETIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>34238665791</id>
+            <cnr>275</cnr>
+            <cnrCode>ftc1</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-04-04T17:24:03.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-04T17:24:17.000</dlv_status_at>
+            <address>79273519178</address>
+            <text>Операция по карте *2569 не успешна, введен неверный CVV2; Дата: 04.04.2015 17:23 мск; Место: 3DI Tinkoff Bank Card2, MOSCOW.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T11:00:04.208+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T11:00:04.208+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_00_00_0000_$LOCALTIME_пополнение_$MONEY_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пополнение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>38643151310</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-21T15:46:21.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-21T15:46:33.000</dlv_status_at>
+            <address>79603892981</address>
+            <text>Карта 6679:00.00.0000 00:00, пополнение 5000.00 RUR, C24, Popolnenie ka. Доступно 5492.27 RUR.</text>
+            
+            
+          </record><record>
+            <id>38587073194</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-20T12:29:49.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2015-07-20T13:09:45.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>Карта 9716:00.00.0000 00:00, пополнение 2500.00 RUR, ITT 10016318, BIRSK. Доступно 2670.68 RUR.</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>38643151310</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-21T15:46:21.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-21T15:46:33.000</dlv_status_at>
+            <address>79603892981</address>
+            <text>Карта 6679:00.00.0000 00:00, пополнение 5000.00 RUR, C24, Popolnenie ka. Доступно 5492.27 RUR.</text>
+            
+            
+          </record><record>
+            <id>39471571682</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-11T13:52:02.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-11T13:52:06.000</dlv_status_at>
+            <address>79273337300</address>
+            <text>Карта 2985:00.00.0000 00:00, пополнение 5000.00 RUR, SBOL, MOSCOW. Доступно -44931.24 RUR.</text>
+            
+            
+          </record><record>
+            <id>39955966697</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-22T19:42:31.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-22T19:42:43.000</dlv_status_at>
+            <address>79279676495</address>
+            <text>Карта 7066:00.00.0000 00:00, пополнение 3250.00 RUR, SBOL, MOSCOW. Доступно -46658.07 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:20:43.167+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-23T21:21:22.857+03:00"/><ed user="lkovaleva" at="2016-10-23T21:20:43.167+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_$T{$VARSTRING}_операция_отклонена_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отклонена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44689508059</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-12-08T17:27:15.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-08T17:27:18.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>Карта 1710: 08.12.2015 19:26 ATM102278, UFA, 118, MENDELEEVA операция отклонена. Введен неверный PIN-код.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T11:19:24.418+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T11:19:24.418+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="платеж_$MONEY_$T{со}_счета_$STRING_$T{на}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17076536822</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-01-17T07:20:58.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-17T07:21:04.000</dlv_status_at>
+            <address>79191427618</address>
+            <text>Платеж 153172р. со счета 0025 на ООО &quot;Крос логистик&quot;</text>
+            
+            
+          </record><record>
+            <id>18583787357</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-28T16:05:36.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-28T16:05:40.000</dlv_status_at>
+            <address>79279529818</address>
+            <text>Платеж 14750р. со счета 0943 на ООО &quot;Торговый дом &quot;Диоксид&quot;</text>
+            
+            
+          </record><record>
+            <id>31541913284</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-01-30T07:55:17.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-01-30T07:55:23.000</dlv_status_at>
+            <address>79373083130</address>
+            <text>Платеж 32723.23р. со счета 0474 на ООО &quot;Империя Детства&quot;</text>
+            
+            
+          </record><record>
+            <id>15635790296</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-11-29T12:37:56.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-29T12:38:00.000</dlv_status_at>
+            <address>79063731415</address>
+            <text>Платеж 180000р. со счета 0221 на ООО &quot;Высокие технологии</text>
+            
+            
+          </record><record>
+            <id>37808785702</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-01T10:56:23.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-01T10:56:25.000</dlv_status_at>
+            <address>79613633555</address>
+            <text>Платеж 46990р. со счета 0046 на ООО &quot;Носимо&quot;</text>
+            
+            
+          </record><record>
+            <id>30225556457</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-12-24T10:14:37.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-24T10:14:45.000</dlv_status_at>
+            <address>79173437121</address>
+            <text>Платеж 4700р. со счета 0889 на ООО &quot;Башнефть-Розница&quot;</text>
+            
+            
+          </record><record>
+            <id>34009353382</id>
+            <cnr>275</cnr>
+            <cnrCode>ftc1</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-03-30T12:48:43.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-30T12:48:46.000</dlv_status_at>
+            <address>79872411373</address>
+            <text>Платеж 6250р. со счета 0049 на ОАО &quot;ИнфоТеКС Интернет Траст&quot; Московск</text>
+            
+            
+          </record><record>
+            <id>20407641113</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-04-16T08:37:09.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-16T08:37:14.000</dlv_status_at>
+            <address>79279529818</address>
+            <text>Платеж 48255р. со счета 0943 на ООО ТПК &quot;Мир Шнура&quot;</text>
+            
+            
+          </record><record>
+            <id>36772233226</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-06-05T12:49:20.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-05T12:49:39.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>Платеж 100000р. со счета 0004 на БФ Туймазинского района РБ</text>
+            
+            
+          </record><record>
+            <id>34405366409</id>
+            <cnr>275</cnr>
+            <cnrCode>ftc1</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-04-09T07:38:00.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-09T07:38:02.000</dlv_status_at>
+            <address>79270855338</address>
+            <text>Платеж 162211р. со счета 0004 на Общероссийский общественный благотво</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-18T14:29:18.395+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-18T14:29:18.395+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="получено_$MONEY_карта_$T{$CARDNUMBER}_адрес_$T{$VARSTRING}_дата_$LOCALDATETIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="получено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="адрес" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23690445457</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-20T14:11:45.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-20T14:11:56.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>Получено: 2000.00 руб.; Карта: *9716; Адрес: INTERNATSIONALNAYA 157, BIRSK Дата: 20.07.2014 16:11; Доступный остаток: 2377.78 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-24T14:03:47.541+03:00"/></created>
+        <edited><ed user="anton" at="2017-01-19T17:48:18.723+03:00"/><ed user="anton" at="2017-01-18T20:20:20.518+03:00"/><ed user="lkovaleva" at="2015-10-24T14:03:47.541+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="код_подтверждения_$T{$STRING}_действует_$T{до}_$DATETIME_карта_$T{$CARDNUMBER}_оплата_$T{$VARSTRING}_$T{на}_сумму_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PP"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подтверждения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="действует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17730949707</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-07T11:52:24.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-07T11:52:24.000</dlv_status_at>
+            <address>79174859557</address>
+            <text>Код подтверждения: 656835 действует до 07.02 12:22 МСК. Карта *5945. Оплата товаров/услуг в интернете ecommerce.liqpay.com на сумму 13.94 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:26:31.935+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:26:31.935+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_возврат_$MONEY_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="возврат" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>23664505068</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-20T07:55:21.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-20T07:55:29.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>*9716: 20.07.2014 07:54 Возврат: 2000.00 руб., 950000015323, BIRSKW, BANKOMAT 023775 859805. Остаток 2497.78 руб.</text>
+            
+            
+          </record><record>
+            <id>19989430220</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-04-04T17:18:24.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-04T17:18:36.000</dlv_status_at>
+            <address>79127499378</address>
+            <text>*0559: 04.04.2014 17:18 Возврат: 442.00 руб., KORPORATSIYA TSENTR, IZHEVSK. Остаток 22010.55 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-24T13:49:06.085+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-24T13:49:06.085+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_$T{$VARSTRING}_дата_00_00_0000_$LOCALTIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17565390390</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-02T23:00:54.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-02T23:01:09.000</dlv_status_at>
+            <address>79273202006</address>
+            <text>Операция по карте *0698 не успешна, недостаточно средств для совершения операции; Дата: 00.00.0000 00:00; Доступный остаток: 284.53 руб..</text>
+            
+            
+          </record><record>
+            <id>17565390390</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-02-02T23:00:54.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-02T23:01:09.000</dlv_status_at>
+            <address>79273202006</address>
+            <text>Операция по карте *0698 не успешна, недостаточно средств для совершения операции; Дата: 00.00.0000 00:00; Доступный остаток: 284.53 руб..</text>
+            
+            
+          </record><record>
+            <id>23385564550</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-12T17:07:07.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-12T17:07:12.000</dlv_status_at>
+            <address>79174917345</address>
+            <text>Операция по карте *6122 не успешна, недостаточно средств для совершения операции; Дата: 00.00.0000 00:00; Доступный остаток: 160.00 руб.</text>
+            
+            
+          </record><record>
+            <id>23385564550</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-12T17:07:07.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-12T17:07:12.000</dlv_status_at>
+            <address>79174917345</address>
+            <text>Операция по карте *6122 не успешна, недостаточно средств для совершения операции; Дата: 00.00.0000 00:00; Доступный остаток: 160.00 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-24T14:02:17.130+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T11:25:28.432+03:00"/><ed user="lkovaleva" at="2016-02-07T13:09:19.265+03:00"/><ed user="lkovaleva" at="2015-12-13T21:36:47.491+03:00"/><ed user="lkovaleva" at="2015-10-24T14:02:17.130+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_вы_выполнили_вход_$T{в}_интернет_банк_$T{в}_$LOCALTIME_мск" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выполнили" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мск" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19035088652</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-03-13T10:46:11.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-13T10:46:14.000</dlv_status_at>
+            <address>79625462181</address>
+            <text>13.03.14 Вы выполнили вход в Интернет-банк в 10:46 Мск.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-13T21:30:57.181+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-13T21:30:57.181+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_$T{$VARSTRING}_дата_$LOCALDATETIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17012358306</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-01-15T12:37:19.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-15T12:37:30.000</dlv_status_at>
+            <address>79373676867</address>
+            <text>Операция по карте *2106 не успешна, введен неверный ПИН-код; Дата: 15.01.2014 12:37; Место: STIL, KIRGIZ-MIYAKI.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-24T14:00:38.033+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-24T14:00:38.033+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_карта_заблокирована_обратитесь_$T{в}_отделение_банка_дата_$LOCALDATETIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заблокирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратитесь" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отделение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20632213171</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-04-21T20:54:52.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-21T20:55:01.000</dlv_status_at>
+            <address>79270879600</address>
+            <text>Операция по карте *0977 не успешна, карта заблокирована, обратитесь в отделение банка; Дата: 21.04.2014 17:54; Место: WWW.ALIEXPRESS.COM, INTERNET.</text>
+            
+            
+          </record><record>
+            <id>23777032013</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-07-22T17:47:21.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-07-23T01:32:31.000</dlv_status_at>
+            <address>79373671000</address>
+            <text>Операция по карте *4590 не успешна, карта заблокирована, обратитесь в отделение банка; Дата: 22.07.2014 16:47; Место: KIRCILAR MONDIAL DERI, ANTALYA.</text>
+            
+            
+          </record><record>
+            <id>17529936818</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-01-31T20:45:06.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-31T20:46:22.000</dlv_status_at>
+            <address>79177962360</address>
+            <text>Операция по карте *3504 не успешна, карта заблокирована, обратитесь в отделение банка; Дата: 31.01.2014 20:44; Место: 950000004002, OKTYABRSKIY, BANKOMAT 950800 8598 5.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T14:07:39.976+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T14:07:39.976+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="списано_$MONEY_$T{по}_карте_$T{$CARDNUMBER}_адрес_$T{$VARSTRING}_дата_00_00_0000_$LOCALTIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="списано" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="адрес" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="00" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="0000" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>22509384480</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-06-18T17:08:29.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-18T17:08:34.000</dlv_status_at>
+            <address>79373465492</address>
+            <text>Списано: 4980.00 руб.. По карте: *6991; Адрес: 3DI CARD2CARD ALFACLIC, MOSCOW Дата: 00.00.0000 00:00; Доступный остаток: 46.11 руб.</text>
+            
+            
+          </record><record>
+            <id>33011936012</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-03-06T10:40:32.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-06T10:40:45.000</dlv_status_at>
+            <address>79279676495</address>
+            <text>Списано: 2849.00 руб. По карте: *7066; Адрес: 3DI CARD2CARD YANDEXMO, MOSKVA Дата: 00.00.0000 00:00; Доступный остаток: 212.98 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:27:01.929+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-23T21:27:58.276+03:00"/><ed user="lkovaleva" at="2016-10-23T21:27:01.929+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_интернет_банк_$DATETIME_$T{если}_вход_совершили_$T{не}_вы_срочно_обратитесь_$T{в}_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="если" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="совершили" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="срочно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратитесь" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>41185950945</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-09-21T13:46:50.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-21T13:46:53.000</dlv_status_at>
+            <address>79872411373</address>
+            <text>Вход в Интернет-банк 21.09 13:46 МСК. Если вход совершили не вы, срочно обратитесь в банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:17:42.125+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-23T21:17:42.125+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="оплата_$T{$VARSTRING}_$MONEY_пароль_$T{$STRING}_никому_$T{не}_сообщайте" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PP"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="оплата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11932707438</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-07-24T20:07:20.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-24T20:07:29.000</dlv_status_at>
+            <address>79373026923</address>
+            <text>Оплата телефона: 50.00р. Пароль 428805 никому не сообщайте</text>
+            
+            
+          </record><record>
+            <id>9309004534</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-04-18T14:12:31.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-18T14:12:36.000</dlv_status_at>
+            <address>79373026923</address>
+            <text>Оплата купонов 200.00р. Пароль 128914 никому не сообщайте</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-07T13:10:16.670+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-07T13:10:16.670+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATE_пополнение_$MONEY_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пополнение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39034312851</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-31T12:14:03.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-31T12:14:11.000</dlv_status_at>
+            <address>79279634843</address>
+            <text>Карта 5473: 31.07.2015, пополнение 5589.03 RUR. Доступно 5597.54 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T13:58:46.383+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T13:58:46.383+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_выдача_наличных_$MONEY_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выдача" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="наличных" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>40926718709</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-09-15T14:13:17.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-15T14:13:29.000</dlv_status_at>
+            <address>79177796841</address>
+            <text>Карта 2397: 15.09.2015 16:12, выдача наличных 13000.00 RUR, ATM102294, UFA, 34, REVOLYUTSIONNAYA. Доступно 114.37 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T10:50:50.525+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T10:50:50.525+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_ошибка_$T{при}_обработке_запроса_попробуйте_позже_дата_$LOCALDATETIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ошибка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="при" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обработке" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="запроса" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="попробуйте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="позже" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16248624582</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-12-19T09:25:53.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-19T09:25:53.000</dlv_status_at>
+            <address>79373389396</address>
+            <text>Операция по карте *2221 не успешна, ошибка при обработке запроса, попробуйте позже; Дата: 19.12.2013 11:25; Место: Apelsin  kassa8, Tuimazy.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:22:45.194+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:22:45.194+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="пароль_$T{$STRING}_$T{до}_$DATETIME_изменение_параметров_карты_$T{$CARDNUMBER}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="изменение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="параметров" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9753365454</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-05-06T08:49:43.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-06T08:49:51.000</dlv_status_at>
+            <address>79177953603</address>
+            <text>Пароль 143552 до 06.05 08:54мск, изменение параметров карты *0821</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-28T11:26:07.001+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-28T11:26:07.001+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_промтрансбанк" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="промтрансбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14378727022</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-10-18T16:45:12.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-18T16:45:18.000</dlv_status_at>
+            <address>79272332333</address>
+            <text>Операция ПромТрансБанк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-13T21:37:50.212+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-13T21:37:50.212+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="сервис_sms_информирование_$STRING_карта_$T{$CARDNUMBER}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="сервис" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sms" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирование" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17065539253</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2014-01-16T15:21:05.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-16T15:21:16.000</dlv_status_at>
+            <address>79174318880</address>
+            <text>Сервис &quot;SMS-информирование&quot; подключен. Карта *1269.</text>
+            
+            
+          </record><record>
+            <id>14780414344</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-11-01T12:02:38.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-01T12:02:48.000</dlv_status_at>
+            <address>79875904750</address>
+            <text>Сервис &quot;SMS-информирование&quot; отключен. Карта *0214.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-13T21:32:46.331+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-13T21:32:46.331+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_списание_$MONEY_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39026701919</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-31T09:58:31.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2015-07-31T11:20:38.000</dlv_status_at>
+            <address>79649639902</address>
+            <text>Карта 9716: 31.07.2015 09:55, списание 200.00 RUR, AVTOZAPRAVKA, BLAGOVESHCHEN. Доступно 1758.22 RUR.</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>38286998794</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-13T11:21:22.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-13T11:21:28.000</dlv_status_at>
+            <address>79272338079</address>
+            <text>Карта 6451: 13.07.2015 13:21, списание 538.00 RUR, PYSHKA-KURAI, UFA. Доступно 34519.67 RUR.</text>
+            
+            
+          </record><record>
+            <id>38105397039</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-08T16:48:41.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-08T16:48:49.000</dlv_status_at>
+            <address>79272338079</address>
+            <text>Карта 6451: 08.07.2015 16:48, списание 735.42 RUR, MAGNIT MM PENEJ, KAMERTAU. Доступно 35057.67 RUR.</text>
+            
+            
+          </record><record>
+            <id>38103107683</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-08T15:54:46.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-08T15:54:53.000</dlv_status_at>
+            <address>79279634843</address>
+            <text>Карта 5473: 08.07.2015 15:54, списание 317.76 RUR, POLUSHKA 64, SIBAY. Доступно 2309.51 RUR.</text>
+            
+            
+          </record><record>
+            <id>38555923740</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-19T14:27:58.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-19T14:28:17.000</dlv_status_at>
+            <address>79279634843</address>
+            <text>Карта 5473: 19.07.2015 14:27, списание 411.00 RUR, MAGNIT GM SIBAJ 1, SIBAY. Доступно 198.51 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-27T14:04:04.372+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-27T14:04:04.372+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_пополнение_$MONEY_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пополнение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39969999699</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-23T11:40:46.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-23T11:42:18.000</dlv_status_at>
+            <address>79603892981</address>
+            <text>Карта 6679:23.08.2015 11:40, пополнение 3799.00 RUR, CYBERPLAT MS CYBERPLAT, MOSCOW. Доступно -72436.45 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-29T12:26:07.173+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-29T12:26:07.173+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_списание_$T{$DOUBLE}_$T{$CURRENCY}_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11144294782</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-06-28T17:18:34.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T17:20:05.000</dlv_status_at>
+            <address>79272332333</address>
+            <text>*6756: 28.06.2013 16:18 Списание: 296000. BYR, &quot;LUKOIL-BELORUS.&quot; AZS, STOLBTSY. Остаток 109485.26 руб.</text>
+            
+            
+          </record><record>
+            <id>11144294564</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-06-28T15:09:54.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T15:10:06.000</dlv_status_at>
+            <address>79272332333</address>
+            <text>*6756: 28.06.2013 14:09 Списание: 160800. BYR, RESTORAN &quot;AVTODAH&quot;, SMOLEVICH.R-N. Остаток 110602.13 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-13T21:32:08.054+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-13T21:32:08.054+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_возврат_$MONEY_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="возврат" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>38628856862</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-07-21T11:07:30.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-21T11:07:39.000</dlv_status_at>
+            <address>79272338079</address>
+            <text>Карта 6451: 21.07.2015 10:53, возврат 148.96 RUR, STROYMATERIALY, KUMERTAU. Доступно 9692.25 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-24T13:58:56.369+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-24T13:58:56.369+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATE_пополнение_$MONEY_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пополнение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13404356162</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-17T11:23:56.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-17T11:23:56.000</dlv_status_at>
+            <address>79674506887</address>
+            <text>*2831: 17.09.2013 Пополнение: 1000.00 руб. Остаток 1090.04 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:14:44.346+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:14:44.346+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$LOCALDATETIME_$STRING" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>40141696963</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-08-27T14:00:11.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-27T14:00:16.000</dlv_status_at>
+            <address>79273353539</address>
+            <text>Карта 6814: 27.08.2015 13:59 заблокирована.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T10:51:30.807+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T10:51:30.807+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_$T{не}_успешна_недостаточно_средств_$T{для}_совершения_операции_дата_$LOCALDATETIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешна" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="недостаточно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="средств" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="совершения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="операции" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13530977854</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-20T15:50:14.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-20T15:50:14.000</dlv_status_at>
+            <address>79196126556</address>
+            <text>Операция по карте *9796 не успешна, недостаточно средств для совершения операции; Дата: 20.09.2013 17:49; Доступный остаток: 0.00 руб..</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:21:26.809+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:21:26.809+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="операция_$T{по}_карте_$T{$CARDNUMBER}_превышен_лимит_ввода_неверного_пин_кода_обратитесь_$T{в}_отделение_банка_$T{для}_сброса_пин_счетчика_дата_$LOCALDATETIME_место_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="превышен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="лимит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ввода" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="неверного" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пин" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кода" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратитесь" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отделение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сброса" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пин" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счетчика" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="место" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16558219372</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-12-26T19:43:36.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-26T19:43:36.000</dlv_status_at>
+            <address>79177393593</address>
+            <text>Операция по карте *4376 превышен лимит ввода неверного ПИН-кода, обратитесь в отделение банка для сброса ПИН-счетчика; Дата: 26.12.2013 19:43; Место: LETUAL KKM 1, UFA.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:24:30.818+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-08-20T14:24:30.818+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="интернет_банк_пароль_$T{$STRING}_действителен_$T{до}_$DATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="действителен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13424944166</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-18T08:52:23.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-18T08:52:29.000</dlv_status_at>
+            <address>79174769039</address>
+            <text>Интернет-банк Пароль 91154151 Действителен до 01.10 21:00 мск</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-07T13:05:57.587+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-07T13:05:57.587+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_списание_$MONEY_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18923360118</id>
+            <cnr>268</cnr>
+            <cnrCode>ftc0</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2014-03-09T11:45:41.000</timestamp>
+            <subject> 6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-09T11:45:47.000</dlv_status_at>
+            <address>79035012644</address>
+            <text>*5700: 09.03.2014 07:45 Списание: 5.42 руб., 3DI PAYU_FCLTY, MOSKVA.</text>
+            
+            
+          </record><record>
+            <id>12438895972</id>
+            <cnr>908</cnr>
+            <cnrCode>ftc22</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2013-08-10T20:07:55.000</timestamp>
+            <subject>Pervobank</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-08-11T08:07:56.000</dlv_status_at>
+            <address>79272696144</address>
+            <text>*3923: 10.08.13 20:07 Списание: 1200.00 руб., MASTER STIL PARK HOUSE, TOLYATTI.  Доступно: 31109.26 руб.</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>13535132612</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2013-09-21T05:15:36.000</timestamp>
+            <subject>PTB-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-21T05:15:46.000</dlv_status_at>
+            <address>79174980254</address>
+            <text>*4581: 21.09.2013 05:15 Списание: 10.00 руб., MEZH. AEROPORT UFA 4, UFA. Остаток 3974.20 руб.</text>
+            
+            
+          </record><record>
+            <id>21855270229</id>
+            <cnr>268</cnr>
+            <cnrCode>ftc0</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2014-05-31T00:05:31.000</timestamp>
+            <subject> 6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-31T00:05:35.000</dlv_status_at>
+            <address>79651039918</address>
+            <text>*4361: 30.05.2014 20:05 Списание: 798.33 руб, SPAR N32, MOSCOW. Остаток 28817.67 руб</text>
+            
+            
+          </record><record>
+            <id>16641619796</id>
+            <cnr>268</cnr>
+            <cnrCode>ftc0</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2013-12-28T16:10:48.000</timestamp>
+            <subject> 6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-28T16:10:59.000</dlv_status_at>
+            <address>79125300865</address>
+            <text>*0087: 28.12.2013 12:10 Списание: 25.00 руб., Santekhnika, NIZHNEVARTOVS. Остаток 44440.47 руб.</text>
+            
+            
+          </record><record>
+            <id>22379774700</id>
+            <cnr>856</cnr>
+            <cnrCode>ftc19</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2014-06-15T18:32:37.000</timestamp>
+            <subject>Expobank</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-06-16T06:33:21.000</dlv_status_at>
+            <address>79130012186</address>
+            <text>*2167: 15.06.2014 18:32 Списание: 645.60 руб., DNK FARM, ISKITIM. Остаток 6363.72 руб.</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>7975236765</id>
+            <cnr>856</cnr>
+            <cnrCode>ftc19</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2013-02-21T15:24:51.000</timestamp>
+            <subject>Expobank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-21T15:24:56.000</dlv_status_at>
+            <address>79165455845</address>
+            <text>*5987: 21.02.2013 15:24 Списание: 1000.00 руб., AZS, MOSKOVSKAYA O. Доступно 21724.79 руб.</text>
+            
+            
+          </record><record>
+            <id>21640675686</id>
+            <cnr>1853</cnr>
+            <cnrCode>ftc82</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2014-05-24T13:45:18.000</timestamp>
+            <subject>DONCOMBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-24T13:45:28.000</dlv_status_at>
+            <address>79525623214</address>
+            <text>*0182: 24.05.2014 13:45 Списание: 199.02 руб, MAGNIT MM KADET, ROSTOV-NA-DON. Остаток 1553.46 руб</text>
+            
+            
+          </record><record>
+            <id>17565389716</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2014-02-02T14:52:30.000</timestamp>
+            <subject>PTB-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-02T14:52:37.000</dlv_status_at>
+            <address>79270858742</address>
+            <text>*2946: 02.02.2014 14:52 Списание: 234.00 руб., OOO POP PLYUSHKA, UFA. Остаток 1387.52 руб.</text>
+            
+            
+          </record><record>
+            <id>14827798202</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ftc</acnCode>
+            <timestamp>2013-11-03T14:07:57.000</timestamp>
+            <subject>PTB-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-03T14:08:09.000</dlv_status_at>
+            <address>79273339747</address>
+            <text>*3992: 03.11.2013 14:07 Списание: 633.00 руб., MALENKAYA STRANA, UFA. Остаток 3083.86 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:08.800+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_получение_наличными_$MONEY_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="наличными" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13659866050</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-25T15:45:34.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-25T15:45:34.000</dlv_status_at>
+            <address>79273325606</address>
+            <text>*5605: 25.09.2013 17:45 Получение наличными 2500.00 руб., PVN102320, UFA, 117, PROSPEKT OKTYABRYA. Остаток 4951.77 руб.</text>
+            
+            
+          </record><record>
+            <id>13330596906</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-14T12:39:49.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-14T12:39:49.000</dlv_status_at>
+            <address>79053504508</address>
+            <text>*6041: 14.09.2013 14:39 Получение наличными 3000.00 руб., ATM102282, UFA, 1, VNESHNETORGOVAYA PLOSHAD. Остаток 10280.37 руб.</text>
+            
+            
+          </record><record>
+            <id>13764050446</id>
+            <cnr>1163</cnr>
+            <cnrCode>ftc39</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2013-09-29T14:35:33.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-29T14:35:33.000</dlv_status_at>
+            <address>79273325606</address>
+            <text>*5605: 29.09.2013 14:35 Получение наличными 1000.00 руб., 950000004678, UFACOW, BANKOMAT 951157 8598 9. Остаток 3052.77 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-08-20T14:17:02.277+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-12-27T19:18:19.583+03:00"/><ed user="lkovaleva" at="2015-08-20T14:17:02.277+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="списано_$MONEY_$T{по}_карте_$T{$CARDNUMBER}_адрес_$T{$VARSTRING}_дата_$LOCALDATETIME_доступный_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="списано" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="адрес" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>36150402038</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ptb</acnCode>
+            <timestamp>2015-05-21T08:28:47.000</timestamp>
+            <subject>PTB-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-21T08:29:10.000</dlv_status_at>
+            <address>79274920158</address>
+            <text>Списано: 280.00 руб. По карте: *4182; Адрес: 3DI P2P PSBANK, PSBANK.RU Дата: 21.05.2015 08:28; Доступный остаток: 108.09 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2015-09-01T23:58:53.999+03:00"/></created>
+        <edited><ed user="anton" at="2015-09-01T23:58:53.999+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

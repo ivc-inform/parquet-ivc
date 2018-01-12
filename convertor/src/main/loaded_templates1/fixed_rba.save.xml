@@ -1,0 +1,65 @@
+<fixedTemplaterActor acn="rba">
+<fixedTemplateHolder>
+<fixedTmpl asString="уважаемый_$T{$VARSTRING}_ваша_карта_$T{$CARDNUMBER}_заблокирована_просим_незамедлительно_обратиться_$T{в}_банк" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заблокирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просим" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="незамедлительно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратиться" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>49517262528</id>
+            <cnr>1575</cnr>
+            <cnrCode>rba0</cnrCode>
+            <acn>416</acn>
+            <acnCode>rba</acnCode>
+            <timestamp>2016-03-24T18:06:07.000</timestamp>
+            <subject>RBABANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-03-24T18:06:12.000</dlv_status_at>
+            <address>79255791284</address>
+            <text>Уважаемый Нурмагомед Расулович! Ваша карта *2734 заблокирована. Просим незамедлительно обратиться в Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-05-02T12:53:55.449+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-05-02T12:53:55.449+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

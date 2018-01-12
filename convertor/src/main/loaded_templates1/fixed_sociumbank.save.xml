@@ -1,0 +1,38 @@
+<fixedTemplaterActor acn="sociumbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="$STRING_$STRING" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13301441370</id>
+            <cnr>1382</cnr>
+            <cnrCode>sociumbank0</cnrCode>
+            <acn>324</acn>
+            <acnCode>sociumbank</acnCode>
+            <timestamp>2013-09-27T15:24:18.000</timestamp>
+            <subject>SOCIUMBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-27T15:25:44.000</dlv_status_at>
+            <address>79104698246</address>
+            <text>test test</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-16T22:29:06.348+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-16T22:29:06.348+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

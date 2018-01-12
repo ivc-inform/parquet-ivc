@@ -1,0 +1,175 @@
+<fixedTemplaterActor acn="alorbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="п_п_$T{$LONG}_$T{от}_$LOCALDATE_сумма_$MONEY_статус_исполнен" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="статус" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18424228042</id>
+            <cnr>1532</cnr>
+            <cnrCode>alorbank0</cnrCode>
+            <acn>388</acn>
+            <acnCode>alorbank</acnCode>
+            <timestamp>2014-03-12T13:42:59.000</timestamp>
+            <subject>ALORBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-12T13:43:04.000</dlv_status_at>
+            <address>79166239677</address>
+            <text>п/п 66 от 12.03.2014 сумма 5654.00 RUR. Статус Исполнен +</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T08:15:18.605+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T08:15:18.605+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="код_безопасности_$T{для}_входа_$T{на}_lkb_besteffortsbank_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="безопасности" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="lkb" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="besteffortsbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>69256468286</id>
+            <cnr>2786</cnr>
+            <cnrCode>alorbank1</cnrCode>
+            <acn>388</acn>
+            <acnCode>alorbank</acnCode>
+            <timestamp>2017-05-01T17:22:54.000</timestamp>
+            <subject>BEFORTS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-05-01T17:22:56.000</dlv_status_at>
+            <address>PEPSI_79219615535</address>
+            <text>Код безопасности для входа на lkb.besteffortsbank.ru: 780900</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T08:17:10.705+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T08:17:10.705+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="п_п_$T{$LONG}_$T{от}_$LOCALDATE_сумма_$MONEY_статус_принят_абс" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="статус" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="принят" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="абс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>55634180403</id>
+            <cnr>1532</cnr>
+            <cnrCode>alorbank0</cnrCode>
+            <acn>388</acn>
+            <acnCode>alorbank</acnCode>
+            <timestamp>2016-09-05T14:22:47.000</timestamp>
+            <subject>BEFORTS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-09-05T14:22:56.000</dlv_status_at>
+            <address>79165704605</address>
+            <text>п/п 774 от 05.09.2016 сумма 24020.00 RUR. Статус Принят АБС +</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T08:16:10.943+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T08:16:10.943+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,91 @@
+<fixedTemplaterActor acn="sauber">
+<fixedTemplateHolder>
+<fixedTmpl asString="вход_sms_код_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sms" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20260257073</id>
+            <cnr>1421</cnr>
+            <cnrCode>sauber0</cnrCode>
+            <acn>334</acn>
+            <acnCode>sauber</acnCode>
+            <timestamp>2014-04-25T23:19:06.000</timestamp>
+            <subject>SAUBER BANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-04-25T23:19:07.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>Вход. SMS-код: 0127</text>
+            
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-08T16:29:35.569+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-08T16:29:35.569+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>24942380136</id>
+            <cnr>1421</cnr>
+            <cnrCode>sauber0</cnrCode>
+            <acn>334</acn>
+            <acnCode>sauber</acnCode>
+            <timestamp>2014-09-04T09:35:39.000</timestamp>
+            <subject>SAUBER BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-04T09:35:44.000</dlv_status_at>
+            <address>79101010101</address>
+            <text>ывавыаыва</text>
+            
+            
+          </record><record>
+            <id>24942380124</id>
+            <cnr>1421</cnr>
+            <cnrCode>sauber0</cnrCode>
+            <acn>334</acn>
+            <acnCode>sauber</acnCode>
+            <timestamp>2014-09-04T09:35:37.000</timestamp>
+            <subject>SAUBER BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-04T09:35:40.000</dlv_status_at>
+            <address>79101010101</address>
+            <text>выбранным</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-15T21:57:03.998+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-15T21:57:03.998+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

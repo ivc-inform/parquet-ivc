@@ -1,0 +1,1744 @@
+<fixedTemplaterActor acn="uralig">
+<fixedTemplateHolder>
+<fixedTmpl asString="поступил_документ_$T{на}_списание_$T{с}_вашего_счета_$STRING_$T{$LONG}_$T{от}_$LOCALDATE_$T{на}_сумму_$MONEY_получатель_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="поступил" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="документ" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашего" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получатель" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7171815352</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-14T10:43:16.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-14T10:48:26.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 5 от 14.01.2013 на сумму 7470.00 RUR. Получатель УФК МФ РФ по Челябинской области (ОПФР по Челябинской области))</text>
+            <start_time>2013-01-14T06:42:10.000</start_time>
+            
+          </record><record>
+            <id>5445749520</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-30T10:32:52.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-30T10:33:44.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 670 от 30.08.2012 на сумму 5000.00 RUR. Получатель ОАО &quot;ЛУКОЙЛ-ИНТЕР-КАРД&quot;</text>
+            <start_time>2012-08-30T06:32:11.000</start_time>
+            
+          </record><record>
+            <id>5274932131</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-22T08:02:46.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-22T08:03:19.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 626 от 22.08.2012 на сумму 114.76 RUR. Получатель ОАО&quot;ВЫМПЕЛКОМ&quot;</text>
+            <start_time>2012-08-22T04:02:12.000</start_time>
+            
+          </record><record>
+            <id>5811769319</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-10-10T10:02:36.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-10T10:02:57.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 814 от 10.10.2012 на сумму 14178.00 RUR. Получатель ООО&quot;САНРАЙЗ РЕГИОНЫ-ЧЕЛЯБИНСК&quot;</text>
+            <start_time>2012-10-10T06:02:12.000</start_time>
+            
+          </record><record>
+            <id>7171815354</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-14T10:43:16.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-14T10:46:04.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 7 от 14.01.2013 на сумму 3300.00 RUR. Получатель Калининское ОСБ №8544/0231 Уральского  банка СБ РФ</text>
+            <start_time>2013-01-14T06:42:10.000</start_time>
+            
+          </record><record>
+            <id>5445749457</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-30T07:02:43.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-30T07:04:05.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 662 от 30.08.2012 на сумму 2485.92 RUR. Получатель ООО&quot;СВАРОЧНЫЕ ЭЛЕКТРОДЫ&quot;</text>
+            <start_time>2012-08-30T03:02:09.000</start_time>
+            
+          </record><record>
+            <id>7370091046</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-17T08:13:26.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-17T08:13:43.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 11 от 17.01.2013 на сумму 3904.60 RUR. Получатель ООО&quot;ТЕПЛОВЫЕ СИСТЕМЫ&quot;</text>
+            <start_time>2013-01-17T04:12:10.000</start_time>
+            
+          </record><record>
+            <id>6993112760</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-24T08:32:18.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-24T08:32:52.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 1001 от 24.12.2012 на сумму 11022.79 RUR. Получатель ООО ИНЖЕНЕРНЫЙ ЦЕНТР &quot;СОВРЕМЕННЫЕ ТРУБОПРОВОДНЫЕ СИСТЕМЫ&quot;</text>
+            <start_time>2012-12-24T04:32:10.000</start_time>
+            
+          </record><record>
+            <id>5495211047</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-09-11T06:42:57.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-11T06:43:15.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 709 от 11.09.2012 на сумму 2200.00 RUR. Получатель ООО&quot;ГЛОБАЛ КАРГО&quot;</text>
+            <start_time>2012-09-11T02:42:11.000</start_time>
+            
+          </record><record>
+            <id>7370090866</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-16T08:53:41.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-16T08:54:03.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>Поступил документ на списание с Вашего счета 40702810900000005353 № 9 от 16.01.2013 на сумму 3230.78 RUR. Получатель ООО &quot;НПФ ВОСТОК-ЗАПАД&quot;</text>
+            <start_time>2013-01-16T04:52:10.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:19:58.879+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:19:58.879+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="п_п_n_$T{$LONG}_сумма_$MONEY_получатель_$T{$VARSTRING}_бик_$STRING_счет_$STRING_id_сессии_$T{$LONG}_пароль_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получатель" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="бик" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7494956506</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-21T11:21:35.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-21T11:21:51.000</dlv_status_at>
+            <address>79507387000</address>
+            <text>П/п N 9
+Сумма 217902.08 руб.
+Получатель ООО ТСК &quot;Терракот&quot;
+БИК 047501779
+Счет 40702810590000012574
+ID сессии 319035
+Пароль 567779</text>
+            
+            
+          </record><record>
+            <id>7107924052</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-25T22:14:14.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-25T22:14:39.000</dlv_status_at>
+            <address>79048178478</address>
+            <text>П/п N 277
+Сумма 850000.00 руб.
+Получатель Челябинское отделение № 8544 г.Челябинск
+БИК 047501602
+Счет 47422810472009940001
+ID сессии 288832
+Пароль 716732</text>
+            
+            
+          </record><record>
+            <id>5535598854</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-09-07T12:03:55.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-07T12:04:04.000</dlv_status_at>
+            <address>79128969385</address>
+            <text>П/п N 49
+Сумма 13407.00 руб.
+Получатель Общество с ограниченной ответственностью &quot;Санрайз Регионы - Челябинск&quot;
+БИК 047501988
+Счет 40702810104020000730
+ID сессии 46851
+Пароль 900216</text>
+            
+            
+          </record><record>
+            <id>6661859888</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-11-30T08:17:20.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-30T08:17:32.000</dlv_status_at>
+            <address>79507387000</address>
+            <text>П/п N 715
+Сумма 2269608.00 руб.
+Получатель ЗАО Компания &quot;Вигма&quot;
+БИК 047501602
+Счет 40702810972000085988
+ID сессии 333943
+Пароль 535248</text>
+            
+            
+          </record><record>
+            <id>5942699992</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-10-11T10:19:23.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-11T10:19:44.000</dlv_status_at>
+            <address>79080485700</address>
+            <text>П/п N 39
+Сумма 125655.00 руб.
+Получатель Общество с ограниченной ответственностью  &quot;Генезис-Авто&quot;
+БИК 047501779
+Счет 40702810790000015672
+ID сессии 491763
+Пароль 755777</text>
+            
+            
+          </record><record>
+            <id>5535598793</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-09-07T11:23:02.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-07T11:23:10.000</dlv_status_at>
+            <address>79191199606</address>
+            <text>П/п N 286
+Сумма 402583.84 руб.
+Получатель ООО &quot;ОптТорг-Холдинг&quot;
+БИК 047501602
+Счет 40702810672000069000
+ID сессии 82817
+Пароль 179586</text>
+            
+            
+          </record><record>
+            <id>6575184351</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-11-26T13:52:02.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-26T13:52:26.000</dlv_status_at>
+            <address>79507387000</address>
+            <text>П/п N 693
+Сумма 340700.00 руб.
+Получатель ООО ГК &quot;Волжские подшипники&quot;
+БИК 046311722
+Счет 40702810100640300553
+ID сессии 467983
+Пароль 818550</text>
+            
+            
+          </record><record>
+            <id>6135571922</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-10-25T07:43:57.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-25T07:44:10.000</dlv_status_at>
+            <address>79191199606</address>
+            <text>П/п N 365
+Сумма 8408.00 руб.
+Получатель ООО &quot; Минимакс&quot;
+БИК 046577952
+Счет 40702810209280004456
+ID сессии 504003
+Пароль 310048</text>
+            
+            
+          </record><record>
+            <id>7386309421</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-15T07:58:59.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-15T07:59:24.000</dlv_status_at>
+            <address>79823281303</address>
+            <text>П/п N 10
+Сумма 800000.00 руб.
+Получатель ООО &quot;Навиком&quot;
+БИК 047501742
+Счет 40702810200000005862
+ID сессии 481288
+Пароль 272715</text>
+            
+            
+          </record><record>
+            <id>6885092722</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-13T09:39:39.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-13T09:39:50.000</dlv_status_at>
+            <address>79525224727</address>
+            <text>П/п N 123
+Сумма 11090.00 руб.
+Получатель ООО &quot;Дилтос-Медиа&quot;
+БИК 046577774
+Счет 40702810000130004167
+ID сессии 81381
+Пароль 452102</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:09:46.710+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:09:46.710+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{по}_вашему_счету_$STRING_документ_банковский_ордер_$T{на}_сумму_$T{$DOUBLE}_получатель_платежа_$T{$VARSTRING}_поставлен_$T{в}_картотеку" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="документ" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банковский" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ордер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получатель" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="поставлен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="картотеку" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5445749849</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-31T16:14:55.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-31T16:16:05.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>По Вашему счету (40702810400000005510) ДОКУМЕНТ (Банковский ордер) НА СУММУ:300.00 -ПОЛУЧАТЕЛЬ ПЛАТЕЖА:ЗАО КБ &quot;УРАЛЛИГА&quot; ПОСТАВЛЕН В КАРТОТЕКУ.</text>
+            <start_time>2012-08-31T12:14:17.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:15:08.846+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:15:08.846+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{с}_вашего_счета_$STRING_$LOCALDATE_списан_платеж_$T{$LONG}_$T{от}_$LOCALDATE_$T{на}_сумму_$MONEY_получатель_$T{$VARSTRING}_$T{на}_счете_$T{$DOUBLE}_доступно_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашего" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получатель" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1772899560</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2011-09-05T13:06:23.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-09-05T13:06:57.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810500000005067 05.09.2011 списан платеж № 11516 от 05.09.2011 на сумму 5000.00 RUR. Получатель ООО&quot;КАНДЕЛА&quot; (На счете - 1,919.41 Доступно - 1,919.41)</text>
+            <start_time>2011-09-05T10:05:56.000</start_time>
+            
+          </record><record>
+            <id>7370090863</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-16T08:47:32.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-16T08:47:51.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810400000005510 16.01.2013 списан платеж № 3 от 16.01.2013 на сумму 98800.00 RUR. Получатель ООО &quot;КЛИМАТИЧЕСКИЕ СИСТЕМЫ&quot; (На счете - 79,782.21 Доступно - 79,782.21)</text>
+            <start_time>2013-01-16T04:46:10.000</start_time>
+            
+          </record><record>
+            <id>6993112763</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-24T08:46:22.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-24T08:46:47.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810900000005353 24.12.2012 списан платеж № 1001 от 24.12.2012 на сумму 11022.79 RUR. Получатель ООО ИНЖЕНЕРНЫЙ ЦЕНТР &quot;СОВРЕМЕННЫЕ ТРУБОПРОВОДНЫЕ СИСТЕМЫ&quot; (На счете - 176,178.25 Доступно - 176,178.25)</text>
+            <start_time>2012-12-24T04:46:13.000</start_time>
+            
+          </record><record>
+            <id>7171815361</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-14T10:43:16.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-14T10:48:04.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810900000005353 14.01.2013 списан платеж № 4 от 14.01.2013 на сумму 780.00 RUR. Получатель УФК МФ РФ по Челябинской области (Для ИФНС России № 7447 по Калининскому району г.Челябинска) (На счете - 41,142.18 Доступно - 41,142.18)</text>
+            <start_time>2013-01-14T06:42:10.000</start_time>
+            
+          </record><record>
+            <id>5274932135</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-22T08:16:33.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-22T08:17:14.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810900000005353 22.08.2012 списан платеж № 626 от 22.08.2012 на сумму 114.76 RUR. Получатель ОАО&quot;ВЫМПЕЛКОМ&quot; (На счете - 97,754.05 Доступно - 97,754.05)</text>
+            <start_time>2012-08-22T04:16:09.000</start_time>
+            
+          </record><record>
+            <id>14454536388</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-11-12T11:46:14.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-12T11:46:37.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810400000005510 12.11.2013 списан платеж № 133 от 12.11.2013 на сумму 1667.00 RUR. Получатель УФК МФ по Челябинской области (для ИФНС РФ по Курчатовскому району г.Челябинска (На счете - 634.08 Доступно - 634.08)</text>
+            <start_time>2013-11-12T07:46:08.000</start_time>
+            
+          </record><record>
+            <id>7171815358</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-14T10:43:16.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-14T10:46:29.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810900000005353 14.01.2013 списан платеж № 1 от 14.01.2013 на сумму 535.00 RUR. Получатель УФК МФ РФ по Челябинской области (ГУ-Челябинское отделение фонда Социального страхования РФ) (На счете - 41,142.18 Доступно - 41,142.18)</text>
+            <start_time>2013-01-14T06:42:10.000</start_time>
+            
+          </record><record>
+            <id>7171815176</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-11T09:49:12.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-11T09:52:38.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810400000005510 11.01.2013 списан платеж № 2 от 11.01.2013 на сумму 19760.00 RUR. Получатель ООО &quot;СЕРВИСНАЯ СТАНЦИЯ-СПЕЦБУРМАШ&quot; (На счете - 529,229.41 Доступно - 529,229.41)</text>
+            <start_time>2013-01-11T05:48:11.000</start_time>
+            
+          </record><record>
+            <id>7171815360</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-14T10:43:16.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-14T10:54:48.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810900000005353 14.01.2013 списан платеж № 5 от 14.01.2013 на сумму 7470.00 RUR. Получатель УФК МФ РФ по Челябинской области (ОПФР по Челябинской области)) (На счете - 41,142.18 Доступно - 41,142.18)</text>
+            <start_time>2013-01-14T06:42:10.000</start_time>
+            
+          </record><record>
+            <id>5274932421</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-24T07:16:36.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-24T07:17:16.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810900000005353 24.08.2012 списан платеж № 633 от 24.08.2012 на сумму 14948.64 RUR. Получатель ООО&quot;ФОРС ПРОДАКШН&quot; (На счете - 128,809.97 Доступно - 128,809.97)</text>
+            <start_time>2012-08-24T03:16:09.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:06:55.147+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:06:55.147+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_ваш_счет_$STRING_$LOCALDATE_зачислен_платеж_$T{$LONG}_$T{от}_$LOCALDATE_$T{на}_сумму_$MONEY_плательщик_$T{$VARSTRING}_$T{на}_счете_$T{$DOUBLE}_доступно_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачислен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="плательщик" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5744982385</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-10-03T11:06:16.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-03T11:06:34.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810900000005353 03.10.2012 зачислен платеж № 389 от 03.10.2012 на сумму 3038.44 RUR. Плательщик ООО Лоция (На счете - 32,154.49 Доступно - 32,154.49)</text>
+            <start_time>2012-10-03T07:06:11.000</start_time>
+            
+          </record><record>
+            <id>5577353363</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-09-18T13:05:14.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-18T13:05:36.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810900000005353 18.09.2012 зачислен платеж № 874 от 18.09.2012 на сумму 12955.85 RUR. Плательщик ООО &quot;Косметичка&quot; (На счете - 68,466.91 Доступно - 68,466.91)</text>
+            <start_time>2012-09-18T09:04:11.000</start_time>
+            
+          </record><record>
+            <id>7108191791</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-27T09:08:27.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-27T09:08:50.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810900000005353 27.12.2012 зачислен платеж № 1013 от 26.12.2012 на сумму 5400.00 RUR. Плательщик СУММЫ ПОСТУПИВШИЕ НА КОРРЕСПОНДЕНТСКИЕ СЧЕТА, ДО ВЫЯСНЕНИЯ  (ОПЕРУ) (На счете - 301,486.43 Доступно - 301,486.43)</text>
+            <start_time>2012-12-27T05:08:13.000</start_time>
+            
+          </record><record>
+            <id>1772899699</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2011-09-07T11:11:10.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-09-07T11:11:31.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810500000005067 07.09.2011 зачислен платеж № 131 от 07.09.2011 на сумму 7839.98 RUR. Плательщик ООО КОМПАНИЯ САНТА ТРЕЙД (На счете - 13,939.39 Доступно - 13,939.39)</text>
+            <start_time>2011-09-07T08:11:00.000</start_time>
+            
+          </record><record>
+            <id>5122991089</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-13T13:04:33.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-13T13:04:57.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810900000005353 13.08.2012 зачислен платеж № 222 от 13.08.2012 на сумму 489658.84 RUR. Плательщик Общество с ограниченной ответственностью &quot;Стройконтинент&quot; (На счете - 527,198.57 Доступно - 527,198.57)</text>
+            <start_time>2012-08-13T09:04:18.000</start_time>
+            
+          </record><record>
+            <id>1772899468</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2011-09-05T08:05:45.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-09-05T08:06:06.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810500000005067 05.09.2011 зачислен платеж № 508 от 02.09.2011 на сумму 7828.00 RUR. Плательщик ФИЛИАЛ ОАО &quot;УРАЛСИБ&quot; В Г.ЕКАТЕРИНБУРГ (На счете - 8,514.04 Доступно - 8,514.04)</text>
+            <start_time>2011-09-05T05:05:14.000</start_time>
+            
+          </record><record>
+            <id>6993113284</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-26T07:08:21.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-26T07:08:52.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810900000005353 26.12.2012 зачислен платеж № 75 от 25.12.2012 на сумму 4915.14 RUR. Плательщик Челябинский филиал N 3 Государственного учреждения - Челябинского регионального отделения Фонда социального страхования Российской Федерации (На счете - 154,310.60 Доступно - 154,310.60)</text>
+            <start_time>2012-12-26T03:08:11.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:04:59.948+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:04:59.948+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_ibank_$T{$LONG}_id_сессии_$T{$LONG}_одноразовый_пароль_$T{$STRING}_$T{не}_сообщайте_данный_пароль_никому_ip_$T{$URL}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ibank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одноразовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="данный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ip" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10035751632</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-05-17T07:10:17.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-17T07:10:27.000</dlv_status_at>
+            <address>79658573373</address>
+            <text>Вход в &quot;iBank 2&quot;.
+ID сессии: 426448
+Одноразовый пароль: 549780
+Не сообщайте данный пароль никому
+IP: 37.113.188.78</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:18:43.053+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:18:43.053+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vhod_$T{v}_ibank_$T{$LONG}_$LOCALDATETIME_id_sessii_$T{$LONG}_parol_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vhod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ibank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sessii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14470075018</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-10-24T07:26:20.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-24T07:26:23.000</dlv_status_at>
+            <address>79026111284</address>
+            <text>Vhod v &quot;iBank 2&quot; 24.10.2013 09:26. ID sessii 122629. Parol' 135851</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:12:20.104+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:12:38.272+03:00"/><ed user="lkovaleva" at="2017-11-23T11:12:20.104+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{с}_вашего_счета_$STRING_$LOCALDATE_списан_платеж_$T{$LONG}_$T{от}_$LOCALDATE_$T{на}_сумму_$MONEY_касса_$T{на}_счете_$T{$DOUBLE}_доступно_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашего" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="касса" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1772899525</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2011-09-05T11:02:52.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-09-05T11:03:12.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810500000005067 05.09.2011 списан платеж № 482 от 05.09.2011 на сумму 64000.00 RUR. (касса) (На счете - 36,919.41 Доступно - 36,919.41)</text>
+            <start_time>2011-09-05T08:02:44.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:13:19.024+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:13:19.024+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="п_п_n_$T{$LONG}_сумма_$MONEY_получатель_$T{$VARSTRING}_бик_$STRING_счет_$STRING_id_сессии_$T{$LONG}_пароль_$T{$STRING}_$T{не}_сообщайте_данный_пароль_никому" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получатель" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="бик" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="данный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13824247414</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-10-03T08:22:21.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-03T08:22:29.000</dlv_status_at>
+            <address>79193009293</address>
+            <text>П/п N 284
+Сумма 10390.00 руб.
+Получатель Управление Федерального казначейства РФ ИФНС по Центральному району г.Челябинска
+БИК 047501001
+Счет 40101810400000010801
+ID сессии 505455
+Пароль 144094
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>13824247398</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-10-03T08:19:20.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-03T08:19:27.000</dlv_status_at>
+            <address>79193009293</address>
+            <text>П/п N 283
+Сумма 4830.00 руб.
+Получатель УФК МФ РФ ИФНС по Правобережному району г.Магнитогорска
+БИК 047501001
+Счет 40101810400000010801
+ID сессии 146106
+Пароль 260129
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>13111731626</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-09-09T09:01:52.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-09T09:02:04.000</dlv_status_at>
+            <address>79191163426</address>
+            <text>П/п N 385
+Сумма 2830.00 руб.
+Получатель Общество с ограниченной ответственностью Торгово-Производственная Компания Блиц
+БИК 047501779
+Счет 40702810190190001060
+ID сессии 36393
+Пароль 101771
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>10789287018</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-06-17T09:37:28.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-17T09:37:43.000</dlv_status_at>
+            <address>79514626483</address>
+            <text>П/п N 139
+Сумма 35200.00 руб.
+Получатель ООО &quot;АНКЛАВ&quot;
+БИК 047501742
+Счет 40702810500000002044
+ID сессии 511822
+Пароль 234309
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>13513424736</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-09-23T13:11:08.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-23T13:11:16.000</dlv_status_at>
+            <address>79193271717</address>
+            <text>П/п N 101
+Сумма 2000.00 руб.
+Получатель ООО&quot;Метиз-Снабжение&quot;
+БИК 046577774
+Счет 40702810700170015652
+ID сессии 390114
+Пароль 42747
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>13475643360</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-09-20T11:31:29.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-20T11:31:52.000</dlv_status_at>
+            <address>79193009293</address>
+            <text>П/п N 267
+Сумма 1608.00 руб.
+Получатель ООО &quot;Центр фармацевтической информации УРФО&quot; г.Екатеринбург
+БИК 046577795
+Счет 40702810462410000408
+ID сессии 264994
+Пароль 960435
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>12088666668</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-07-31T08:31:24.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-31T08:31:33.000</dlv_status_at>
+            <address>79191199606</address>
+            <text>П/п N 228
+Сумма 24433.08 руб.
+Получатель ООО&quot;ТМ системы&quot;
+БИК 046568905
+Счет 40702810005020002232
+ID сессии 466287
+Пароль 499616
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>13032258140</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-09-04T15:11:38.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-04T15:11:55.000</dlv_status_at>
+            <address>79193392871</address>
+            <text>П/п N 880
+Сумма 60670.00 руб.
+Получатель Общество с ограниченной ответственностью &quot;Симфония&quot;
+БИК 047501711
+Счет 40702810407280002316
+ID сессии 462833
+Пароль 549600
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>13475643374</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-09-20T11:33:43.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-20T11:34:04.000</dlv_status_at>
+            <address>79193009293</address>
+            <text>П/п N 268
+Сумма 620.00 руб.
+Получатель Департамент финансов Екатеринбурга (МБУ &quot;Центр Мединком&quot;, 89071002016)
+БИК 046577001
+Счет 40701810900003000001
+ID сессии 1728
+Пароль 275301
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record><record>
+            <id>14241097026</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-10-15T10:48:47.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-15T10:49:04.000</dlv_status_at>
+            <address>79193009293</address>
+            <text>П/п N 293
+Сумма 10130.98 руб.
+Получатель ООО &quot;Уральская Фармацевтическая Компания&quot;
+БИК 047501711
+Счет 40702810907910000696
+ID сессии 320207
+Пароль 153946
+Не сообщайте данный пароль никому</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:11:06.494+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:11:06.494+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_ваш_счет_$STRING_$LOCALDATE_зачислен_платеж_$T{$LONG}_$T{от}_$LOCALDATE_$T{на}_сумму_$MONEY_плательщик_кпп_$T{$LONG}_$T{$VARSTRING}_$T{на}_счете_$T{$DOUBLE}_доступно_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачислен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="плательщик" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кпп" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7370090746</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-15T13:05:50.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-15T13:06:14.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810400000005510 15.01.2013 зачислен платеж № 8 от 15.01.2013 на сумму 168600.00 RUR. Плательщик КПП 744901001 ООО &quot;Умный климат&quot; (На счете - 215,879.41 Доступно - 215,879.41)</text>
+            <start_time>2013-01-15T09:04:07.000</start_time>
+            
+          </record><record>
+            <id>5331582858</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-08-28T13:04:44.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-28T13:05:14.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810900000005353 28.08.2012 зачислен платеж № 240 от 28.08.2012 на сумму 81100.56 RUR. Плательщик КПП 744901001 ООО &quot;Стройконтинент&quot;, ТРАКТОРОЗАВОДСКИЙ ФИЛИАЛ ОАО &quot;ЧЕЛЯБИНВЕСТБАНК&quot; (На счете - 265,549.37 Доступно - 265,549.37)</text>
+            <start_time>2012-08-28T09:04:10.000</start_time>
+            
+          </record><record>
+            <id>6993112991</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2012-12-24T13:52:19.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-24T13:52:38.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>На Ваш счет 40702810400000005510 24.12.2012 зачислен платеж № 491 от 24.12.2012 на сумму 75610.00 RUR. Плательщик КПП 745301001 ООО &quot;Климатические системы&quot; (На счете - 429,990.78 Доступно - 429,990.78)</text>
+            <start_time>2012-12-24T09:52:13.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:02:38.932+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:02:38.932+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{с}_вашего_счета_$STRING_$LOCALDATE_списан_платеж_$T{$LONG}_$T{от}_$LOCALDATE_$T{на}_сумму_$MONEY_$T{на}_счете_$T{$DOUBLE}_доступно_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашего" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1772899672</id>
+            <cnr>17</cnr>
+            <cnrCode>uralig0</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2011-09-07T09:39:00.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-09-07T09:39:19.000</dlv_status_at>
+            <address>79080630769</address>
+            <text>С Вашего счета 40702810500000005067 07.09.2011 списан платеж № 469428 от 07.09.2011 на сумму 40.00 RUR. (На счете - 6,099.41 Доступно - 6,099.41)</text>
+            <start_time>2011-09-07T06:38:46.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:14:00.277+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:14:00.277+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_ibank_$T{$LONG}_id_сессии_$T{$LONG}_одноразовый_пароль_$T{$STRING}_ip_$T{$URL}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ibank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одноразовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ip" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7386308641</id>
+            <cnr>959</cnr>
+            <cnrCode>uralig1</cnrCode>
+            <acn>10</acn>
+            <acnCode>uralig</acnCode>
+            <timestamp>2013-01-14T07:36:53.000</timestamp>
+            <subject>URALLIGA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-14T07:37:04.000</dlv_status_at>
+            <address>79525224727</address>
+            <text>Вход в &quot;iBank 2&quot;.
+ID сессии: 395781
+Одноразовый пароль: 257851
+IP: 77.73.64.62</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-23T11:16:17.221+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-23T11:16:17.221+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

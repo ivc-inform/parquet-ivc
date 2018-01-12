@@ -1,0 +1,58 @@
+<fixedTemplaterActor acn="slaviabank">
+<fixedTemplateHolder>
+<fixedTmpl asString="ваш_платеж_$T{по}_кредиту_$MONEY_оплатить_$T{до}_$LOCALDATE" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплатить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8197116472</id>
+            <cnr>467</cnr>
+            <cnrCode>slaviabank0</cnrCode>
+            <acn>138</acn>
+            <acnCode>slaviabank</acnCode>
+            <timestamp>2013-03-26T12:02:48.000</timestamp>
+            <subject>JSCB SLAVIA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-26T12:02:53.000</dlv_status_at>
+            <address>79261257331</address>
+            <text>ВАШ ПЛАТЕЖ ПО КРЕДИТУ 809,9 $ ОПЛАТИТЬ ДО 31.03.2013</text>
+            <start_time>2013-03-26T08:02:48.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T12:13:24.150+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T12:13:24.150+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

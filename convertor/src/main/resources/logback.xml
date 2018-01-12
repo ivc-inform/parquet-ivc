@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <timestamp key="byDay" datePattern="yyyy-MM-dd"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="com.mihnita.colorlog.logback.ColorPatternLayoutEncoder">
+          <pattern>%highlight(%d{HH:mm:ss.SSS} [%t] %-5p %logger{255}) - %msg%n</pattern>
+            <pattern>%highlight(%-5level): %logger{15} - %msg %n</pattern>
+            <errorColor>1;31</errorColor>
+            <warningColor>1;33</warningColor>
+            <infoColor>32</infoColor>
+            <debugColor>36</debugColor>
+            <traceColor>1;30</traceColor>
+        </encoder>
+        <withJansi>false</withJansi>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>log/tss-${byDay}.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %logger{255} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--<logger name="com.simplesys.servlet.http.HttpServletRequest" level="debug"/>-->
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

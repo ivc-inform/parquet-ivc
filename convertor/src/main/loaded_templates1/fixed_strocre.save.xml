@@ -1,0 +1,4393 @@
+<fixedTemplaterActor acn="strocre">
+<fixedTemplateHolder>
+<fixedTmpl asString="$T{$CARDNUMBER}_zachislenie_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14741915742</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-31T15:55:36.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-31T15:55:44.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Zachislenie: 19202,36 RUR
+31.10.13 15:55
+Dostupno 25927,89 RUR
+zarplata</text>
+            
+            
+          </record><record>
+            <id>17331714980</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-24T17:56:09.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-24T17:56:14.000</dlv_status_at>
+            <address>79102905651</address>
+            <text>4917*1928
+Zachislenie: 9000,00 RUR
+24.01.14 17:55
+Dostupno 9009,22 RUR
+Zarplata za pervuu polovinu yanva</text>
+            
+            
+          </record><record>
+            <id>17081825950</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-16T17:55:47.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-16T17:55:52.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Zachislenie: 9553,18 RUR
+16.01.14 17:55
+Dostupno 60806,89 RUR
+Otpusknye</text>
+            
+            
+          </record><record>
+            <id>8244345378</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-07T16:40:47.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-07T16:40:53.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Zachislenie: 5000,00 RUR
+07.03.13 16:40
+Dostupno 5131,01 RUR
+premiya</text>
+            
+            
+          </record><record>
+            <id>17411225444</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-27T16:40:36.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-27T16:40:41.000</dlv_status_at>
+            <address>79208654050</address>
+            <text>4917*3893
+Zachislenie: 15000,00 RUR
+27.01.14 16:40
+Dostupno 14961,53 RUR
+OTPUSKNYE ZA YaNVAR' 2014</text>
+            
+            
+          </record><record>
+            <id>14567354304</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-25T13:56:33.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-25T13:56:39.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Zachislenie: 5000,00 RUR
+25.10.13 13:55
+Dostupno 5037,84 RUR
+Avans</text>
+            
+            
+          </record><record>
+            <id>17006793322</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-14T13:55:37.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-14T13:55:44.000</dlv_status_at>
+            <address>79208535425</address>
+            <text>4917*5370
+Zachislenie: 500,00 RUR
+14.01.14 13:55
+Dostupno 27261,47 RUR
+BRYANSK CASH IN 50240005 ADMIN</text>
+            
+            
+          </record><record>
+            <id>14704923356</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-30T16:40:38.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-30T16:40:45.000</dlv_status_at>
+            <address>79226592593</address>
+            <text>4917*3611
+Zachislenie: 48151,00 RUR
+30.10.13 16:40
+Dostupno 48305,00 RUR
+z/plata za sentyabr'</text>
+            
+            
+          </record><record>
+            <id>13077954462</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-09-05T09:25:56.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-05T09:26:01.000</dlv_status_at>
+            <address>79186644058</address>
+            <text>4917*0939
+Zachislenie: 6500,00 RUR
+05.09.13 9:25
+Dostupno 6588,60 RUR
+NOVOROSSIYSK CASH IN 50170001 FILIAL</text>
+            
+            
+          </record><record>
+            <id>18757690040</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-03-05T14:25:56.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-05T14:25:59.000</dlv_status_at>
+            <address>79611036220</address>
+            <text>4917*3746
+Zachislenie: 4120,56 RUR
+05.03.14 14:25
+Dostupno 7501,12 RUR
+Zarabotnaya plata za fevral' 2014</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:01.865+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_zachislenie_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1293779799</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-05-24T17:31:03.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-05-24T17:31:08.000</dlv_status_at>
+            <address>79272095006</address>
+            <text>4917*4682
+Zachislenie: 24 000,00 RUR
+24.05.11 17:30
+ Komandirovochnye rashody
+Dostupno 24 094,17 RUR</text>
+            
+            
+          </record><record>
+            <id>1304100469</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-05-27T17:10:38.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-05-27T17:10:44.000</dlv_status_at>
+            <address>79505122604</address>
+            <text>4917*6235
+Zachislenie: 17 998,40 RUR
+27.05.11 17:10
+ zarplata
+Dostupno 28 245,06 RUR</text>
+            
+            
+          </record><record>
+            <id>1252194689</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-05-11T18:25:59.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-05-11T18:26:14.000</dlv_status_at>
+            <address>79505122604</address>
+            <text>4917*6235
+Zachislenie: 1 950,00 RUR
+11.05.11 18:25
+ Komandir. rashody
+Dostupno 20 946,66 RUR</text>
+            
+            
+          </record><record>
+            <id>1222345760</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-04-29T15:37:21.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-04-29T15:37:35.000</dlv_status_at>
+            <address>79265760115</address>
+            <text>4917*0962
+Zachislenie: 7 012,00 RUR
+29.04.11 15:36
+ Zarabotnaya plata za Aprel' 2011g
+Dostupno 20 327,25 RUR</text>
+            
+            
+          </record><record>
+            <id>1326047746</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-06-02T19:55:54.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-06-02T19:58:41.000</dlv_status_at>
+            <address>79044771121</address>
+            <text>4917*9494
+Zachislenie: 96 980,74 RUR
+02.06.11 19:55
+ Otpusknye
+Dostupno 132 147,23 RUR</text>
+            
+            
+          </record><record>
+            <id>1177158443</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-04-13T18:17:47.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-04-13T18:17:58.000</dlv_status_at>
+            <address>79265760115</address>
+            <text>4917*0962
+Zachislenie: 50,00 RUR
+13.04.11 18:17
+ Komissiya SMS-kard, mart
+Dostupno 13 365,25 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-23T14:24:27.331+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-23T14:26:21.066+03:00"/><ed user="lkovaleva" at="2015-11-23T14:24:27.331+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="IT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11684558886</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-15T17:55:42.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T17:56:51.000</dlv_status_at>
+            <address>79129291868</address>
+            <text>4917*3874
+: 0,00 RUR
+28.05.04 9:08
+Dostupno 44275,11 RUR&amp;nl</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-16T23:27:48.448+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-16T23:27:48.448+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_zachislenie_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8449142556</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-14T16:55:44.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-14T16:56:29.000</dlv_status_at>
+            <address>79505133374</address>
+            <text>001-*01
+Zachislenie: 3450,00 RUR
+14.03.13 16:55
+Dostupno 36069,77 RUR
+Pod otchet na komandirovochnye ras</text>
+            
+            
+          </record><record>
+            <id>6622610502</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-11-26T12:22:33.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-26T12:22:38.000</dlv_status_at>
+            <address>79629053536</address>
+            <text>001-*01
+Zachislenie: 5 000,00 RUR
+26.11.12 12:22
+Dostupno 44 421,27 RUR
+Vyplata avansa za noyabr' 2012g.</text>
+            
+            
+          </record><record>
+            <id>8091967426</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-28T11:55:47.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-28T11:55:52.000</dlv_status_at>
+            <address>79051755841</address>
+            <text>001-*01
+Zachislenie: 966600,00 RUR
+28.02.13 11:55
+Dostupno 966945,19 RUR
+po dogovoru kupli-prodazhi</text>
+            
+            
+          </record><record>
+            <id>8753321082</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-27T15:47:30.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-27T15:47:36.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>026-*01
+Zachislenie: 15000,00 RUR
+27.03.13 15:47
+Dostupno 27572,05 RUR
+Perevedeno sogl.s/z</text>
+            
+            
+          </record><record>
+            <id>7966968560</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-20T18:25:40.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-02-21T06:25:40.000</dlv_status_at>
+            <address>79048851618</address>
+            <text>001-*01
+Zachislenie: 8899,96 RUR
+20.02.13 18:25
+Dostupno 37865,59 RUR
+Perechisl.okonchat.pri uvol.</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>10919821752</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-06-18T19:57:20.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-18T19:57:23.000</dlv_status_at>
+            <address>79184880670</address>
+            <text>001-*01
+Zachislenie: 91350,00 RUR
+18.06.13 19:56
+Dostupno 117361,35 RUR
+zarplata</text>
+            
+            
+          </record><record>
+            <id>18188298886</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-18T10:39:06.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-18T10:39:11.000</dlv_status_at>
+            <address>79042390429</address>
+            <text>502-*01
+Zachislenie: 161,19 RUR
+18.02.14 10:38
+Dostupno 187,33 RUR
+zachislenie oshibochno spisannyh denezhnyh sredstv</text>
+            
+            
+          </record><record>
+            <id>5711594851</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-09-21T10:29:10.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-21T10:29:15.000</dlv_status_at>
+            <address>79161111195</address>
+            <text>001-*01
+Zachislenie: 42 000,00 RUR
+21.09.12 10:29
+Dostupno 42 042,47 RUR
+Bezvozmezdnaya material'naya pomosch'</text>
+            
+            
+          </record><record>
+            <id>18448153888</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-24T15:58:58.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-24T15:59:05.000</dlv_status_at>
+            <address>79038188787</address>
+            <text>024-*
+Zachislenie: 202000,00 RUR
+24.02.14 15:58
+Dostupno 202165,00 RUR
+POPOLNENIE SChETA PP 72 OT 24.02.2014</text>
+            
+            
+          </record><record>
+            <id>7194797797</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-28T17:07:07.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-28T17:09:25.000</dlv_status_at>
+            <address>79605617089</address>
+            <text>001-*01
+Zachislenie: 23149,68 RUR
+28.12.12 17:06
+Dostupno 106307,83 RUR
+I/L 2-1339 ot 15.11.12</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T15:20:20.869+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T15:20:20.869+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_$MONEY_$LOCALDATETIME_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17380820642</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-26T18:10:33.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-26T18:10:39.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*6155
+Spisanie: 542,60 USD
+26.01.14 18:10
+LAS VEGAS HILTON GVC LV</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T15:40:16.136+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T15:40:16.136+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$MONEY_block_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="block" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1176179431</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-04-13T16:49:41.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-04-13T16:49:44.000</dlv_status_at>
+            <address>79270077009</address>
+            <text>4917*9231
+Snyatie: 3 000,00 RUR
+Block: 3 163,37 RUR
+13.04.11 16:49
+SAMARA SBERBANK 6991 0341
+Dostupno 1 129,32 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:56:03.570+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:56:03.570+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="napominaem_vam_$T{o}_neobhodimosti_nezamedlitelno_vnesti_minimal_nyj_platezh_$T{po}_karte_$T{$CARDNUMBER}_$T{v}_razmere_$MONEY_kb_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="o" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nezamedlitelno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnesti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="minimal" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nyj" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="razmere" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kb" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7126021820</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-25T15:53:03.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-25T15:53:09.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>Napominaem Vam o neobhodimosti nezamedlitelno vnesti minimal'nyj platezh po karte *7064 v razmere 7228.79rur. KB Stroykredit</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T15:03:20.102+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T15:03:20.102+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$STRING_$STRING_$STRING_$T{$CURRENCY}_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7147843697</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-26T15:45:39.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-26T16:22:30.000</dlv_status_at>
+            <address>79217728004</address>
+            <text>4917*3319
+Snyatie: 5A 000,00 RUR
+26.12.12 15:45
+Dostupno 46A 613,30 RUR
+ST. PETERSBUR ATM493 FB STROYCREDIT</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-16T23:30:42.572+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-16T23:30:42.572+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_komissiya_$T{$VARSTRING}_$MONEY_$LOCALDATETIME_dostupno_$MONEY_komissiya_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="komissiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="komissiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9358399388</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-04-20T07:11:01.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-04-20T07:11:02.000</dlv_status_at>
+            <address>79048851618</address>
+            <text>4917*6672
+Komissiya Vedenie scheta god: 200,00 RUR
+20.04.13 7:10
+Dostupno -234,36 RUR
+Komissiya Vedenie scheta god</text>
+            
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record><record>
+            <id>11520362642</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-10T12:14:11.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-10T12:14:16.000</dlv_status_at>
+            <address>79186644058</address>
+            <text>4917*0939
+Komissiya SMS-Info: 50,00 RUR
+10.07.13 12:13
+Dostupno 413,68 RUR
+Komissiya SMS-Info</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.674+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_popolnenie_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>12774308250</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-08-23T14:11:12.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-23T14:11:18.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>4440*7064
+Popolnenie: 20000,00 RUR
+23.08.13 14:10
+Dostupno 26174,12 RUR
+ST. PETERSBUR POS625  FB STROYCREDIT</text>
+            
+            
+          </record><record>
+            <id>10806478204</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-06-14T13:01:18.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-14T13:01:24.000</dlv_status_at>
+            <address>79166519720</address>
+            <text>4917*7610
+Popolnenie: 2500,00 USD
+14.06.13 13:01
+Dostupno 3062,72 USD
+MOSCOW POS053 NOVINSKY CASH</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.579+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="kb_stroykredit_uvedomljaet_$T{chto}_dolg_$T{po}_karte_$T{$CARDNUMBER}_sostavljaet_$MONEY_kotorij_neobhodimo_pogasit_$T{do}_$LOCALDATE" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="kb" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="stroykredit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uvedomljaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="chto" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dolg" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер кредитной карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sostavljaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kotorij" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16327017174</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-12-20T13:24:42.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-20T13:24:49.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>KB Stroykredit uvedomljaet chto dolg po karte *7064 sostavljaet 16940.93rur, kotorij neobhodimo pogasit' do 25-12-2013</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T15:37:48.095+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T15:37:48.095+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="kredity_$T{ot}_banka_$T{$VARSTRING}_$T{do}_$MONEY_dostupno_$T{i}_bystro_podrobnosti_$T{po}_tel_$T{$PHONE}_$T{ili}_$T{na}_$URL" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="MO"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="kredity" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ot" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="banka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Размер кредита/лимит" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="i" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bystro" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podrobnosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ili" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1239042059</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-05-04T15:29:01.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-05-04T15:29:06.000</dlv_status_at>
+            <address>79026238564</address>
+            <text>Kredity ot banka &quot;Stroykredit&quot; do 500 000 rublej, dostupno i bystro. Podrobnosti po tel.8(800)100-11-88 ili na www.stroycredit.ru</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-16T23:32:44.193+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-16T23:32:44.193+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$MONEY_$T{$DOUBLE}_$STRING_$LOCALTIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18519963232</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-26T16:02:07.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-26T16:02:13.000</dlv_status_at>
+            <address>79038188787</address>
+            <text>4917*3400
+Snyatie: 200000,00 RUR
+26.02..14 16:01
+Dostupno 80965,00 RUR
+BRYANSK ATM275 FB STROYCREDIT</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T14:54:58.328+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T14:54:58.328+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1529537091</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-07-21T12:12:56.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-07-21T12:12:59.000</dlv_status_at>
+            <address>79270077009</address>
+            <text>4917*9231
+Snyatie: 5 000,00 RUR
+21.07.11 12:12
+SAMARA BANKOMAT 540644 6991
+Dostupno 11 473,49 RUR</text>
+            
+            
+          </record><record>
+            <id>1529536576</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-07-20T19:52:53.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-07-20T19:52:56.000</dlv_status_at>
+            <address>79270077009</address>
+            <text>4917*9231
+Snyatie: 5 000,00 RUR
+20.07.11 19:52
+SAMARA ATM#1630 SAMARA GAZBANK
+Dostupno 16 573,49 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:46:09.887+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:46:09.887+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_prodazha_$MONEY_$LOCALDATETIME_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prodazha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16088813366</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-12-14T13:17:11.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-14T13:17:15.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*2828
+Prodazha: 2248,00 RUR
+14.12.13 13:16
+Moscow WWW.RZD.RU</text>
+            
+            
+          </record><record>
+            <id>17150343340</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-19T00:36:01.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-19T00:36:08.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*6155
+Prodazha: 649,64 USD
+19.01.14 0:35
+NEW YORK RW NEW YORK LESSEE</text>
+            
+            
+          </record><record>
+            <id>14778191178</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-11-01T15:45:48.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-01T15:45:51.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*2828
+Prodazha: 9000,00 RUR
+01.11.13 15:45
+MIRNIY ALROSA  BOOKING OFIICE</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T14:53:45.769+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T14:53:45.769+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="spisanie_$T{$DOUBLE}_$T{$CURRENCY}_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>290882216</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2009-10-15T09:50:55.000</timestamp>
+            <subject>79037672323</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2009-10-15T09:51:04.000</dlv_status_at>
+            <address>79180408802</address>
+            <text>Spisanie: 29900.0 (RUR)
+15.10.09 09:50
+NOVOROSSIYSK ATM074, LENIN PRSP 9
+Dostupno 156800.69 RUR</text>
+            
+            
+          </record><record>
+            <id>304117885</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2009-11-03T11:10:34.000</timestamp>
+            <subject>79037672323</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2009-11-03T11:10:39.000</dlv_status_at>
+            <address>79180408802</address>
+            <text>Spisanie: 6000.0 (RUR)
+03.11.09 11:09
+KRASNODAR KRA,DZERJINS-GO,42
+Dostupno 38873.11 RUR</text>
+            
+            
+          </record><record>
+            <id>275191549</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2009-09-20T13:08:14.000</timestamp>
+            <subject>79037672323</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2009-09-20T13:08:21.000</dlv_status_at>
+            <address>79180408802</address>
+            <text>Spisanie: 900.0 (RUR)
+20.09.09 13:07
+KRASNODAR BANKOMAT 300849 8619
+Dostupno 82330.26 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T15:06:03.502+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T15:06:03.502+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_vozvrat_sredstv_$T{$DOUBLE}_$T{$CURRENCY}_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vozvrat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sredstv" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>821154330</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2010-11-30T09:49:48.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2010-11-30T09:49:57.000</dlv_status_at>
+            <address>79505122604</address>
+            <text>4917********6235
+Vozvrat sredstv: 2000.0 (RUR)
+30.11.10 09:49
+KOGALYM ATM179 GOVD KOGALYM
+Dostupno 6951.24 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-23T14:26:00.825+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-23T14:26:00.825+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_zachislenie_$MONEY_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7048493897</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-21T11:07:07.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-21T11:07:15.000</dlv_status_at>
+            <address>79220796150</address>
+            <text>4440*9535
+Zachislenie: 50,00 RUR
+21.12.12 11:06
+Dostupno 116A 990,42 RUR
+TYUMEN CASHIN 50140001 MIRAZH</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:57:08.407+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:57:08.407+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_popolnenie_failed_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="failed" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4905569569</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-07-16T14:48:09.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-07-16T14:49:06.000</dlv_status_at>
+            <address>79064518008</address>
+            <text>4917*2003
+Popolnenie FAILED: 60 000,00 RUR
+16.07.12 14:47
+Incorrect PIN
+Dostupno 2 604,11 RUR
+VOLGOGRAD POS517 KASSA 2</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-25T12:23:55.812+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T12:23:55.812+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$MONEY_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17280202866</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-23T13:25:30.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-23T13:25:32.000</dlv_status_at>
+            <address>79192984680</address>
+            <text>4917*9936
+Snyatie: 5000,00 RUR
+23.01.14 13:24
+Dostupno 10A 375,63 RUR
+BRYANSK ATM303 TC BUM</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.748+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9633002218</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-04-29T19:40:03.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-29T19:40:07.000</dlv_status_at>
+            <address>79186644058</address>
+            <text>4917*0939
+Snyatie: 15000,00 RUR
+29.04.13 19:39
+Dostupno 3973,17 RUR
+NOVOROSSIYSK ATM072 TC LENTA</text>
+            
+            
+          </record><record>
+            <id>14704924086</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-31T06:29:13.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-31T06:29:23.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Snyatie: 5000,00 RUR
+31.10.13 6:28
+Dostupno 6725,53 RUR
+KH-MANSIYSK ATM, RESTORAN FRISTAYL</text>
+            
+            
+          </record><record>
+            <id>14807358462</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-11-02T12:10:50.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-02T12:10:57.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Snyatie: 5000,00 RUR
+02.11.13 12:10
+Dostupno 20778,32 RUR
+KH-MANSIYSK ATM, DOPOFIS-4</text>
+            
+            
+          </record><record>
+            <id>8331742576</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-11T09:15:16.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-11T09:15:22.000</dlv_status_at>
+            <address>79611055766</address>
+            <text>4917*7865
+Snyatie: 500,00 RUR
+11.03.13 9:14
+Dostupno 731,88 RUR
+GOLICYNO ATM065 ZAO TDK GUZHON</text>
+            
+            
+          </record><record>
+            <id>11322010852</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-03T10:13:45.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-03T10:13:52.000</dlv_status_at>
+            <address>79226592593</address>
+            <text>4917*0760
+Snyatie: 3000,00 RUR
+03.07.13 10:13
+Dostupno 0,00 RUR
+KOGALYM ATM179 TC 1000 MELOCHEY</text>
+            
+            
+          </record><record>
+            <id>17268673584</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-23T09:34:51.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-23T09:34:59.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Snyatie: 9000,00 RUR
+23.01.14 9:34
+Dostupno 357,35 RUR
+KH-MANSIYSK ATM, FED. NAL. SLUZHBA</text>
+            
+            
+          </record><record>
+            <id>17234403838</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-21T19:38:08.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-01-22T07:38:09.000</dlv_status_at>
+            <address>79208306500</address>
+            <text>4917*3664
+Snyatie: 500,00 RUR
+21.01.14 19:37
+Dostupno 27137,20 RUR
+BRYANSK ATM300  BTU</text>
+            
+            
+          </record><record>
+            <id>17239739310</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-22T10:51:51.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-22T10:52:04.000</dlv_status_at>
+            <address>79199219397</address>
+            <text>4917*9312
+Snyatie: 5400,00 RUR
+22.01.14 10:49
+Dostupno 3000,32 RUR
+TYUMEN ATM253 ZAVOD EKCPROF</text>
+            
+            
+          </record><record>
+            <id>14109070982</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-11T08:40:50.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-11T08:40:57.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Snyatie: 4000,00 RUR
+11.10.13 8:40
+Dostupno 925,53 RUR
+KH-MANSIYSK ATM, YUGRA</text>
+            
+            
+          </record><record>
+            <id>14359972744</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-18T17:47:28.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-18T17:47:35.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Snyatie: 2000,00 RUR
+18.10.13 17:47
+Dostupno 3737,98 RUR
+YAROSLAVL A846 DOF YAROSLAVL</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.680+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_popolnenie_$MONEY_$LOCALDATETIME_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17407264464</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-27T15:47:11.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-01-30T15:50:08.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*2828
+Popolnenie: 180000,00 RUR
+27.01.14 15:46
+MOSCOW POS013 CASH MOSCOW</text>
+            
+            <dlv_error>unknown</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T14:52:40.112+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T14:52:40.112+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vozvrat_sredstv_$T{$DOUBLE}_$T{$CURRENCY}_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vozvrat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sredstv" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>296875602</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2009-10-23T09:45:01.000</timestamp>
+            <subject>79037672323</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2009-10-23T09:45:06.000</dlv_status_at>
+            <address>79180408802</address>
+            <text>Vozvrat sredstv: 10000.0 (RUR)
+23.10.09 09:43
+NOVOROSSIYSK ATM510 PEREKRESTOK
+Dostupno 165428.69 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T15:36:09.829+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T15:36:09.829+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_korrektirovka_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      <userComments>перепроверить</userComments>
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korrektirovka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10743493258</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-06-13T08:17:45.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-13T08:18:00.000</dlv_status_at>
+            <address>79166519720</address>
+            <text>4917*7610
+Korrektirovka: 2162,27 RUR
+13.06.13 8:14
+Dostupno 562,72 USD
+ZAHAROVO LUKOIL AZS 469</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.751+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_failed_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="failed" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1389988434</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-06-23T10:53:52.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-06-23T10:53:58.000</dlv_status_at>
+            <address>79505122604</address>
+            <text>4917*6235
+Spisanie FAILED: 0,00 RUR
+23.06.11 10:53
+Incorrect PIN
+KOGALYM ATM179 GOVD KOGALYM
+Dostupno 8 545,06 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-25T13:32:32.374+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T13:32:32.374+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_$STRING_$MONEY_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7147844219</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-26T16:44:20.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-26T16:44:23.000</dlv_status_at>
+            <address>79161111195</address>
+            <text>4917*4219
+Snyatie: 14A 300,00 RUR
+26.12.12 16:44
+Dostupno 50A 106,73 RUR
+MOSCOW ATM116 OPER ROOM 2 FLOOR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:54:57.169+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:54:57.169+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_zachislenie_$STRING_$MONEY_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7147843946</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-26T16:22:48.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-26T16:22:56.000</dlv_status_at>
+            <address>79260611175</address>
+            <text>4917*5169
+Zachislenie: 44A 117,28 RUR
+26.12.12 16:21
+Dostupno 58A 884,49 RUR
+Zarplata</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:58:28.415+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:58:28.415+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="karty_$T{$CARDNUMBER}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="karty" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5455226049</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-08-31T11:33:02.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-08-31T11:33:05.000</dlv_status_at>
+            <address>79184779505</address>
+            <text>karty 40817810852467713811</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:40:19.546+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:40:19.546+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_$T{$DOUBLE}_$T{$CURRENCY}_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1028988285</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-02-22T15:05:59.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-02-22T15:06:05.000</dlv_status_at>
+            <address>79272095006</address>
+            <text>4917********4682
+Spisanie: 1000.0 (RUR)
+22.02.11 15:05
+SAMARA ATM #1451 OF NTB
+Dostupno 6908.8 RUR</text>
+            
+            
+          </record><record>
+            <id>1067057632</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-03-06T12:23:01.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-03-06T12:23:07.000</dlv_status_at>
+            <address>79272095006</address>
+            <text>4917********4682
+Spisanie: 6000.0 (RUR)
+06.03.11 12:22
+SAMARA A715 SOLIDARNOST-37
+Dostupno 14088.18 RUR</text>
+            
+            
+          </record><record>
+            <id>945927549</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-01-22T11:18:54.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-01-22T11:18:59.000</dlv_status_at>
+            <address>79272095006</address>
+            <text>4917********4682
+Spisanie: 4075.0 (RUR)
+22.01.11 11:11
+SURGUT SPORTMASTER  SHOP
+Dostupno 7784.34 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-25T13:14:48.106+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T13:14:48.106+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_$STRING_komissiya_$T{$VARSTRING}_$MONEY_$LOCALDATETIME_dostupno_$MONEY_komissiya_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="komissiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="komissiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11520362728</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-10T12:14:19.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-10T12:14:24.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>011-*01
+Komissiya SMS-Info: 50,00 RUR
+10.07.13 12:13
+Dostupno 9,04 RUR
+Komissiya SMS-Info</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.762+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_prodazha_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prodazha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17539294992</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-31T17:34:22.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-31T17:34:25.000</dlv_status_at>
+            <address>79102905651</address>
+            <text>4917*1928
+Prodazha: 14,19 USD
+31.01.14 17:33
+Dostupno 1968,49 RUR
+NICOSIA START2PAY (VULCAN-CASINO)</text>
+            
+            
+          </record><record>
+            <id>15660888974</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-11-29T19:48:06.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-29T19:48:17.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Prodazha: 150,00 RUR
+29.11.13 19:47
+Dostupno 4289,57 RUR
+MOSCOW ROBOKASSA*OVERALL</text>
+            
+            
+          </record><record>
+            <id>15305518548</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-11-20T16:55:58.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-20T16:56:04.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Prodazha: 50,00 RUR
+20.11.13 16:55
+Dostupno 5505,41 RUR
+MOSCOW PAYMENT FOR SERVICES</text>
+            
+            
+          </record><record>
+            <id>12495435272</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-08-13T19:44:37.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-13T19:44:44.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Prodazha: 999,00 RUR
+13.08.13 19:44
+Dostupno 22831,35 RUR
+MOSCOW H &amp; M  SHOP</text>
+            
+            
+          </record><record>
+            <id>8651965672</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-23T22:23:16.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-23T22:23:23.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>4440*7064
+Prodazha: 6600,00 RUR
+23.03.13 22:23
+Dostupno 15150,41 RUR
+18006782119 CIRQUE DU SOLEIL BOUTI</text>
+            
+            
+          </record><record>
+            <id>13323365952</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-09-13T17:38:15.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-13T17:38:21.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>4440*7064
+Prodazha: 526,35 RUR
+13.09.13 17:37
+Dostupno 14264,00 RUR
+VYBORG LUKOIL AZK 147 SKANDINAV</text>
+            
+            
+          </record><record>
+            <id>15719112458</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-12-02T09:31:36.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-02T09:31:43.000</dlv_status_at>
+            <address>79166519720</address>
+            <text>4917*7610
+Prodazha: 2845,00 RUR
+01.12.13 19:26
+Dostupno 3141,67 USD
+TUCHKOVO DRAFT INN</text>
+            
+            
+          </record><record>
+            <id>17506608828</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-30T20:19:41.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-30T20:19:46.000</dlv_status_at>
+            <address>79213167470</address>
+            <text>4440*7064
+Prodazha: 845,00 RUR
+30.01.14 20:19
+Dostupno 37577,50 RUR
+SOSNOVYY BOR PYATEROCHKA 105</text>
+            
+            
+          </record><record>
+            <id>14467059128</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-22T20:39:26.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-22T20:39:32.000</dlv_status_at>
+            <address>79159724225</address>
+            <text>4917*2864
+Prodazha: 223,00 RUR
+22.10.13 20:39
+Dostupno 3037,84 RUR
+YAROSLAVL MCDONALDS 24105</text>
+            
+            
+          </record><record>
+            <id>12091208030</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-29T23:20:09.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-29T23:20:11.000</dlv_status_at>
+            <address>79166519720</address>
+            <text>4917*7610
+Prodazha: 60000,00 RUR
+29.07.13 23:19
+Dostupno 1081,51 USD
+NIZHNY NOVGOR OOO SANTEHINVEST</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.758+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_prodazha_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prodazha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1405007110</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-06-27T13:40:54.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-06-27T13:41:01.000</dlv_status_at>
+            <address>79044771121</address>
+            <text>4917*9494
+Prodazha: 3 250,00 RUR
+27.06.11 13:40
+TYUMEN DOM NEMETSKOI OBUVI
+Dostupno 37 203,62 RUR</text>
+            
+            
+          </record><record>
+            <id>1349968527</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-06-10T12:07:44.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-06-10T12:07:51.000</dlv_status_at>
+            <address>79044771121</address>
+            <text>4917*9494
+Prodazha: 3 298,00 RUR
+10.06.11 12:07
+TYUMEN SPORTMASTER  SHOP
+Dostupno 88 274,47 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T21:37:19.936+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T21:37:19.936+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_failed_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="failed" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5467811309</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-09-01T17:05:22.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-01T17:05:28.000</dlv_status_at>
+            <address>79371779291</address>
+            <text>4917*5283
+Spisanie FAILED: 0,00 RUR
+01.09.12 17:04
+Expired card / target
+Dostupno -13,18 RUR
+OTRADNIY A801 SOLIDARNOST-76</text>
+            
+            
+          </record><record>
+            <id>6323076075</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-11-07T00:05:36.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-07T00:05:42.000</dlv_status_at>
+            <address>79161737167</address>
+            <text>4127*2410
+Spisanie FAILED: 10,00 RUR
+07.11.12 0:04
+Not sufficient funds
+Dostupno -26,81 RUR
+Perevod sobstvennyh sredstv. Bez naloga (NDS). Podshibyakin Ant</text>
+            
+            
+          </record><record>
+            <id>4383390050</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-05-30T15:36:19.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-05-30T15:36:22.000</dlv_status_at>
+            <address>79058203789</address>
+            <text>4917*5483
+Spisanie FAILED: 200,00 RUR
+30.05.12 15:35
+Not sufficient funds
+Dostupno 83,95 RUR
+TYUMEN ATM200 FB SHIROTNAYA</text>
+            
+            
+          </record><record>
+            <id>19025127244</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-03-12T16:20:15.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-12T16:20:21.000</dlv_status_at>
+            <address>79220772331</address>
+            <text>4917*4844
+Spisanie FAILED: 9,00 RUR
+12.03.14 16:19
+Transaction not permitted to cardholder
+Dostupno 9,97 RUR
+TYUMEN ATM253 ZAVOD EKCPROF</text>
+            
+            
+          </record><record>
+            <id>7934079726</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-18T21:59:56.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-18T22:00:02.000</dlv_status_at>
+            <address>79038689027</address>
+            <text>4917*7266
+Spisanie FAILED: 1000,00 RUR
+18.02.13 21:59
+Not sufficient funds
+Dostupno 18,47 RUR
+Oplata Popolnenie scheta - Moneta.Ru #62546# l/c 27641189, do</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-25T13:30:33.269+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T13:30:33.269+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_otmena_$MONEY_$LOCALDATETIME_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>17344172728</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-25T15:05:52.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-25T15:06:02.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*6155
+Otmena: 542,60 USD
+21.01.14 5:12
+LAS VEGAS HILTON GVC LV</text>
+            
+            
+          </record><record>
+            <id>17210586846</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-21T11:54:14.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-21T11:54:20.000</dlv_status_at>
+            <address>79110015050</address>
+            <text>4917*6155
+Otmena: 649,64 USD
+19.01.14 0:35
+NEW YORK RW NEW YORK LESSEE</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T14:49:28.054+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T14:49:28.054+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_otmena_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1146800145</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-04-02T17:48:39.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-04-02T17:48:43.000</dlv_status_at>
+            <address>79270077009</address>
+            <text>4917*9231
+Otmena: 40 000,00 RUR
+02.04.11 17:47
+SAMARA ATM252 TD ZAHAR
+Dostupno 169 308,01 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:41:46.614+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:41:46.614+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1405006934</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-06-27T11:37:59.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-06-27T11:38:02.000</dlv_status_at>
+            <address>79276922990</address>
+            <text>4917*9558
+Spisanie: 5 170,49 RUR
+27.06.11 11:37
+ vydano so scheta
+Dostupno 0,00 RUR</text>
+            
+            
+          </record><record>
+            <id>1311747534</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-05-31T10:01:06.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-05-31T10:01:12.000</dlv_status_at>
+            <address>79265760115</address>
+            <text>4917*0962
+Spisanie: 50,00 RUR
+31.05.11 9:59
+ Komissiya SMS-kard, may
+Dostupno 20 278,34 RUR</text>
+            
+            
+          </record><record>
+            <id>1397929112</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-06-24T16:25:49.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-06-24T16:25:52.000</dlv_status_at>
+            <address>79276922990</address>
+            <text>4917*9558
+Spisanie: 51,70 RUR
+24.06.11 16:25
+ Komissiya za snyatie bez karty
+Dostupno 5 170,49 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-25T13:28:13.936+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T13:28:13.936+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vhod_$T{v}_ibank_$T{s}_adresa_$T{$URL}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vhod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ibank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="adresa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6028176063</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-10-16T10:15:56.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-16T10:15:59.000</dlv_status_at>
+            <address>79184779505</address>
+            <text>vhod v iBank s adresa 79.104.213.78
+16.10.12 10:15:52</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T21:21:21.290+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T21:21:21.290+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$T{$VARSTRING}_failed_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="failed" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8163537240</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-05T04:29:43.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-05T04:29:49.000</dlv_status_at>
+            <address>79226592593</address>
+            <text>4917*2989
+Snyatie FAILED: 2900,00 RUR
+05.03.13 4:29
+Not sufficient funds
+Dostupno 3000,00 RUR
+Kogalim 9, Neftyannikov str.</text>
+            
+            
+          </record><record>
+            <id>18659465570</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-03-02T18:45:47.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-02T18:45:50.000</dlv_status_at>
+            <address>79208306500</address>
+            <text>4917*3664
+Snyatie FAILED: 1000,00 RUR
+02.03.14 18:45
+Incorrect PIN
+Dostupno 32595,56 RUR
+BRYANSK ATM300  BTU</text>
+            
+            
+          </record><record>
+            <id>13409058688</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-09-17T13:10:54.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-17T13:11:02.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Snyatie FAILED: 6000,00 RUR
+17.09.13 13:10
+Incorrect PIN
+Dostupno 1964,46 RUR
+KOGALYM ATM126 FILIAL</text>
+            
+            
+          </record><record>
+            <id>9337696862</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-04-19T09:46:28.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-19T09:46:34.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Prodazha FAILED: 1685,00 RUR
+19.04.13 9:39
+Unable to validate PIN
+Dostupno 6978,81 RUR
+KOGALYM PRESTIZH</text>
+            
+            
+          </record><record>
+            <id>17782906844</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-07T23:21:39.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-07T23:21:40.000</dlv_status_at>
+            <address>79102905651</address>
+            <text>4917*1928
+Prodazha FAILED: 28,79 USD
+07.02.14 23:21
+Exceeds withdrawal amount limit
+Dostupno 631,55 RUR
+CYPRUS GGS NET PAYMENT</text>
+            
+            
+          </record><record>
+            <id>10593347722</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-06-06T13:29:25.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-06T13:29:31.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Snyatie FAILED: 1000,00 RUR
+06.06.13 13:29
+Not sufficient funds
+Dostupno 1078,42 RUR
+KHANTY-MANSIY BANKOMAT 237701 17911791</text>
+            
+            
+          </record><record>
+            <id>13409058712</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-09-17T13:12:56.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-17T13:13:04.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+ATM126 FILIAL FAILED: 0,00 RUR
+17.09.13 13:12
+Allowable number of PIN tries exceeded
+Dostupno 1964,46 RUR
+KOGALYM ATM126 FILIAL</text>
+            
+            
+          </record><record>
+            <id>14359972362</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-18T16:33:38.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-18T16:33:45.000</dlv_status_at>
+            <address>79226592593</address>
+            <text>4917*0760
+Snyatie FAILED: 1000,00 RUR
+18.10.13 16:33
+Not sufficient funds
+Dostupno 154,00 RUR
+SOSNOVOBORSK BANKOMAT 480027 86240031</text>
+            
+            
+          </record><record>
+            <id>11258375092</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-01T11:52:55.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-07-01T11:52:56.000</dlv_status_at>
+            <address>79048851618</address>
+            <text>4917*6672
+Prodazha FAILED: 170,00 RUR
+01.07.13 11:52
+Incorrect PIN
+Dostupno -334,34 RUR
+KOGALYM Apteka N 3</text>
+            
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record><record>
+            <id>19231619824</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-03-17T14:40:03.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-17T14:40:23.000</dlv_status_at>
+            <address>79208306500</address>
+            <text>4917*3664
+Spisanie FAILED: 50,00 RUR
+17.03.14 14:38
+Incorrect PIN
+Dostupno 33068,54 RUR
+BRYANSK ATM281 APTEKA</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.768+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_prodazha_$MONEY_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prodazha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7147843541</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-26T15:30:41.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-26T15:32:30.000</dlv_status_at>
+            <address>79220796150</address>
+            <text>4440*9535
+Prodazha: 149,00 RUR
+26.12.12 14:23
+Dostupno 68A 821,52 RUR
+Sankt-Peterbu WWW.ONLINEDENGI.RU</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T14:44:23.174+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T14:44:23.174+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_$MONEY_$LOCALDATETIME_dostupno_$STRING_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7147843606</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-26T15:31:02.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-26T15:31:08.000</dlv_status_at>
+            <address>79165076538</address>
+            <text>4917*5697
+Spisanie: 200,00 RUR
+26.12.12 15:19
+Dostupno 2A 953,49 RUR
+ISTRA ATM522 ISTRA TERMINAL</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T14:56:51.059+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T14:56:51.059+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_snyatie_failed_$MONEY_$LOCALDATETIME_$T{$VARSTRING}_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyatie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="failed" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>4895310055</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-07-16T10:03:08.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2012-07-16T22:52:30.000</dlv_status_at>
+            <address>79267249069</address>
+            <text>4917*9742
+Snyatie FAILED: 6 000,00 RUR
+16.07.12 10:02
+Incorrect PIN
+Dostupno 30 888,84 RUR
+MOSCOW BANKOMAT 830356 7977</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>1877416223</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2011-08-31T08:43:30.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-08-31T08:43:37.000</dlv_status_at>
+            <address>79058203789</address>
+            <text>4917*5483
+Snyatie FAILED: 18 800,00 RUR
+31.08.11 8:43
+System Malfunction
+Dostupno 30 107,60 RUR
+TYUMEN ATM200 FB SHIROTNAYA</text>
+            
+            
+          </record><record>
+            <id>18491503644</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-25T19:48:30.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-25T19:48:35.000</dlv_status_at>
+            <address>79053230545</address>
+            <text>4917*0654
+Snyatie FAILED: 10000,00 RUR
+25.02.14 19:48
+Incorrect PIN
+Dostupno 10378,05 RUR
+SARATOV ATM504 GORELEKTROTRANS</text>
+            
+            
+          </record><record>
+            <id>18686602114</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-03-03T15:33:24.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-03T15:33:28.000</dlv_status_at>
+            <address>79529615064</address>
+            <text>4917*5147
+Snyatie FAILED: 3500,00 RUR
+03.03.14 15:33
+Incorrect PIN
+Dostupno 9747,13 RUR
+BRYANSK ATM304 LENINA 35</text>
+            
+            
+          </record><record>
+            <id>12133335168</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-31T11:45:09.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-31T11:45:13.000</dlv_status_at>
+            <address>79161111195</address>
+            <text>4917*5267
+Snyatie FAILED: 19000,00 RUR
+31.07.13 11:44
+Exceeds withdrawal amount limit
+Dostupno 14407,27 RUR
+MOSCOW ATM111 HALL 1 FLOOR</text>
+            
+            
+          </record><record>
+            <id>18686602124</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-03-03T15:34:24.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-03T15:34:29.000</dlv_status_at>
+            <address>79529615064</address>
+            <text>4917*5147
+Snyatie FAILED: 4000,00 RUR
+03.03.14 15:34
+Allowable number of PIN tries exceeded
+Dostupno 9747,13 RUR
+BRYANSK ATM304 LENINA 35</text>
+            
+            
+          </record><record>
+            <id>7900505920</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-16T11:17:19.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-16T11:17:24.000</dlv_status_at>
+            <address>79052040213</address>
+            <text>4917*9913
+Snyatie FAILED: 50400,00 RUR
+16.02.13 11:17
+Refer to card issuer
+Dostupno 68076,44 RUR
+ST. PETERSBUR ATM493 FB STROYCREDIT</text>
+            
+            
+          </record><record>
+            <id>16508701186</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-12-25T13:41:12.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-25T13:41:18.000</dlv_status_at>
+            <address>79221667172</address>
+            <text>4917*8024
+Snyatie FAILED: 7000,00 RUR
+25.12.13 13:40
+Not sufficient funds
+Dostupno 45,58 RUR
+TUGULYM BANKOMAT 531994 70030061</text>
+            
+            
+          </record><record>
+            <id>16662260724</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-12-29T21:09:20.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-29T21:09:22.000</dlv_status_at>
+            <address>79829266041</address>
+            <text>4917*9446
+Snyatie FAILED: 1000,00 RUR
+29.12.13 21:08
+Not sufficient funds
+Dostupno 89,95 RUR
+TYUMEN ATM253 ZAVOD EKCPROF</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-25T13:13:30.604+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T13:13:30.604+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_spisanie_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16461739296</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-12-24T12:33:13.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-24T12:33:18.000</dlv_status_at>
+            <address>79208582861</address>
+            <text>4917*1658
+Spisanie: 100,00 RUR
+24.12.13 12:32
+Dostupno 28,36 RUR
+BRYANSK ATM565 MIR VINA STORE</text>
+            
+            
+          </record><record>
+            <id>11388367970</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-07-05T11:25:26.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-05T11:25:31.000</dlv_status_at>
+            <address>79186644058</address>
+            <text>4917*0939
+Spisanie: 6214,35 RUR
+05.07.13 11:25
+Dostupno 3563,68 RUR
+BLOKIROVAT' DLYa POGAShENIYa</text>
+            
+            
+          </record><record>
+            <id>18491504444</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-26T05:55:04.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-26T05:55:08.000</dlv_status_at>
+            <address>79208306500</address>
+            <text>4917*3664
+Spisanie: 20,00 RUR
+26.02.14 5:54
+Dostupno 30000,78 RUR
+BRYANSK ATM300  BTU</text>
+            
+            
+          </record><record>
+            <id>17239739302</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-22T10:51:50.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-22T10:52:00.000</dlv_status_at>
+            <address>79199219397</address>
+            <text>4917*9312
+Spisanie: 200,00 RUR
+22.01.14 10:48
+Dostupno 8400,32 RUR
+TYUMEN ATM253 ZAVOD EKCPROF</text>
+            
+            
+          </record><record>
+            <id>9337696418</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-04-19T07:12:07.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-19T07:12:13.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Spisanie: 500,00 RUR
+19.04.13 7:11
+Dostupno 7478,81 RUR
+KOGALYM ATM127 BAKINSKAYA 14</text>
+            
+            
+          </record><record>
+            <id>8331743030</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-11T11:24:10.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-03-11T23:22:49.000</dlv_status_at>
+            <address>79048851618</address>
+            <text>4917*6672
+Spisanie: 83,00 RUR
+11.03.13 11:23
+Dostupno 8000,58 RUR
+KOGALYM ATM179 TC 1000 MELOCHEY</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>12928055250</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-08-29T17:55:24.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-29T17:55:29.000</dlv_status_at>
+            <address>79500246760</address>
+            <text>4917*9253
+Spisanie: 4763,76 RUR
+29.08.13 17:55
+Dostupno 0,00 RUR
+KOMISSIYa PO RKO</text>
+            
+            
+          </record><record>
+            <id>5707205727</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-09-20T16:28:45.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-20T16:28:48.000</dlv_status_at>
+            <address>79161737167</address>
+            <text>4917*6106
+Spisanie: 20 100,00 RUR
+20.09.12 16:28
+Dostupno 81 139,30 RUR
+zachislenie na schet sobstvennyh sredstv Bez naloga (NDS). Podshibyakina Galina Niko</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.772+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-25T13:26:21.951+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_spisanie_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5754779562</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-09-25T10:55:09.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-25T10:55:14.000</dlv_status_at>
+            <address>79169904439</address>
+            <text>001-*01
+Spisanie: 50 210,74 RUR
+25.09.12 10:54
+Dostupno 1,26 RUR
+Soglasno Postanovleniu ?24116/12/05/56 ot 11.09.2012</text>
+            
+            
+          </record><record>
+            <id>18170524782</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-17T15:40:36.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-17T15:40:41.000</dlv_status_at>
+            <address>79201209199</address>
+            <text>001-*01
+Spisanie: 14267,30 RUR
+17.02.14 15:40
+Dostupno 14631,95 RUR
+pogashenie kredita</text>
+            
+            
+          </record><record>
+            <id>8715549714</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-26T15:10:46.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-26T16:20:09.000</dlv_status_at>
+            <address>79505130717</address>
+            <text>001-*02
+Spisanie: 252,00 RUR
+26.03.13 15:10
+Dostupno 10,99 RUR
+komissiya za vydachu d/s bez karty</text>
+            
+            
+          </record><record>
+            <id>7682576842</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-01-31T18:07:45.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-01-31T18:07:52.000</dlv_status_at>
+            <address>79166710088</address>
+            <text>001-*01
+Spisanie: 425,91 RUR
+31.01.13 18:07
+Dostupno 67462,00 RUR
+perevod dlya vozmescheniya ust. limita na mob. svyaz' (za mart chastichno)</text>
+            
+            
+          </record><record>
+            <id>7104624768</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-12-24T16:52:12.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-12-24T16:52:19.000</dlv_status_at>
+            <address>79266214755</address>
+            <text>001-*01
+Spisanie: 0,68 RUR
+24.12.12 16:51
+Dostupno 0,00 RUR
+soglasno porucheniu/zayavleniu klienta</text>
+            
+            
+          </record><record>
+            <id>17535750854</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-31T16:56:02.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-31T16:56:08.000</dlv_status_at>
+            <address>79067120341</address>
+            <text>001-*01
+Spisanie: 59800,00 RUR
+31.01.14 16:55
+Dostupno 89,56 RUR
+Soglasno zayavleniya na perevod na 40817810300001013436</text>
+            
+            
+          </record><record>
+            <id>8992429366</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-04-05T16:03:04.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-05T16:03:08.000</dlv_status_at>
+            <address>79099328888</address>
+            <text>001-*01
+Spisanie: 409,28 RUR
+05.04.13 16:02
+Dostupno 0,00 RUR
+komissiya za perevod denezhnyh sredstv</text>
+            
+            
+          </record><record>
+            <id>4941973440</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-07-20T11:45:16.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-07-20T11:45:23.000</dlv_status_at>
+            <address>79183991016</address>
+            <text>001-*01
+Spisanie: 15 000,00 RUR
+20.07.12 11:44
+Dostupno -9 978,25 RUR
+oshibochno zachislennye denezhnye sr-va</text>
+            
+            
+          </record><record>
+            <id>8715549716</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-26T15:10:47.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-26T16:18:24.000</dlv_status_at>
+            <address>79505130717</address>
+            <text>001-*02
+Spisanie: 25200,00 RUR
+26.03.13 15:10
+Dostupno 10,99 RUR
+vydano so scheta</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T15:39:13.523+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T15:39:13.523+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>7890539422</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-15T14:54:12.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-15T14:54:15.000</dlv_status_at>
+            <address>79219151659</address>
+            <text>21001-026</text>
+            
+            
+          </record><record>
+            <id>6201408305</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-10-29T12:21:32.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-29T12:21:37.000</dlv_status_at>
+            <address>79184779505</address>
+            <text>usmotren</text>
+            
+            
+          </record><record>
+            <id>12538506066</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-08-15T09:08:10.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-15T09:08:14.000</dlv_status_at>
+            <address>79048821226</address>
+            <text>p.</text>
+            
+            
+          </record><record>
+            <id>17927999696</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-02-12T12:34:04.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-12T12:34:07.000</dlv_status_at>
+            <address>79129475072</address>
+            <text> 1105214801</text>
+            
+            
+          </record><record>
+            <id>12203496360</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-08-02T17:22:54.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-08-02T17:22:57.000</dlv_status_at>
+            <address>79183468385</address>
+            <text>smotren</text>
+            
+            
+          </record><record>
+            <id>9299554596</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-04-17T12:30:32.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-17T12:30:38.000</dlv_status_at>
+            <address>79652080897</address>
+            <text>http://unmail22.narod.ru/Books/ASPNETMVC3/2.0.html</text>
+            
+            
+          </record><record>
+            <id>6141639079</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-10-24T16:26:55.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-24T16:26:58.000</dlv_status_at>
+            <address>79183468385</address>
+            <text>-019-050921</text>
+            
+            
+          </record><record>
+            <id>6220080557</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2012-10-30T08:02:07.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-30T08:02:12.000</dlv_status_at>
+            <address>79184779505</address>
+            <text>predusmotren</text>
+            
+            
+          </record><record>
+            <id>8043749846</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-25T12:44:20.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-25T12:44:26.000</dlv_status_at>
+            <address>79062377047</address>
+            <text>etsya.</text>
+            
+            
+          </record><record>
+            <id>7716942074</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-02-04T11:44:06.000</timestamp>
+            <subject>STROYCREDIT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-04T11:44:11.000</dlv_status_at>
+            <address>79062377047</address>
+            <text>oblagaetsya.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-25T14:58:59.239+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-25T14:58:59.239+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_otmena_$MONEY_$LOCALDATETIME_dostupno_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8701942534</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-25T15:09:52.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-25T15:09:58.000</dlv_status_at>
+            <address>79186644058</address>
+            <text>4917*0939
+Otmena: 9,87 RUR
+25.03.13 15:05
+Dostupno 516,00 RUR
+MOSCOW REGISTRATION ON THE SITE</text>
+            
+            
+          </record><record>
+            <id>8826890024</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-03-30T17:08:38.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-30T17:08:48.000</dlv_status_at>
+            <address>79186644058</address>
+            <text>4917*0939
+Otmena: 9000,00 RUR
+30.03.13 17:07
+Dostupno 9335,52 RUR
+NOVOROSSIYSK ATM072 TC LENTA</text>
+            
+            
+          </record><record>
+            <id>17357513872</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2014-01-26T01:57:21.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-26T01:57:24.000</dlv_status_at>
+            <address>79102905651</address>
+            <text>4917*1928
+Otmena: 3,39 RUR
+25.01.14 1:56
+Dostupno 1661,03 RUR
+MONEY.YANDEX. YANDEX.MONEY</text>
+            
+            
+          </record><record>
+            <id>14508444026</id>
+            <cnr>183</cnr>
+            <cnrCode>strocre0</cnrCode>
+            <acn>58</acn>
+            <acnCode>strocre</acnCode>
+            <timestamp>2013-10-24T06:36:34.000</timestamp>
+            <subject>Stroycredit</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-24T06:36:41.000</dlv_status_at>
+            <address>79505134008</address>
+            <text>4917*1447
+Otmena: 10000,00 RUR
+24.10.13 6:35
+Dostupno 10725,53 RUR
+KOGALYM ATM126 FILIAL</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.352+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,70 @@
+<fixedTemplaterActor acn="mrbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="вход_$T{в}_$T{$VARSTRING}_id_сессии_$T{$STRING}_одноразовый_пароль_$T{$STRING}_ip_$T{$URL}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одноразовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ip" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>49940487438</id>
+            <cnr>1603</cnr>
+            <cnrCode>mrbank0</cnrCode>
+            <acn>417</acn>
+            <acnCode>mrbank</acnCode>
+            <timestamp>2016-04-04T11:44:39.000</timestamp>
+            <subject>MBR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-04T11:45:19.000</dlv_status_at>
+            <address>79213287275</address>
+            <text>Вход в &quot;iBank 2&quot;.
+ID сессии: 104449
+Одноразовый пароль: 302574
+IP: 94.140.193.2</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-17T22:18:25.719+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-17T22:18:25.719+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,2653 @@
+<fixedTemplaterActor acn="centrboo">
+<fixedTemplateHolder>
+<fixedTmpl asString="пароль_$T{для}_входа_$T{в}_личный_кабинет_$T{на}_$T{$VARSTRING}_пароль_действителен_$T{до}_$LOCALDATETIME_мск" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="личный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кабинет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="действителен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мск" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15143679896</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-18T17:47:59.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-18T17:48:06.000</dlv_status_at>
+            <address>79114510687</address>
+            <text>Пароль для входа в личный кабинет на kartapolza.ru: 2SDu4r9y. Пароль действителен до 19.11.2013 17:47, МСК.</text>
+            <start_time>2013-11-18T17:47:59.000</start_time>
+            
+          </record><record>
+            <id>20206736845</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-04-14T18:04:49.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-14T18:05:00.000</dlv_status_at>
+            <address>79527974172</address>
+            <text>Пароль для входа в личный кабинет на kartapolza.ru: hnoYT05R. Пароль действителен до 15.04.2014 18:04, МСК.</text>
+            <start_time>2014-04-14T18:04:48.000</start_time>
+            
+          </record><record>
+            <id>14810019798</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-05T17:58:18.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-05T17:58:23.000</dlv_status_at>
+            <address>79637388833</address>
+            <text>Пароль для входа в личный кабинет на kartapolza.ru: 2Gnyl7NC. Пароль действителен до 06.11.2013 17:58, МСК.</text>
+            <start_time>2013-11-05T17:58:17.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T12:28:55.461+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T12:28:55.461+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_карту_$T{$CARDNUMBER}_начислены_баллы_$T{$DOUBLE}_списаны_баллы_$T{$DOUBLE}_вам_доступны_$T{для}_списания_баллы_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислены" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списания" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19869796554</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-04-11T15:39:01.000</timestamp>
+            <subject>79037676166</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-04-11T15:39:01.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту *0001 начислены баллы: 5.00, списаны баллы: 50.00. Вам доступны для списания баллы: 20587.00. kartapolza.ru.</text>
+            <start_time>2014-04-11T15:39:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:56:21.042+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:56:21.042+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_карту_$T{$CARDNUMBER}_начислены_баллы_$T{$DOUBLE}_вам_доступны_$T{для}_списания_баллы_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислены" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списания" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19869796552</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-04-11T14:47:00.000</timestamp>
+            <subject>79037676166</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-11T14:47:02.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту *0001 начислены баллы: 90.00. Вам доступны для списания баллы: 20632.00. kartapolza.ru.</text>
+            <start_time>2014-04-11T14:47:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:54:31.968+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:54:31.968+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{na}_kartu_$T{$CARDNUMBER}_nachisleny_bally_$T{$DOUBLE}_spisany_bally_$T{$DOUBLE}_pokupka_$LOCALDATETIME_$T{$VARSTRING}_vam_dostupny_$T{dlya}_spisaniya_bally_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisany" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13538858878</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-09-27T15:24:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-27T15:24:07.000</dlv_status_at>
+            <address>79118502571</address>
+            <text>Na kartu *6276 nachisleny bally: 0.21, spisany bally: 2.00. Pokupka 27.09.2013 13:22, Buffet. Vam dostupny dlya spisaniya bally: 197.49. kartapolza.ru.</text>
+            <start_time>2013-09-27T15:24:00.000</start_time>
+            
+          </record><record>
+            <id>21659436281</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-05-28T12:05:02.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-05-29T00:57:44.000</dlv_status_at>
+            <address>79094011188</address>
+            <text>Na kartu *1298 nachisleny bally: 350.00, spisany bally: 1205.00. Pokupka 28.05.2014 12:04, Kalendar' podarkov. Vam dostupny dlya spisaniya bally: 350.05. kartapolza.ru.</text>
+            <start_time>2014-05-28T12:05:01.000</start_time>
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>21180261103</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-05-13T12:40:00.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-13T12:44:49.000</dlv_status_at>
+            <address>79814541031</address>
+            <text>Na kartu *5993 nachisleny bally: 0.40, spisany bally: 3.00. Pokupka 13.05.2014 10:39, Skrepka 39. Vam dostupny dlya spisaniya bally: 1365.72. kartapolza.ru.</text>
+            <start_time>2014-05-13T12:40:00.000</start_time>
+            
+          </record><record>
+            <id>22569265938</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-20T18:04:01.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-06-20T18:12:02.000</dlv_status_at>
+            <address>79885204090</address>
+            <text>Na kartu *5956 nachisleny bally: 494.00, spisany bally: 2815.50. Pokupka 20.06.2014 18:03, Pravil'nyy Kholod. Vam dostupny dlya spisaniya bally: 494.00. kartapolza.ru.</text>
+            <start_time>2014-06-20T18:04:00.000</start_time>
+            <dlv_error>timeout</dlv_error>
+          </record><record>
+            <id>22525098234</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-19T10:33:02.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-06-19T23:27:16.000</dlv_status_at>
+            <address>79054711114</address>
+            <text>Na kartu *0358 nachisleny bally: 140.01, spisany bally: 14000.00. Pokupka 19.06.2014 10:32, Discount Center. Vam dostupny dlya spisaniya bally: 4347.21. kartapolza.ru.</text>
+            <start_time>2014-06-19T10:33:01.000</start_time>
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>22133308987</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-08T19:17:00.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-08T19:18:01.000</dlv_status_at>
+            <address>79216159915</address>
+            <text>Na kartu *7304 nachisleny bally: 1.10, spisany bally: 20.99. Pokupka 08.06.2014 17:16, Knigi i Knizhechki. Vam dostupny dlya spisaniya bally: 100.20. kartapolza.ru.</text>
+            <start_time>2014-06-08T19:17:00.000</start_time>
+            
+          </record><record>
+            <id>13282718976</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-09-23T11:30:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-23T11:30:16.000</dlv_status_at>
+            <address>79515315206</address>
+            <text>Na kartu *6155 nachisleny bally: 0.05, spisany bally: 0.03. Pokupka 23.09.2013 11:30, Apteka Nektar. Vam dostupny dlya spisaniya bally: 0.05. kartapolza.ru.</text>
+            <start_time>2013-09-23T11:30:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:45:50.395+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:45:50.395+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_карту_$T{$CARDNUMBER}_начислены_баллы_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислены" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14810019626</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-05T13:15:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-05T13:15:14.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту  *0001 начислены баллы: %количество_баллов_начислено%. Покупка %чек_дата%, %чек_время%, %чек_партнёр%. Вам доступны для списания баллы: 2600.00. kartapolza.ru.</text>
+            <start_time>2013-11-05T13:15:00.000</start_time>
+            
+          </record><record>
+            <id>14810019868</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-06T09:37:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-06T09:37:15.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту *0001 начислены баллы: %количество_баллов_начислено%, списаны баллы: %количество_баллов_списано%. Покупка %чек_дата% %чек_время%, %чек_партнёр%. Вам доступны для списания баллы: 3260.00. kartapolza.ru.</text>
+            <start_time>2013-11-06T09:37:00.000</start_time>
+            
+          </record><record>
+            <id>21099681992</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-05-06T16:52:30.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-06T16:52:43.000</dlv_status_at>
+            <address>79027936999</address>
+            <text>На карту *1845 начислены баллы: 698.78. Оплата покупок картой Home Credit Bank. Вам доступны для списания баллы: 698.78.
+kartapolza.ru.</text>
+            <start_time>2014-05-06T16:51:38.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-26T15:14:02.675+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-26T15:14:02.675+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="parol_$T{dlya}_vkhoda_$T{v}_lichnyy_kabinet_$T{na}_$T{$VARSTRING}_parol_deystvitelen_$T{do}_$LOCALDATETIME_msk" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vkhoda" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="lichnyy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kabinet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="deystvitelen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="msk" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9484801296</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-06-06T12:45:43.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-06-06T12:45:44.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>Parol' dlya vkhoda v lichnyy kabinet na kartapolza.ru: 4GHJ8akK. Parol' deystvitelen do 07.06.2013 12:45, MSK.</text>
+            <start_time>2013-06-06T12:45:39.000</start_time>
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record><record>
+            <id>21329514387</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-05-14T10:42:34.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-14T10:42:48.000</dlv_status_at>
+            <address>79233793243</address>
+            <text>Parol' dlya vkhoda v lichnyy kabinet na kartapolza.ru: 7eW21X0r. Parol' deystvitelen do 15.05.2014 10:42, MSK.</text>
+            <start_time>2014-05-14T10:42:34.000</start_time>
+            
+          </record><record>
+            <id>22738536489</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-25T12:00:59.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-25T12:01:04.000</dlv_status_at>
+            <address>79520579705</address>
+            <text>Parol' dlya vkhoda v lichnyy kabinet na kartapolza.ru: 4kByVskS. Parol' deystvitelen do 26.06.2014 12:00, MSK.</text>
+            <start_time>2014-06-25T12:00:59.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T12:25:05.363+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T12:25:05.363+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vash_odnorazovyi_parol_$T{$STRING}_platezh_$T{$VARSTRING}_summa_$MONEY_$T{dlya}_soversheniya_platezha_budet_spisano_$T{$DOUBLE}_ballov_podrobnee_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vash" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="odnorazovyi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="soversheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="budet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisano" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ballov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podrobnee" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>45998823508</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2016-01-03T16:47:46.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-03T16:47:58.000</dlv_status_at>
+            <address>79307065429</address>
+            <text>Vash odnorazovyi parol’:276140. Platezh Мегафон, summa 295rub. Dlya soversheniya platezha budet spisano 295 ballov. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2016-01-03T16:47:45.000</start_time>
+            
+          </record><record>
+            <id>78047407600</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2017-08-03T10:51:26.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-03T10:51:38.000</dlv_status_at>
+            <address>79260013166</address>
+            <text>Vash odnorazovyi parol’:3125. Platezh MTS, summa 300rub. Dlya soversheniya platezha budet spisano 300 ballov. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2017-08-03T10:48:54.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T12:23:41.494+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T12:23:41.494+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_oplachivayte_pokupki_$T{v}_magazine_$T{$VARSTRING}_kartoy_$T{$VARSTRING}_$T{i}_poluchayte_bally_$T{$DOUBLE}_$T{ot}_stoimosti_pokupok_$T{ot}_partnera_$T{i}_$T{$DOUBLE}_$T{ot}_home_credit_bank_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="oplachivayte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupki" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="magazine" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="kartoy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="i" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="poluchayte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ot" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="stoimosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ot" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="partnera" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="i" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ot" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="home" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="credit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14275955460</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-18T12:01:59.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-18T12:02:14.000</dlv_status_at>
+            <address>79183185395</address>
+            <text>Olga Alexanderovna, oplachivayte pokupki v magazine bizhuterii &quot;EFF&quot; kartoy POL'ZA i poluchayte bally: 10% ot stoimosti pokupok ot Partnera i 1% ot Home Credit Bank. kartapolza.ru</text>
+            <start_time>2013-10-18T12:01:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:52:17.089+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:52:17.089+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_успешно_связана_$T{с}_номером_вашего_мобильного_телефона_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="связана" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="номером" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашего" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мобильного" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="телефона" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20541391574</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-04-19T18:28:46.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-19T18:28:52.000</dlv_status_at>
+            <address>79180201962</address>
+            <text>Карта *6124 успешно связана с номером Вашего мобильного телефона. kartapolza.ru.</text>
+            <start_time>2014-04-19T18:28:45.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T18:19:25.315+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T18:19:25.315+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="platezh_$T{$VARSTRING}_summa_$MONEY_ispolnen_bally_dostupnye_$T{dlya}_spisaniya_$T{$DOUBLE}_podrobnee_polza_homecredit_$T{$CURRENCY}_home_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ispolnen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podrobnee" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="polza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="homecredit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="home" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44507446513</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-12-05T08:05:03.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-05T08:05:07.000</dlv_status_at>
+            <address>79055585581</address>
+            <text>Platezh Вымпел-Коммуникации (ОАО) summa 240.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 0.83. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2015-12-05T08:05:03.000</start_time>
+            
+          </record><record>
+            <id>42497747156</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-10-22T10:17:49.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-22T10:17:57.000</dlv_status_at>
+            <address>79262360007</address>
+            <text>Platezh Мобильные ТелеСистемы (ОАО) summa 300.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 14912.12. Podrobnee: polza.homecredit.ru. Home Credi</text>
+            <start_time>2015-10-22T10:17:49.000</start_time>
+            
+          </record><record>
+            <id>39592275443</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-08-15T09:31:02.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-15T09:31:08.000</dlv_status_at>
+            <address>79056997476</address>
+            <text>Platezh Vympel-Kommunikatsii (OAO) summa 300.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 270.46. Podrobnee: polza.homecredit.ru. Home Credit Ba</text>
+            <start_time>2015-08-15T09:31:01.000</start_time>
+            
+          </record><record>
+            <id>41264342192</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-09-23T16:56:30.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-23T16:56:41.000</dlv_status_at>
+            <address>79262360007</address>
+            <text>Platezh Мобильные ТелеСистемы (ОАО) summa 1000.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 17618.81. Podrobnee: polza.homecredit.ru. Home Cred</text>
+            <start_time>2015-09-23T16:56:29.000</start_time>
+            
+          </record><record>
+            <id>42313758795</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-10-17T15:17:56.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-17T15:18:04.000</dlv_status_at>
+            <address>79056997476</address>
+            <text>Platezh Rostovskaya Sotovaya Svyaz' (ZAO) summa 400.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 980.51. Podrobnee: polza.homecredit.ru. Home Cred</text>
+            <start_time>2015-10-17T15:17:55.000</start_time>
+            
+          </record><record>
+            <id>43876686407</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-11-21T12:28:11.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-11-21T12:28:21.000</dlv_status_at>
+            <address>79262360007</address>
+            <text>Platezh МегаФон (ОАО) summa 685.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 0.55. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2015-11-21T12:28:10.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:49:58.713+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:49:58.713+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{na}_kartu_$T{$CARDNUMBER}_nachisleny_bally_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13282717534</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-09-18T14:17:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-18T14:17:22.000</dlv_status_at>
+            <address>79118502571</address>
+            <text>Na kartu  *9883 nachisleny bally: %kolichestvo_ballov_nachisleno%. Pokupka %chek_data%, %chek_vremya%, %chek_partnyor%. Vam dostupny dlya spisaniya bally: 166.92. kartapolza.ru.</text>
+            <start_time>2013-09-18T14:17:00.000</start_time>
+            
+          </record><record>
+            <id>9103823460</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-06-11T15:19:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-11T15:24:38.000</dlv_status_at>
+            <address>79161455143</address>
+            <text>Na kartu *0404 nachisleny bally: %kolichestvo_ballov_nachisleno%. Vam dostupny dlya spisaniya bally: 70.40. kartapolza.ru.
+%chek_pokupka% - sootvetstvuet polyu nomer cheka (pl_number)
+%chek_summa% - sootvetstvuet polyu summe cheka (pl_summ)
+%chek_data% - sootvetstvuet date cheka (pl_datetime)
+%chek_partn?r% - imya partner (partner iz cheka)
+%chek_partner_vneshniy_identifikator% - vneshniy identifikator partnera</text>
+            <start_time>2013-06-11T15:19:00.000</start_time>
+            
+          </record><record>
+            <id>9103823448</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-06-10T11:46:02.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-10T11:46:05.000</dlv_status_at>
+            <address>79161455143</address>
+            <text>Na kartu *0404 nachisleny bally: 10.00. Vam dostupny dlya spisaniya bally: 80.40. kartapolza.ru.
+114541 - sootvetstvuet polyu nomer cheka (pl_number)
+100.00 - sootvetstvuet polyu summe cheka (pl_summ)
+10.06.2013 - sootvetstvuet date cheka (pl_datetime)
+R-keeper - imya partner (partner iz cheka)
+R11 - vneshniy identifikator partnera</text>
+            <start_time>2013-06-10T11:46:00.000</start_time>
+            
+          </record><record>
+            <id>9103824020</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-07-10T14:11:02.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-10T14:12:07.000</dlv_status_at>
+            <address>79262532901</address>
+            <text>Na kartu *1281 nachisleny bally: 43.50. Vam dostupny dlya spisaniya bally: 248.50. kartapolza.ru.
+13; 10.07.2013; R-keeper; R11.</text>
+            <start_time>2013-07-10T14:11:00.000</start_time>
+            
+          </record><record>
+            <id>9484800578</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-05-27T13:51:07.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-05-27T13:51:10.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>Na kartu *1008 nachisleny bally: 9.75, spisany bally: 193.90. Vam dostupny dlya spisaniya bally: 195.28. kartapolza.ru.</text>
+            <start_time>2013-05-27T13:51:00.000</start_time>
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record><record>
+            <id>9103823478</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-06-20T12:13:11.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-20T12:13:12.000</dlv_status_at>
+            <address>79161455143</address>
+            <text>Na kartu *0049 nachisleny bally: 3713.00. Vam dostupny dlya spisaniya bally: 3713.00. kartapolza.ru.
+??100000949 - sootvetstvuet polyu nomer cheka (pl_number)
+37130.00 - sootvetstvuet polyu summe cheka (pl_summ)
+20.06.2013 - sootvetstvuet date cheka (pl_datetime)
+Evroset' - imya partner (partner iz cheka)
+R1 - vneshniy identifikator partnera</text>
+            <start_time>2013-06-20T12:13:01.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-26T15:11:11.162+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-26T15:13:01.313+03:00"/><ed user="lkovaleva" at="2017-04-26T15:12:40.051+03:00"/><ed user="lkovaleva" at="2017-04-26T15:11:11.162+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{na}_kartu_$T{$CARDNUMBER}_nachisleny_bally_kolichestvo_ballov_nachisleno_spisany_bally_kolichestvo_ballov_spisano_vam_dostupny_$T{dlya}_spisaniya_bally_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kolichestvo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ballov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisany" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kolichestvo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ballov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisano" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14455378880</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-29T13:11:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-29T13:11:06.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>Na kartu *0001 nachisleny bally: %kolichestvo_ballov_nachisleno%, spisany bally: %kolichestvo_ballov_spisano%. Vam dostupny dlya spisaniya bally: 55.65. kartapolza.ru.</text>
+            <start_time>2013-10-29T13:11:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:42:35.317+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:42:35.317+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_карту_$T{$CARDNUMBER}_начислены_баллы_$T{$DOUBLE}_списаны_баллы_$T{$DOUBLE}_покупка_$LOCALDATETIME_$T{$VARSTRING}_вам_доступны_$T{для}_списания_баллы_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислены" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="покупка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списания" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16053922190</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-12-12T21:24:49.000</timestamp>
+            <subject>79037676166</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-12T21:25:12.000</dlv_status_at>
+            <address>79604905543</address>
+            <text>На карту *1964 начислены баллы: 0.00, списаны баллы: 657.00. Покупка 12.12.2013 20:30, Сотовик. Вам доступны для списания баллы: 21940.30. kartapolza.ru.</text>
+            <start_time>2013-12-12T20:32:00.000</start_time>
+            
+          </record><record>
+            <id>17850683270</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-02-14T13:16:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-14T13:16:57.000</dlv_status_at>
+            <address>79814541031</address>
+            <text>На карту *5993 начислены баллы: 1.00, списаны баллы: 9.00. Покупка 14.02.2014 11:21, BB1 Accessories. Вам доступны для списания баллы: 8.11. kartapolza.ru.</text>
+            <start_time>2014-02-14T13:16:00.000</start_time>
+            
+          </record><record>
+            <id>17121002452</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-01-23T11:38:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-23T11:38:25.000</dlv_status_at>
+            <address>79094011188</address>
+            <text>На карту *1298 начислены баллы: 7.00, списаны баллы: 99.00. Покупка 23.01.2014 11:37, Календарь подарков. Вам доступны для списания баллы: 84.68. kartapolza.ru.</text>
+            <start_time>2014-01-23T11:38:01.000</start_time>
+            
+          </record><record>
+            <id>15029038768</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-13T01:03:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-13T01:05:11.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту *0001 начислены баллы: 77.00, списаны баллы: 100.00. Покупка 12.11.2013 13:55, Mr.PUB-ЛЮБИМОЕ МЕСТО. Вам доступны для списания баллы: 4190.83. kartapolza.ru.</text>
+            <start_time>2013-11-13T01:03:00.000</start_time>
+            
+          </record><record>
+            <id>17510166730</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-02-04T15:17:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-04T15:24:29.000</dlv_status_at>
+            <address>79161455143</address>
+            <text>На карту *0001 начислены баллы: 75.00, списаны баллы: 10.00. Покупка 04.02.2014 11:10, Тестовый Партнер 2. Вам доступны для списания баллы: 2365.00. kartapolza.ru.</text>
+            <start_time>2014-02-04T15:17:00.000</start_time>
+            
+          </record><record>
+            <id>16796431479</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-01-13T19:54:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-13T19:54:16.000</dlv_status_at>
+            <address>79005705177</address>
+            <text>На карту *5959 начислены баллы: 100.10, списаны баллы: 1429.00. Покупка 13.01.2014 17:54, Протея. Вам доступны для списания баллы: 1238.52. kartapolza.ru.</text>
+            <start_time>2014-01-13T19:54:00.000</start_time>
+            
+          </record><record>
+            <id>19387769394</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-03-24T14:26:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-24T14:27:55.000</dlv_status_at>
+            <address>79216159915</address>
+            <text>На карту *7304 начислены баллы: 18.99, списаны баллы: 288.00. Покупка 24.03.2014 12:25, Книги и Книжечки. Вам доступны для списания баллы: 19.92. kartapolza.ru.</text>
+            <start_time>2014-03-24T14:26:00.000</start_time>
+            
+          </record><record>
+            <id>19458975199</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-03-26T12:51:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-26T12:51:07.000</dlv_status_at>
+            <address>79814541031</address>
+            <text>На карту *5993 начислены баллы: 7.50, списаны баллы: 42.00. Покупка 26.03.2014 10:50, МОБИЛЬНИК. Вам доступны для списания баллы: 7.77. kartapolza.ru.</text>
+            <start_time>2014-03-26T12:51:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:57:07.879+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:57:07.879+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="карта_$T{$CARDNUMBER}_$T{на}_вашем_счету_$T{$DOUBLE}_баллов_$T{с}_уважением_ваша_польза" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашем" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллов" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уважением" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="польза" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6449567633</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-02-06T12:31:33.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-02-06T12:55:05.000</dlv_status_at>
+            <address>79857619435</address>
+            <text>Карта ********00018; На вашем счету 472.31 баллов. С уважением, ваша Польза.</text>
+            <start_time>2013-02-06T12:55:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T12:27:35.748+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T12:27:35.748+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_карту_$T{$CARDNUMBER}_начислены_баллы_количество_баллов_начислено_вам_доступны_$T{для}_списания_баллы_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислены" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="количество" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллов" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списания" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14202412526</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-21T12:37:44.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-21T12:37:58.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту *0100 начислены баллы: %количество_баллов_начислено%. Вам доступны для списания баллы: 112.00. kartapolza.ru.</text>
+            <start_time>2013-10-21T12:32:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:55:02.798+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:55:02.798+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{na}_kartu_$T{$CARDNUMBER}_nachisleny_bally_$T{$DOUBLE}_pokupka_$LOCALDATETIME_$T{$VARSTRING}_vam_dostupny_$T{dlya}_spisaniya_bally_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9103824146</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-07-18T16:41:07.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T16:41:07.000</dlv_status_at>
+            <address>79161455143</address>
+            <text>Na kartu  *0527 nachisleny bally: 33.50. Pokupka 18.07.2013, 12:34, R-keeper. Vam dostupny dlya spisaniya bally: 153.50. kartapolza.ru.</text>
+            <start_time>2013-07-18T16:41:00.000</start_time>
+            
+          </record><record>
+            <id>22897392866</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-29T18:19:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-29T18:19:06.000</dlv_status_at>
+            <address>79114608234</address>
+            <text>Na kartu  *9475 nachisleny bally: 25.90. Pokupka 29.06.2014, 16:18, Proteya. Vam dostupny dlya spisaniya bally: 260.50. kartapolza.ru.</text>
+            <start_time>2014-06-29T18:19:00.000</start_time>
+            
+          </record><record>
+            <id>28399728675</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-11-15T15:42:07.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T15:42:12.000</dlv_status_at>
+            <address>79180906524</address>
+            <text>Na kartu  *3537 nachisleny bally: 80.00. Pokupka 11.11.2014, 12:48, Home Credit &amp; Finance Bank. Vam dostupny dlya spisaniya bally: 80.00. kartapolza.ru.</text>
+            <start_time>2014-11-15T15:42:00.000</start_time>
+            
+          </record><record>
+            <id>13282717536</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-09-18T14:18:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-18T14:18:07.000</dlv_status_at>
+            <address>79118502571</address>
+            <text>Na kartu  *9883 nachisleny bally: 14.00. Pokupka 18.09.2013, 12:16, Studiya 7 nebo. Vam dostupny dlya spisaniya bally: 180.92. kartapolza.ru.</text>
+            <start_time>2013-09-18T14:18:00.000</start_time>
+            
+          </record><record>
+            <id>22525098168</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-19T10:27:00.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-06-19T23:17:23.000</dlv_status_at>
+            <address>79054711114</address>
+            <text>Na kartu  *0358 nachisleny bally: 140.00. Pokupka 19.06.2014, 10:26, Discount Center. Vam dostupny dlya spisaniya bally: 18347.20. kartapolza.ru.</text>
+            <start_time>2014-06-19T10:27:00.000</start_time>
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>21115606015</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-05-07T19:49:01.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-07T19:49:06.000</dlv_status_at>
+            <address>79094068097</address>
+            <text>Na kartu  *5044 nachisleny bally: 4.93. Pokupka 07.05.2014, 19:53, Apteka Nektar. Vam dostupny dlya spisaniya bally: 230.31. kartapolza.ru.</text>
+            <start_time>2014-05-07T19:49:00.000</start_time>
+            
+          </record><record>
+            <id>14507021020</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-26T11:14:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-26T11:14:08.000</dlv_status_at>
+            <address>79062180728</address>
+            <text>Na kartu  *6751 nachisleny bally: 34.50. Pokupka 26.10.2013, 09:12, Knigi i Knizhechki. Vam dostupny dlya spisaniya bally: 34.50. kartapolza.ru.</text>
+            <start_time>2013-10-26T11:14:00.000</start_time>
+            
+          </record><record>
+            <id>22569265936</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-06-20T17:44:01.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-06-20T17:52:04.000</dlv_status_at>
+            <address>79885204090</address>
+            <text>Na kartu  *5956 nachisleny bally: 544.00. Pokupka 20.06.2014, 17:43, Pravil'nyy Kholod. Vam dostupny dlya spisaniya bally: 2815.50. kartapolza.ru.</text>
+            <start_time>2014-06-20T17:44:00.000</start_time>
+            <dlv_error>timeout</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:45:07.475+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:45:07.475+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="platezh_$T{$VARSTRING}_summa_$MONEY_ispolnen_bally_dostupnye_$T{dlya}_spisaniya_$T{$DOUBLE}_podrobnee_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ispolnen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podrobnee" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>62591102178</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2016-11-27T11:16:36.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-27T11:16:48.000</dlv_status_at>
+            <address>79037762613</address>
+            <text>Platezh Вымпел-Коммуникации (ОАО) summa 50.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 50.20. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2016-11-27T11:16:36.000</start_time>
+            
+          </record><record>
+            <id>32060512024</id>
+            <cnr>1198</cnr>
+            <cnrCode>centrboo1</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-05-20T14:51:03.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-20T14:51:13.000</dlv_status_at>
+            <address>79059509614</address>
+            <text>Platezh Mobil'nye TeleSistemy (OAO) summa 200.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 19400.00. Podrobnee: polza.homecredit.ru</text>
+            <start_time>2015-05-20T14:51:02.000</start_time>
+            
+          </record><record>
+            <id>66179003301</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2017-01-30T13:16:22.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-30T13:16:28.000</dlv_status_at>
+            <address>79264991800</address>
+            <text>Platezh Rostovskaya Sotovaya Svyaz' (ZAO) summa 300.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 739.08. Podrobnee: polza.homecredit.ru. Home Cred</text>
+            <start_time>2017-01-30T13:16:22.000</start_time>
+            
+          </record><record>
+            <id>45998823510</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2016-01-03T16:48:29.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-03T16:49:20.000</dlv_status_at>
+            <address>79307065429</address>
+            <text>Platezh МегаФон (ОАО) summa 295.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 0.60. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2016-01-03T16:48:29.000</start_time>
+            
+          </record><record>
+            <id>61623941210</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2016-11-10T16:08:03.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-10T16:08:15.000</dlv_status_at>
+            <address>79053875888</address>
+            <text>Platezh Мобильные ТелеСистемы (ОАО) summa 148.00 rub., ispolnen. Bally, dostupnye dlya spisaniya: 0.52. Podrobnee: polza.homecredit.ru. Home Credit Ba</text>
+            <start_time>2016-11-10T16:08:03.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T12:19:05.572+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T12:19:05.572+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="пароль_$T{для}_входа_$T{в}_$T{$VARSTRING}_$T{на}_kartapolza_$T{$CURRENCY}_$STRING_пароль_действителен_$T{до}_$LOCALDATETIME_мск" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="действителен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мск" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19368628138</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-03-20T18:19:53.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-20T18:19:56.000</dlv_status_at>
+            <address>79622580220</address>
+            <text>Пароль для входа в личный кабинет на kartapolza.ru: B54ssPB4. Пароль действителен до 21.03.2014 17:54, МСК.</text>
+            <start_time>2014-03-20T17:54:13.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T18:21:53.973+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T18:21:53.973+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="parol_$T{dlya}_vkhoda_$T{v}_$T{$VARSTRING}_$T{na}_kartapolza_$T{$CURRENCY}_$T{$VARSTRING}_parol_deystvitelen_$T{do}_$LOCALDATETIME_msk" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vkhoda" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="deystvitelen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="msk" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9484801294</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-06-06T12:45:24.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-06-06T12:45:25.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>Parol' dlya vkhoda v lichnyy kabinet na kartapolza.ru: j0fLDVXZ. Parol' deystvitelen do 07.06.2013 12:45, MSK.</text>
+            <start_time>2013-06-06T12:45:20.000</start_time>
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T18:20:38.442+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T18:20:38.442+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_$T{на}_вашей_карте_$T{$VARSTRING}_есть_баллы_$T{$DOUBLE}_потратьте_их_$T{в}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашей" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="есть" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="потратьте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="их" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14038672138</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-11T12:36:11.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-11T12:36:40.000</dlv_status_at>
+            <address>79883350788</address>
+            <text>ДЕНИС ВАЛЕРЬЕВИЧ, на вашей карте ПОЛЬЗА есть баллы: 0.00. Потратьте их в магазинах &quot;Белорусский трикотаж&quot;. 1 балл = 1 рубль скидки. kartapolza.ru</text>
+            <start_time>2013-10-11T12:36:00.000</start_time>
+            
+          </record><record>
+            <id>14077006398</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-11T12:55:09.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-11T12:55:39.000</dlv_status_at>
+            <address>79114754115</address>
+            <text>Татьяна Васильевна, на вашей карте ПОЛЬЗА есть баллы: 500.00. Потратьте их в магазинах &quot;Книги и Книжечки&quot;. 1 балл = 1 рубль скидки. kartapolza.ru</text>
+            <start_time>2013-10-11T12:55:01.000</start_time>
+            
+          </record><record>
+            <id>14077006448</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-11T13:18:09.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-11T13:18:20.000</dlv_status_at>
+            <address>79034711003</address>
+            <text>Татьяна Алексеевна, на вашей карте ПОЛЬЗА есть баллы: 500.00. Потратьте их в сети аптек &quot;Нектар&quot;. 1 балл = 1 рубль скидки. kartapolza.ru</text>
+            <start_time>2013-10-11T13:18:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-09-19T12:26:36.589+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-19T12:26:36.589+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{на}_карту_$T{$CARDNUMBER}_начислены_баллы_$T{$DOUBLE}_покупка_$LOCALDATETIME_$T{$VARSTRING}_вам_доступны_$T{для}_списания_баллы_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="начислены" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="покупка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="вам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списания" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баллы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>21659436275</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-05-28T11:47:01.000</timestamp>
+            <subject>KARTAPOLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-28T11:47:13.000</dlv_status_at>
+            <address>79533939973</address>
+            <text>На карту  *6013 начислены баллы: 39.35. Покупка 28.05.2014, 09:46, Линия Жизни. Вам доступны для списания баллы: 42.43. kartapolza.ru.</text>
+            <start_time>2014-05-28T11:47:00.000</start_time>
+            
+          </record><record>
+            <id>28538754096</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-11-15T15:43:02.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T15:43:23.000</dlv_status_at>
+            <address>79175467922</address>
+            <text>На карту  *4752 начислены баллы: 24.98. Покупка 12.11.2014, 07:40, Home Credit &amp; Finance Bank. Вам доступны для списания баллы: 64.58. kartapolza.ru.</text>
+            <start_time>2014-11-15T15:43:00.000</start_time>
+            
+          </record><record>
+            <id>17301392059</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-01-29T14:49:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-29T14:49:10.000</dlv_status_at>
+            <address>79184447712</address>
+            <text>На карту  *4132 начислены баллы: 36.00. Покупка 29.01.2014, 14:48, Discount Center. Вам доступны для списания баллы: 227.76. kartapolza.ru.</text>
+            <start_time>2014-01-29T14:49:00.000</start_time>
+            
+          </record><record>
+            <id>14454532642</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-10-22T14:17:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-22T14:17:09.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту  *0001 начислены баллы: 3.00. Покупка 22.10.2013, 14:16, Белорусский трикотаж. Вам доступны для списания баллы: 2503.00. kartapolza.ru.</text>
+            <start_time>2013-10-22T14:17:00.000</start_time>
+            
+          </record><record>
+            <id>16796431477</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-01-13T19:52:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-13T19:52:14.000</dlv_status_at>
+            <address>79005705177</address>
+            <text>На карту  *5959 начислены баллы: 100.10. Покупка 13.01.2014, 17:53, Протея. Вам доступны для списания баллы: 2667.52. kartapolza.ru.</text>
+            <start_time>2014-01-13T19:52:00.000</start_time>
+            
+          </record><record>
+            <id>15029039276</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-13T17:49:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-13T17:49:14.000</dlv_status_at>
+            <address>79521159697</address>
+            <text>На карту  *9417 начислены баллы: 45.90. Покупка 13.11.2013, 15:48, Алоэ. Вам доступны для списания баллы: 545.90. kartapolza.ru.</text>
+            <start_time>2013-11-13T17:49:00.000</start_time>
+            
+          </record><record>
+            <id>15596244088</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-30T19:07:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-30T19:07:05.000</dlv_status_at>
+            <address>79114819102</address>
+            <text>На карту  *7518 начислены баллы: 23.50. Покупка 30.11.2013, 17:06, ПАПА й Я. Вам доступны для списания баллы: 126.75. kartapolza.ru.</text>
+            <start_time>2013-11-30T19:07:00.000</start_time>
+            
+          </record><record>
+            <id>17506164403</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-01-30T17:40:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-30T17:40:19.000</dlv_status_at>
+            <address>79094068097</address>
+            <text>На карту  *5044 начислены баллы: 0.79. Покупка 30.01.2014, 17:39, Аптека Нектар. Вам доступны для списания баллы: 141.00. kartapolza.ru.</text>
+            <start_time>2014-01-30T17:40:00.000</start_time>
+            
+          </record><record>
+            <id>15427601578</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-11-26T17:48:00.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-26T17:48:20.000</dlv_status_at>
+            <address>79211008561</address>
+            <text>На карту  *2872 начислены баллы: 8.40. Покупка 26.11.2013, 15:47, Турка и Чайник. Вам доступны для списания баллы: 125.90. kartapolza.ru.</text>
+            <start_time>2013-11-26T17:48:00.000</start_time>
+            
+          </record><record>
+            <id>17509961463</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2014-01-31T10:52:01.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-31T11:07:49.000</dlv_status_at>
+            <address>79055189949</address>
+            <text>На карту  *0404 начислены баллы: 5.00. Покупка 31.01.2014, 06:51, Тестовый партнер. Вам доступны для списания баллы: 5.00. kartapolza.ru.</text>
+            <start_time>2014-01-31T10:52:00.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:55:51.312+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:55:51.312+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{na}_kartu_$T{$CARDNUMBER}_nachisleny_bally_$T{$DOUBLE}_oplata_pokupok_kartoy_home_credit_bank_vam_dostupny_$T{dlya}_spisaniya_bally_$T{$DOUBLE}_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartoy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="home" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="credit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8197068274</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-05-16T15:00:51.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-05-16T15:00:53.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>Na kartu *1008 nachisleny bally: 4.20. Oplata pokupok kartoy Home Credit Bank. Vam dostupny dlya spisaniya bally: 4.20.
+kartapolza.ru.</text>
+            <start_time>2013-05-16T15:00:47.000</start_time>
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:43:19.115+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:43:19.115+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vash_odnorazovyi_parol_$T{$STRING}_platezh_$T{$VARSTRING}_summa_$MONEY_$T{dlya}_soversheniya_platezha_budet_spisano_$T{$DOUBLE}_ballov_podrobnee_polza_homecredit_$T{$CURRENCY}_home_credit_bank" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="PP"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vash" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="odnorazovyi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="soversheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="budet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisano" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ballov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podrobnee" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="polza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="homecredit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="home" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="credit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>41808229451</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-10-07T08:49:44.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-07T08:49:56.000</dlv_status_at>
+            <address>79262360007</address>
+            <text>Vash odnorazovyi parol’:739053. Platezh Мегафон, summa 2000rub. Dlya soversheniya platezha budet spisano 2000 ballov. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2015-10-07T08:49:44.000</start_time>
+            
+          </record><record>
+            <id>42313758793</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2015-10-17T15:17:19.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-17T15:17:32.000</dlv_status_at>
+            <address>79056997476</address>
+            <text>Vash odnorazovyi parol’:513818. Platezh Tele2, summa 400rub. Dlya soversheniya platezha budet spisano 400 ballov. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2015-10-17T15:17:18.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:51:02.253+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:51:02.253+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="karta_$T{$CARDNUMBER}_uspeshno_svyazana_$T{s}_nomerom_vashego_mobil_nogo_telefona_kartapolza_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="svyazana" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nomerom" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vashego" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mobil" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nogo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="telefona" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartapolza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8197067502</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2013-04-26T15:30:49.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-04-26T15:30:54.000</dlv_status_at>
+            <address>79181208298</address>
+            <text>Karta *1041 uspeshno svyazana s nomerom Vashego mobil'nogo telefona. kartapolza.ru.</text>
+            <start_time>2013-04-26T15:30:42.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-26T15:13:36.726+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-26T15:13:36.726+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_platezha_$T{$VARSTRING}_summa_$MONEY_bally_dostupnye_$T{dlya}_spisaniya_$T{$DOUBLE}_podrobnee_polza_homecredit_$T{$CURRENCY}_home_credit_bank" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupnye" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisaniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podrobnee" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="polza" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="homecredit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="home" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="credit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>46231786948</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2016-01-11T09:22:05.000</timestamp>
+            <subject>POLZA</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-11T09:22:10.000</dlv_status_at>
+            <address>79030015437</address>
+            <text>Otmena platezha Вымпел-Коммуникации (ОАО), summa 70.00 rub. Bally, dostupnye dlya spisaniya: 70.78. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2016-01-11T09:22:05.000</start_time>
+            
+          </record><record>
+            <id>50269643225</id>
+            <cnr>1047</cnr>
+            <cnrCode>centrboo0</cnrCode>
+            <acn>273</acn>
+            <acnCode>centrboo</acnCode>
+            <timestamp>2016-04-01T20:28:12.000</timestamp>
+            <subject>Polza</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-01T20:28:18.000</dlv_status_at>
+            <address>79286210033</address>
+            <text>Otmena platezha MegaFon (OAO), summa 108.00 rub. Bally, dostupnye dlya spisaniya: 108.16. Podrobnee: polza.homecredit.ru. Home Credit Bank</text>
+            <start_time>2016-04-01T20:28:11.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-25T12:48:18.303+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-25T12:48:18.303+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

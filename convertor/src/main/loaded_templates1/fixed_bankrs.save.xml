@@ -1,0 +1,49 @@
+<fixedTemplaterActor acn="bankrs">
+<fixedTemplateHolder>
+<fixedTmpl asString="зачисление_$MONEY_$LOCALDATE_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="зачисление" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>37783545193</id>
+            <cnr>1626</cnr>
+            <cnrCode>bankrs0</cnrCode>
+            <acn>429</acn>
+            <acnCode>bankrs</acnCode>
+            <timestamp>2015-07-02T12:04:05.000</timestamp>
+            <subject>OOO KB BRIS</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-02T12:04:10.000</dlv_status_at>
+            <address>79035147861</address>
+            <text>Зачисление:100.00руб.;2015-07-02.Доступно:568.21руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-06-24T19:52:30.057+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-06-24T19:52:30.057+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

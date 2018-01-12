@@ -1,0 +1,125 @@
+<fixedTemplaterActor acn="unknown">
+<fixedTemplateHolder>
+<fixedTmpl asString="$T{$CARDNUMBER}_$MONEY_adres_$T{$VARSTRING}_data_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="IT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="adres" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="data" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27150825583</id>
+            <cnr>268</cnr>
+            <cnrCode>ftc0</cnrCode>
+            <acn>92</acn>
+            <acnCode>unknown</acnCode>
+            <timestamp>2014-10-13T16:44:55.000</timestamp>
+            <subject> 6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-13T16:45:02.000</dlv_status_at>
+            <address>79280830444</address>
+            <text>*4818; : 50950.00 rub.; Adres: VB24, NALCHIK G, VB24 17A, KULIEVA; Data: 13.10.2014 16:44.</text>
+            
+            
+          </record><record>
+            <id>26264312132</id>
+            <cnr>268</cnr>
+            <cnrCode>ftc0</cnrCode>
+            <acn>92</acn>
+            <acnCode>unknown</acnCode>
+            <timestamp>2014-09-22T13:50:52.000</timestamp>
+            <subject> 6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-22T13:50:59.000</dlv_status_at>
+            <address>79280830444</address>
+            <text>*4818; : 450.00 rub.; Adres: 710000006453, NALCHIK, ITT 974422 B-N ASHUROV; Data: 22.09.2014 13:50.</text>
+            
+            
+          </record><record>
+            <id>26755683727</id>
+            <cnr>268</cnr>
+            <cnrCode>ftc0</cnrCode>
+            <acn>92</acn>
+            <acnCode>unknown</acnCode>
+            <timestamp>2014-10-03T14:43:47.000</timestamp>
+            <subject> 6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-03T14:43:54.000</dlv_status_at>
+            <address>79280830444</address>
+            <text>*4818; : 450.00 rub.; Adres: VB24, NALCHIK G, VB24 57, KESHOKOVA; Data: 03.10.2014 14:43.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-07T21:48:39.867+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-07T21:49:12.925+03:00"/><ed user="lkovaleva" at="2015-09-07T21:48:55.876+03:00"/><ed user="lkovaleva" at="2015-09-07T21:48:39.867+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_sum_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="IT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sum" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19563850423</id>
+            <cnr>1512</cnr>
+            <cnrCode>devino1</cnrCode>
+            <acn>370</acn>
+            <acnCode>unknown</acnCode>
+            <timestamp>2014-03-26T11:17:26.000</timestamp>
+            <subject>Association</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-26T11:17:30.000</dlv_status_at>
+            <address>79200419720</address>
+            <text>6769****0640 25.03.2014 15:48 SUM 5000.00 RUR ATM-09019453 ASSOCIATION</text>
+            <start_time>2014-03-26T11:17:26.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-07T21:24:23.564+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-07T21:24:23.564+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

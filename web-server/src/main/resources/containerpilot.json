@@ -1,0 +1,22 @@
+{
+  "consul": "{{ .CONSUL }}:8500",
+  "preStart": "/opt/config-preparer/config-preparer.sh",
+  "logging": {
+    "level": "DEBUG",
+    "format": "text",
+    "output": "stdout"
+  },
+  "services": [
+    {
+      "name": "{{ .SERVICE_NAME }}",
+      "port": "{{ .APP_PORT }}",
+      "health": "/usr/bin/curl --fail --silent --show-error --output /dev/null http://{{ .HOST }}:{{ .APP_PORT }}/health/ruok",
+      "poll": 3,
+      "ttl": 10,
+      "interfaces": [
+        "static:{{ .HOST }}"
+      ]
+    }
+  ]
+}
+

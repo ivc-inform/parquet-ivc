@@ -1,0 +1,376 @@
+<fixedTemplaterActor acn="dd">
+<fixedTemplateHolder>
+<fixedTmpl asString="$T{$CARDNUMBER}_pokupka_uspeshno_summa_$MONEY_ostatok_$MONEY_$T{$VARSTRING}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ostatok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>55493916637</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-07-10T21:02:11.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-10T21:02:15.000</dlv_status_at>
+            <address>79029420280</address>
+            <text>4*7710; Pokupka; Uspeshno; Summa: 19,60 EUR; Ostatok: 674,61 EUR; GR/AGIOS NIKOLAO/FRAGKIADAKIS GEORGIO; 10.07.2016 21:02:08</text>
+            
+            
+          </record><record>
+            <id>51111909135</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-04-17T18:09:30.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-17T18:09:36.000</dlv_status_at>
+            <address>79045577257</address>
+            <text>5*6911; Pokupka; Uspeshno; Summa: 850,00 RUR; Ostatok: 3692,55 RUR; RU/SANKT-PETERBU/KVARTIRKA; 17.04.2016 18:09:27</text>
+            
+            
+          </record><record>
+            <id>67007319889</id>
+            <cnr>2581</cnr>
+            <cnrCode>dd5</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2017-02-13T17:35:30.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-13T17:35:33.000</dlv_status_at>
+            <address>79045434049</address>
+            <text>4*8852; Pokupka; Uspeshno; Summa: 205,00 RUR; Ostatok: 50796,05 RUR; RU/Ekaterinburg/Kassa cafe Vertuos; 13.02.2017 17:35:28</text>
+            
+            
+          </record><record>
+            <id>61357337707</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-11-04T20:53:18.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-04T20:53:58.000</dlv_status_at>
+            <address>73519007027</address>
+            <text>4*4900; Pokupka; Uspeshno; Summa: 1850,00 RUR; Ostatok: 9452,53 RUR; RU/MAGNITOGORSK/OOO INZHIR; 04.11.2016 20:53:15</text>
+            
+            
+          </record><record>
+            <id>60275266195</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-10-15T18:45:00.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-15T18:45:03.000</dlv_status_at>
+            <address>79772580014</address>
+            <text>5*2425; Pokupka; Uspeshno; Summa: 600,00 RUR; Ostatok: 1078,90 RUR; RU/MOSKVA/BEBI JOLI PR KOMSOMOLE; 15.10.2016 18:44:58</text>
+            
+            
+          </record><record>
+            <id>56594431668</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-08-03T12:55:52.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-08-03T12:55:57.000</dlv_status_at>
+            <address>79043114468</address>
+            <text>4*2326; Pokupka; Uspeshno; Summa: 500,00 RUR; Ostatok: 21125,62 RUR; RU/IZHEVSK/FPK RADIOZAVOD; 03.08.2016 12:55:49</text>
+            
+            
+          </record><record>
+            <id>67922225384</id>
+            <cnr>2593</cnr>
+            <cnrCode>dd7</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2017-03-01T00:49:29.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-03-01T00:49:34.000</dlv_status_at>
+            <address>79998342097</address>
+            <text>4*0873; Pokupka; Uspeshno; Summa: 1293,00 RUR; Ostatok: 99033,45 RUR; RU/MOSCOW/RBKM*GOOGLEAPPS.SOF; 01.03.2017 00:49:25</text>
+            <start_time>2017-03-01T00:49:29.000</start_time>
+            
+          </record><record>
+            <id>51634511638</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-04-27T15:15:14.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-27T15:15:16.000</dlv_status_at>
+            <address>79167809165</address>
+            <text>5*7297; Pokupka; Uspeshno; Summa: 740,00 RUR; Ostatok: 28726,31 RUR; RU/MOSKVA/CentreFilm na Shelkovs; 27.04.2016 15:15:11</text>
+            
+            
+          </record><record>
+            <id>69861816780</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2017-04-02T01:30:36.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-04-02T01:30:40.000</dlv_status_at>
+            <address>79853380925</address>
+            <text>4*9861; Pokupka; Uspeshno; Summa: 3000,00 RUR; Ostatok: 5056,31 RUR; RU/KHIMKI/KAFE KARAOKE ZAPOY; 02.04.2017 01:30:33</text>
+            
+            
+          </record><record>
+            <id>65747713253</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2017-01-22T18:37:45.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-22T18:37:49.000</dlv_status_at>
+            <address>79516838017</address>
+            <text>5*9992; Pokupka; Uspeshno; Summa: 3000,00 RUR; Ostatok: 1685,57 RUR; RU/SANKT-PETERBU/INDIVID.SHOP; 22.01.2017 18:37:43</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2017-07-19T17:21:52.654+03:00"/></created>
+        <edited><ed user="anton" at="2017-07-19T17:21:52.654+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_pokupka_uspeshno_summa_$MONEY_dostupniy_limit_operacij_$MONEY_$T{$VARSTRING}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupniy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="limit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="operacij" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>61567834631</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-11-09T12:12:11.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-09T12:12:15.000</dlv_status_at>
+            <address>79028180015</address>
+            <text>4*8359; Pokupka; Uspeshno; Summa: 590,00 RUR; Dostupniy limit operacij: 106593,23 RUR; RU/TJUMEN/KOFEJNJA KOFEIN; 09.11.2016 12:12:08</text>
+            
+            
+          </record><record>
+            <id>60854707122</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-10-26T14:01:14.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-26T14:02:59.000</dlv_status_at>
+            <address>79028589422</address>
+            <text>4*1554; Pokupka; Uspeshno; Summa: 500,00 RUR; Dostupniy limit operacij: 59034,59 RUR; RU/NIZHNEVARTOVS/STRONG FITNESS HALL; 26.10.2016 14:01:11</text>
+            
+            
+          </record><record>
+            <id>55821388673</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-07-17T15:36:41.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-17T15:36:47.000</dlv_status_at>
+            <address>79029986728</address>
+            <text>4*3162; Pokupka; Uspeshno; Summa: 399,50 RUR; Dostupniy limit operacij: 86407,19 RUR; RU/BARNAUL/NOVEKS-UNIVERSAM; 17.07.2016 15:36:38</text>
+            
+            
+          </record><record>
+            <id>65749426818</id>
+            <cnr>2593</cnr>
+            <cnrCode>dd7</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2017-01-22T19:26:09.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-22T20:52:32.000</dlv_status_at>
+            <address>79992603448</address>
+            <text>4*0960; Pokupka; Uspeshno; Summa: 352,00 RUR; Dostupniy limit operacij: 333867,09 RUR; RU/BELOZERSK/MAGNIT MM BANDZHO; 22.01.2017 19:26:04</text>
+            <start_time>2017-01-22T19:26:09.000</start_time>
+            
+          </record><record>
+            <id>52681063412</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-05-17T15:21:59.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-05-17T15:22:00.000</dlv_status_at>
+            <address>79853387037</address>
+            <text>4*2670; Pokupka; Uspeshno; Summa: 1094,80 RUR; Dostupniy limit operacij: 299982,44 RUR; RU/ELEKTROSTAL/CHISTYE MATERIALY; 17.05.2016 15:21:50</text>
+            
+            
+          </record><record>
+            <id>62189910337</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-11-19T17:01:43.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-19T17:01:48.000</dlv_status_at>
+            <address>79086640880</address>
+            <text>4*0513; Pokupka; Uspeshno; Summa: 526,65 RUR; Dostupniy limit operacij: 7984,77 RUR; RU/IRKUTSK/AZS KRAYS-NEFT; 19.11.2016 17:01:41</text>
+            
+            
+          </record><record>
+            <id>62775447776</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-11-30T12:19:50.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-30T12:19:51.000</dlv_status_at>
+            <address>79522722018</address>
+            <text>4*5331; Pokupka; Uspeshno; Summa: 2533,04 RUR; Dostupniy limit operacij: 1539,78 RUR; RU/SANKT-PETERBU/KARNAVAL SPB; 30.11.2016 12:19:47</text>
+            
+            
+          </record><record>
+            <id>51277130415</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-04-20T17:42:07.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-20T17:42:13.000</dlv_status_at>
+            <address>79088809216</address>
+            <text>4*9721; Pokupka; Uspeshno; Summa: 1080,00 RUR; Dostupniy limit operacij: 9957,80 RUR; RU/HANTY-MANSIJS/LETUAL 3; 20.04.2016 17:42:04</text>
+            
+            
+          </record><record>
+            <id>60809482527</id>
+            <cnr>2578</cnr>
+            <cnrCode>dd3</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2016-10-25T17:13:18.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-25T17:13:22.000</dlv_status_at>
+            <address>79028180015</address>
+            <text>4*8359; Pokupka; Uspeshno; Summa: 369,90 RUR; Dostupniy limit operacij: 33658,35 RUR; RU/TYUMEN/OKHOT AKTIV; 25.10.2016 17:13:16</text>
+            
+            
+          </record><record>
+            <id>65606235128</id>
+            <cnr>2593</cnr>
+            <cnrCode>dd7</cnrCode>
+            <acn>700</acn>
+            <acnCode>dd</acnCode>
+            <timestamp>2017-01-20T08:35:22.000</timestamp>
+            <subject>ALFA-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-20T08:35:25.000</dlv_status_at>
+            <address>79220341517</address>
+            <text>4*3488; Pokupka; Uspeshno; Summa: 49,00 RUR; Dostupniy limit operacij: 31414,16 RUR; RU/EKATERINBURG/MFTS GARMONIYA; 20.01.2017 08:35:20</text>
+            <start_time>2017-01-20T08:35:22.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="anton" at="2017-07-19T17:23:00.954+03:00"/></created>
+        <edited><ed user="anton" at="2017-07-19T17:23:00.954+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

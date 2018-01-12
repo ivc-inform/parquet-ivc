@@ -1,0 +1,41 @@
+target/
+backups/
+.idea
+*.iml
+generated/
+
+### Scala template
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+web-ui/src/main/webapp/javascript/IncludeModules
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+!jrebel.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+!common/lib/*.jar
+!loaded_templates/
+!loaded_templates1/

@@ -1,0 +1,952 @@
+<fixedTemplaterActor acn="smartbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="ваша_учетная_запись_заблокирована" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="учетная" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="запись" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заблокирована" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>29501660306</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-01-19T17:47:09.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-01-19T17:47:12.000</dlv_status_at>
+            <address>79104342782</address>
+            <text>Ваша учетная запись
+заблокирована.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-31T21:57:19.195+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-31T21:57:19.195+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="документ_$T{$LONG}_оплачен_оплата_услуги_$T{$VARSTRING}_$T{$VARCARDNUMBER}_номер_$STRING_сумма_$MONEY_комиссия_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="документ" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплачен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="услуги" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="номер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="комиссия" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27014670334</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-14T15:58:59.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T20:30:27.000</dlv_status_at>
+            <address>79859295627</address>
+            <text>Документ 381 оплачен
+Оплата услуги &quot;Билайн&quot; Visa Electron 4198...7328, номер 9661946927, сумма 630,00 RUR, комиссия 0,00 RUR</text>
+            
+            
+          </record><record>
+            <id>27014670206</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-13T09:18:04.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T09:18:15.000</dlv_status_at>
+            <address>79652931516</address>
+            <text>Документ 46 оплачен
+Оплата услуги &quot;Мосэнергосбыт&quot; Mastercard Gold 5444...3050, номер 6368908095, сумма 252,89 RUR, комиссия 0,00 RUR</text>
+            
+            
+          </record><record>
+            <id>27014670196</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-13T08:00:34.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T08:00:50.000</dlv_status_at>
+            <address>79259970240</address>
+            <text>Документ 20 оплачен
+Оплата услуги &quot;Мосэнергосбыт&quot; Mastercard  Standard 5429...3982, номер 0143601281, сумма 636,53 RUR, комиссия 0,00 RUR</text>
+            
+            
+          </record><record>
+            <id>27014670332</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-14T15:52:04.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T15:52:34.000</dlv_status_at>
+            <address>79859295627</address>
+            <text>Документ 376 оплачен
+Оплата услуги &quot;БиЛайн Интернет&quot; Visa Electron 4198...7328, номер 0895547030, сумма 450,00 RUR, комиссия 0,00 RUR</text>
+            
+            
+          </record><record>
+            <id>27014669906</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-07T13:31:45.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-07T13:32:57.000</dlv_status_at>
+            <address>79032066368</address>
+            <text>Документ 367 оплачен
+Оплата услуги &quot;Билайн&quot; Visa Classic 4198...2316, номер 9032066368, сумма 300,00 RUR, комиссия 0,00 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.030+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{$LONG}_отказан_перевод_со_счета_$STRING_сумма_$MONEY_на_$T{$VARSTRING}_сумма_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отказан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27014670232</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-13T15:03:54.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T15:04:18.000</dlv_status_at>
+            <address>79162201311</address>
+            <text>Перевод № 141 отказан.
+Перевод со счета 40817978000110140545, сумма 51,95 EUR, на счет 42306978700110140545, сумма 51,95 EUR #25847: Нарушен лимит по счету (лимит зачисления)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.034+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{$LONG}_исполнен_перевод_со_счета_$STRING_на_счет_$STRING_бик_$STRING_сумма_$MONEY_комиссия_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="бик" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="комиссия" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27014669938</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-07T16:22:45.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-07T16:22:56.000</dlv_status_at>
+            <address>79259970240</address>
+            <text>Перевод № 394 исполнен.
+Перевод со счета 40817810700007120366 на счет 40702810140040105893 БИК 044525225, сумма 5 068,49 RUR, комиссия 25,34 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.038+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="разовый_пароль_$T{на}_вход_$T{в}_интернет_банк_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="разовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8884424086</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2013-06-10T12:11:54.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-10T12:11:58.000</dlv_status_at>
+            <address>79859295627</address>
+            <text>Разовый пароль на вход в Интернет-Банк 
+ofzh9t</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T12:16:31.133+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T12:16:31.133+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="разовый_пароль_$T{на}_вход_$T{в}_интернет_банк_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="разовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8884424082</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2013-06-10T12:05:39.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-10T12:05:49.000</dlv_status_at>
+            <address>79859295627</address>
+            <text>Разовый пароль на вход в Интернет-Банк 
+ncdp9r</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T12:19:09.634+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T12:19:09.634+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{$LONG}_исполнен_перевод_со_счета_$STRING_сумма_$MONEY_на_счет_$STRING_сумма_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27014669936</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-07T16:08:50.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-07T16:08:55.000</dlv_status_at>
+            <address>79055050525</address>
+            <text>Перевод № 430 исполнен.
+Перевод со счета 40817810401100134901, сумма 6 783,42 RUR, на счет 42307810401100134901, сумма 6 783,42 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.041+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="успешный_вход_$T{в}_бк_смартбанк_$LOCALDATE_$T{в}_$LOCALTIME_тел_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="успешный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="бк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="смартбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>45062319792</id>
+            <cnr>1731</cnr>
+            <cnrCode>smartbank2</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-12-25T09:24:46.000</timestamp>
+            <subject>SMARTBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-25T09:24:52.000</dlv_status_at>
+            <address>79175954025</address>
+            <text>Успешный вход в БК СМАРТБАНК 25.12.2015 в 09:26:28. Тел. (495)6414044</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-31T21:57:04.661+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-31T21:57:04.661+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="учетные_данные_$T{для}_входа_$T{в}_интернет_банк_учетная_запись_$STRING_пароль_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="учетные" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="данные" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="учетная" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="запись" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>40307598545</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-09-23T16:24:16.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-23T16:24:33.000</dlv_status_at>
+            <address>79266975193</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clnteejQ9Xf Пароль: eFsmNdos</text>
+            
+            
+          </record><record>
+            <id>27014669428</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-10-30T16:23:14.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-30T16:23:20.000</dlv_status_at>
+            <address>79055050525</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clnteksaPFAs Пароль: fESFPT</text>
+            
+            
+          </record><record>
+            <id>35744012483</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-06-03T12:54:14.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-03T12:54:32.000</dlv_status_at>
+            <address>79191057701</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clntNHSfV Пароль: aSoNER</text>
+            
+            
+          </record><record>
+            <id>8197488708</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2013-03-11T15:47:37.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-03-11T15:47:51.000</dlv_status_at>
+            <address>79256643333</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clntRGh9pGRe Пароль: pU2Pyme1</text>
+            
+            
+          </record><record>
+            <id>33909967159</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-04-10T13:12:24.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-10T13:12:34.000</dlv_status_at>
+            <address>79067119933</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clntMKsuKa Пароль: KKshPzmS</text>
+            
+            
+          </record><record>
+            <id>45405398955</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2016-01-14T15:27:51.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-14T15:28:04.000</dlv_status_at>
+            <address>79787118458</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clntSSsks Пароль: sSnPGHS</text>
+            
+            
+          </record><record>
+            <id>33172849836</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-04-02T18:22:10.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-02T18:23:44.000</dlv_status_at>
+            <address>79219469418</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clntWGpShB Пароль: YSvgRs</text>
+            
+            
+          </record><record>
+            <id>38844637932</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2015-08-06T11:37:48.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-06T11:37:51.000</dlv_status_at>
+            <address>79255061993</address>
+            <text>Учетные данные для входа в Интернет-Банк
+Учетная запись: clnt96BfWsJn Пароль: vTgmZS</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-31T21:58:37.591+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-31T21:58:37.591+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="документ_$T{$LONG}_оплачен_оплата_услуги_$T{$VARSTRING}_$T{$VARCARDNUMBER}_номер_сумма_$MONEY_комиссия_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="документ" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплачен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="услуги" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="номер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="комиссия" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27014669768</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-05T15:05:05.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T15:05:17.000</dlv_status_at>
+            <address>79032066368</address>
+            <text>Документ 37 оплачен
+Оплата услуги &quot;АКАДО - Столица&quot; Visa Classic 4198...2316, номер , сумма 499,00 RUR, комиссия 0,00 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.044+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{$LONG}_отказан_перевод_со_счета_$STRING_сумма_$MONEY_на_счет_$STRING_сумма_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="отказан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27014669948</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2014-11-07T16:46:30.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-11-08T04:46:31.000</dlv_status_at>
+            <address>79052794959</address>
+            <text>Перевод № 287 отказан.
+Перевод со счета 40817978000000133772, сумма 111,00 EUR, на счет 42307978000000133772, сумма 111,00 EUR </text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.046+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вы_вошли_$T{в}_интернет_банк_smartonline_$T{в}_целях_безопасности_никому_$T{не}_сообщайте_вашу_учетную_запись_$T{и}_пароль" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вошли" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="smartonline" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="целях" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="безопасности" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашу" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="учетную" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="запись" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="и" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>8884424084</id>
+            <cnr>942</cnr>
+            <cnrCode>smartbank0</cnrCode>
+            <acn>257</acn>
+            <acnCode>smartbank</acnCode>
+            <timestamp>2013-06-10T12:06:24.000</timestamp>
+            <subject>SMARTONLINE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-10T12:06:38.000</dlv_status_at>
+            <address>79859295627</address>
+            <text>Вы вошли в интернет-банк SMARTONLINE.
+В целях безопасности, никому не сообщайте Вашу учетную запись и пароль.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-02-09T12:14:23.541+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-02-09T12:14:23.541+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,2254 @@
+<fixedTemplaterActor acn="finserv">
+<fixedTemplateHolder>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_снятие_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="снятие" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>66533065513</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-05T13:47:07.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-05T13:47:12.000</dlv_status_at>
+            <address>79626617195</address>
+            <text>VISA5215 05.02.17 13:47 Снятие 1600p VB24 Баланс 3294.30p</text>
+            <start_time>2017-02-05T13:47:07.000</start_time>
+            
+          </record><record>
+            <id>66672176912</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-08T07:27:24.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-08T07:27:27.000</dlv_status_at>
+            <address>79209974768</address>
+            <text>MC2522 08.02.17 07:27 Снятие 500p ATM 10448268 29 SMIRYA Баланс 51.20p</text>
+            <start_time>2017-02-08T07:27:24.000</start_time>
+            
+          </record><record>
+            <id>66559826173</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-06T08:39:47.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-06T08:39:48.000</dlv_status_at>
+            <address>79197682868</address>
+            <text>VISA9122 06.02.17 08:39 Снятие 1600p GAZPROMBANK Баланс 4090.32p</text>
+            <start_time>2017-02-06T08:39:47.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:39:34.272+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:39:34.272+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пpиxoд_$MONEY_баланс_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пpиxoд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>61123512458</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-31T18:00:18.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-11-01T06:06:42.000</dlv_status_at>
+            <address>79164112194</address>
+            <text>VISA1074 31.10.16 18:00 Пpиxoд 300$ Баланс 302.44$</text>
+            <start_time>2016-10-31T18:00:18.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:11:25.758+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:11:25.758+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пoкyпкa_$STRING_$T{$VARSTRING}_баланс_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пoкyпкa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>61421281613</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-06T15:57:35.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-06T15:57:39.000</dlv_status_at>
+            <address>79198363627</address>
+            <text>VISA0732 06.11.16 15:57 Пoкyпкa 348p MAGNIT MM PRINTS Баланс 15611p</text>
+            <start_time>2016-11-06T15:57:35.000</start_time>
+            
+          </record><record>
+            <id>62538068390</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-25T19:15:08.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-25T19:15:16.000</dlv_status_at>
+            <address>79033958037</address>
+            <text>VISA2328 25.11.16 19:15 Пoкyпкa 81p MAGNIT MM DEPOZIT Баланс 2989p</text>
+            <start_time>2016-11-25T19:15:08.000</start_time>
+            
+          </record><record>
+            <id>65662360320</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-21T02:30:35.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-21T02:30:56.000</dlv_status_at>
+            <address>79152178164</address>
+            <text>VISA0633 21.01.17 02:30 Пoкyпкa 2015p RESTORAN EL I STAUT Баланс 20485p</text>
+            <start_time>2017-01-21T02:30:35.000</start_time>
+            
+          </record><record>
+            <id>61421281877</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-06T16:04:14.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-06T16:04:21.000</dlv_status_at>
+            <address>79062824498</address>
+            <text>VISA7913 06.11.16 16:04 Пoкyпкa 246p MAGNIT MK SYURREALIZM Баланс 2028p</text>
+            <start_time>2016-11-06T16:04:14.000</start_time>
+            
+          </record><record>
+            <id>60259187048</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-15T13:46:45.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-15T13:46:52.000</dlv_status_at>
+            <address>79635706260</address>
+            <text>MC4924 15.10.16 13:46 Пoкyпкa 44p M-N ERSH Баланс 17576p</text>
+            <start_time>2016-10-15T13:46:45.000</start_time>
+            
+          </record><record>
+            <id>61394828361</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-05T22:21:19.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-05T22:21:38.000</dlv_status_at>
+            <address>79608808638</address>
+            <text>VISA1460 05.11.16 22:21 Пoкyпкa 164p PEREKRESTOK_SM KARNAVAL Баланс 9152p</text>
+            <start_time>2016-11-05T22:21:19.000</start_time>
+            
+          </record><record>
+            <id>64092635073</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-23T04:58:37.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-12-23T07:58:43.000</dlv_status_at>
+            <address>79252355727</address>
+            <text>VISA1097 23.12.16 04:58 Пoкyпкa 2000p BEELINE SOTOVAYA SVY 9861 Баланс 48147.63eu</text>
+            <start_time>2016-12-23T04:58:37.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>62125383705</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-18T15:07:47.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-18T15:07:52.000</dlv_status_at>
+            <address>79312982984</address>
+            <text>MC5779 18.11.16 15:07 Пoкyпкa 831p MAGNIT MM LINOTIP Баланс 5609p</text>
+            <start_time>2016-11-18T15:07:47.000</start_time>
+            
+          </record><record>
+            <id>59465176008</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-09-30T21:52:14.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-09-30T21:52:25.000</dlv_status_at>
+            <address>79031164822</address>
+            <text>MC2148 30.09.16 21:52 Пoкyпкa 8598.50p HYPERGLOBUS PUSHKINO Баланс 29763p</text>
+            <start_time>2016-09-30T21:52:14.000</start_time>
+            
+          </record><record>
+            <id>59718143468</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-06T08:33:28.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-06T08:33:34.000</dlv_status_at>
+            <address>7372F627C5111464666E4447E9CA300F</address>
+            <text>VISA5352 06.10.16 08:33 Пoкyпкa 75.30p POLUSHKA Баланс 41499p</text>
+            <start_time>2016-10-06T08:33:28.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:26:43.766+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:26:43.766+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_cнятиe_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cнятиe" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>61713168703</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-11T15:28:28.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-11T15:28:30.000</dlv_status_at>
+            <address>79124186942</address>
+            <text>MC8762 11.11.16 15:28 Cнятиe 5000p ATM 251625 10 GEOLOGIC Баланс 27796.94p</text>
+            <start_time>2016-11-11T15:28:28.000</start_time>
+            
+          </record><record>
+            <id>64460419733</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-28T18:54:25.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-28T18:54:35.000</dlv_status_at>
+            <address>79105666381</address>
+            <text>MC1282 28.12.16 18:54 Cнятиe 2000p ATM 10448268 29 SMIRYA Баланс 2375.33p</text>
+            <start_time>2016-12-28T18:54:25.000</start_time>
+            
+          </record><record>
+            <id>59595575655</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-03T19:12:04.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-03T19:12:06.000</dlv_status_at>
+            <address>79099361002</address>
+            <text>MC7358 03.10.16 19:12 Cнятиe 2900p ATM 10155498 PROFSOYUZ Баланс 4205.52p</text>
+            <start_time>2016-10-03T19:12:04.000</start_time>
+            
+          </record><record>
+            <id>60851831762</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-26T14:23:20.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-26T14:23:32.000</dlv_status_at>
+            <address>79213340693</address>
+            <text>MC0443 26.10.16 14:23 Cнятиe 500p 9900 2-YA KRASNOARMEYS Баланс 325079.43p</text>
+            <start_time>2016-10-26T14:23:20.000</start_time>
+            
+          </record><record>
+            <id>60650765253</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-22T14:52:51.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-22T14:52:55.000</dlv_status_at>
+            <address>79224200479</address>
+            <text>VISA5632 22.10.16 14:52 Cнятиe 2000p GAZPROMBANK Баланс 45717.36p</text>
+            <start_time>2016-10-22T14:52:51.000</start_time>
+            
+          </record><record>
+            <id>62645426873</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-28T09:57:19.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-28T09:57:21.000</dlv_status_at>
+            <address>79859960231</address>
+            <text>MC4631 28.11.16 09:57 Cнятиe 2000p ATM 345635 12 AVIAKONS Баланс 112782.52p</text>
+            <start_time>2016-11-28T09:57:19.000</start_time>
+            
+          </record><record>
+            <id>61736047173</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-11T20:26:42.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-11T20:26:47.000</dlv_status_at>
+            <address>79112108639</address>
+            <text>MC5247 11.11.16 20:26 Cнятиe 1000p ATM 551267 49 PLANERNA Баланс 17764.22p</text>
+            <start_time>2016-11-11T20:26:42.000</start_time>
+            
+          </record><record>
+            <id>61812451241</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-13T14:10:05.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-13T14:10:08.000</dlv_status_at>
+            <address>79224447046</address>
+            <text>MC2148 13.11.16 14:10 Cнятиe 4000p ATM 10084237 19 PERVOM Баланс 67365.56p</text>
+            <start_time>2016-11-13T14:10:05.000</start_time>
+            
+          </record><record>
+            <id>60823045759</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-26T04:30:19.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-26T04:30:26.000</dlv_status_at>
+            <address>4A6CA2ED6E328CA417905EACB15C61BC</address>
+            <text>MC7811 26.10.16 04:30 Cнятиe 200p ATM 492867 40 ENTUZIAS Баланс 53.67p</text>
+            <start_time>2016-10-26T04:30:19.000</start_time>
+            
+          </record><record>
+            <id>64174216173</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-24T09:37:27.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-24T09:37:35.000</dlv_status_at>
+            <address>79152410523</address>
+            <text>VISA2305 24.12.16 09:37 Cнятиe 7000p NMOS Баланс 10409.61p</text>
+            <start_time>2016-12-24T09:37:27.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:35:07.114+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:35:07.114+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_покупка_$T{$DOUBLE}_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="покупка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>67071235943</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-14T17:08:48.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-14T17:08:51.000</dlv_status_at>
+            <address>79039780400</address>
+            <text>VISA8137 14.02.17 17:08 Покупка 171.50p REMIT Баланс 229801.32p</text>
+            <start_time>2017-02-14T17:08:48.000</start_time>
+            
+          </record><record>
+            <id>66572566896</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-06T11:40:45.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-06T11:40:53.000</dlv_status_at>
+            <address>79219176455</address>
+            <text>VISA7665 06.02.17 11:40 Покупка 43.91p WWW.ALIEXPRESS.COM Баланс 13735.44p</text>
+            <start_time>2017-02-06T11:40:45.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:30:16.944+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:30:16.944+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_погашение_кредита_$STRING_баланс_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="погашение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредита" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>64279708825</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-26T11:25:31.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-26T11:25:33.000</dlv_status_at>
+            <address>79653492587</address>
+            <text>MC5439 26.12.16 11:25 Погашение кредита 5000p Баланс 0p</text>
+            <start_time>2016-12-26T11:25:31.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:43:51.136+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:43:51.136+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_снятие_$STRING_$T{$VARSTRING}_баланс_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="снятие" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>66592484134</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-06T16:00:28.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-06T16:00:30.000</dlv_status_at>
+            <address>79161375012</address>
+            <text>VISA9026 06.02.17 16:00 Снятие 5000p GAZPROMBANK Баланс 9922p</text>
+            <start_time>2017-02-06T16:00:28.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:40:43.099+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:40:43.099+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_покупка_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="покупка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>67076620948</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-14T18:25:02.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-14T18:25:02.000</dlv_status_at>
+            <address>79197682868</address>
+            <text>VISA9122 14.02.17 18:25 Покупка 972p UNIVERSAM N66 Баланс 12872.08p</text>
+            <start_time>2017-02-14T18:25:02.000</start_time>
+            
+          </record><record>
+            <id>67115955011</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-15T12:23:46.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-15T12:23:49.000</dlv_status_at>
+            <address>79250091975</address>
+            <text>VISA2276 15.02.17 12:23 Покупка 115p Social Payments Badoo.com Баланс 50963.38p</text>
+            <start_time>2017-02-15T12:23:46.000</start_time>
+            
+          </record><record>
+            <id>66779728080</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-09T19:31:00.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-09T19:31:11.000</dlv_status_at>
+            <address>79523098674</address>
+            <text>MC9776 09.02.17 19:30 Покупка 363p MAGNIT MM INFRAKRASNYJ Баланс 410.65p</text>
+            <start_time>2017-02-09T19:31:00.000</start_time>
+            
+          </record><record>
+            <id>67054666702</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-14T13:50:54.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-14T13:51:02.000</dlv_status_at>
+            <address>79609509466</address>
+            <text>VISA9900 14.02.17 13:50 Покупка 357p  KHMELNOY BOCHONOK SHOP Баланс 14816.06p</text>
+            <start_time>2017-02-14T13:50:54.000</start_time>
+            
+          </record><record>
+            <id>67121999856</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-15T13:26:18.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-15T14:56:37.000</dlv_status_at>
+            <address>79164530690</address>
+            <text>VISA3081 15.02.17 13:26 Покупка 295p SUSHI BUFET Баланс 13318.55p</text>
+            <start_time>2017-02-15T13:26:18.000</start_time>
+            
+          </record><record>
+            <id>67011257089</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-13T19:13:05.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-13T19:13:24.000</dlv_status_at>
+            <address>79164530690</address>
+            <text>VISA3081 13.02.17 19:13 Покупка 138p MAGNIT MM SVETILA Баланс 16937.55p</text>
+            <start_time>2017-02-13T19:13:05.000</start_time>
+            
+          </record><record>
+            <id>66451059676</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-03T17:46:42.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-03T17:46:46.000</dlv_status_at>
+            <address>79197682868</address>
+            <text>VISA9122 03.02.17 17:46 Покупка 913p PRODUKTY Баланс 8571.82p</text>
+            <start_time>2017-02-03T17:46:42.000</start_time>
+            
+          </record><record>
+            <id>66495355191</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-04T15:33:57.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-04T15:34:03.000</dlv_status_at>
+            <address>79523098674</address>
+            <text>MC9776 04.02.17 15:33 Покупка 425p MAGNIT MK AGNIS Баланс 1808.68p</text>
+            <start_time>2017-02-04T15:33:57.000</start_time>
+            
+          </record><record>
+            <id>66572566174</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-06T11:20:15.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-06T11:30:49.000</dlv_status_at>
+            <address>79219176455</address>
+            <text>VISA7665 06.02.17 11:20 Покупка 79p MCDONALDS 21064 Баланс 13779.35p</text>
+            <start_time>2017-02-06T11:20:15.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:32:57.195+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:32:57.195+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_авториз_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="авториз" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>63651697237</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-15T16:13:12.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-15T16:13:23.000</dlv_status_at>
+            <address>79876157345</address>
+            <text>MC7790 15.12.16 16:13 Авториз 330p YM*Wargaming.net Баланс 6016.57p</text>
+            <start_time>2016-12-15T16:13:12.000</start_time>
+            
+          </record><record>
+            <id>61328053634</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-04T11:14:11.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-04T11:14:25.000</dlv_status_at>
+            <address>79174160197</address>
+            <text>MC2959 04.11.16 11:14 Авториз 13038.90p CLOUD*samogon-i-vodk Баланс 77475.24p</text>
+            <start_time>2016-11-04T11:14:11.000</start_time>
+            
+          </record><record>
+            <id>59540963653</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-02T17:54:40.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-02T17:54:42.000</dlv_status_at>
+            <address>79030133929</address>
+            <text>MC4609 02.10.16 17:54 Авториз 549p  TEZENIS SHOP Баланс 1361.09p</text>
+            <start_time>2016-10-02T17:54:40.000</start_time>
+            
+          </record><record>
+            <id>66530705410</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-02-05T12:57:36.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-05T12:57:44.000</dlv_status_at>
+            <address>79264006395</address>
+            <text>MC3428 05.02.17 12:57 Авториз 38CHF Kitag Kino-Theater AG Баланс 13995.32p</text>
+            <start_time>2017-02-05T12:57:36.000</start_time>
+            
+          </record><record>
+            <id>64826009243</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-05T12:07:44.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-05T12:07:49.000</dlv_status_at>
+            <address>79099135617</address>
+            <text>MC4500 05.01.17 12:07 Авториз 2637.90p UFS-ONLINE Баланс 9914.60p</text>
+            <start_time>2017-01-05T12:07:44.000</start_time>
+            
+          </record><record>
+            <id>59771026064</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-07T07:50:28.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-07T07:50:30.000</dlv_status_at>
+            <address>79115501303</address>
+            <text>MC4118 07.10.16 07:50 Авториз 29p SUPERMARKET Баланс 304.92p</text>
+            <start_time>2016-10-07T07:50:28.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-07-11T14:46:47.161+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-07-11T14:46:47.161+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_finservis_uvedomlyaet_vasha_prosrochennya_zadolzhennost_$T{na}_$LOCALDATE_$MONEY_vam_neobhodimo_nezamedlitel_$T{no}_pogasit_summu_$T{v}_razmere_$T{$DOUBLE}_telefon_$T{dlya}_spravok_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="finservis" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uvedomlyaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vasha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prosrochennya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolzhennost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nezamedlitel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="no" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="razmere" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="telefon" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>9815446948</id>
+            <cnr>80</cnr>
+            <cnrCode>finserv0</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2013-05-06T17:10:01.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-06T17:10:19.000</dlv_status_at>
+            <address>79265265698</address>
+            <text>Bank Finservis uvedomlyaet: Vasha prosrochennya zadolzhennost' na 06.05.2013 0.01 rub. Vam neobhodimo nezamedlitel'no pogasit' summu v razmere 0.01. Telefon dlya spravok 8-800-2000-767.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-28T21:31:49.106+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-28T21:31:49.106+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="bank_finservis_uvedomlyaet_obshaya_summa_vashey_zadolzhennosti_$T{na}_$LOCALDATE_sostavlyaet_$MONEY_vam_neobhodimo_$T{v}_srok_$T{do}_$T{$LONG}_chisla_pogasit_zadolzhennost_$T{v}_summe_$T{ne}_menee_$MONEY_telefon_$T{dlya}_spravok_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="finservis" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uvedomlyaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="obshaya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vashey" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolzhennosti" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sostavlyaet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vam" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="neobhodimo" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="chisla" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zadolzhennost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summe" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="menee" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="telefon" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spravok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>5514907430</id>
+            <cnr>80</cnr>
+            <cnrCode>finserv0</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2012-09-21T17:11:08.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-09-21T17:11:23.000</dlv_status_at>
+            <address>79265265698</address>
+            <text>Bank Finservis uvedomlyaet: obshaya summa Vashey zadolzhennosti na 21.09.2012 sostavlyaet 0.01 rub. Vam neobhodimo v srok do 28 chisla  pogasit' zadolzhennost' v summe ne menee 0.01 rub. Telefon dlya spravok 8-800-2000-767.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-28T21:33:52.174+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-28T21:33:52.174+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_приход_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="приход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44945570396</id>
+            <cnr>1197</cnr>
+            <cnrCode>finserv3</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-24T09:47:36.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-24T09:47:42.000</dlv_status_at>
+            <address>79168777687</address>
+            <text>VISA9671 24.11.16 09:47 Приход 388p FIMI_UCAT Баланс 272341.74p</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:42:02.369+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:42:02.369+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пoкyпкa_$MONEY_$T{$VARSTRING}_баланс_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пoкyпкa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>62658133816</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-28T13:38:59.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-28T13:39:03.000</dlv_status_at>
+            <address>79645149861</address>
+            <text>VISA1097 28.11.16 13:38 Пoкyпкa 10.35eu AMAZON.UK PAYMENTS Баланс 41548.39eu</text>
+            <start_time>2016-11-28T13:38:59.000</start_time>
+            
+          </record><record>
+            <id>62549454551</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-26T03:42:54.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-11-26T06:42:53.000</dlv_status_at>
+            <address>79252355727</address>
+            <text>MC4123 26.11.16 03:42 Пoкyпкa 15.54GBP UBER BV Баланс 44167.05eu</text>
+            <start_time>2016-11-26T03:42:54.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>64324210369</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-27T00:05:55.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-27T00:15:29.000</dlv_status_at>
+            <address>33664137969</address>
+            <text>MC9785 27.12.16 00:05 Пoкyпкa 212.50eu LA VECIA MESCOLA DELL' Баланс 4109.93eu</text>
+            <start_time>2016-12-27T00:05:55.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:10:36.505+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:10:36.505+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пpиxoд_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пpиxoд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>62233389838</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-20T18:31:06.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-20T18:31:09.000</dlv_status_at>
+            <address>79687362883</address>
+            <text>MC2262 20.11.16 18:31 Пpиxoд 3000p Popolnenie MasterCard Баланс 17540.67p</text>
+            <start_time>2016-11-20T18:31:06.000</start_time>
+            
+          </record><record>
+            <id>62336740566</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-22T15:46:20.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-22T15:46:22.000</dlv_status_at>
+            <address>79111016780</address>
+            <text>VISA5746 22.11.16 15:46 Пpиxoд Отмена 402p Баланс 244158.47p</text>
+            <start_time>2016-11-22T15:46:20.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:37:51.489+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:37:51.489+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_платеж_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>63034744752</id>
+            <cnr>1197</cnr>
+            <cnrCode>finserv3</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-27T10:35:43.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-27T10:35:47.000</dlv_status_at>
+            <address>79262260109</address>
+            <text>VISA9671 27.12.16 10:35 Платеж 1000p ATM5000001 Баланс 184029.19p</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:44:32.585+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:44:32.585+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="uvazhaemiy_$T{$VARSTRING}_napominaem_vy_dolzny_oplatit_minimalniy_platezh_$MONEY_$T{do}_$LOCALDATE_tel_$T{$PHONE}_oao_bank_finservis" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemiy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dolzny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplatit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="minimalniy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="finservis" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1124795875</id>
+            <cnr>80</cnr>
+            <cnrCode>finserv0</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2011-03-24T17:11:03.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-03-24T17:11:11.000</dlv_status_at>
+            <address>79161743164</address>
+            <text>Uvazhaemiy Sergey Anatol'evich, napominaem, Vy dolzny oplatit' minimalniy platezh 19049 rub do 28-03-2011 Tel 8-800-2-000-767, OAO Bank Finservis</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-28T21:34:59.095+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-28T21:34:59.095+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пoкyпкa_$STRING_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пoкyпкa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>61479818211</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-07T19:10:59.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-07T19:11:10.000</dlv_status_at>
+            <address>79375677786</address>
+            <text>VISA5010 07.11.16 19:10 Пoкyпкa 310p MAGNIT MM LEDENETS Баланс 8685.09p</text>
+            <start_time>2016-11-07T19:10:59.000</start_time>
+            
+          </record><record>
+            <id>59499829706</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-01T16:56:41.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-01T16:56:44.000</dlv_status_at>
+            <address>79870338879</address>
+            <text>VISA2658 01.10.16 16:56 Пoкyпкa 110p MAGAZIN DLYA PIRA MYOD-PI Баланс 3234.28p</text>
+            <start_time>2016-10-01T16:56:41.000</start_time>
+            
+          </record><record>
+            <id>61956821417</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-15T19:40:48.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-15T19:40:51.000</dlv_status_at>
+            <address>79258019981</address>
+            <text>VISA9436 15.11.16 19:40 Пoкyпкa 359p DOMOVOY Баланс 88115.57p</text>
+            <start_time>2016-11-15T19:40:48.000</start_time>
+            
+          </record><record>
+            <id>62583566047</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-26T17:20:41.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-26T17:20:52.000</dlv_status_at>
+            <address>79279157933</address>
+            <text>VISA4738 26.11.16 17:20 Пoкyпкa 528p MAGNIT MM ORGANZA Баланс 80636.24p</text>
+            <start_time>2016-11-26T17:20:41.000</start_time>
+            
+          </record><record>
+            <id>62658133714</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-28T13:36:48.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-28T13:36:54.000</dlv_status_at>
+            <address>79042726430</address>
+            <text>MC7378 28.11.16 13:36 Пoкyпкa 52p MAGNIT MK MEANDR Баланс 71663.86p</text>
+            <start_time>2016-11-28T13:36:48.000</start_time>
+            
+          </record><record>
+            <id>60703913817</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-23T22:26:07.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-23T22:26:09.000</dlv_status_at>
+            <address>79214242051</address>
+            <text>VISA8063 23.10.16 22:26 Пoкyпкa 660p KINOTEATR Баланс 546.84p</text>
+            <start_time>2016-10-23T22:26:07.000</start_time>
+            
+          </record><record>
+            <id>61376477717</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-05T13:29:35.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-05T13:29:42.000</dlv_status_at>
+            <address>79173857002</address>
+            <text>VISA3649 05.11.16 13:29 Пoкyпкa 221p MAGNIT MM VYDVIZHNOJ Баланс 3343.74p</text>
+            <start_time>2016-11-05T13:29:35.000</start_time>
+            
+          </record><record>
+            <id>61482807034</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-07T21:24:49.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-07T21:24:58.000</dlv_status_at>
+            <address>A16B992794701E99051F3049DC896082</address>
+            <text>VISA1520 07.11.16 21:24 Пoкyпкa 228.25p ZHIVAYA KLASSIKA Баланс 780.88p</text>
+            <start_time>2016-11-07T21:24:49.000</start_time>
+            
+          </record><record>
+            <id>60197644752</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-14T13:40:57.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-14T13:41:06.000</dlv_status_at>
+            <address>79507250081</address>
+            <text>MC6076 14.10.16 13:40 Пoкyпкa 149p IP SLESAR A.N. MONTAZH Баланс 244.05p</text>
+            <start_time>2016-10-14T13:40:57.000</start_time>
+            
+          </record><record>
+            <id>60993941908</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-28T20:48:47.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-28T20:48:54.000</dlv_status_at>
+            <address>79261652350</address>
+            <text>VISA1001 28.10.16 20:48 Пoкyпкa 1313.51p OOO KREATIV Баланс 20550.39p</text>
+            <start_time>2016-10-28T20:48:47.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:25:34.423+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:25:34.423+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пoкyпкa_$MONEY_$T{$VARSTRING}_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пoкyпкa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>60029437638</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-11T18:26:30.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-11T18:39:10.000</dlv_status_at>
+            <address>79161375012</address>
+            <text>VISA9026 11.10.16 18:26 Пoкyпкa 10.99GBP CARDS GALORE Баланс 72256.93p</text>
+            <start_time>2016-10-11T18:26:30.000</start_time>
+            
+          </record><record>
+            <id>62930715243</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-03T03:35:31.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-12-03T06:35:30.000</dlv_status_at>
+            <address>79857982890</address>
+            <text>VISA9574 03.12.16 03:35 Пoкyпкa 7.33eu BRI S2P CRYS 78003017406 Баланс 27443.72p</text>
+            <start_time>2016-12-03T03:35:31.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>59684473907</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-05T13:12:05.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-05T13:12:12.000</dlv_status_at>
+            <address>8C87D8188DCE348016B220978414518C</address>
+            <text>VISA8435 05.10.16 13:12 Пoкyпкa 237.40eu WWW.AIRMOLDOVA.MD Баланс 40897.73p</text>
+            <start_time>2016-10-05T13:12:05.000</start_time>
+            
+          </record><record>
+            <id>65832597387</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-24T10:39:07.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-24T10:39:28.000</dlv_status_at>
+            <address>79164888449</address>
+            <text>VISA2063 24.01.17 10:39 Пoкyпкa 185eu PLATZL HOTEL INSELKAMMER Баланс 1431518.13p</text>
+            <start_time>2017-01-24T10:39:07.000</start_time>
+            
+          </record><record>
+            <id>66051407172</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-27T16:35:09.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-27T16:35:11.000</dlv_status_at>
+            <address>79262292006</address>
+            <text>VISA3890 27.01.17 16:35 Пoкyпкa 169.20eu STYL Баланс 71454.95p</text>
+            <start_time>2017-01-27T16:35:09.000</start_time>
+            
+          </record><record>
+            <id>63999669725</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-21T14:36:00.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-21T14:36:06.000</dlv_status_at>
+            <address>79260996997</address>
+            <text>VISA0597 21.12.16 14:35 Пoкyпкa 56DKK Torvets Bistro vHanne Mog Баланс 46210.85p</text>
+            <start_time>2016-12-21T14:36:00.000</start_time>
+            
+          </record><record>
+            <id>64727441428</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-02T14:46:04.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-02T14:46:11.000</dlv_status_at>
+            <address>79166799371</address>
+            <text>VISA5186 02.01.17 14:46 Пoкyпкa 15.70eu SOGEVINUS CALEM Баланс 354069.45p</text>
+            <start_time>2017-01-02T14:46:04.000</start_time>
+            
+          </record><record>
+            <id>65706565238</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-21T19:35:44.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-21T19:36:06.000</dlv_status_at>
+            <address>79164888449</address>
+            <text>VISA2063 21.01.17 19:35 Пoкyпкa 19.90eu Feedbag Accessoires GmbH Баланс 1459487.81p</text>
+            <start_time>2017-01-21T19:35:44.000</start_time>
+            
+          </record><record>
+            <id>64796779030</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-04T15:04:15.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-04T15:04:21.000</dlv_status_at>
+            <address>79104282841</address>
+            <text>VISA8701 04.01.17 15:04 Пoкyпкa 18PLN SKLEP UPOMINKI Баланс 19831.89p</text>
+            <start_time>2017-01-04T15:04:15.000</start_time>
+            
+          </record><record>
+            <id>62579706585</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-26T16:06:03.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-26T16:06:13.000</dlv_status_at>
+            <address>79110362120</address>
+            <text>VISA7178 26.11.16 16:06 Пoкyпкa 94.95eu Disas Fish Hamina Баланс 239387.77p</text>
+            <start_time>2016-11-26T16:06:03.000</start_time>
+            
+          </record><record>
+            <id>60759359667</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-25T04:03:05.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-10-25T07:03:05.000</dlv_status_at>
+            <address>79162120767</address>
+            <text>VISA6049 25.10.16 04:03 Пoкyпкa 27.99$ ATHENS LIQUORS Баланс 29645.56p</text>
+            <start_time>2016-10-25T04:03:05.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>64761987582</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-03T15:04:00.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-03T15:04:28.000</dlv_status_at>
+            <address>79164888449</address>
+            <text>VISA2063 03.01.17 15:03 Пoкyпкa 343eu CY AIRPORTS DUTY FREE-DE Баланс 1638525.46p</text>
+            <start_time>2017-01-03T15:04:00.000</start_time>
+            
+          </record><record>
+            <id>62505057444</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-25T12:38:54.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-25T12:38:57.000</dlv_status_at>
+            <address>79110362120</address>
+            <text>VISA7178 25.11.16 12:38 Пoкyпкa 19.90eu CUBUS P28 Баланс 261424.97p</text>
+            <start_time>2016-11-25T12:38:54.000</start_time>
+            
+          </record><record>
+            <id>66069078244</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2017-01-28T00:04:42.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-01-28T00:04:45.000</dlv_status_at>
+            <address>79262292006</address>
+            <text>VISA3890 28.01.17 00:04 Пoкyпкa 158.50eu ELECTRA PALACE HOTEL Баланс 60321.81p</text>
+            <start_time>2017-01-28T00:04:42.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:09:21.698+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-09-29T12:34:28.677+03:00"/><ed user="lkovaleva" at="2017-04-29T12:09:21.698+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_погашение_кредита_$STRING_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="погашение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредита" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>60575156105</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-21T10:30:39.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-21T10:30:42.000</dlv_status_at>
+            <address>79112132855</address>
+            <text>VISA8905 21.10.16 10:30 Погашение кредита 119120p Баланс 207.06p</text>
+            <start_time>2016-10-21T10:30:39.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:43:18.372+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:43:18.372+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_cнятиe_$STRING_$T{$VARSTRING}_баланс_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cнятиe" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>61120140748</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-10-31T17:05:27.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-31T17:05:35.000</dlv_status_at>
+            <address>79168113751</address>
+            <text>MC2295 31.10.16 17:05 Cнятиe 30000p BANK ROSSIYA p.Kommu Баланс 6599p</text>
+            <start_time>2016-10-31T17:05:27.000</start_time>
+            
+          </record><record>
+            <id>62523572865</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-11-25T15:56:17.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-11-26T04:00:03.000</dlv_status_at>
+            <address>79325364604</address>
+            <text>VISA0976 25.11.16 15:56 Cнятиe 5000p ROSBANK Баланс 115012p</text>
+            <start_time>2016-11-25T15:56:17.000</start_time>
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-04-29T12:35:57.422+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-04-29T12:35:57.422+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="uvazhaemaya_$T{$VARSTRING}_prosim_vas_srochno_svyazat_sya_$T{so}_specialistami_banka_tel_$T{$PHONE}_$T{po}_voprosu_pogasheniya_dolga_$T{pered}_oao_bank_finservis" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="FB"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemaya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="prosim" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vas" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="srochno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="svyazat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="so" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="specialistami" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="banka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="voprosu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pogasheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dolga" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pered" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="finservis" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>852561745</id>
+            <cnr>80</cnr>
+            <cnrCode>finserv0</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2010-12-15T17:11:04.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2010-12-15T17:11:45.000</dlv_status_at>
+            <address>79134806130</address>
+            <text>Uvazhaemaya Elena Valentinovna, prosim Vas srochno svyazat'sya so specialistami banka Tel:8-800-2-000-767 po voprosu pogasheniya dolga pered OAO Bank Finservis</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-28T21:32:47.855+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-28T21:32:47.855+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="uvazhaemaya_$T{$VARSTRING}_napominaem_vy_dolzny_oplatit_minimalniy_platezh_$MONEY_$T{do}_$LOCALDATE_tel_$T{$PHONE}_oao_bank_finservis" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="uvazhaemaya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="napominaem" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dolzny" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplatit" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="minimalniy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="platezh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="do" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oao" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="finservis" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>1164557399</id>
+            <cnr>80</cnr>
+            <cnrCode>finserv0</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2011-04-11T19:01:03.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2011-04-11T19:01:36.000</dlv_status_at>
+            <address>79164819924</address>
+            <text>Uvazhaemaya Nataliya Aleksandrovna, napominaem, Vy dolzny oplatit' minimalniy platezh 5708 rub do 14-04-2011 Tel 8-800-2-000-767, OAO Bank Finservis</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-28T21:30:45.233+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-28T21:30:45.233+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_$LOCALDATETIME_пpиxoд_$STRING_баланс_$T{$DOUBLE}_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пpиxoд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>64129964218</id>
+            <cnr>2814</cnr>
+            <cnrCode>finserv5</cnrCode>
+            <acn>40</acn>
+            <acnCode>finserv</acnCode>
+            <timestamp>2016-12-23T14:05:39.000</timestamp>
+            <subject>FINSERVICE</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-23T14:05:43.000</dlv_status_at>
+            <address>79115525331</address>
+            <text>MC1929 23.12.16 14:05 Пpиxoд 3000p Баланс 3026.01p</text>
+            <start_time>2016-12-23T14:05:39.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-07-11T14:49:11.916+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-07-11T14:49:11.916+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

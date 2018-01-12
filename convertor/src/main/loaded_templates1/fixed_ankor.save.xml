@@ -1,0 +1,1334 @@
+<fixedTemplaterActor acn="ankor">
+<fixedTemplateHolder>
+<fixedTmpl asString="вход_$T{в}_интернет_банк_пароль_$T{$STRING}_никому_$T{не}_сообщайте" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>43016460632</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-11-02T10:40:00.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-11-02T10:40:06.000</dlv_status_at>
+            <address>79172985918</address>
+            <text>Вход в Интернет-банк. Пароль: 220423 никому не сообщайте.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-23T15:30:24.079+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-23T15:30:24.079+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$DATETIME_исполнен_платеж_$MONEY_$T{со}_счета_$T{$STRING}_$T{на}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>39504548882</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-08-12T10:13:51.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-12T10:13:58.000</dlv_status_at>
+            <address>79600489009</address>
+            <text>10.08 21:00 МСК исполнен платеж №53 408 р. со счета 3273 на УФК по РТ (Отделение Пенсионного фонда РФ (государственное учреждение).</text>
+            
+            
+          </record><record>
+            <id>42228577124</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-10-15T12:12:50.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-15T12:14:04.000</dlv_status_at>
+            <address>79656081266</address>
+            <text>14.10 21:00 МСК исполнен платеж №62 700 р. со счета 3763 на ООО &quot;Консалтинговая компания &quot;Референтъ&quot;.</text>
+            
+            
+          </record><record>
+            <id>50760210175</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-11T13:22:14.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-11T13:22:52.000</dlv_status_at>
+            <address>79276373926</address>
+            <text>10.04 21:00 МСК исполнен платеж №6 759 р. со счета 7854 на УФК по Республике Башкортостан (ГУ  Отделение Пенсионного фонда Российской Федерации по РБ).</text>
+            
+            
+          </record><record>
+            <id>50760210213</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-11T13:22:19.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-11T13:23:05.000</dlv_status_at>
+            <address>79276373926</address>
+            <text>10.04 21:00 МСК исполнен платеж №8 100.05 р. со счета 7854 на УФК по Республике Башкортостан (Государственное учреждение - региональное отделение ФСС РФ  по РБ).</text>
+            
+            
+          </record><record>
+            <id>50495655841</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-06T11:22:08.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T11:22:22.000</dlv_status_at>
+            <address>79372880118</address>
+            <text>05.04 21:00 МСК исполнен платеж №140 230.6 р. со счета 3034 на Минфин РТ (МБУ &quot;Дезинфекционная станция города Казани&quot;), л/с ЛБВ718510426-Дезстан.</text>
+            
+            
+          </record><record>
+            <id>51000527306</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-15T13:36:07.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T13:36:13.000</dlv_status_at>
+            <address>79276657668</address>
+            <text>14.04 21:00 МСК исполнен платеж №39 790.5 р. со счета 5089 на УФК по Чувашской Республике-Чувашии(Отделение ПФР по Чувашской Республике-Чувашии).</text>
+            
+            
+          </record><record>
+            <id>50436614223</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-05T11:02:01.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T11:02:31.000</dlv_status_at>
+            <address>79272403186</address>
+            <text>04.04 21:00 МСК исполнен платеж №105 160 р. со счета 3178 на УФК по Республике Татарстан (Государственное учр.-региональное отд.Фонда соц.страхования РФ по РТ).</text>
+            
+            
+          </record><record>
+            <id>40601261680</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-09-08T09:00:25.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-08T09:01:02.000</dlv_status_at>
+            <address>79656081266</address>
+            <text>06.09 21:00 МСК исполнен платеж №13 459 р. со счета 3763 на УФК по РТ (ГУ - Управление Пенсионного фонда РФ в Вахитовском районе г. Казани РТ).</text>
+            
+            
+          </record><record>
+            <id>50428812246</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-05T08:55:50.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T08:56:09.000</dlv_status_at>
+            <address>79274163946</address>
+            <text>03.04 21:00 МСК исполнен платеж №519 560.7 р. со счета 3548 на Общество с ограниченной ответственностью &quot;ПЛАНЕТА-КРЕПЕЖА&quot;.</text>
+            
+            
+          </record><record>
+            <id>41782531787</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-10-05T15:02:50.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-05T15:03:14.000</dlv_status_at>
+            <address>79655838633</address>
+            <text>04.10 21:00 МСК исполнен платеж №60 833 р. со счета 0431 на УФК по РТ (Государственное учреждение-региональное отделение Фонда социального страхования РФ по РТ)  Л/с 04114001450.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:45:52.946+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:45:52.946+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="пароль_$T{$STRING}_платеж_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50861584090</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-13T09:06:49.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T09:06:52.000</dlv_status_at>
+            <address>79274211059</address>
+            <text>Пароль 409081 (Платеж: 2000.00р.ООО &quot;Александр Некрасов и Партнеры&quot;)</text>
+            
+            
+          </record><record>
+            <id>38731234047</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-07-23T16:24:44.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-23T16:24:52.000</dlv_status_at>
+            <address>79673698888</address>
+            <text>Пароль 651281 (Платеж: 108460.00р.ООО &quot;КРОВЛЯ ПРОФИ&quot;)</text>
+            
+            
+          </record><record>
+            <id>50980302874</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-15T09:26:35.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T09:26:39.000</dlv_status_at>
+            <address>79268781893</address>
+            <text>Пароль 827865 (Платеж: 26811.39р.ООО &quot;Торговый дом ИМИДЖ&quot;)</text>
+            
+            
+          </record><record>
+            <id>36441970833</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-05-28T11:02:24.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-28T11:02:26.000</dlv_status_at>
+            <address>79047667036</address>
+            <text>Пароль 276902 (Платеж: 22000р.ООО &quot;Астром инжиниринг&quot;)</text>
+            
+            
+          </record><record>
+            <id>47130283990</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-01-29T14:25:33.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-01-29T14:25:41.000</dlv_status_at>
+            <address>79272491800</address>
+            <text>Пароль 794696 (Платеж: 18000.00р.ООО &quot;Систем Сервис&quot;)</text>
+            
+            
+          </record><record>
+            <id>50622518583</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-08T14:32:59.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-08T14:33:04.000</dlv_status_at>
+            <address>79376132291</address>
+            <text>Пароль 289604 (Платеж: 3318.00р.ООО &quot;Страховая компания &quot;Мегарусс-Д&quot; К</text>
+            
+            
+          </record><record>
+            <id>40139229639</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-08-27T13:11:16.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-27T13:11:19.000</dlv_status_at>
+            <address>79600489009</address>
+            <text>Пароль 698584 (Платеж: 24000.00р.ООО &quot;Простые решения&quot;)</text>
+            
+            
+          </record><record>
+            <id>38345910128</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-07-14T15:09:24.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-14T15:09:37.000</dlv_status_at>
+            <address>79673698888</address>
+            <text>Пароль 393946 (Платеж: 100000.00р.ООО &quot;ПРАЙД&quot;)</text>
+            
+            
+          </record><record>
+            <id>50889805795</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-13T16:18:28.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T16:18:38.000</dlv_status_at>
+            <address>79274223068</address>
+            <text>Пароль 310699 (Платеж: 13500.00р.ООО&quot;Консалтинговое агенство &quot;Хелфер&quot;)</text>
+            
+            
+          </record><record>
+            <id>40729830744</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-09-10T21:15:18.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-10T21:15:20.000</dlv_status_at>
+            <address>79053118383</address>
+            <text>Пароль 314177 (Платеж: 1700.00р.Филиал СПАО &quot;Ресо-Гарантия&quot; Центральны</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:48:56.423+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:48:56.423+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="подтвердите_вход_$T{в}_интернет_банк_пароль_$T{$STRING}_никому_$T{не}_сообщайте_этот_пароль" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="подтвердите" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="никому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="этот" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>34188898122</id>
+            <cnr>2275</cnr>
+            <cnrCode>ftc101</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-24T13:16:45.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-24T14:08:52.000</dlv_status_at>
+            <address>79172985918</address>
+            <text>Подтвердите вход в Интернет-Банк. Пароль: 992524. Никому не сообщайте этот пароль.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-23T15:30:54.524+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-23T15:30:54.524+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="платеж_$MONEY_$T{со}_счета_$STRING_$T{на}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>37775521330</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-30T14:57:37.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-30T14:57:40.000</dlv_status_at>
+            <address>79178739483</address>
+            <text>Платеж 2193р. со счета 0477 на УФК по РТ (Отделение Пенсионного фонда</text>
+            
+            
+          </record><record>
+            <id>30984390656</id>
+            <cnr>2275</cnr>
+            <cnrCode>ftc101</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-01-15T12:55:23.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-01-15T12:55:27.000</dlv_status_at>
+            <address>79031586660</address>
+            <text>Платеж 660р. со счета 2673 на ООО &quot;Картридж.биз&quot;</text>
+            
+            
+          </record><record>
+            <id>36684282471</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-03T12:40:43.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-03T12:40:49.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 34578р. со счета 4068 на УФК по РТ (Отделение Пенсионного фонд</text>
+            
+            
+          </record><record>
+            <id>34474750756</id>
+            <cnr>275</cnr>
+            <cnrCode>ftc1</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-04-10T13:45:19.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-10T13:45:25.000</dlv_status_at>
+            <address>79031586660</address>
+            <text>Платеж 1000р. со счета 2673 на ООО &quot;Логистик-Альянс&quot;</text>
+            
+            
+          </record><record>
+            <id>31733683407</id>
+            <cnr>2275</cnr>
+            <cnrCode>ftc101</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-02-03T12:46:59.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-02-03T12:47:04.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 2714р. со счета 4068 на ЗАО &quot;ЭР-Телеком Холдинг&quot;</text>
+            
+            
+          </record><record>
+            <id>36684763322</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-03T12:49:46.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-03T12:51:02.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 1000р. со счета 4068 на ООО &quot;Объединенные Напитки&quot;</text>
+            
+            
+          </record><record>
+            <id>36684102449</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-03T12:37:04.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-03T12:37:10.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 943р. со счета 4068 на УФК по Республике Татарстан (Государств</text>
+            
+            
+          </record><record>
+            <id>36684999616</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-03T12:53:12.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-03T12:53:24.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 4275.41р. со счета 4068 на ООО &quot;Центр Ваш Консультант&quot;</text>
+            
+            
+          </record><record>
+            <id>36684103243</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-03T12:37:54.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-03T12:38:58.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 4558р. со счета 4068 на УФК по Республике Татарстан (Государст</text>
+            
+            
+          </record><record>
+            <id>32847986572</id>
+            <cnr>2275</cnr>
+            <cnrCode>ftc101</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-03-03T11:17:43.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-03T11:17:49.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>Платеж 4532р. со счета 4068 на Закрытое акционерное общество &quot;ТЕКО &quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:49:53.755+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:49:53.755+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="password_$T{$STRING}_payment_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="password" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="payment" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50994338634</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-15T12:21:59.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T12:22:13.000</dlv_status_at>
+            <address>79274145546</address>
+            <text>Password 733232 (Payment: 23220.00RUB ИП Камнева Мария Викторовна)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:50:28.718+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:50:28.718+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_вы_выполнили_вход_$T{в}_интернет_банк_$T{в}_$LOCALTIME_мск" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выполнили" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мск" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>37026872872</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-06-11T15:12:38.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-11T15:12:51.000</dlv_status_at>
+            <address>79178739483</address>
+            <text>11.06.15 Вы выполнили вход в Интернет-банк в 15:12 Мск.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-01-11T22:40:55.853+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-01-11T22:40:55.853+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_интернет_банк_$DATETIME_$T{если}_вход_совершили_$T{не}_вы_срочно_обратитесь_$T{в}_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="если" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="совершили" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="срочно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратитесь" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>43026154819</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-11-02T14:16:16.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-11-02T14:16:19.000</dlv_status_at>
+            <address>79178739483</address>
+            <text>Вход в Интернет-банк 02.11 14:16 МСК. Если вход совершили не вы, срочно обратитесь в банк</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-23T15:29:57.871+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-23T15:29:57.871+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="log_$T{in}_$T{to}_internet_bank_password_$STRING_never_tell_it_anyone" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="log" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="in" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="to" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="internet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="password" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="never" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tell" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="it" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="anyone" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50501198157</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-06T12:50:20.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T12:50:25.000</dlv_status_at>
+            <address>79274145546</address>
+            <text>Log in to Internet-bank. Password: 017431. Never tell it anyone.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-11T18:20:07.944+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-11T18:20:07.944+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$DATETIME_совершен_платеж_$MONEY_$T{со}_счета_$T{$STRING}_$T{на}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="совершен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>38001916384</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-07-06T10:58:15.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-06T10:58:28.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>06.07 10:58 МСК совершен платеж 1233.34 р. со счета 4068 на Минфин РТ (МБУ &quot;Дезинфекционная станция города Казани&quot;), л/с ЛБВ718510426-Дезстан.</text>
+            
+            
+          </record><record>
+            <id>38046137032</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-07-07T11:31:39.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-07T11:32:00.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>07.07 11:31 МСК совершен платеж 5307 р. со счета 4068 на УФК по РТ (Отделение Пенсионного фонда РФ (государственное учреждение) по РТ.</text>
+            
+            
+          </record><record>
+            <id>38953170400</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-07-29T13:25:20.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-29T13:25:31.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>29.07 13:25 МСК совершен платеж 800 р. со счета 4068 на УФК по РТ (УФМС России по Республике Татарстан).</text>
+            
+            
+          </record><record>
+            <id>50802858430</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-12T09:18:58.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-12T09:19:02.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>12.04 09:18 МСК совершен платеж 2031 р. со счета 4068 на ООО &quot;Предприятие Развитие&quot;.</text>
+            
+            
+          </record><record>
+            <id>40919508008</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-09-15T12:18:13.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-15T12:18:19.000</dlv_status_at>
+            <address>79178739483</address>
+            <text>15.09 12:18 МСК совершен платеж 301 р. со счета 0477 на УФК по РТ (Государственное учреждение - региональное отделение Фонда социального страхования Российской Федерации по Республике Татарстан).</text>
+            
+            
+          </record><record>
+            <id>40919455041</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-09-15T12:17:53.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-15T12:17:58.000</dlv_status_at>
+            <address>79178739483</address>
+            <text>15.09 12:17 МСК совершен платеж 2193 р. со счета 0477 на УФК по РТ (Отделение Пенсионного фонда Российской Федерации (государственное учреждение).</text>
+            
+            
+          </record><record>
+            <id>50502123206</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-06T13:03:33.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T13:03:41.000</dlv_status_at>
+            <address>79037210646</address>
+            <text>06.04 13:03 МСК совершен платеж 16524 р. со счета 3062 на ООО &quot;КОНВЕКТОР&quot;.</text>
+            
+            
+          </record><record>
+            <id>50981907847</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-15T09:49:41.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T09:50:23.000</dlv_status_at>
+            <address>79272480917</address>
+            <text>15.04 09:49 МСК совершен платеж 2200 р. со счета 3698 на УФК МФ РФ по РТ (Государственное учреждение Отделение Пенсионного фонда РФ по РТ).</text>
+            
+            
+          </record><record>
+            <id>38989402081</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-07-30T11:35:16.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-30T11:35:27.000</dlv_status_at>
+            <address>79274050091</address>
+            <text>30.07 11:35 МСК совершен платеж 20000 р. со счета 4068 на Общество с ограниченной ответственностью &quot;ЛУКОЙЛ-Интер-Кард&quot;.</text>
+            
+            
+          </record><record>
+            <id>48612682336</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-02-29T09:36:47.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-02-29T09:36:52.000</dlv_status_at>
+            <address>79037210646</address>
+            <text>29.02 09:36 МСК совершен платеж 15500 р. со счета 3062 на Публичное акционерное общество &quot;Сбербанк России&quot;.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:46:36.945+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:46:36.945+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$DATETIME_номер_телефона_$T{для}_получения_паролей_$T{и}_уведомлений_изменен_c_$T{$STRING}_$T{на}_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="номер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="телефона" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="паролей" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="и" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уведомлений" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="изменен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="c" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Старый телефон" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Новый телефон" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>48695948338</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-03-01T16:22:54.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-03-02T04:22:54.000</dlv_status_at>
+            <address>79266872543</address>
+            <text>01.03 16:22 МСК номер телефона для получения паролей и уведомлений изменен c 9266872543 на 9252098316.</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:48:07.557+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:48:07.557+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$DATETIME_исполнен_платеж_$T{$LONG}_$MONEY_$T{со}_счета_$T{$STRING}_$T{на}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="со" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50269650519</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-01T14:55:15.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-01T14:55:19.000</dlv_status_at>
+            <address>79503254477</address>
+            <text>31.03 21:00 МСК исполнен платеж №389 1891.62 р. со счета 3243 на УФК по РТ ( ОВО по Арскому району - филиал ФГКУ УВО МВД по РТ л/с 04111А71840.</text>
+            
+            
+          </record><record>
+            <id>50623441153</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-08T14:43:09.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-08T14:43:29.000</dlv_status_at>
+            <address>79376132291</address>
+            <text>07.04 21:00 МСК исполнен платеж №74 5577 р. со счета 1365 на УФК по РТ (Исполнительный комитет города Набережные Челны Республики Татарстан).</text>
+            
+            
+          </record><record>
+            <id>50813588212</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-12T11:50:25.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-12T11:50:59.000</dlv_status_at>
+            <address>79372880118</address>
+            <text>11.04 21:00 МСК исполнен платеж №152 36000 р. со счета 3034 на ООО ЧОП &quot;Контр-Юниверсити 3&quot;.</text>
+            
+            
+          </record><record>
+            <id>50501036076</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-06T12:47:23.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T12:47:40.000</dlv_status_at>
+            <address>79377744710</address>
+            <text>05.04 21:00 МСК исполнен платеж №75 5000 р. со счета 2977 на ООО &quot;Линкор Мастер&quot;.</text>
+            
+            
+          </record><record>
+            <id>50861584716</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-13T09:07:59.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T09:08:11.000</dlv_status_at>
+            <address>79274163946</address>
+            <text>12.04 21:00 МСК исполнен платеж №1377 65000 р. со счета 2734 на Общество с ограниченной ответственностью частное охранное предприятие &quot;Риф&quot;.</text>
+            
+            
+          </record><record>
+            <id>39217781723</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2015-08-05T10:43:20.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-05T10:43:38.000</dlv_status_at>
+            <address>79673698888</address>
+            <text>03.08 21:00 МСК исполнен платеж №142 55534.75 р. со счета 3470 на ООО &quot;Лизинг-Трейд&quot;.</text>
+            
+            
+          </record><record>
+            <id>51005526685</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-15T14:36:36.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T14:36:43.000</dlv_status_at>
+            <address>79376132291</address>
+            <text>14.04 21:00 МСК исполнен платеж №83 48000 р. со счета 1365 на ЗАО &quot;Аналитика Право Сервис&quot;.</text>
+            
+            
+          </record><record>
+            <id>50941388895</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-14T14:36:44.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-14T14:37:01.000</dlv_status_at>
+            <address>79276793834</address>
+            <text>13.04 21:00 МСК исполнен платеж №476 60000 р. со счета 1441 на ООО &quot;ЧОО &quot;Сфинкс Патруль&quot;.</text>
+            
+            
+          </record><record>
+            <id>50989351863</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-15T11:23:23.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T11:23:36.000</dlv_status_at>
+            <address>79372880118</address>
+            <text>14.04 21:00 МСК исполнен платеж №161 9315 р. со счета 3034 на ООО &quot;Российское Авторское Общество&quot;(РАО).</text>
+            
+            
+          </record><record>
+            <id>51211373489</id>
+            <cnr>2345</cnr>
+            <cnrCode>ftc104</cnrCode>
+            <acn>92</acn>
+            <acnCode>ankor</acnCode>
+            <timestamp>2016-04-19T15:55:59.000</timestamp>
+            <subject>ANKOR BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-19T15:56:11.000</dlv_status_at>
+            <address>79372849988</address>
+            <text>18.04 21:00 МСК исполнен платеж №108 1000 р. со счета 3038 на Открытое акционерное общество &quot;Мобильные ТелеСистемы &quot;.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:44:44.376+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:44:44.376+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

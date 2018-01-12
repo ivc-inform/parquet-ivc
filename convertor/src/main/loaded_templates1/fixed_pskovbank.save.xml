@@ -1,0 +1,184 @@
+<fixedTemplaterActor acn="pskovbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="подтверждение_входа_$T{в}_интернет_банк_$T{$STRING}_$T{не}_разглашайте_этот_код" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="подтверждение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="разглашайте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="этот" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>18424444770</id>
+            <cnr>1206</cnr>
+            <cnrCode>pskovbank0</cnrCode>
+            <acn>295</acn>
+            <acnCode>pskovbank</acnCode>
+            <timestamp>2014-02-25T12:49:02.000</timestamp>
+            <subject>EUROSIBBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-25T12:49:07.000</dlv_status_at>
+            <address>79052229927</address>
+            <text>Подтверждение входа в Интернет-Банк 81069 Не разглашайте этот код</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-27T10:48:35.650+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-27T10:48:35.650+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="телефонный_номер_$T{в}_системе_интернет_банк_изменен_$T{$PHONE}_$T{на}_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="телефонный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="номер" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="системе" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="изменен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Старый телефон" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Новый телефон" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13701908294</id>
+            <cnr>1206</cnr>
+            <cnrCode>pskovbank0</cnrCode>
+            <acn>295</acn>
+            <acnCode>pskovbank</acnCode>
+            <timestamp>2013-10-01T09:08:55.000</timestamp>
+            <subject>EUROSIBBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-01T09:09:06.000</dlv_status_at>
+            <address>79113636631</address>
+            <text>Телефонный номер в системе Интернет-Банк изменен 89113636631 на 89116919186</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:15:50.039+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-23T21:15:50.039+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="auth_$T{$VARSTRING}_$MONEY_cardn_$T{$CARDNUMBER}_$T{$VARSTRING}_bal_$T{$DOUBLE}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="auth" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cardn" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="bal" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19131614790</id>
+            <cnr>1584</cnr>
+            <cnrCode>rapportoml1</cnrCode>
+            <acn>361</acn>
+            <acnCode>pskovbank</acnCode>
+            <timestamp>2014-03-14T13:45:55.000</timestamp>
+            <subject>EUROSIBBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-14T13:46:00.000</dlv_status_at>
+            <address>79213866855</address>
+            <text>Auth:&quot;AZBUKA VKUSA&quot;
+225.00RUR
+CardN**6340
+IRINA SOKOLOVA
+BAL: 13 632.30
+2014-03-14 13:45:39</text>
+            <start_time>2014-03-14T13:45:55.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-10-23T21:15:11.693+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-10-23T21:15:11.693+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

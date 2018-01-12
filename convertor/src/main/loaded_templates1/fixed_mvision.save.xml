@@ -1,0 +1,3589 @@
+<fixedTemplaterActor acn="mvision">
+<fixedTemplateHolder>
+<fixedTmpl asString="popolnenie_scheta_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="scheta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6375904545</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-09T14:30:39.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-09T14:30:50.000</dlv_status_at>
+            <address>79859980890</address>
+            <text>Popolnenie scheta: 09.11.12 14:30,karta 4169***2926. summa:90138.38 RUB, balance:92767.32 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:45:54.770+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:45:54.770+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_списание_$MONEY_$T{$VARSTRING}_доступно_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="доступно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6085989365</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-10-19T11:09:23.000</timestamp>
+            <subject>PERVOBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-19T11:09:41.000</dlv_status_at>
+            <address>79277209197</address>
+            <text>*2230: 19.10.2012 11:09 Списание: 700.00 руб., ATM101542, SAMARA, 106,  NOVO-SADOVAYA STREET.  Доступно: 18649.25 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:02:53.782+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:02:53.782+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY_$T{$DOUBLE}_ballov_$T{za}_pokupku_budet_nachisleno_$T{$DOUBLE}_ballov_svyaznoy_club_bally_eto_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ballov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="za" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupku" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="budet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ballov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="svyaznoy" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="club" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bally" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="eto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6087236584</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-10-19T12:10:40.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-19T12:12:38.000</dlv_status_at>
+            <address>79051273032</address>
+            <text>5163***0572; Oplata tovarov/uslug: 10170.00RUR; Mesto: ADIDAS  SHOP, TVER; 19.10.2012 08:10. Dostupno po karte 30134.78RUR, 6437 ballov. Za pokupku budet nachisleno 10170.00 ballov Svyaznoy-Club. Bally – eto Vasha skidka v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>6087160035</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-10-19T12:05:52.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-19T12:18:50.000</dlv_status_at>
+            <address>79534156179</address>
+            <text>5203***8519; Oplata tovarov/uslug: 1590.00RUR; Mesto: DNS, N.NOVGOROD; 19.10.2012 12:05. Dostupno po karte 263124.15RUR, 243873 ballov. Za pokupku budet nachisleno 1590.00 ballov Svyaznoy-Club. Bally – eto Vasha skidka v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>6084187552</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-10-19T09:44:13.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-10-19T09:44:50.000</dlv_status_at>
+            <address>79154049401</address>
+            <text>5203***9689; Oplata tovarov/uslug: 5700.00RUR; Mesto: INTERNET BANK, IBANK.SVYAZNOYBANK.RU,; 19.10.2012 09:44. Dostupno po karte 92017.00RUR, 111345 ballov. Za pokupku budet nachisleno 5700.00 ballov Svyaznoy-Club. Bally – eto Vasha skidka v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:30:46.874+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:30:46.874+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY_balans_plusov_$T{$DOUBLE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="plusov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11749967156</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T18:51:31.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T18:51:37.000</dlv_status_at>
+            <address>79036444344</address>
+            <text>4890***1776;
+Oplata tovarov/uslug:
+271.60 RUB;
+Mesto:IMPERIYA SUMOK, BRYANSK;
+17.07.2013 18:51
+Dostupno po karte: 839 089.41 RUB;
+Balans plusov: 10,084.5.</text>
+            
+            
+          </record><record>
+            <id>11750105344</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T18:58:17.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-07-17T18:58:17.000</dlv_status_at>
+            <address>79111111111</address>
+            <text>4890***4102;
+Oplata tovarov/uslug:
+750.00 EUR;
+Mesto:CHATZIVASILIS KONSTANT, IRAKLEIOU;
+17.07.2013 18:58
+Dostupno po karte: 5 483 577.25 RUB;
+Balans plusov: 3,525.46.</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>11721148948</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T20:42:59.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T20:43:05.000</dlv_status_at>
+            <address>79104124993</address>
+            <text>4890***7300;
+Oplata tovarov/uslug:
+1.95 USD;
+Mesto:PP*2235CODE, 4029357733;
+16.07.2013 20:42
+Dostupno po karte: 699 933.74 RUB;
+Balans plusov: 327.09.</text>
+            
+            
+          </record><record>
+            <id>11721614610</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T21:13:10.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T21:13:13.000</dlv_status_at>
+            <address>79154511111</address>
+            <text>4890***7774;
+Oplata tovarov/uslug:
+103.00 RUB;
+Mesto:NSK_PARKINGMOS_APP, MOSKVA;
+16.07.2013 21:13
+Dostupno po karte: 26 944.07 RUB;
+Balans plusov: 0.</text>
+            
+            
+          </record><record>
+            <id>11206423740</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T09:42:06.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T09:42:12.000</dlv_status_at>
+            <address>79036444344</address>
+            <text>4890***4983;
+Oplata tovarov/uslug:
+258.00 RUB;
+Mesto:COFFEE BEAN, MOSKVA;
+28.06.2013 09:42
+Dostupno po karte: 901 840.18 RUB;
+Balans plusov: 95.53.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:23:32.638+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:23:32.638+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vasha_karta_$T{$CARDNUMBER}_aktivirovana_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="vasha" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="aktivirovana" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11709067262</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T13:20:11.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T13:20:26.000</dlv_status_at>
+            <address>79166183621</address>
+            <text>Vasha karta *6559 aktivirovana. Poluchenie PIN po karte v techenie 5 dney  po tel.8 800 100 0005 na territorii RF (+7 495 514 1114  za predelami RF).</text>
+            
+            
+          </record><record>
+            <id>6527582251</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-20T11:44:47.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-20T11:45:00.000</dlv_status_at>
+            <address>79219504999</address>
+            <text>Vasha karta 5203***9737 aktivirovana. Poluchite PIN po telefonu 8-800-333-0030 v techenie 5 dney.</text>
+            
+            
+          </record><record>
+            <id>11778563244</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T16:49:15.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T16:49:22.000</dlv_status_at>
+            <address>79219412982</address>
+            <text>Vasha karta 5203***8979 aktivirovana. Dlya polucheniya PIN-koda pozvonite v techenie 5 dney po tel. 8 800 100 0005, za predelami RF +7 495 514 1114 .</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:03:22.639+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:03:22.639+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11712159064</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T14:50:18.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T14:50:28.000</dlv_status_at>
+            <address>79203870780</address>
+            <text>5163***7179;
+Oplata tovarov/uslug:
+399.00 RUB;
+Mesto:CONCEPT CLUB AND ACOOL, KARAVAEVO;
+16.07.2013 16:50
+Dostupno po karte: 1 663.14 RUB;</text>
+            
+            
+          </record><record>
+            <id>11781402832</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T18:27:49.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T18:27:57.000</dlv_status_at>
+            <address>79218873546</address>
+            <text>5163***7222;
+Oplata tovarov/uslug:
+327.62 RUB;
+Mesto:UNIVERSAM SEMYA, VOLKHOV;
+18.07.2013 18:27
+Dostupno po karte: 13 695.87 RUB;</text>
+            
+            
+          </record><record>
+            <id>11202606358</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T07:49:53.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T07:50:00.000</dlv_status_at>
+            <address>79194543592</address>
+            <text>5163***5311;
+Oplata tovarov/uslug:
+990.00 RUB;
+Mesto:TEL000000000000000M000, PERMOW;
+28.06.2013 07:49
+Dostupno po karte: 0.00 RUB;</text>
+            
+            
+          </record><record>
+            <id>11205973636</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T09:32:31.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T09:32:40.000</dlv_status_at>
+            <address>79265959781</address>
+            <text>5163***5112;
+Oplata tovarov/uslug:
+178.50 RUB;
+Mesto:UNIVERSAM ABK, MOSCOW;
+28.06.2013 09:32
+Dostupno po karte: 27 185.71 RUB;</text>
+            
+            
+          </record><record>
+            <id>11634644682</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-13T11:32:16.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-13T11:32:19.000</dlv_status_at>
+            <address>79032170705</address>
+            <text>4375***8666;
+Oplata tovarov/uslug:
+793.00 RUB;
+Mesto:AZBUKA VKUSA PRM97, MOSCOW;
+13.07.2013 11:32
+Dostupno po karte: 2 024.10 RUB;</text>
+            
+            
+          </record><record>
+            <id>11206445322</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T09:42:32.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T09:42:39.000</dlv_status_at>
+            <address>79641944144</address>
+            <text>5163***2222;
+Oplata tovarov/uslug:
+181.00 RUB;
+Mesto:MCDONALDS 27603, PERM;
+28.06.2013 09:42
+Dostupno po karte: 7 687.23 RUB;</text>
+            
+            
+          </record><record>
+            <id>11763739654</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T11:00:39.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T11:00:55.000</dlv_status_at>
+            <address>79853374552</address>
+            <text>5163***2146;
+Oplata tovarov/uslug:
+5 000.00 RUB;
+Mesto:SPORTMASTER  SHOP, MOSCOW;
+18.07.2013 11:00
+Dostupno po karte: 822.97 RUB;</text>
+            
+            
+          </record><record>
+            <id>11720220194</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T19:51:06.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T19:51:14.000</dlv_status_at>
+            <address>79049896003</address>
+            <text>5163***1266;
+Oplata tovarov/uslug:
+176.20 RUB;
+Mesto:SEM PYATNITS, EKATERINBURG;
+16.07.2013 19:51
+Dostupno po karte: 1 485.24 RUB;</text>
+            
+            
+          </record><record>
+            <id>11690638296</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T18:02:36.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T18:02:41.000</dlv_status_at>
+            <address>79218873546</address>
+            <text>5163***7222;
+Oplata tovarov/uslug:
+110.70 RUB;
+Mesto:POLUSHKA, SANKT-PETERBU;
+15.07.2013 18:02
+Dostupno po karte: 17 023.49 RUB;</text>
+            
+            
+          </record><record>
+            <id>11749680932</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T18:36:50.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T18:37:00.000</dlv_status_at>
+            <address>79295055555</address>
+            <text>4375***9916;
+Oplata tovarov/uslug:
+940.00 RUB;
+Mesto:Wheely Technologies, London EC2A 4;
+17.07.2013 18:36
+Dostupno po karte: 299 840.73 RUB;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:19:11.951+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:19:11.951+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY_balans_plusov_$T{$DOUBLE}_$T{$LONG}_plus_eto_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="plusov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="plus" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="eto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11733291498</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T11:20:46.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T11:20:55.000</dlv_status_at>
+            <address>79213981818</address>
+            <text>5203***9796;
+Oplata tovarov/uslug:
+74.80 RUB;
+Mesto:UNIVERSAM SEMYA, SANKT-PETERBU;
+17.07.2013 11:20
+Dostupno po karte: 40 487.53 RUB;
+Balans plusov: 978.89.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11708685866</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T13:10:17.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T13:10:29.000</dlv_status_at>
+            <address>79186148665</address>
+            <text>5203***3126;
+Oplata tovarov/uslug:
+10.00 USD;
+Mesto:POKERSTARS, DOUGLAS;
+16.07.2013 10:10
+Dostupno po karte: 974.35 RUB;
+Balans plusov: 196.15.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11203910070</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T08:27:59.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T08:28:05.000</dlv_status_at>
+            <address>79138982298</address>
+            <text>5203***0926;
+Oplata tovarov/uslug:
+651.00 RUB;
+Mesto:OOO MEDTEHNIKA DOMA, NOVOSIBIRSK;
+28.06.2013 11:27
+Dostupno po karte: 51 403.90 RUB;
+Balans plusov: 0.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:28:34.366+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:28:34.366+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="pokupka_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6400375806</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-11T15:14:35.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-11T15:14:40.000</dlv_status_at>
+            <address>79262942161</address>
+            <text>Pokupka: MCDONALDS 11030, MOSKVA, ,11.11.12 15:14,karta 4169***8236. summa:246.00 RUB, balance:63720.23 RUB.</text>
+            
+            
+          </record><record>
+            <id>6380715194</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-09T18:27:03.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-09T18:27:07.000</dlv_status_at>
+            <address>79172981271</address>
+            <text>Pokupka: EDELVEYS 908, KAZAN, ,09.11.12 18:26,karta 4169***8486. summa:653.81 RUB, balance:95.75 RUB.</text>
+            
+            
+          </record><record>
+            <id>6386854496</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-10T11:14:14.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-10T11:14:20.000</dlv_status_at>
+            <address>79124956081</address>
+            <text>Pokupka: OBUV, PERM, ,10.11.12 11:14,karta 5268***1936. summa:1700.00 RUB, balance:11559.14 RUB.</text>
+            
+            
+          </record><record>
+            <id>6397852130</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-11T11:37:45.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-11T11:37:51.000</dlv_status_at>
+            <address>79177767851</address>
+            <text>Pokupka: 1000 MELOCHEY, UFA, ,11.11.12 11:37,karta 5124***0513. summa:318.50 RUB, balance:128270.98 RUB.</text>
+            
+            
+          </record><record>
+            <id>6402678893</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-11T19:39:58.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-11T19:40:01.000</dlv_status_at>
+            <address>79634554701</address>
+            <text>Pokupka: SEMEYNYY MARKET, TYUMEN, ,11.11.12 19:39,karta 4169***2317. summa:140.00 RUB, balance:42916.90 RUB.</text>
+            
+            
+          </record><record>
+            <id>6393579295</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-10T20:28:31.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-10T20:28:37.000</dlv_status_at>
+            <address>79099356680</address>
+            <text>Pokupka v internet-magazine: POKERSTARS, Isle of Man, ,10.11.12 20:28,karta 5124***9709. summa:190.00 USD, balance:196.22 RUB.</text>
+            
+            
+          </record><record>
+            <id>6394617166</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-11T00:14:32.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-11T00:14:36.000</dlv_status_at>
+            <address>79162410546</address>
+            <text>Pokupka v internet-magazine: FONBET, MOSCOW, ,11.11.12 00:14,karta 4169***1426. summa:49.47 EUR, balance:112234.53 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:43:04.268+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:43:04.268+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_poluchenie_nalichnimi_$MONEY_$T{$VARSTRING}_ostatok_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="poluchenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnimi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="ostatok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10959996518</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-19T19:32:53.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-19T19:33:00.000</dlv_status_at>
+            <address>79522541788</address>
+            <text>*6666: 19.06.2013 19:32 Poluchenie nalichnimi 1000.00 rub., 040000005893, ARKHANGELSK, BANKOMAT 431607 8637 2. Ostatok 11198.94 rub.</text>
+            
+            
+          </record><record>
+            <id>10970015316</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-20T10:04:43.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-20T10:04:50.000</dlv_status_at>
+            <address>79522541788</address>
+            <text>*6666: 20.06.2013 10:02 Poluchenie nalichnimi 7000.00 rub., MINB, Arkhangelsk, MINB Reydovaya str.3. Ostatok 4198.94 rub.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T16:59:00.151+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T16:59:00.151+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARCARDNUMBER}_oplata_tovara_uslug_sum_$MONEY_$T{$VARSTRING}_$DATETIME_ostatok_$T{na}_karte_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovara" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sum" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ostatok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11354734522</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-03T17:14:27.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-03T17:14:33.000</dlv_status_at>
+            <address>79029236909</address>
+            <text>VISA: 6289. Oplata tovara/uslug.  Sum: 267.00 RUR 25 CHASOV SUPERMARKET  2013-07-03 17:14:24 (MCK). Ostatok na karte:621.77 RUR.</text>
+            
+            
+          </record><record>
+            <id>11681810968</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T13:44:56.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T13:44:59.000</dlv_status_at>
+            <address>79185553625</address>
+            <text>VISA: 1631. Oplata tovara/uslug.  Sum: 11 580.00 RUR UTAIR  BOOKING OFFICE  2013-07-15 13:44:53 (MCK). Ostatok na karte:8 086.65 RUR.</text>
+            
+            
+          </record><record>
+            <id>11676227260</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T11:39:21.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T11:39:27.000</dlv_status_at>
+            <address>79242429207</address>
+            <text>VISA: 0193. Oplata tovara/uslug.  Sum: 275.00 RUR OOO PRIMAYS  2013-07-15 11:39:17 (MCK). Ostatok na karte:32 091.33 RUR.</text>
+            
+            
+          </record><record>
+            <id>11681252288</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T13:36:26.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T13:36:33.000</dlv_status_at>
+            <address>79021686731</address>
+            <text>VISA: 8543. Oplata tovara/uslug.  Sum: 298.00 RUR PRODUKTY OT TITANA  2013-07-15 13:36:21 (MCK). Ostatok na karte:1 403.98 RUR.</text>
+            
+            
+          </record><record>
+            <id>11679836052</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T13:06:35.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T13:06:38.000</dlv_status_at>
+            <address>79114289738</address>
+            <text>VISA: 6583. Oplata tovara/uslug.  Sum: 54.40 RUR UNIVERSAM SEMYA  2013-07-15 13:06:31 (MCK). Ostatok na karte:969.19 RUR.</text>
+            
+            
+          </record><record>
+            <id>11683531148</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T14:30:56.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T14:31:04.000</dlv_status_at>
+            <address>79086668400</address>
+            <text>VISA: 8822. Oplata tovara/uslug.  Sum: 6 500.00 RUR ELLE COLLECTION  2013-07-15 14:30:54 (MCK). Ostatok na karte:7 542.72 RUR.</text>
+            
+            
+          </record><record>
+            <id>11682881568</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T14:12:09.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T14:12:15.000</dlv_status_at>
+            <address>79212712708</address>
+            <text>VISA: 2857. Oplata tovara/uslug.  Sum: 471.54 RUR EVROROS  2013-07-15 14:12:05 (MCK). Ostatok na karte:3 863.62 RUR.</text>
+            
+            
+          </record><record>
+            <id>3950453115</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-04-20T08:38:51.000</timestamp>
+            <subject>VOST ALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-04-20T08:38:58.000</dlv_status_at>
+            <address>79138040439</address>
+            <text>VISA: 3600. Oplata tovara/uslug.  Sum: 100.00 RUR ODNOKLASSNIKI OOO  2012-04-20 08:38:49 (MCK). Ostatok na karte:3 589.83 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:37:59.853+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:37:59.853+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="poluchenie_nalichnykh_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="poluchenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnykh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6388778518</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-10T12:55:35.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-10T12:55:39.000</dlv_status_at>
+            <address>79634554701</address>
+            <text>Poluchenie nalichnykh: RGS BANK EKT ATM, TYUMEN, RESPUBLIKI 164/2,10.11.12 12:55,karta 4169***2317. summa:900.00 RUB, balance:46968.00 RUB.</text>
+            
+            
+          </record><record>
+            <id>6382182726</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-09T20:19:26.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-09T20:19:31.000</dlv_status_at>
+            <address>79269123585</address>
+            <text>Poluchenie nalichnykh: NMOS/AR500772, SERGIYEV POS, ,09.11.12 20:19,karta 4169***5573. summa:500.00 RUB, balance:468.63 RUB.</text>
+            
+            
+          </record><record>
+            <id>6403034628</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-11T20:36:20.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-11T20:36:25.000</dlv_status_at>
+            <address>79262942161</address>
+            <text>Poluchenie nalichnykh: BANKOMAT 780055 1569, MOSCOW, ,11.11.12 20:36,karta 4169***8236. summa:2500.00 RUB, balance:48185.25 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:45:13.706+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:45:13.706+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_polucheno_nalichnymi_$MONEY_$T{$VARSTRING}_ostatok_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="polucheno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnymi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="ostatok" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10966145100</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-20T08:02:30.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-20T08:02:35.000</dlv_status_at>
+            <address>79039147103</address>
+            <text>*9172: 20.06.2013 11:02 Polucheno nalichnymi5200.00 RUR, ATM079513, TOMSK, 77, IRKUTSKIY TRAKT. Ostatok: 110.36 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:00:27.226+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:00:27.226+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_otmena_polucheniya_nalichnyh_$MONEY_dostupno_$T{po}_karte_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="polucheniya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnyh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11804570896</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T12:11:02.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T12:18:19.000</dlv_status_at>
+            <address>79172656003</address>
+            <text>5203***5518;
+Otmena polucheniya nalichnyh:
+2 000.00 RUB;
+Dostupno po karte:
+2329.16 RUB;
+Mesto:VB24 86, MOSKOVSKIY,NABEREZHNYE C;
+19.07.2013 12:10</text>
+            
+            
+          </record><record>
+            <id>11206901372</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T09:57:49.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T09:57:55.000</dlv_status_at>
+            <address>79127007875</address>
+            <text>5203***6479;
+Otmena polucheniya nalichnyh:
+5 000.00 RUB;
+Dostupno po karte:
+69320.36 RUB;
+Mesto:BANKOMAT 270348 8612 1,KIROV;
+28.06.2013 09:57</text>
+            
+            
+          </record><record>
+            <id>11041039656</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-22T14:20:50.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-22T14:21:45.000</dlv_status_at>
+            <address>79654430751</address>
+            <text>5163***2095;
+Otmena polucheniya nalichnyh:
+5 000.00 RUB;
+Dostupno po karte:
+37290 RUB;
+Mesto:NMOS NMOS/AR770823,MOSCOW;
+22.06.2013 13:47</text>
+            
+            
+          </record><record>
+            <id>11677610940</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T12:12:40.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T12:12:49.000</dlv_status_at>
+            <address>79273616626</address>
+            <text>5163***7309;
+Otmena polucheniya nalichnyh:
+5 000.00 RUB;
+Dostupno po karte:
+109741.22 RUB;
+Mesto:ATM 009 PENZA,PENZA;
+15.07.2013 12:12</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:35:41.841+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:35:41.841+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATE_вы_выполнили_вход_$T{в}_интернет_банк_$T{в}_$LOCALTIME_мск" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выполнили" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="мск" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10970852640</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-20T10:26:16.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-20T10:26:20.000</dlv_status_at>
+            <address>79139463777</address>
+            <text>20.06.13 Вы выполнили вход в Интернет-банк в 10:26 Мск.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:36:47.089+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:36:47.089+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="operatsiya_otklonena_$T{$VARSTRING}_$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_tel_$T{$PHONE}_$T{za}_predelami_rf_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="operatsiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otklonena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="za" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="predelami" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rf" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11752895430</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T21:31:10.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T21:31:18.000</dlv_status_at>
+            <address>79126302765</address>
+            <text>Operatsiya otklonena, nedostatochno sredstv;
+5203***8882;
+Oplata tovarov/uslug:
+3 276.00 RUB;
+Mesto:PAYU RU APPLIANCE, Moscow;
+17.07.2013 00:00
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11744944314</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T15:59:06.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T15:59:13.000</dlv_status_at>
+            <address>79055096092</address>
+            <text>Operatsiya otklonena, neverniy PIN;
+5203***4060;
+Oplata tovarov/uslug:
+657.00 RUB;
+Mesto:4 SEZONA, ANAPA;
+17.07.2013 15:58
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11764173670</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T11:08:32.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T11:08:40.000</dlv_status_at>
+            <address>79629619840</address>
+            <text>Operatsiya otklonena, karta blokirovana;
+5163***5137;
+Oplata tovarov/uslug:
+71.40 USD;
+Mesto:HostpapaInc, 9053153455;
+18.07.2013 03:08
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>14137236832</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-10-11T08:47:31.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-10-11T08:47:42.000</dlv_status_at>
+            <address>79139222578</address>
+            <text>Operatsiya otklonena, obratites v Bank;
+5203***5084;
+Oplata tovarov/uslug:
+0.01 RUB;
+Mesto:IP BUSHUEVA E A, NOVOSIBIRSK;
+11.10.2013 08:47
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11130743376</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-25T22:54:33.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-25T22:54:46.000</dlv_status_at>
+            <address>79178476205</address>
+            <text>Operatsiya otklonena, neverniy CVV2;
+5163***0863;
+Oplata tovarov/uslug:
+31.00 RUB;
+Mesto:ODNOKLASSNIKI, MOSCOW;
+25.06.2013 22:54
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11756048160</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T06:43:24.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T09:35:38.000</dlv_status_at>
+            <address>79536074287</address>
+            <text>Operatsiya otklonena, operatsiya ne dostupna po karte;
+5203***7173;
+Oplata tovarov/uslug:
+50.00 RUB;
+Mesto:ODNOKLASSNIKI, MOSCOW;
+18.07.2013 06:43
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11130701648</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-25T22:49:56.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-25T22:49:59.000</dlv_status_at>
+            <address>79032112121</address>
+            <text>Operatsiya otklonena, nedostatochno sredstv;
+5316***7689;
+Oplata tovarov/uslug:
+10.00 USD;
+Mesto:POKERSTARS, DOUGLAS IOM;
+25.06.2013 19:49
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11717965364</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T18:07:43.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T18:15:56.000</dlv_status_at>
+            <address>79825312538</address>
+            <text>Operatsiya otklonena, neverniy PIN;
+5203***8716;
+Oplata tovarov/uslug:
+222.00 RUB;
+Mesto:PRODUKTY, NIZHNEVARTOVS;
+16.07.2013 18:07
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11355071752</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-03T17:22:14.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-03T17:22:33.000</dlv_status_at>
+            <address>79851328810</address>
+            <text>Operatsiya otklonena, nedostatochno sredstv;
+5203***2553;
+Oplata tovarov/uslug:
+250.00 RUB;
+Mesto:MTS-RECURRING PHONE SE, MOSCOW;
+03.07.2013 17:22
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11753766374</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T22:39:21.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T22:40:11.000</dlv_status_at>
+            <address>79031823299</address>
+            <text>Operatsiya otklonena, nedostatochno sredstv;
+5203***9068;
+Oplata tovarov/uslug:
+750.00 RUB;
+Mesto:POKERSTARS, INTERNET;
+17.07.2013 19:39
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:38:57.108+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:38:57.108+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="karta_$T{$VARCARDNUMBER}_dostupno_$T{vsego}_$MONEY_binbank_tel_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="B"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vsego" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="binbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28793686743</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2014-11-21T13:00:08.000</timestamp>
+            <subject>BINBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-11-21T13:15:10.000</dlv_status_at>
+            <address>79000000000</address>
+            <text>Karta  VISA  *1455 
+Dostupno vsego 3792.40 RUR BINBANK tel 8 800 200 50 75</text>
+            <start_time>2014-11-21T13:00:08.000</start_time>
+            <dlv_error>unknown-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:04:54.634+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:04:54.634+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="pokupka_$LOCALDATETIME_karta_$T{$CARDNUMBER}_$MONEY_$T{$VARSTRING}_ost_$MONEY_dost_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="pokupka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="ost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dost" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28792031874</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2014-11-21T12:36:24.000</timestamp>
+            <subject>LKB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-21T12:36:29.000</dlv_status_at>
+            <address>79042828359</address>
+            <text>Pokupka
+12:36 21.11.2014
+karta 6*6823
+103.30 rub.
+MAGNIT MM FARGELION     &gt;
+Ost. -14 247.33 rub.
+Dost. 6 252.67 rub.</text>
+            <start_time>2014-11-21T12:36:24.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:44:22.854+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:44:22.854+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY_$T{$LONG}_plus_eto_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="plus" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="eto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10768903094</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-12T17:04:42.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-12T17:04:57.000</dlv_status_at>
+            <address>79115766567</address>
+            <text>5203***7658;
+Oplata tovarov/uslug:
+1 270.00 RUB;
+Mesto:GULLIVER, ARKHANGELSK;
+12.06.2013 17:03
+Dostupno po karte: 14 318.06 RUB;
+
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:27:35.255+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:27:35.255+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="parol_$T{dlya}_vhoda_$T{v}_internet_bank_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dlya" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vhoda" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="internet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>13753558862</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-09-28T10:53:30.000</timestamp>
+            <subject>VOSTALERT</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-09-28T10:53:33.000</dlv_status_at>
+            <address>79155327658</address>
+            <text>Parol' dlya vhoda v Internet-bank: 790192</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:46:26.277+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:46:26.277+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_oplata_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY_balans_plusov_$T{$DOUBLE}_$T{za}_pokupku_budet_nachisleno_$T{$DOUBLE}_plusa_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balans" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="plusov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="za" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="pokupku" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="budet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nachisleno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="plusa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11681089338</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T13:33:55.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T13:33:59.000</dlv_status_at>
+            <address>79032444048</address>
+            <text>5163***6785;
+Oplata tovarov/uslug:
+167.00 RUB;
+Mesto:OLYMPIETS, MOSKVA;
+15.07.2013 13:33
+Dostupno po karte: 45 907.58 RUB;
+Balans plusov: 3,755.33.
+Za pokupku budet nachisleno 1.67 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11754685080</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T01:15:56.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T01:16:08.000</dlv_status_at>
+            <address>79242155860</address>
+            <text>5316***8016;
+Oplata tovarov/uslug:
+146.00 RUB;
+Mesto:SAMOBRANKA, KHABAROVSK;
+18.07.2013 01:15
+Dostupno po karte: 1 026.43 RUB;
+Balans plusov: 232.4.
+Za pokupku budet nachisleno 1.46 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11720132982</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T19:47:09.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T19:47:26.000</dlv_status_at>
+            <address>79854176632</address>
+            <text>5203***4781;
+Oplata tovarov/uslug:
+699.00 RUB;
+Mesto:HAMELEON, MO KLIMOVSK;
+16.07.2013 19:46
+Dostupno po karte: 18 758.43 RUB;
+Balans plusov: 0.
+Za pokupku budet nachisleno 6.99 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11212596092</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T12:04:51.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-06-28T13:08:49.000</dlv_status_at>
+            <address>79886191423</address>
+            <text>5316***1741;
+Oplata tovarov/uslug:
+375.00 RUB;
+Mesto:COLINS YUNAYTED 41, MAYKOP;
+28.06.2013 12:04
+Dostupno po karte: 778.54 RUB;
+Balans plusov: 76.2.
+Za pokupku budet nachisleno 3.75 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            <dlv_error>call-barred</dlv_error>
+          </record><record>
+            <id>11682832436</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T14:10:28.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T14:10:37.000</dlv_status_at>
+            <address>79036371020</address>
+            <text>5203***4776;
+Oplata tovarov/uslug:
+515.00 RUB;
+Mesto:AVTODILER, OREL;
+15.07.2013 14:10
+Dostupno po karte: 49 735.54 RUB;
+Balans plusov: 185.69.
+Za pokupku budet nachisleno 5.15 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11776081968</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T15:39:59.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T15:40:14.000</dlv_status_at>
+            <address>79671767801</address>
+            <text>5203***0057;
+Oplata tovarov/uslug:
+129.00 RUB;
+Mesto:EUREST, MOSCOW;
+18.07.2013 15:39
+Dostupno po karte: 22 136.77 RUB;
+Balans plusov: 1,169.56.
+Za pokupku budet nachisleno 1.29 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11721036404</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T20:35:42.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T20:35:47.000</dlv_status_at>
+            <address>79052231000</address>
+            <text>5181***8230;
+Oplata tovarov/uslug:
+160.00 RUB;
+Mesto:STARBUCKS  COFFEE HOUS, MOSCOW;
+16.07.2013 20:35
+Dostupno po karte: 8 700.21 RUB;
+Balans plusov: 11,846.93.
+Za pokupku budet nachisleno 1.6 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11802244602</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T11:35:29.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T11:35:46.000</dlv_status_at>
+            <address>79825207578</address>
+            <text>5203***2858;
+Oplata tovarov/uslug:
+1 727.00 RUB;
+Mesto:GLORIYA DZHINS, NIZHNEVARTOVS;
+19.07.2013 11:35
+Dostupno po karte: 8 868.52 RUB;
+Balans plusov: 1,715.55.
+Za pokupku budet nachisleno 17.27 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>10462049878</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-05-31T11:59:58.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-05-31T12:00:12.000</dlv_status_at>
+            <address>79221696491</address>
+            <text>5203***7840;
+Oplata tovarov/uslug:
+960.00 RUB;
+Mesto:COMPUTER CENTER DNS, YEKATR;
+31.05.2013 11:59
+Dostupno po karte: 164.67 RUB;
+Balans plusov: 882.33.
+Za pokupku budet nachisleno 9.6 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record><record>
+            <id>11729283984</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T09:52:19.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T09:52:26.000</dlv_status_at>
+            <address>79169033220</address>
+            <text>5203***7452;
+Oplata tovarov/uslug:
+218.00 RUB;
+Mesto:SHOKO KRASNOPRED 3, MOSCOW;
+17.07.2013 09:52
+Dostupno po karte: 308.10 RUB;
+Balans plusov: 3.96.
+Za pokupku budet nachisleno 2.18 plusa Svyaznoy-Club.
+1 plus - eto 1 RUB skidki v Svyaznom i u partnerov programmy: www.sclub.ru/spend</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:25:07.570+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:25:31.645+03:00"/><ed user="lkovaleva" at="2017-10-26T17:25:07.570+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_poluchenie_nalichnyh_$MONEY_dostupno_$T{po}_karte_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="poluchenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnyh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11721548904</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T21:09:54.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T21:09:57.000</dlv_status_at>
+            <address>79188996523</address>
+            <text>5163***9901;
+Poluchenie nalichnyh:
+3 000.00 RUB;
+Dostupno po karte: 6 746.96 RUB;
+Mesto:ATM-RND-KOMMUNISTICHES, ROSTOV-ON-D;
+16.07.2013 21:09</text>
+            
+            
+          </record><record>
+            <id>11203784806</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T08:21:51.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T08:21:57.000</dlv_status_at>
+            <address>79045466443</address>
+            <text>5163***2744;
+Poluchenie nalichnyh:
+7 000.00 RUB;
+Dostupno po karte: 28 915.10 RUB;
+Mesto:NMOS NMOS/AR660497, YEKATERINBURG;
+28.06.2013 10:21</text>
+            
+            
+          </record><record>
+            <id>11734308020</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T11:42:31.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T11:42:42.000</dlv_status_at>
+            <address>79265550904</address>
+            <text>5203***0718;
+Poluchenie nalichnyh:
+200.00 EUR;
+Dostupno po karte: 12 785.41 RUB;
+Mesto:BANCO MARE NOSTRUM, LLORET DE MAR;
+17.07.2013 09:42</text>
+            
+            
+          </record><record>
+            <id>11783548674</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T20:00:50.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T20:01:04.000</dlv_status_at>
+            <address>79262631504</address>
+            <text>5203***5495;
+Poluchenie nalichnyh:
+3 000.00 RUB;
+Dostupno po karte: 14 617.69 RUB;
+Mesto:ATM MAGNOLIYA-KUTUZOVS, MOSCOW;
+18.07.2013 20:00</text>
+            
+            
+          </record><record>
+            <id>11718650142</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T18:35:29.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T18:35:34.000</dlv_status_at>
+            <address>79042851979</address>
+            <text>5163***6679;
+Poluchenie nalichnyh:
+2 000.00 RUB;
+Dostupno po karte: 17 679.70 RUB;
+Mesto:ATM LKB+ POBEDI, LIPETSK;
+16.07.2013 18:35</text>
+            
+            
+          </record><record>
+            <id>11742559108</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T15:01:15.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T15:01:24.000</dlv_status_at>
+            <address>79169548122</address>
+            <text>5203***4669;
+Poluchenie nalichnyh:
+1 000.00 RUB;
+Dostupno po karte: 1 214.31 RUB;
+Mesto:VB24 39-29, LENINGRADS, MOSCOW;
+17.07.2013 15:01</text>
+            
+            
+          </record><record>
+            <id>11748203232</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T17:42:41.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T17:42:51.000</dlv_status_at>
+            <address>79263243442</address>
+            <text>5203***0370;
+Poluchenie nalichnyh:
+5 000.00 RUB;
+Dostupno po karte: 12 063.12 RUB;
+Mesto:ATM - OTD. TAGANSKOE Z, MOSCOW;
+17.07.2013 17:42</text>
+            
+            
+          </record><record>
+            <id>11738200096</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T13:07:00.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T13:07:07.000</dlv_status_at>
+            <address>79052801596</address>
+            <text>5203***9308;
+Poluchenie nalichnyh:
+6 000.00 RUB;
+Dostupno po karte: 33 394.96 RUB;
+Mesto:BANKOMAT 271166 2004 1, SANKT-PETERBU;
+17.07.2013 13:06</text>
+            
+            
+          </record><record>
+            <id>11212343134</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T11:59:20.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T11:59:25.000</dlv_status_at>
+            <address>79851374361</address>
+            <text>5163***8932;
+Poluchenie nalichnyh:
+6 000.00 RUB;
+Dostupno po karte: 181.85 RUB;
+Mesto:AZBUKA VKUSA, Moscow;
+28.06.2013 11:59</text>
+            
+            
+          </record><record>
+            <id>11811843404</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T13:59:30.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T14:00:14.000</dlv_status_at>
+            <address>79103308066</address>
+            <text>5203***3368;
+Poluchenie nalichnyh:
+3 000.00 RUB;
+Dostupno po karte: 115 951.12 RUB;
+Mesto:GAZPROMBANK, BRJANSK;
+19.07.2013 13:59</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:34:56.889+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:34:56.889+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="otmena_operacii_$T{$VARSTRING}_$LOCALDATETIME_karta_$T{$CARDNUMBER}_summa_$MONEY_balance_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="operacii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>6405009126</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2012-11-12T07:49:39.000</timestamp>
+            <subject>RGSBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2012-11-12T07:49:48.000</dlv_status_at>
+            <address>79247500716</address>
+            <text>Otmena operacii: RGS BANK NSB ATM, ULAN-UDE, GARMAEVA 15,12.11.12 07:49,karta 4169***2347. summa:100.00 RUB, balance:6603.99 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:41:37.712+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:41:37.712+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="operatsiya_otklonena_$T{$VARSTRING}_$T{$CARDNUMBER}_poluchenie_nalichnyh_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_tel_$T{$PHONE}_$T{za}_predelami_rf_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="operatsiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otklonena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="poluchenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nalichnyh" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="za" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="predelami" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rf" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11782212008</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T18:51:21.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-07-19T02:51:22.000</dlv_status_at>
+            <address>79851613705</address>
+            <text>Operatsiya otklonena, prevyshen limit vvoda PIN;
+5163***8946;
+Poluchenie nalichnyh:
+2 000.00 RUB;
+Mesto:BANKOMAT 101310 904001,SEREBRYANYE P;
+18.07.2013 18:51
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>11756914978</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T07:49:19.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T07:49:34.000</dlv_status_at>
+            <address>79312291711</address>
+            <text>Operatsiya otklonena, neverniy PIN;
+5203***5141;
+Poluchenie nalichnyh:
+5 000.00 RUB;
+Mesto:BANKOMAT 354036 798201,MOSCOW;
+18.07.2013 07:49
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11215303362</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T13:15:48.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T13:15:59.000</dlv_status_at>
+            <address>79122448485</address>
+            <text>Operatsiya otklonena, prevyshen limit;
+5203***3949;
+Poluchenie nalichnyh:
+6 500.00 RUB;
+Mesto:BANKOMAT 703276 9016 9,EKATERINBURG;
+28.06.2013 13:15
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11806661904</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T12:42:32.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T12:43:01.000</dlv_status_at>
+            <address>79263848103</address>
+            <text>Operatsiya otklonena, neverniy PIN;
+5203***3520;
+Poluchenie nalichnyh:
+3 000.00 RUB;
+Mesto:ATM 480 MKB 810,MOSCOW;
+19.07.2013 12:42
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11768365992</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T12:32:38.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T12:32:50.000</dlv_status_at>
+            <address>79272037707</address>
+            <text>Operatsiya otklonena, prevyshen limit vvoda PIN;
+5203***2968;
+Poluchenie nalichnyh:
+5 000.00 RUB;
+Mesto:BANKOMAT 650109 781301,MOSCOW;
+18.07.2013 12:32
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11786882862</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T01:36:11.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T01:36:34.000</dlv_status_at>
+            <address>79261457465</address>
+            <text>Operatsiya otklonena, karta blokirovana;
+5203***8190;
+Poluchenie nalichnyh:
+7 500.00 RUB;
+Mesto:BANKOMAT 433171 690101,MOSCOW;
+19.07.2013 01:36
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11777370172</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T16:12:02.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T16:12:31.000</dlv_status_at>
+            <address>79267147700</address>
+            <text>Operatsiya otklonena, neverniy PIN;
+5203***5216;
+Poluchenie nalichnyh:
+5 500.00 RUB;
+Mesto:TransCreditBank GCSS 2,Zheleznodoroz;
+18.07.2013 16:11
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11711537088</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T14:30:21.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T14:30:30.000</dlv_status_at>
+            <address>79233316937</address>
+            <text>Operatsiya otklonena, nedostatochno sredstv;
+5316***8738;
+Poluchenie nalichnyh:
+400.00 RUB;
+Mesto:KRASN.RABOCHIY 27,KRASNOYARSK;
+16.07.2013 18:30
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11202491846</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T07:38:40.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T07:38:54.000</dlv_status_at>
+            <address>79242975376</address>
+            <text>Operatsiya otklonena, operatsiya ne dostupna po karte;
+5203***2451;
+Poluchenie nalichnyh:
+2 000.00 RUB;
+Mesto:LENINA 58,AGINSKOYE;
+28.06.2013 13:38
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record><record>
+            <id>11680142164</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T13:10:36.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T13:10:50.000</dlv_status_at>
+            <address>79084745118</address>
+            <text>Operatsiya otklonena, nedostatochno sredstv;
+5203***5432;
+Poluchenie nalichnyh:
+100.00 RUB;
+Mesto:NMOS NMOS/AR730872,ULYANOVSK;
+15.07.2013 13:10
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:40:05.341+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:40:05.341+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="operatsiya_otklonena_$T{$VARSTRING}_$T{$CARDNUMBER}_popolnenie_karty_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_tel_$T{$PHONE}_$T{za}_predelami_rf_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="operatsiya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otklonena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popolnenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karty" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="za" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="predelami" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="rf" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>14810426532</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-11-01T19:07:51.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-01T19:08:00.000</dlv_status_at>
+            <address>79651656569</address>
+            <text>Operatsiya otklonena, neverniy PIN;
+5203***0585;
+Popolnenie karty:
+3 500.00 RUB;
+Mesto:SVZN, Moscow;
+01.11.2013 19:07.
+Tel: 88001000005, za predelami RF +74955141114</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:40:51.122+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:40:51.122+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_dostupno_$T{po}_karte_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="B"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11204183140</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T08:43:10.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T16:34:46.000</dlv_status_at>
+            <address>79048824001</address>
+            <text>5203***3436;
+Dostupno po karte:
+393.46 RUB;
+Mesto:BANKOMAT 241383 5939 1,NIZHNEVARTOVS;
+28.06.2013 08:43</text>
+            
+            
+          </record><record>
+            <id>11680640540</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-15T13:23:54.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-15T13:24:00.000</dlv_status_at>
+            <address>79602556014</address>
+            <text>5203***6035;
+Dostupno po karte:
+50 682.36 RUB;
+Mesto:VB24 25-A, KANTEMIROVS,SAINT-PETERSB;
+15.07.2013 13:23</text>
+            
+            
+          </record><record>
+            <id>11720683996</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T20:16:31.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T20:16:36.000</dlv_status_at>
+            <address>79046144521</address>
+            <text>5203***8668;
+Dostupno po karte:
+1 022.28 RUB;
+Mesto:NMOS NMOS/AR780418,SOSNOVIY BOR;
+16.07.2013 20:16</text>
+            
+            
+          </record><record>
+            <id>11798449050</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T10:35:18.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T10:35:24.000</dlv_status_at>
+            <address>79047515174</address>
+            <text>5163***4124;
+Dostupno po karte:
+198.29 RUB;
+Mesto:PCB.ATM#99946111,VOLGOGRAD;
+19.07.2013 10:35</text>
+            
+            
+          </record><record>
+            <id>11791322360</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T08:07:47.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T08:07:54.000</dlv_status_at>
+            <address>79519407142</address>
+            <text>5203***7496;
+Dostupno po karte:
+2 754.81 RUB;
+Mesto:BANKOMAT 291072 698400,PERMOW;
+19.07.2013 08:07</text>
+            
+            
+          </record><record>
+            <id>11747016968</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T17:03:22.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T17:03:25.000</dlv_status_at>
+            <address>79601366476</address>
+            <text>5203***6439;
+Dostupno po karte:
+2 277.47 RUB;
+Mesto:BANKOMAT 340033 9013 3,VORONEZH;
+17.07.2013 17:03</text>
+            
+            
+          </record><record>
+            <id>11796248636</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T09:58:02.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T09:58:19.000</dlv_status_at>
+            <address>79036170768</address>
+            <text>5203***1150;
+Dostupno po karte:
+22 971.99 RUB;
+Mesto:VB24 1-A, PROFESSIONAL,DMITROV-5 GOR;
+19.07.2013 09:58</text>
+            
+            
+          </record><record>
+            <id>11215379708</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-28T13:18:32.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-28T13:18:37.000</dlv_status_at>
+            <address>79208391607</address>
+            <text>5203***3442;
+Dostupno po karte:
+2 389.69 RUB;
+Mesto:GAZPROMBANK,KLINCY;
+28.06.2013 13:18</text>
+            
+            
+          </record><record>
+            <id>11777533156</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T16:17:24.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T16:17:30.000</dlv_status_at>
+            <address>79519738334</address>
+            <text>5203***1668;
+Dostupno po karte:
+2 504.38 RUB;
+Mesto:ATM,OFIS FILIALA BANKA,MEGION;
+18.07.2013 18:17</text>
+            
+            
+          </record><record>
+            <id>11779197784</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T17:05:12.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T17:05:19.000</dlv_status_at>
+            <address>79226664593</address>
+            <text>5203***4224;
+Dostupno po karte:
+28 495.10 RUB;
+Mesto:BANKOMAT 270567 4423 4,VYATSKIE POLY;
+18.07.2013 17:05</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:16:55.387+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:16:55.387+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_podkluchen_servis_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    <paramRef category="Личные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="podkluchen" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="servis" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11779164814</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T17:04:42.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T17:15:32.000</dlv_status_at>
+            <address>79219412982</address>
+            <text>5203***8979; Podkluchen servis &quot;SMS-informirovanie&quot;. Uznaite kak upravlyat' schetom pri pomoshchi SMS-soobshenii: www.svyaznoybank.ru/sms23</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:18:01.205+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:18:01.205+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_списание_$MONEY_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10966735496</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-20T08:18:53.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-20T08:19:03.000</dlv_status_at>
+            <address>79227829908</address>
+            <text>*5022: 20.06.2013 04:18 Списание: 599.77 руб., AZS, NIZHNEVARTOVS. Остаток 19056.81 руб.</text>
+            
+            
+          </record><record>
+            <id>10961365904</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-19T20:51:14.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-19T21:02:26.000</dlv_status_at>
+            <address>79169570457</address>
+            <text>*5202: 19.06.2013 20:50 Списание: 198.00 руб., SEDMOY KONTINENT, MOSCOW. Остаток 2192.63 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:02:12.417+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:02:12.417+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_$LOCALDATETIME_получение_наличными_$MONEY_$T{$VARSTRING}_остаток_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="W"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="наличными" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="остаток" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>10950696342</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-06-19T13:55:26.000</timestamp>
+            <subject>6470</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-06-19T13:55:41.000</dlv_status_at>
+            <address>79265872244</address>
+            <text>*7524: 19.06.2013 13:55 Получение наличными 400.00 руб., VB24, MOSCOW, VB24 28, RUBLEVSKOE. Остаток 6442.57 руб.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:01:17.025+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:01:17.025+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$CARDNUMBER}_otmena_oplaty_tovarov_uslug_$MONEY_mesto_$T{$VARSTRING}_$LOCALDATETIME_dostupno_$T{po}_karte_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="oplaty" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tovarov" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslug" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="mesto" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>11289787688</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-01T15:01:24.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-01T15:01:28.000</dlv_status_at>
+            <address>79110897332</address>
+            <text>5203***9920;
+Otmena oplaty tovarov/uslug:
+500.00 RUB;
+Mesto:FORMULA KINO GALEREYA,SNPETERBURG;
+01.07.2013 14:59
+Dostupno po karte:
+109052.19 RUB.</text>
+            
+            
+          </record><record>
+            <id>11726392702</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T08:10:06.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T08:10:14.000</dlv_status_at>
+            <address>79226088736</address>
+            <text>5203***6310;
+Otmena oplaty tovarov/uslug:
+1.73 RUB;
+Mesto:UFS-ONLINE,MOSCOW;
+17.07.2013 05:06
+Dostupno po karte:
+32379.84 RUB.</text>
+            
+            
+          </record><record>
+            <id>11738745620</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-17T13:23:50.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-17T13:24:07.000</dlv_status_at>
+            <address>79099516252</address>
+            <text>5163***8149;
+Otmena oplaty tovarov/uslug:
+1.08 UAH;
+Mesto:IPAY.UA.TL,Kyiv;
+17.07.2013 00:00
+Dostupno po karte:
+187965.07 RUB.</text>
+            
+            
+          </record><record>
+            <id>11804670616</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-19T12:13:21.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-19T12:13:25.000</dlv_status_at>
+            <address>79035009953</address>
+            <text>5316***8815;
+Otmena oplaty tovarov/uslug:
+141.00 RUB;
+Mesto:MCDONALDS 24440,MOSKVA;
+19.07.2013 12:12
+Dostupno po karte:
+42372.77 RUB.</text>
+            
+            
+          </record><record>
+            <id>11768366420</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-18T12:32:47.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-18T12:33:02.000</dlv_status_at>
+            <address>79023837007</address>
+            <text>5316***1083;
+Otmena oplaty tovarov/uslug:
+1.00 RUB;
+Mesto:ODNOKLASSNIKI,MOSCOW;
+18.07.2013 12:32
+Dostupno po karte:
+100669.55 RUB.</text>
+            
+            
+          </record><record>
+            <id>11717872440</id>
+            <cnr>797</cnr>
+            <cnrCode>mvision1</cnrCode>
+            <acn>144</acn>
+            <acnCode>mvision</acnCode>
+            <timestamp>2013-07-16T18:02:25.000</timestamp>
+            <subject>SVYAZNOYBNK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-07-16T18:02:36.000</dlv_status_at>
+            <address>79279717171</address>
+            <text>5203***0333;
+Otmena oplaty tovarov/uslug:
+59.00 RUB;
+Mesto:GOOGLE *DualBootGames,GOOGLE.COM/CH;
+13.07.2013 02:37
+Dostupno po karte:
+24479.48 RUB.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-10-26T17:32:12.823+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-10-26T17:32:12.823+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

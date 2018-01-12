@@ -1,0 +1,64 @@
+<fixedTemplaterActor acn="dmcapital">
+<fixedTemplateHolder>
+<fixedTmpl asString="$T{не}_забудьте_внести_платеж_$MONEY_$T{до}_$LOCALDATE_дом_капитал_$T{$PHONE}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="забудьте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="внести" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="дом" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="капитал" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27631540984</id>
+            <cnr>1588</cnr>
+            <cnrCode>devino3</cnrCode>
+            <acn>370</acn>
+            <acnCode>dmcapital</acnCode>
+            <timestamp>2014-10-24T12:03:10.000</timestamp>
+            <subject>DOM CAPITAL</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-24T12:03:18.000</dlv_status_at>
+            <address>79164160470</address>
+            <text>Не забудьте внести платеж 14000р. до 29.10.2014. Дом Капитал 88005000090</text>
+            <start_time>2014-10-24T12:03:10.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-09-26T19:46:45.913+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-09-26T19:46:45.913+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

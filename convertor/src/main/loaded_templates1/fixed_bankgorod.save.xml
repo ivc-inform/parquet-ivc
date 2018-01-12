@@ -1,0 +1,72 @@
+<fixedTemplaterActor acn="bankgorod">
+<fixedTemplateHolder>
+<fixedTmpl asString="auth_$T{$VARSTRING}_$MONEY_card_n_$T{$CARDNUMBER}_$T{$VARSTRING}_$T{$VARSTRING}_bal_$MONEY_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="auth" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="card" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Имя" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Отчество" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="bal" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19439965911</id>
+            <cnr>1584</cnr>
+            <cnrCode>rapportoml1</cnrCode>
+            <acn>361</acn>
+            <acnCode>bankgorod</acnCode>
+            <timestamp>2014-03-22T17:42:27.000</timestamp>
+            <subject>BANK GOROD</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-22T17:42:30.000</dlv_status_at>
+            <address>79269732000</address>
+            <text>Auth:SOKOLNICHESKIY VAL, 1A
+180.00RUR
+Card_N**8307
+MARINE KIRAKOSYAN
+BAL: 13 948.60 RUR
+2014-03-22 17:42:12</text>
+            <start_time>2014-03-22T17:42:27.000</start_time>
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-10-11T11:21:33.961+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-10-11T11:21:33.961+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

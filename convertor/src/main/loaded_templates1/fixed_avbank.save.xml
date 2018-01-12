@@ -1,0 +1,1154 @@
+<fixedTemplaterActor acn="avbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="$T{$VARSTRING}_ваша_банковская_карта_перевыпущена_телефон_оао_банк_авб_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="ваша" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банковская" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="перевыпущена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="телефон" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="авб" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>21969955894</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-06-16T15:01:16.000</timestamp>
+            <subject>BANK AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-16T17:02:09.000</dlv_status_at>
+            <address>79171212340</address>
+            <text>ИРИНА ВАЛЕРЬЕВНА! Ваша банковская карта перевыпущена. Телефон ОАО Банк АВБ: 8 800 100 1988</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-08-30T12:52:50.975+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-08-30T12:52:50.975+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="уважаемый_клиент_просим_вас_сделать_ежемесячный_платеж_$T{по}_кредиту_$T{до}_$LOCALDATE_г_заранее_благодарим_вас_$T{с}_уважением_$STRING" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="уважаемый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="клиент" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="просим" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сделать" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ежемесячный" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="до" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="г" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="заранее" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="благодарим" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уважением" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26273667264</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-09-29T12:48:37.000</timestamp>
+            <subject>BANK AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-29T12:50:51.000</dlv_status_at>
+            <address>79276672594</address>
+            <text>Уважаемый Клиент! Просим Вас сделать ежемесячный платеж по кредиту до 30.09.2014 г. Заранее благодарим Вас. С уважением, ОАО</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-06T00:30:34.171+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-06T00:30:34.171+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_s_karty_$T{$CARDNUMBER}_na_kartu_$T{$CARDNUMBER}_summa_$T{$DOUBLE}_$T{$LONG}_id_$T{$LONG}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karty" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="kartu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28049430811</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-05T08:15:49.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T08:15:53.000</dlv_status_at>
+            <address>79276880730</address>
+            <text>Perevod s karty 4062180000030475 na kartu 4062179123017781. Summa: 10000.00 : 783507 (ID 30)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:01.865+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="rashod_$MONEY_balance_$MONEY_schet_$CARDNUMBER_dostupno_$MONEY_$LOCALDATE_$LOCALTIME" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="rashod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="schet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28376754293</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-15T07:00:42.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T07:00:49.000</dlv_status_at>
+            <address>79272083852</address>
+            <text>Rashod 324.55 RUB, balance 324.55 RUB, schet 40702810000900000565, dostupno 21342.79 RUB 17.11.2014.,  0:00:57</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.313+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_s_$CARDNUMBER_na_$CARDNUMBER_summa_$T{$DOUBLE}_$STRING_id_$T{$LONG}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28163624610</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-13T21:30:15.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T21:30:21.000</dlv_status_at>
+            <address>79278910762</address>
+            <text>Perevod s 40817810501000706564 na  40702810300000004930. Summa: 10243.02 : 074248 (ID 36)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:01.896+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="err_$T{$VARSTRING}_$T{$LONG}_л_$T{с}_$T{$LONG}_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="err" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="л" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28049431027</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-05T13:14:26.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T13:14:37.000</dlv_status_at>
+            <address>79608367964</address>
+            <text>ERR Оплата за платные дополнит. образовател .услуги  Архипова Кристина Алексеевна Гр : 7 л/с  738  за сентябрь</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:02.573+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="prihod_$MONEY_balance_$MONEY_schet_$STRING_dostupno_$MONEY_$LOCALDATE_$LOCALTIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="prihod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="schet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>36768302844</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2015-06-08T14:19:18.000</timestamp>
+            <subject>BANK AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-08T14:19:22.000</dlv_status_at>
+            <address>79063398168</address>
+            <text>Prihod 7000.00 RUR, balance 54319.00 RUR, schet 40702810600500000297, dostupno 54319.00 RUR  8.06.2015., 15:17:34</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-07-10T17:01:16.244+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-07-10T17:01:16.244+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$PHONE}" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumPhone" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25222338002</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-08-27T17:38:02.000</timestamp>
+            <subject>BANK AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-27T17:38:07.000</dlv_status_at>
+            <address>79278435800</address>
+            <text>36-08-07</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T17:32:26.243+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T17:32:26.243+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_к_вашему_карточному_счету_открыт_лимит_овердрафта_$T{в}_размере_$MONEY_подробности_$T{по}_тел_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="к" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вашему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="карточному" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="открыт" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="лимит" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="овердрафта" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="размере" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="подробности" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="тел" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>25223392723</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-08-27T17:46:46.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-08-27T17:46:50.000</dlv_status_at>
+            <address>79277771743</address>
+            <text>Иван Александрович! К Вашему карточному счету открыт лимит овердрафта в размере 12800.00 рублей. Подробности по тел.(8482)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.316+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="выполнен_вход_$T{в}_$T{i}_банк_$LOCALDATETIME_$STRING_$T{если}_операция_выполнена_$T{не}_вами_обратитесь_$T{в}_банк" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="выполнен" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="i" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="если" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="операция" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выполнена" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="не" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вами" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обратитесь" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20153631272</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-04-16T09:52:08.000</timestamp>
+            <subject>BANK AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-16T09:52:18.000</dlv_status_at>
+            <address>79858960076</address>
+            <text>Выполнен вход в i-Банк 16.04.2014 09:51:18.9520. Если операция выполнена не Вами, обратитесь в Банк.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T17:33:04.679+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T17:33:04.679+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="spisanie_s_$CARDNUMBER_na_summu_$MONEY_poluchatel_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="s" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="poluchatel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28596629624</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-19T15:11:02.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T15:14:09.000</dlv_status_at>
+            <address>79053058106</address>
+            <text>Spisanie s 408178104000001671784062173000012320 na summu 450.00 RUR, poluchatel' platezha INFOLADA Internet  19.11.2014</text>
+            
+            
+          </record><record>
+            <id>27929617362</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-01T10:19:03.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T10:19:07.000</dlv_status_at>
+            <address>79277774330</address>
+            <text>Spisanie s 4062173000421091 na summu 100.00 RUR, poluchatel' platezha MegaFon Povolzhskiy filial  01.11.2014 12:17:29 IP</text>
+            
+            
+          </record><record>
+            <id>28376754295</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-15T07:00:43.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T07:01:18.000</dlv_status_at>
+            <address>79277312020</address>
+            <text>Spisanie s 408178103005101002204062173000343279 na summu 10000.00 RUR, poluchatel' platezha Pogashenie kredita AVB  14.11.2014</text>
+            
+            
+          </record><record>
+            <id>28049430879</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-05T09:04:45.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T09:04:48.000</dlv_status_at>
+            <address>79372789849</address>
+            <text>Spisanie s 42305810400152601078 na summu 6744.00 RUR, poluchatel' platezha Pogashenie kredita AVB  05.11.2014 11:01:06 IP</text>
+            
+            
+          </record><record>
+            <id>28163624628</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-14T07:00:07.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-14T07:00:16.000</dlv_status_at>
+            <address>79278910762</address>
+            <text>Spisanie s 40817810501000706564 na summu 10243.02 RUR, poluchatel' platezha OOO &quot;Torgovaya kompaniya Al'fa&quot; IP 109.169.179.122</text>
+            
+            
+          </record><record>
+            <id>28596629620</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-19T15:06:59.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T15:07:45.000</dlv_status_at>
+            <address>79053058106</address>
+            <text>Spisanie s 408178104000001671784062173000012320 na summu 400.00 RUR, poluchatel' platezha Infolada telefon  19.11.2014 17:03:55</text>
+            
+            
+          </record><record>
+            <id>28376754897</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-17T12:47:24.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T12:47:30.000</dlv_status_at>
+            <address>79608367964</address>
+            <text>Spisanie s 42307810300480302161 na summu 1000.00 RUR, poluchatel' platezha AIST Internet kompaniya  17.11.2014 14:43:03 IP</text>
+            
+            
+          </record><record>
+            <id>28163624238</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-13T07:00:32.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T07:00:38.000</dlv_status_at>
+            <address>79278917807</address>
+            <text>Spisanie s 40817810000000143259 na summu 1290.00 RUR, poluchatel' platezha Obshchestvo s ogranichennoy otvetstvennost'yo</text>
+            
+            
+          </record><record>
+            <id>28163624452</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-13T10:55:06.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T10:55:10.000</dlv_status_at>
+            <address>79297183397</address>
+            <text>Spisanie s 40817810700000246430 na summu 681.47 RUR, poluchatel' platezha upravlenie federal'nogo kaznacheystva po samarskoy</text>
+            
+            
+          </record><record>
+            <id>28049430771</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-05T07:40:35.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T07:40:40.000</dlv_status_at>
+            <address>79178254934</address>
+            <text>Spisanie s 408178102000002342565244180000045018 na summu 4048.34 RUR, poluchatel' platezha Vnutribankovskiy perevod YuL/IP</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.321+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="oplata_uslugi_$T{$VARSTRING}_summa_$T{$VARSTRING}_id_$STRING" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="oplata" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uslugi" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28163623016</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-11T00:35:06.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-11T00:35:11.000</dlv_status_at>
+            <address>79204506929</address>
+            <text>Oplata uslugi: Trikolor TV.Lichnyy schet. Summa 100.00 : 720617 (ID 20)</text>
+            
+            
+          </record><record>
+            <id>28049430761</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-05T07:31:42.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T07:31:47.000</dlv_status_at>
+            <address>79178254934</address>
+            <text>Oplata uslugi: Vnutribankovskiy perevod YuL/IP. Summa 4396.95 : 116366 (ID 19)</text>
+            
+            
+          </record><record>
+            <id>28596629618</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-19T15:04:47.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T15:07:27.000</dlv_status_at>
+            <address>79053058106</address>
+            <text>Oplata uslugi: INFOLADA Internet. Summa 450.00 : 793857 (ID 73)</text>
+            
+            
+          </record><record>
+            <id>28049432295</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-09T11:55:04.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-09T11:55:07.000</dlv_status_at>
+            <address>79297170829</address>
+            <text>Oplata uslugi: PZhRT-servis g.Tol'yatti. Summa 2000.00 : 299657 (ID 21)</text>
+            
+            
+          </record><record>
+            <id>28596629614</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-19T15:02:04.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T15:03:39.000</dlv_status_at>
+            <address>79053058106</address>
+            <text>Oplata uslugi: Infolada telefon. Summa 400.00 : 666570 (ID 72)</text>
+            
+            
+          </record><record>
+            <id>28049431179</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-05T20:19:58.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T20:20:03.000</dlv_status_at>
+            <address>79603623525</address>
+            <text>Oplata uslugi: Kompleksnoe predlozhenie DOM.RU Kazan'. Summa 500.00 : 820381 (ID 29)</text>
+            
+            
+          </record><record>
+            <id>28376754365</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-15T15:18:19.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T15:18:27.000</dlv_status_at>
+            <address>79031565413</address>
+            <text>Oplata uslugi: Pogashenie kredita AVB. Summa 11800.00 : 413867 (ID 3)</text>
+            
+            
+          </record><record>
+            <id>28596629690</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-19T19:27:03.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T19:27:09.000</dlv_status_at>
+            <address>79022976004</address>
+            <text>Oplata uslugi: Visa Qiwi Wallet.Popolnenie. Summa 500.00 : 685128 (ID 2)</text>
+            
+            
+          </record><record>
+            <id>28376755503</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-18T12:53:07.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-18T12:53:11.000</dlv_status_at>
+            <address>79277920713</address>
+            <text>Oplata uslugi: OOO &quot;RKTs UK-3&quot;. Summa 16.00 : 726874 (ID 39)</text>
+            
+            
+          </record><record>
+            <id>28376754397</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-15T19:28:35.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T19:28:40.000</dlv_status_at>
+            <address>79276108596</address>
+            <text>Oplata uslugi: MegaFon Povolzhskiy filial. Summa 100.00 : 589170 (ID 5)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.349+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="perevod_$T{$VARSTRING}_summa_$T{$DOUBLE}_$T{$LONG}_id_$T{$LONG}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="perevod" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28376754385</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-15T18:34:18.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T18:34:23.000</dlv_status_at>
+            <address>79061288197</address>
+            <text>Perevod s karty 4062173000286536 na kartu . Summa: 3000.00 : 623767 (ID 5)</text>
+            
+            
+          </record><record>
+            <id>27955650055</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-01T15:19:26.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T15:19:30.000</dlv_status_at>
+            <address>79277774330</address>
+            <text>Perevod: MegaFon Povolzhskiy filial. Summa 100.00 : 868387 (ID 9)</text>
+            
+            
+          </record><record>
+            <id>27997571880</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-02T10:39:14.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-02T10:39:59.000</dlv_status_at>
+            <address>79378728939</address>
+            <text>Perevod: NSS Ul'yanovskaya obl.. Summa 100.00 : 671802 (ID 18)</text>
+            
+            
+          </record><record>
+            <id>27997571610</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-02T08:30:34.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-02T08:30:37.000</dlv_status_at>
+            <address>79272173685</address>
+            <text>Perevod: Pogashenie kredita AVB. Summa 5300.00 : 261511 (ID 24)</text>
+            
+            
+          </record><record>
+            <id>27955650131</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-01T15:55:06.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T15:55:10.000</dlv_status_at>
+            <address>79176334187</address>
+            <text>Perevod: EVO.Internet. Summa 350.00 : 274562 (ID 57)</text>
+            
+            
+          </record><record>
+            <id>28376754373</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-15T17:44:04.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T17:44:10.000</dlv_status_at>
+            <address>79276986642</address>
+            <text>Perevod s 42305810500882600700 na  40702810454080100186. Summa: 220.00 : 143669 (ID 29)</text>
+            
+            
+          </record><record>
+            <id>28023353942</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-03T20:44:53.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-03T20:44:58.000</dlv_status_at>
+            <address>79053708904</address>
+            <text>Perevod: Bilayn. Summa 300.00 : 285352 (ID 44)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.855+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="err_$T{$VARSTRING}_$MONEY_$STRING" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="err" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28376755759</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-19T07:00:34.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T07:00:48.000</dlv_status_at>
+            <address>79608367964</address>
+            <text>ERR Оплата пени налога на имущество, г.Тольятти, 40 лет Победы ул, д.18, кв.250|940070446|2.00р. 004138</text>
+            
+            
+          </record><record>
+            <id>28163623622</id>
+            <cnr>799</cnr>
+            <cnrCode>avbank0</cnrCode>
+            <acn>229</acn>
+            <acnCode>avbank</acnCode>
+            <timestamp>2014-11-12T07:00:05.000</timestamp>
+            <subject>Bank AVB</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-12T07:00:12.000</dlv_status_at>
+            <address>79608367964</address>
+            <text>ERR Оплата за бодибар ir93023a 3 кг, без ндс|20049|1260.00р. 004019</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T15:36:03.857+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

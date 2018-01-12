@@ -1,0 +1,2899 @@
+<fixedTemplaterActor acn="nbdbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="необходимо_обеспечить_$T{на}_счете_$T{к}_$LOCALDATE_$MONEY_$T{для}_оплаты_кред_договора_$T{$VARSTRING}_$T{от}_$STRING_$STRING_$STRING_$T{в}_оао_нбд_банк_$T{при}_движении_$T{по}_ссудному_счету_$T{после}_получения_сообщения_уточняйте_суммы_оплаты" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="необходимо" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обеспечить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="к" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кред" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="договора" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="при" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="движении" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ссудному" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="после" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уточняйте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>22462446255</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-06-17T10:30:12.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-17T10:30:35.000</dlv_status_at>
+            <address>79503447403</address>
+            <text>Необходимо обеспечить на счете к 20.06.14 - 55816.78 руб для оплаты кред. договора 21890811 от 10.08.11 в ОАО НБД-Банк. При движении по ссудному счету после получения сообщения уточняйте суммы оплаты</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-11T21:12:24.756+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-11T21:12:24.756+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="нбд_банк_информирует_$T{о}_платежах_$T{по}_кредиту_$T{$VARSTRING}_$LOCALDATE_$MONEY_суммы_рассчитаны_$T{по}_состоянию_$T{на}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="рассчитаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="состоянию" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28933259258</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-25T10:04:15.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-25T10:04:29.000</dlv_status_at>
+            <address>79200652199</address>
+            <text>НБД-Банк информирует о платежах по кредиту 41431213: 28.11.14 - 9353.00 руб. Суммы рассчитаны по состоянию на 25.11.14 00:00</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:53:42.884+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:53:42.884+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="аннул_исх_п_п_$T{$VARSTRING}_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="аннул" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исх" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28610228684</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T15:03:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T15:03:46.000</dlv_status_at>
+            <address>79202941044</address>
+            <text>Аннул. исх. п/п N null,17.11.2014,80.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28583975332</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T07:33:18.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T07:33:37.000</dlv_status_at>
+            <address>79503573916</address>
+            <text>Аннул. исх. п/п N 604,17.11.2014,1000000.00 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:25.970+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="нбд_банк_информирует_$T{о}_платежах_$T{по}_потребительским_кредитам_$LOCALDATE_$MONEY_суммы_рассчитаны_$T{по}_состоянию_$T{на}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="потребительским" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредитам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="рассчитаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="состоянию" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>33487482080</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2015-03-17T11:11:57.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-17T11:12:15.000</dlv_status_at>
+            <address>79047810501</address>
+            <text>НБД-Банк информирует о платежах по потребительским кредитам: 20.03.15 - 43084.60 руб Суммы рассчитаны по состоянию на 17.03.15 00:00</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:58:45.619+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:58:45.619+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_код_$T{для}_входа_$T{в}_интернетбанк_n_$T{$LONG}_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернетбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20760273372</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-25T06:40:43.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-25T06:40:54.000</dlv_status_at>
+            <address>79036005757</address>
+            <text>25.04.2014 06:40:14 Код для входа в Интернетбанк N 10: 658233</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-28T14:25:47.805+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-28T14:25:47.805+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="nbd_bank_karta_$T{$CARDNUMBER}_tranzakciya_$LOCALDATE_$LOCALTIME_summa_$T{$DOUBLE}_valuta_$T{$CURRENCY}_terminal_$T{$VARSTRING}_balance_$T{$DOUBLE}_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="IT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="nbd" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tranzakciya" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="valuta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="terminal" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>21169763750</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-09T11:02:33.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-09T11:02:44.000</dlv_status_at>
+            <address>79524510291</address>
+            <text>NBD-Bank: Karta *5798 Tranzakciya 09/05/14 (11:02:29) SUMMA: 205.00 valuta: RUB Terminal: PYATEROCHKA 2340, N.NOVGOROD Balance: 134.18  (RUB)</text>
+            
+            
+          </record><record>
+            <id>21400318342</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-16T10:16:07.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-16T10:16:10.000</dlv_status_at>
+            <address>79103919355</address>
+            <text>NBD-Bank: Karta *5438 Tranzakciya 16/05/14 (10:16:03) SUMMA: 7300.00 valuta: RUB Terminal: ATM Dzerzhinsk NBD, Dzerzhinsk Balance: 52.96  (RUB)</text>
+            
+            
+          </record><record>
+            <id>21365951922</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-15T11:33:58.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-15T11:34:00.000</dlv_status_at>
+            <address>79103919355</address>
+            <text>NBD-Bank: Karta *4027 Tranzakciya 15/05/14 (11:33:55) SUMMA: 9400.00 valuta: RUB Terminal: Dzerzhinskiy NBD-Bank, Dzerzhinskiy Balance: 94.59  (RUB)</text>
+            
+            
+          </record><record>
+            <id>21845923055</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-06-01T13:04:17.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-01T13:04:23.000</dlv_status_at>
+            <address>79524510291</address>
+            <text>NBD-Bank: Karta *5798 Tranzakciya 01/06/14 (13:04:13) SUMMA: 25.17 valuta: RUB Terminal: ROSSIYSKIE VINA, N.NOVGOROD Balance:  4.98  (RUB)</text>
+            
+            
+          </record><record>
+            <id>21633228266</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-23T19:06:13.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-23T19:06:18.000</dlv_status_at>
+            <address>79524510291</address>
+            <text>NBD-Bank: Karta *5798 Tranzakciya 23/05/14 (19:06:04) SUMMA: 127.03 valuta: RUB Terminal: TTS NOVYY VEK, N.NOVGOROD Balance:  7.15  (RUB)</text>
+            
+            
+          </record><record>
+            <id>59907366915</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2016-10-10T16:46:12.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-10T16:46:16.000</dlv_status_at>
+            <address>79527806005</address>
+            <text>NBD-Bank: Karta *6491 Tranzakciya 10/10/16 (16:45:13) SUMMA: 9358.00 valuta: RUB Terminal: &quot;SPORTMASTER&quot; SHOP, NIZHNIY NOVGO Balance: 6323.77  (RUB)</text>
+            
+            
+          </record><record>
+            <id>58990881487</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2016-09-23T09:02:52.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-09-23T10:02:57.000</dlv_status_at>
+            <address>79524436588</address>
+            <text>NBD-Bank: Karta *2096 Tranzakciya 23/09/16 (09:01:58) SUMMA: 296780.33 valuta: RUB Terminal: Dzerzhinskiy DO Beznal, Dzerzhinsk Balance: 3338.53  (RUB)</text>
+            
+            
+          </record><record>
+            <id>73390241848</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2017-05-29T12:34:24.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-05-29T12:37:10.000</dlv_status_at>
+            <address>79058680388</address>
+            <text>NBD-Bank: Karta *0998 Tranzakciya 29/05/17 (12:34:26) SUMMA: 1780.20 valuta: RUB Terminal: SANTEKHLYUKS, N.NOVGOROD Balance: 78502.23  (RUB)</text>
+            
+            
+          </record><record>
+            <id>58913328296</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2016-09-22T12:42:47.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-09-22T12:42:51.000</dlv_status_at>
+            <address>79524436588</address>
+            <text>NBD-Bank: Karta *2096 Tranzakciya 22/09/16 (12:42:08) SUMMA: 70.00 valuta: RUB Terminal: Tarif SMS-Banking,  Balance: 153150.69  (RUB)</text>
+            
+            
+          </record><record>
+            <id>73385900933</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2017-05-29T10:41:59.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-05-29T10:45:16.000</dlv_status_at>
+            <address>79058680388</address>
+            <text>NBD-Bank: Karta *0998 Tranzakciya 29/05/17 (10:42:01) SUMMA: 389.00 valuta: RUB Terminal: SHESTERENKA, N.NOVGOROD Balance: 102944.51  (RUB)</text>
+            
+            
+          </record><record>
+            <id>71260277930</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2017-04-24T17:30:06.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-04-24T17:30:10.000</dlv_status_at>
+            <address>79036080688</address>
+            <text>NBD-Bank: Karta *0608 Tranzakciya 24/04/17 (17:30:04) SUMMA: 323.00 valuta: RUB Terminal: MAGNIT MM SAMBUKA, N.NOVGOROD Balance: 6419.18  (RUB)</text>
+            
+            
+          </record><record>
+            <id>57859084302</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2016-09-05T10:26:07.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-09-05T10:45:37.000</dlv_status_at>
+            <address>79026863409</address>
+            <text>NBD-Bank: Karta *4777 Tranzakciya 05/09/16 (10:25:48) SUMMA: 600.00 valuta: RUB Terminal: Tarif obsluzhivanie scheta, NBD-Bank Balance: 406.78  (RUB)</text>
+            
+            
+          </record><record>
+            <id>77461432171</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2017-07-25T19:18:24.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-25T19:18:27.000</dlv_status_at>
+            <address>79103997770</address>
+            <text>NBD-Bank: Karta *2056 Tranzakciya 25/07/17 (19:18:26) SUMMA: 271.00 valuta: RUB Terminal: MCDONALDS 11011, MOSKVA Balance: 19818.07  (RUB)</text>
+            
+            
+          </record><record>
+            <id>60115248258</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2016-10-14T11:15:37.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-14T11:15:41.000</dlv_status_at>
+            <address>79519036147</address>
+            <text>NBD-Bank: Karta *0771 Tranzakciya 14/10/16 (11:15:09) SUMMA: 1200.00 valuta: RUB Terminal: &quot;NOVYE TKANI&quot; SHOP, NIZHNIY NOVGO Balance: 29649.43  (RUB)</text>
+            
+            
+          </record><record>
+            <id>64303005647</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2016-12-26T19:01:45.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-26T19:01:51.000</dlv_status_at>
+            <address>79108819458</address>
+            <text>NBD-Bank: Karta *7961 Tranzakciya 26/12/16 (19:01:41) SUMMA: 305.00 valuta: RUB Terminal: MAGNIT MM TAIROS, N.NOVGOROD Balance: 94043.58  (RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:25.993+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-06T10:07:54.197+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="исх_п_п_n_$T{$VARSTRING}_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="исх" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>21304181137</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-13T13:47:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-13T13:48:32.000</dlv_status_at>
+            <address>79519041012</address>
+            <text>Исх. п/п N 20,13.05.2014,171.12 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.012+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="исх_п_п_$T{от}_$T{$VARSTRING}_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="исх" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28590315705</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T09:06:48.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T09:06:53.000</dlv_status_at>
+            <address>79290444319</address>
+            <text>Исх. п/п от abs N 2048,17.11.2014,12132.31 RUB</text>
+            
+            
+          </record><record>
+            <id>28084087223</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T10:14:23.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T10:14:30.000</dlv_status_at>
+            <address>79308047391</address>
+            <text>Исх. п/п от Автокран N 655,05.11.2014,50000.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28611474087</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T17:00:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T17:00:43.000</dlv_status_at>
+            <address>79200085401</address>
+            <text>Исх. п/п от PPK N 633,17.11.2014,767.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28695114156</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-19T13:32:58.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-19T13:33:04.000</dlv_status_at>
+            <address>79049217326</address>
+            <text>Исх. п/п от Визгунов N 6,19.11.2014,5.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28736252112</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-20T10:58:53.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T10:58:56.000</dlv_status_at>
+            <address>79308025552</address>
+            <text>Исх. п/п от DS N 44,20.11.2014,120636.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28113773995</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-06T07:14:08.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-06T07:14:12.000</dlv_status_at>
+            <address>79308009911</address>
+            <text>Исх. п/п от УЧИТ N 335,06.11.2014,1540.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28102298634</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T15:57:23.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T15:57:28.000</dlv_status_at>
+            <address>79601810444</address>
+            <text>Исх. п/п от УМ N 5221,05.11.2014,483.80 RUB</text>
+            
+            
+          </record><record>
+            <id>28085674326</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T10:26:33.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T10:26:36.000</dlv_status_at>
+            <address>79308000154</address>
+            <text>Исх. п/п от Das-OiL N 344,05.11.2014,338096.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28125028671</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-06T09:14:08.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-06T09:14:15.000</dlv_status_at>
+            <address>79519032705</address>
+            <text>Исх. п/п от НЦД ЗАО N 901,06.11.2014,9000.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28590317113</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T09:16:58.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T09:17:08.000</dlv_status_at>
+            <address>79534158024</address>
+            <text>Исх. п/п от STORM N 93,17.11.2014,2360.00 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.020+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="нбд_банк_информирует_$T{о}_платежах_$T{по}_возобновляемому_кредиту_$T{$VARSTRING}_$LOCALDATE_$MONEY_суммы_рассчитаны_$T{по}_состоянию_$T{на}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="возобновляемому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="рассчитаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="состоянию" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>35218785968</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2015-04-28T11:49:31.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-28T11:49:36.000</dlv_status_at>
+            <address>79107917914</address>
+            <text>НБД-Банк информирует о платежах по возобновляемому кредиту 08770415: 03.05.15 - 221943.08 руб. Суммы рассчитаны по состоянию на 28.04.15 00:00</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:54:23.794+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:54:23.794+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="необходимо_обеспечить_$T{на}_счете_$T{к}_$LOCALDATE_$MONEY_$T{для}_оплаты_кред_договора_$T{$VARSTRING}_$T{от}_$LOCALDATE_$T{в}_оао_нбд_банк_$T{при}_движении_$T{по}_ссудному_счету_$T{после}_получения_сообщения_уточняйте_суммы_оплаты" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="необходимо" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обеспечить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="к" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кред" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="договора" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="при" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="движении" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ссудному" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="после" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уточняйте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20684781881</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-23T10:03:13.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-23T10:03:43.000</dlv_status_at>
+            <address>79107917914</address>
+            <text>Необходимо обеспечить на счете к 28.04.14 - 51.62 руб для оплаты кред. договора 37771113 от 13.11.13 в ОАО НБД-Банк. При движении по ссудному счету после получения сообщения уточняйте суммы оплаты</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-11T21:07:18.688+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-11T21:07:18.688+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_вход_$T{в}_интернетбанк_ip_$T{$URL}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="E"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    <paramRef category="Интернет-банк" paramName="Дата входа" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернетбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ip" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20663645227</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-22T14:57:28.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-22T14:57:31.000</dlv_status_at>
+            <address>79103828033</address>
+            <text>22.04.2014 14:57:27 Вход в Интернетбанк. IP:37.235.70.38</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-11T21:05:50.136+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-11T21:05:50.136+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="необходимо_обеспечить_$T{на}_счете_$T{к}_$LOCALDATE_$MONEY_$T{для}_платежа_$T{по}_возобн_кред_договору_$T{$VARSTRING}_$T{от}_$LOCALDATE_$T{в}_оао_нбд_банк_$T{при}_движении_$T{по}_ссудному_счету_$T{после}_получения_сообщения_уточняйте_суммы_оплаты" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="необходимо" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обеспечить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="к" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="возобн" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кред" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="договору" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="при" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="движении" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ссудному" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="после" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уточняйте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>21098910752</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-06T10:01:13.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-06T10:01:34.000</dlv_status_at>
+            <address>79103828033</address>
+            <text>Необходимо обеспечить на счете к 11.05.14 - 204184.27 руб для платежа по возобн. кред. договору 01680114 от 29.01.14 в ОАО НБД-Банк. При движении по ссудному счету после получения сообщения уточняйте суммы оплаты</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:57:23.864+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:57:23.864+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$T{$VARSTRING}_создан_исх_$T{$VARSTRING}_дата_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="создан" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исх" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="дата" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28653539952</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-18T14:17:58.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-18T14:18:01.000</dlv_status_at>
+            <address>79519033516</address>
+            <text>Для Савитри создан исх. в К1 N 3812, дата 18.11.2014, 6923.04 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:26.024+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_платеж_$T{$VARSTRING}_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платеж" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28124036680</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-06T08:54:58.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-06T08:55:03.000</dlv_status_at>
+            <address>79272891820</address>
+            <text>Вход.платеж для Интер N 29,05.11.2014,14790.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28656690107</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-18T16:24:13.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-18T16:24:15.000</dlv_status_at>
+            <address>79308000154</address>
+            <text>Вход.платеж для Das-OiL N 294,18.11.2014,400000.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28375565681</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-12T09:49:33.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-12T09:49:37.000</dlv_status_at>
+            <address>79200353190</address>
+            <text>Вход.платеж для ЭФ-НН N 562,12.11.2014,5580.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28302333949</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-10T15:24:23.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-10T15:24:27.000</dlv_status_at>
+            <address>79101341211</address>
+            <text>Вход.платеж для PB N 670,10.11.2014,289736.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28087047475</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T10:55:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T10:55:48.000</dlv_status_at>
+            <address>79273620663</address>
+            <text>Вход.платеж для AUTO N 3835,05.11.2014,300000.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28077858192</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T08:19:33.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T08:19:40.000</dlv_status_at>
+            <address>79049217326</address>
+            <text>Вход.платеж для Визгунов N 99,05.11.2014,11749.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28087047491</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T10:55:53.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T10:55:59.000</dlv_status_at>
+            <address>79202532762</address>
+            <text>Вход.платеж для СИ N 363,05.11.2014,546939.80 RUB</text>
+            
+            
+          </record><record>
+            <id>28379976977</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-12T11:14:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-12T11:14:47.000</dlv_status_at>
+            <address>79200403100</address>
+            <text>Вход.платеж для ЭК N 55,12.11.2014,28682.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28379977101</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-12T11:16:13.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-12T11:16:17.000</dlv_status_at>
+            <address>79200372100</address>
+            <text>Вход.платеж для Профи N 962,12.11.2014,10000.00 RUB</text>
+            
+            
+          </record><record>
+            <id>28083256668</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T09:50:08.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T09:50:11.000</dlv_status_at>
+            <address>79200202896</address>
+            <text>Вход.платеж для boss N 924,05.11.2014,731.25 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.282+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="пополнение_счета_$T{на}_сумму_$MONEY_выполнено_успешно" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="пополнение" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счета" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумму" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="выполнено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="успешно" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27240565831</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-10-15T16:19:59.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-15T16:20:02.000</dlv_status_at>
+            <address>79200577712</address>
+            <text>Пополнение счета на сумму 29336.02 руб. выполнено успешно.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-28T14:23:40.548+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-28T14:23:40.548+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="nbd_bank_proverka_cvc_po_karte_$T{$CARDNUMBER}_ne_uspeshna_ne_prinyato_ot_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="nbd" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="proverka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="cvc" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshna" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prinyato" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ot" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28656688773</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-18T15:36:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-18T15:36:48.000</dlv_status_at>
+            <address>79081520400</address>
+            <text>NBD-Bank: Proverka CVC po karte *8382 ne uspeshna. Ne prinyato ot PYATEROCHKA 1616,N.NOVGOROD,RU Obratites v bank</text>
+            
+            
+          </record><record>
+            <id>27938212359</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-01T08:18:28.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T08:18:34.000</dlv_status_at>
+            <address>79200013535</address>
+            <text>NBD-Bank: Proverka CVC po karte *5165 ne uspeshna. Ne prinyato ot AZS N 386,MALYY KHOMUTE,RU Obratites v bank</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.285+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="your_balance_is_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="your" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="balance" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="is" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28583975444</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T07:34:53.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T07:34:57.000</dlv_status_at>
+            <address>79519081770</address>
+            <text>Your balance is 94611.880 RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.283+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="оплачено_п_п_из_$T{$VARSTRING}_$LOCALDATE_$MONEY_сумма_опл_$MONEY_ост_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="оплачено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="из" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сумма" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="опл" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ост" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28586148353</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T07:47:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T07:47:51.000</dlv_status_at>
+            <address>79625071711</address>
+            <text>Оплачено п/п из К2 от ИП N 743,17.11.2014,84.51 RUB.Сумма опл.76.80 RUR.Ост.7.71 RUR.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.286+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="необходимо_обеспечить_$T{на}_счете_$T{к}_$LOCALDATE_$MONEY_$T{для}_оплаты_кредитных_договоров_$T{в}_оао_нбд_банк_$T{при}_движении_$T{по}_ссудному_счету_$T{после}_получения_сообщения_уточняйте_суммы_оплаты" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="необходимо" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="обеспечить" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счете" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="к" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредитных" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="договоров" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оао" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="при" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="движении" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ссудному" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="счету" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="после" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="получения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сообщения" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="уточняйте" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="оплаты" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20445433847</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-16T11:10:17.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-16T11:10:33.000</dlv_status_at>
+            <address>79128270752</address>
+            <text>Необходимо обеспечить на счете к 20.04.14 - 41987.20 руб для оплаты кредитных договоров в ОАО НБД-Банк. При движении по ссудному счету после получения сообщения уточняйте суммы оплаты</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:55:05.855+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:55:05.855+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="оплачено_исх_п_п_$T{$VARSTRING}_$LOCALDATE_$MONEY_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="оплачено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исх" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28300339609</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-10T14:42:48.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-10T14:43:00.000</dlv_status_at>
+            <address>79308173050</address>
+            <text>Оплачено исх. п/п  N 99, 10.11.2014, 1600.00 RUB Сапфира.</text>
+            
+            
+          </record><record>
+            <id>28641094814</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-18T11:16:18.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-18T11:16:21.000</dlv_status_at>
+            <address>79103832415</address>
+            <text>Оплачено исх. п/п  N 415, 18.11.2014, 2268.03 RUB Эр-телек.</text>
+            
+            
+          </record><record>
+            <id>28168638663</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-07T08:52:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-07T08:52:42.000</dlv_status_at>
+            <address>79040547506</address>
+            <text>Оплачено исх. п/п  N 589, 07.11.2014, 4755.00 RUB Дел.лини.</text>
+            
+            
+          </record><record>
+            <id>28093931125</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T13:03:18.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T13:03:33.000</dlv_status_at>
+            <address>79023273434</address>
+            <text>Оплачено исх. п/п  N 207, 05.11.2014, 50000.00 RUB ракурс.</text>
+            
+            
+          </record><record>
+            <id>28732464734</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-20T10:11:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T10:11:49.000</dlv_status_at>
+            <address>79535556829</address>
+            <text>Оплачено исх. п/п  N 359, 20.11.2014, 53400.00 RUB БАХТ АМ.</text>
+            
+            
+          </record><record>
+            <id>28728456315</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-20T09:17:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T09:18:04.000</dlv_status_at>
+            <address>79527724698</address>
+            <text>Оплачено исх. п/п  N 62, 20.11.2014, 260000.00 RUB строй.</text>
+            
+            
+          </record><record>
+            <id>28749967171</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-20T14:49:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T14:49:50.000</dlv_status_at>
+            <address>79047830663</address>
+            <text>Оплачено исх. п/п  N 1465, 20.11.2014, 260154.63 RUB зарплата.</text>
+            
+            
+          </record><record>
+            <id>28328144552</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-11T08:54:18.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-11T08:55:10.000</dlv_status_at>
+            <address>79047856478</address>
+            <text>Оплачено исх. п/п  N 1394, 11.11.2014, 1336.00 RUB проволок.</text>
+            
+            
+          </record><record>
+            <id>28383772618</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-12T12:30:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-12T12:30:43.000</dlv_status_at>
+            <address>79524468333</address>
+            <text>Оплачено исх. п/п  N 241, 12.11.2014, 10162.70 RUB Герметик.</text>
+            
+            
+          </record><record>
+            <id>28724409714</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-20T08:08:03.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T08:08:17.000</dlv_status_at>
+            <address>79049071717</address>
+            <text>Оплачено исх. п/п  N 35, 20.11.2014, 9649.72 RUB Зав мот.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.290+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="нбд_банк_информирует_$T{о}_платежах_$T{по}_кредитам_$LOCALDATE_$MONEY_суммы_рассчитаны_$T{по}_состоянию_$T{на}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредитам" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="рассчитаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="состоянию" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>29926776855</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-12-17T11:30:25.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-17T11:30:43.000</dlv_status_at>
+            <address>79047879287</address>
+            <text>НБД-Банк информирует о платежах по кредитам: 20.12.14 - 163777.16 руб Суммы рассчитаны по состоянию на 17.12.14 00:00</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:57:56.726+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:57:56.726+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_$T{$VARSTRING}_нбд_банк_поздравляет_вас_$T{с}_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="ФИО целиком" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="поздравляет" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вас" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="с" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20295044863</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-13T10:00:09.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-13T10:00:13.000</dlv_status_at>
+            <address>79107972599</address>
+            <text>Уважаемый СЕРГЕЙ ИВАНОВИЧ! НБД-Банк поздравляет Вас с днем рождения, желаем успехов!</text>
+            
+            
+          </record><record>
+            <id>20543903976</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-19T10:00:43.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-19T10:00:52.000</dlv_status_at>
+            <address>79109983964</address>
+            <text>Уважаемая МАРИНА ЮРЬЕВНА! НБД-Банк поздравляет Вас с днем рождения, желаем успехов!</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-11T21:13:29.603+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-11T21:13:29.603+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="nbd_bank_nedostatochno_sredstv_po_vashey_karte_$T{$CARDNUMBER}_bila_popitka_snyat_summu_$T{$DOUBLE}_po_valyute_$T{$CURRENCY}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="nbd" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="nedostatochno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sredstv" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vashey" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bila" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popitka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="valyute" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28277791996</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-10T07:59:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-10T07:59:47.000</dlv_status_at>
+            <address>79200773272</address>
+            <text>NBD-Bank: Nedostatochno sredstv. Po vashey karte 5419xxxx2365 bila popitka snyat summu 50 000.00. po valyute RUB</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.293+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="нбд_банк_информирует_$T{о}_платежах_$T{по}_непотребительскому_кредиту_$T{$VARSTRING}_$LOCALDATE_$MONEY_суммы_рассчитаны_$T{по}_состоянию_$T{на}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="непотребительскому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="рассчитаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="состоянию" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27324396999</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-10-17T10:05:03.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-10-17T10:05:15.000</dlv_status_at>
+            <address>79047859004</address>
+            <text>НБД-Банк информирует о платежах по непотребительскому кредиту 16070513: 20.10.14 - 4573.40 руб. Суммы рассчитаны по состоянию на 17.10.14 00:00</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-22T13:52:01.067+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-22T13:52:01.067+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="nbd_bank_$LOCALDATETIME_otmena_tranzakcii_$T{po}_karte_$T{$CARDNUMBER}_$T{na}_summu_$T{$DOUBLE}_$T{$CURRENCY}_$T{$VARSTRING}_dostupno_$T{$DOUBLE}_$T{$CURRENCY}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="R"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="nbd" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="otmena" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="tranzakcii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="na" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="dostupno" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>20750178988</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-24T14:47:23.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-24T14:47:26.000</dlv_status_at>
+            <address>79290467087</address>
+            <text>NBD-Bank: 24/04/14 14:47:14 Otmena tranzakcii po karte *3843 na summu: 61.40 (RUB) proshla uspeshno. MAGNIT-KOSMETIK NEREID Dostupno:7072.24 (RUB)</text>
+            
+            
+          </record><record>
+            <id>20880773509</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-04-28T19:52:38.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-28T19:52:43.000</dlv_status_at>
+            <address>79103921240</address>
+            <text>NBD-Bank: 28/04/14 19:52:34 Otmena tranzakcii po karte *1417 na summu: 40000.00 (RUB) proshla uspeshno. 22-B, KORABLESTROITELEY Dostupno:63144.61 (RUB)</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-05-28T14:24:38.112+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-05-28T14:24:38.112+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$LOCALDATETIME_код_$T{для}_входа_$T{в}_интернетбанк_n_$T{$STRING}_$T{$STRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="код" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="интернетбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>21302457212</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-05-13T13:45:23.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-13T13:45:31.000</dlv_status_at>
+            <address>79519041012</address>
+            <text>13.05.2014 13:45:19 Код для входа в Интернетбанк N 48: 193594</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.294+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="нбд_банк_информирует_$T{о}_платежах_$T{по}_потребительскому_кредиту_$T{$VARSTRING}_$LOCALDATE_$MONEY_суммы_рассчитаны_$T{по}_состоянию_$T{на}_$LOCALDATETIME" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Кредитные факты" paramName="Тип кредитного факта" paramDecription="" value="I"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="нбд" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="банк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="информирует" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="о" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="платежах" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="потребительскому" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="кредиту" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Номер договора/карты/счета" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Дата к погашению" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Кредитные факты" paramName="Сумма к погашению/мин.платеж" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="суммы" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="рассчитаны" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="по" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="состоянию" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>29929561596</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-12-17T11:46:25.000</timestamp>
+            <subject>NBD-BANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-17T11:46:54.000</dlv_status_at>
+            <address>79047827464</address>
+            <text>НБД-Банк информирует о платежах по потребительскому кредиту 36130914: 20.12.14 - 12229.65 руб. Суммы рассчитаны по состоянию на 17.12.14 00:00</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-11T21:08:44.954+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-11T21:08:44.954+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="оплачено_исх_п_п_$T{$VARSTRING}_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="оплачено" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="исх" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="п" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28721452246</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-20T07:23:53.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-20T07:24:02.000</dlv_status_at>
+            <address>79200574400</address>
+            <text>Оплачено исх. п/п  N 89, 20.11.2014, 120.00 RUB .</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.295+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="nbd_bank_proverka_$STRING_po_karte_$T{$CARDNUMBER}_ne_uspeshna_ne_prinyato_ot_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="nbd" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="proverka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="uspeshna" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ne" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="prinyato" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ot" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>27938212201</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-01T07:04:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T07:04:41.000</dlv_status_at>
+            <address>79200190202</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *5143 ne uspeshna. Ne prinyato ot TEL000000000000000M000,PERM,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>28441011646</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-13T18:27:03.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-13T18:27:08.000</dlv_status_at>
+            <address>79524570768</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *1084 ne uspeshna. Ne prinyato ot ODNOKLASSNIKI,MOSCOW,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>27938212985</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-01T11:33:28.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T11:33:32.000</dlv_status_at>
+            <address>79202543431</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *1763 ne uspeshna. Ne prinyato ot YANDEX.MONEY,MONEY.YANDEX.,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>28507927142</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-15T14:23:53.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-15T14:23:59.000</dlv_status_at>
+            <address>79082309470</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *5778 ne uspeshna. Ne prinyato ot YANDEX.WARGAMING,MONEY.YANDEX.,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>28211345970</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-09T09:58:53.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-09T09:58:58.000</dlv_status_at>
+            <address>79202530371</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *2787 ne uspeshna. Ne prinyato ot YANDEX.MONEY            &gt;,MOSCOW,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>28391145880</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-12T14:51:28.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-11-13T02:51:28.000</dlv_status_at>
+            <address>79200596989</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *2694 ne uspeshna. Ne prinyato ot GOOGLE *MARKETPLACE,GOOGLE.COM/CH,GB Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>27997794439</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-03T12:21:03.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-03T12:21:07.000</dlv_status_at>
+            <address>79081553592</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *0858 ne uspeshna. Ne prinyato ot wargaming,RIGA,LV Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>28241898611</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-09T13:17:03.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-09T21:40:21.000</dlv_status_at>
+            <address>79527709997</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *8476 ne uspeshna. Ne prinyato ot VK.COM,SANKT-PETERBU,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>27938212175</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-01T06:38:38.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T07:14:56.000</dlv_status_at>
+            <address>79200001943</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *9647 ne uspeshna. Ne prinyato ot SUMMA TELECOM           &gt;,MOSCOW,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record><record>
+            <id>27997793377</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-02T20:38:33.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-02T21:01:44.000</dlv_status_at>
+            <address>79202958395</address>
+            <text>NBD-Bank: Proverka CVV2 po karte *9890 ne uspeshna. Ne prinyato ot W.QIWI.RU 10/2 PETROVS,W.QIWI.RU,RU Vvedite pravilnij CVV2 kod.</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.705+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="nbd_bank_vnimanie_karta_zablokirovana_po_karte_$T{$CARDNUMBER}_bila_popitka_snyat_summu_$T{$DOUBLE}_valyuta_$T{$CURRENCY}_v_$T{$VARSTRING}" isIgnoreData="false" isValidated="false">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp lexem="nbd" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vnimanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zablokirovana" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="po" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="karte" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="bila" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="popitka" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="snyat" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summu" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumDouble" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="valyuta" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCurrency" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="v" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>28613851424</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-17T18:53:48.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-17T18:53:59.000</dlv_status_at>
+            <address>79200319373</address>
+            <text>NBD-Bank: VNIMANIE! Karta ZABLOKIROVANA. Po karte *7308 bila popitka snyat summu  9.14. valyuta USD v FLAGSHIP INN #11569881,LAFAYETTE,US</text>
+            
+            
+          </record><record>
+            <id>28107008558</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-06T06:39:43.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-06T06:39:48.000</dlv_status_at>
+            <address>79200284522</address>
+            <text>NBD-Bank: VNIMANIE! Karta ZABLOKIROVANA. Po karte *5646 bila popitka snyat summu 246.66. valyuta RUB v ROBOKASSA,WWW.ROBOKASSA,RU</text>
+            
+            
+          </record><record>
+            <id>27938212055</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-01T02:10:33.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-01T02:10:46.000</dlv_status_at>
+            <address>79527837077</address>
+            <text>NBD-Bank: VNIMANIE! Karta ZABLOKIROVANA. Po karte *4450 bila popitka snyat summu  0.00. valyuta USD v QUIRKY, INC.,NEW YORK,US</text>
+            
+            
+          </record><record>
+            <id>28080153863</id>
+            <cnr>1851</cnr>
+            <cnrCode>nbdbank0</cnrCode>
+            <acn>500</acn>
+            <acnCode>nbdbank</acnCode>
+            <timestamp>2014-11-05T09:03:28.000</timestamp>
+            <subject>NBD-Bank</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-05T09:03:35.000</dlv_status_at>
+            <address>79506171733</address>
+            <text>NBD-Bank: VNIMANIE! Karta ZABLOKIROVANA. Po karte *4466 bila popitka snyat summu 150.00. valyuta RUB v Tarif obsluzhivanie scheta,NBD-Bank,RU</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="system" at="2015-07-09T17:55:28.708+03:00"/></created>
+        
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

@@ -1,0 +1,347 @@
+<fixedTemplaterActor acn="dilbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="ваш_пароль_$T{для}_входа_$T{в}_систему_dipay_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="ваш" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="для" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="входа" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="систему" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="dipay" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19868942448</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2014-05-12T14:22:53.000</timestamp>
+            <subject>DIPAY</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-05-12T14:23:15.000</dlv_status_at>
+            <address>79999999999</address>
+            <text>Ваш пароль для входа в систему Dipay: 625860</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-12-06T23:09:52.253+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-12-06T23:09:52.253+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="возврат_$T{$VARSTRING}_$T{$CARDNUMBER}_$MONEY_баланс_$MONEY_$LOCALDATETIME_end" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="возврат" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="end" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44949567838</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2016-04-14T15:32:12.000</timestamp>
+            <subject>DiPay</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-14T15:32:13.000</dlv_status_at>
+            <address>79165655555</address>
+            <text>Возврат TravelRail.RU
+*9086  + 545.00 РУБ
+Баланс: 12 743.98 РУБ
+15:35:04 14.04.2016
+END</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T15:29:05.487+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T15:29:05.487+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{на}_$T{$VARSTRING}_$T{$CARDNUMBER}_$MONEY_баланс_$MONEY_$LOCALDATETIME_end" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="на" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="end" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44949567812</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2016-04-07T12:48:30.000</timestamp>
+            <subject>DiPay</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-07T12:48:31.000</dlv_status_at>
+            <address>79165655555</address>
+            <text>Перевод на 8000-3145-0534-7048
+*9086  - 500.00 РУБ
+Баланс: 12 458.26 РУБ
+12:51:16 07.04.2016
+END</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T15:30:31.745+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T15:37:37.012+03:00"/><ed user="Ковалева Лилия Хамидовна" at="2016-09-18T15:36:01.837+03:00"/><ed user="lkovaleva" at="2016-09-18T15:30:31.745+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="покупка_$T{$VARSTRING}_$T{$CARDNUMBER}_$MONEY_баланс_$MONEY_$LOCALDATETIME_end" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="P"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="покупка" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Остаток по счету" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="end" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44949567822</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2016-04-13T16:17:05.000</timestamp>
+            <subject>DiPay</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T16:17:06.000</dlv_status_at>
+            <address>79165655555</address>
+            <text>Покупка TravelRail.RU
+*9086  - 2 350.98 РУБ
+Баланс: 9 960.19 РУБ
+16:19:58 13.04.2016
+END</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T15:35:49.012+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T15:35:49.012+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="перевод_$T{от}_$T{$VARSTRING}_$T{$CARDNUMBER}_$MONEY_баланс_$MONEY_$LOCALDATETIME_end" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="перевод" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="от" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер карты" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumCardNumber" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="баланс" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDateTime" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="end" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>44949567810</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2016-04-07T12:48:30.000</timestamp>
+            <subject>DiPay</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-07T12:48:32.000</dlv_status_at>
+            <address>79165655555</address>
+            <text>Перевод от 8000-3145-0534-7048
+*7048  + 500.00 РУБ
+Баланс: 10 867.32 РУБ
+12:51:16 07.04.2016
+END</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T15:34:12.081+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T15:34:12.081+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_$STRING_$STRING" isIgnoreData="true" isValidated="true">
+      
+      
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16420580896</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2013-12-25T18:12:09.000</timestamp>
+            <subject>DIPAY</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-12-26T06:57:46.000</dlv_status_at>
+            <address>79266659368</address>
+            <text>test test test</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record><record>
+            <id>16420580896</id>
+            <cnr>1617</cnr>
+            <cnrCode>dilbank0</cnrCode>
+            <acn>422</acn>
+            <acnCode>dilbank</acnCode>
+            <timestamp>2013-12-25T18:12:09.000</timestamp>
+            <subject>DIPAY</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2013-12-26T06:57:46.000</dlv_status_at>
+            <address>79266659368</address>
+            <text>test test test</text>
+            
+            <dlv_error>failure</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2016-09-18T15:34:37.036+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2016-09-18T15:34:37.036+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>

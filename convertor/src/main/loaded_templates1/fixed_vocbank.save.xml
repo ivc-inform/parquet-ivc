@@ -1,0 +1,3491 @@
+<fixedTemplaterActor acn="vocbank">
+<fixedTemplateHolder>
+<fixedTmpl asString="вокбанк_$T{$VARSTRING}_cч_n_$STRING_списание_$LOCALDATE_$MONEY_корр_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вокбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="корр" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>77173602032</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-24T15:00:16.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-24T15:00:21.000</dlv_status_at>
+            <address>79200780920</address>
+            <text>ВОКБАНК-ООО &quot;ПРС&quot;
+Cч.N:40702810500000210760
+Списание
+24.07.2017
+200 000.00 RUR
+Корр:ОПЕРАЦИОННАЯ КАССА, ДО &quot;Центральный&quot;
+Cч.N:20202810000110000000</text>
+            
+            
+          </record><record>
+            <id>77989546902</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-02T15:21:28.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-02T15:21:34.000</dlv_status_at>
+            <address>PEPSI_79200780920</address>
+            <text>ВОКБАНК-ООО &quot;ПРС&quot;
+Cч.N:40702810500000210760
+Списание
+02.08.2017
+30.51 RUR
+Корр:Налог на добавленную стоимость полученный
+Cч.N:60309810700000000001</text>
+            
+            
+          </record><record>
+            <id>55407453489</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-07-11T13:42:21.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-11T13:42:29.000</dlv_status_at>
+            <address>79107921864</address>
+            <text>ВОКБАНК-Леонов Андрей Сергеевич (ИП) //Российская Федерация, 603089, Нижегородская обл, г. Нижний Новгород, Полтавская ул, дом 47, кв. 86//
+Cч.N:40802810000000210555
+Списание
+11.07.2016
+40.00 RUR
+Корр:Комиссия, полученная по кассовым операциям клиентов - ИП</text>
+            
+            
+          </record><record>
+            <id>76558572684</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-14T15:21:33.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-14T15:22:08.000</dlv_status_at>
+            <address>79200609600</address>
+            <text>ВОКБАНК-ООО &quot;Междугородние перевозки&quot;
+Cч.N:40702810900000214337
+Списание
+14.07.2017
+661.02 RUR
+Корр:Комиссия, полученная за заверение карточек с образцами подписей и копий других документов клиента - ЮЛ</text>
+            
+            
+          </record><record>
+            <id>67414561396</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-02-21T15:21:30.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-21T15:23:33.000</dlv_status_at>
+            <address>79200609600</address>
+            <text>ВОКБАНК-ООО &quot;Междугородние перевозки&quot;
+Cч.N:40702810900000214337
+Списание
+21.02.2017
+1 093.88 RUR
+Корр:Управление Федерального казначейства по Нижегородской области (ИФНС России по Канавинскому району г.Н.Новгорода)</text>
+            
+            
+          </record><record>
+            <id>70518979478</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-04-13T13:01:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-04-13T13:02:01.000</dlv_status_at>
+            <address>79200609600</address>
+            <text>ВОКБАНК-ООО &quot;Междугородние перевозки&quot;
+Cч.N:40702810900000214337
+Списание
+13.04.2017
+1 550.00 RUR
+Корр:ООО &quot;Лад-Отчет&quot;</text>
+            
+            
+          </record><record>
+            <id>66744834131</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-02-10T15:21:43.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-10T15:21:46.000</dlv_status_at>
+            <address>79290461016</address>
+            <text>ВОКБАНК-ООО &quot;ПромТрейд&quot;
+Cч.N:40702810000000213979
+Списание
+10.02.2017
+12 240.00 RUR
+Корр:ЗАО &quot;Интерфакс&quot;</text>
+            
+            
+          </record><record>
+            <id>77989548352</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-03T13:00:38.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-03T13:00:54.000</dlv_status_at>
+            <address>PEPSI_79519074699</address>
+            <text>ВОКБАНК-Бородин Олег Владимирович (ИП)
+Cч.N:40802810016000214448
+Списание
+03.08.2017
+500.00 RUR
+Корр:НРОО &quot;ДОБРОЕ ДЕЛО&quot;</text>
+            
+            
+          </record><record>
+            <id>77855115262</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T11:21:44.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T11:22:32.000</dlv_status_at>
+            <address>PEPSI_79519035336</address>
+            <text>ВОКБАНК-ООО &quot;АСА Компания&quot;
+Cч.N:40702810320000214399
+Списание
+01.08.2017
+342.00 RUR
+Корр:ООО &quot;Деловые линии&quot;</text>
+            
+            
+          </record><record>
+            <id>76558572640</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-14T15:00:35.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-14T15:00:50.000</dlv_status_at>
+            <address>79200609600</address>
+            <text>ВОКБАНК-ООО &quot;Междугородние перевозки&quot;
+Cч.N:40702810900000214337
+Списание
+14.07.2017
+45.76 RUR
+Корр:Налог на добавленную стоимость полученный</text>
+            
+            
+          </record><record>
+            <id>56074470145</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-07-25T15:42:22.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-25T15:44:15.000</dlv_status_at>
+            <address>79202537886</address>
+            <text>ВОКБАНК-ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;КОМСЕРВИС&quot;
+Cч.N:40702810000000212750
+Списание
+25.07.2016
+11.79 RUR
+Корр:УФК ПО НИЖЕГОРОДСКОЙ ОБЛАСТИ (ИФНС РОССИИ  ПО ПРИОКСКОМУ РАЙОНУ Г.НИЖНИЙ НОВГОРОД)</text>
+            
+            
+          </record><record>
+            <id>64526592752</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-12-30T11:21:38.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-30T11:23:02.000</dlv_status_at>
+            <address>79202537560</address>
+            <text>ВОКБАНК-ООО ГК Евразия &quot;НефтеГазСтрой&quot;
+Cч.N:40702810919000214454
+Списание
+30.12.2016
+1 989.00 RUR
+Корр:УФК по Нижегородской области (государственное учреждение - Отделение Пенсионного фонда Российской Федерации по Нижегородской области)</text>
+            
+            
+          </record><record>
+            <id>77855116138</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T15:21:46.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T15:22:00.000</dlv_status_at>
+            <address>PEPSI_79159305647</address>
+            <text>ВОКБАНК-ООО &quot;Терико&quot;
+Cч.N:40702810418000212559
+Списание
+01.08.2017
+57 519.59 RUR
+Корр:ООО &quot;Компания Евроколор +&quot;</text>
+            
+            
+          </record><record>
+            <id>77922646185</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T17:42:34.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T17:42:57.000</dlv_status_at>
+            <address>PEPSI_79290461016</address>
+            <text>ВОКБАНК-ООО &quot;ПромТрейд&quot;
+Cч.N:40702810000000213979
+Списание
+01.08.2017
+1 000.00 RUR
+Корр:Комиссия за ведение расчетного счета, ЮЛ</text>
+            
+            
+          </record><record>
+            <id>77922645971</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T16:42:32.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T16:42:36.000</dlv_status_at>
+            <address>PEPSI_79202515556</address>
+            <text>ВОКБАНК-ООО &quot;ГД52&quot;
+Cч.N:40702810024000213557
+Списание
+01.08.2017
+1 000.00 RUR
+Корр:ЮЛ.Доходы за ведение расчетного счета д/о Канавинский
+Cч.N:70601810816002710201</text>
+            
+            
+          </record><record>
+            <id>59425520018</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-09-30T14:42:47.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-10-01T02:42:48.000</dlv_status_at>
+            <address>79202515593</address>
+            <text>ВОКБАНК-ООО &quot;АвтоТехСервис&quot;
+Cч.N:40702810519000211226
+Списание
+30.09.2016
+68.46 RUR
+Корр:ЮЛ.КОМИССИЯ, ПОЛУЧЕННАЯ ПО КАССОВЫМ ОПЕРАЦИЯМ, ДОП. ОФИС &quot;ПЕЧЕРСКИЙ&quot;</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>77855116112</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T15:21:38.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T16:07:25.000</dlv_status_at>
+            <address>PEPSI_79047829660</address>
+            <text>ВОКБАНК-Валеулина Ольга Геннадьевна (ИП)
+Cч.N:40802810316000016841
+Списание
+01.08.2017
+30 000.00 RUR
+Корр:ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ ФИНАНСОВО-ТОРГОВАЯ КОМПАНИЯ  &quot;АГРОТРЕЙД&quot;</text>
+            
+            
+          </record><record>
+            <id>66292721423</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-02-02T14:00:22.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-02-02T14:00:46.000</dlv_status_at>
+            <address>79200279141</address>
+            <text>ВОКБАНК-ООО &quot;Центр АГАПЕ&quot;
+Cч.N:40702810700000014164
+Списание
+02.02.2017
+300.00 RUR
+Корр:Комиссия, полученная по кассовым операциям клиентов - ЮЛ</text>
+            
+            
+          </record><record>
+            <id>77922646005</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T16:42:49.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T16:42:57.000</dlv_status_at>
+            <address>PEPSI_79519181880</address>
+            <text>ВОКБАНК-ООО &quot;ЧОО &quot;Роза&quot;
+Cч.N:40702810100000211923
+Списание
+01.08.2017
+7 000.00 RUR
+Корр:ОПЕРАЦИОННАЯ КАССА ДОП. ОФИС &quot;АВТОЗАВОДСКИЙ&quot;</text>
+            
+            
+          </record><record>
+            <id>77922646197</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-01T17:42:43.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-01T17:43:42.000</dlv_status_at>
+            <address>PEPSI_79107921864</address>
+            <text>ВОКБАНК-Леонов Андрей Сергеевич (ИП)
+Cч.N:40802810000000210555
+Списание
+01.08.2017
+600.00 RUR
+Корр:Комиссия, полученная за обслуживание по системе КЛИЕНТ-БАНК, ИП</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T11:00:47.839+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T11:00:47.839+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вокбанк_$T{$VARSTRING}_cч_n_$STRING_зачисление_$LOCALDATE_$MONEY_корр_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вокбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачисление" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="корр" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>75946577306</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-05T18:42:31.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-05T18:42:33.000</dlv_status_at>
+            <address>79047829660</address>
+            <text>ВОКБАНК-ИП Валеулина Ольга Геннадьевна
+Cч.N:40802810316000016841
+Зачисление
+05.07.2017
+8 121.90 RUR
+Корр:ПО &quot;Тоншаевский Универсам&quot;</text>
+            
+            
+          </record><record>
+            <id>78536616952</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-11T09:21:28.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-11T09:21:31.000</dlv_status_at>
+            <address>79601951947</address>
+            <text>ВОКБАНК-ООО &quot;АвангардПЛАСТ-НН&quot;
+Cч.N:40702810100000210458
+Зачисление
+11.08.2017
+8 569.99 RUR
+Корр:ООО ППФ &quot;Технические системы&quot;</text>
+            
+            
+          </record><record>
+            <id>78136924804</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-07T08:25:26.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-07T08:25:36.000</dlv_status_at>
+            <address>79302888852</address>
+            <text>ВОКБАНК-ООО &quot;Ирбис&quot;
+Cч.N:40702810916000211625
+Зачисление
+04.08.2017
+8 000.00 RUR
+Корр:ООО НПП &quot;НИТА&quot;</text>
+            
+            
+          </record><record>
+            <id>77433181808</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-26T10:21:17.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2017-07-26T22:30:57.000</dlv_status_at>
+            <address>79023076555</address>
+            <text>ВОКБАНК-ООО &quot;Лотос плюс&quot;
+Cч.N:40702810419000212215
+Зачисление
+26.07.2017
+10 500.00 RUR
+Корр:Ордена &quot;Знак Почета&quot; акционерное общество &quot;ХОХЛОМСКАЯ РОСПИСЬ&quot;</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>77502355425</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-27T15:01:00.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-27T15:01:10.000</dlv_status_at>
+            <address>79519035336</address>
+            <text>ВОКБАНК-ООО &quot;АСА Компания&quot;
+Cч.N:40702810320000214399
+Зачисление
+27.07.2017
+20 000.00 RUR
+Корр:Общество с ограниченной ответственностью &quot;Компания АС-Запчасть&quot;</text>
+            
+            
+          </record><record>
+            <id>64492482823</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-12-29T23:42:50.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-12-29T23:43:27.000</dlv_status_at>
+            <address>79519181880</address>
+            <text>ВОКБАНК-ООО &quot;ЧОО &quot;Роза&quot;
+Cч.N:40702810100000211923
+Зачисление
+28.12.2016
+3 000.00 RUR
+Корр:ЧОУ ДПО &quot;Клуб Профессионалов&quot;</text>
+            
+            
+          </record><record>
+            <id>71265353738</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-04-26T10:42:17.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-04-26T10:42:44.000</dlv_status_at>
+            <address>79047829660</address>
+            <text>ВОКБАНК-ИП Валеулина Ольга Геннадьевна
+Cч.N:40802810316000016841
+Зачисление
+26.04.2017
+2 500.00 RUR
+Корр:ФНОПО &quot;Уренское ОРП&quot;</text>
+            
+            
+          </record><record>
+            <id>54657905922</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-06-22T17:21:44.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-06-22T17:21:48.000</dlv_status_at>
+            <address>79200212224</address>
+            <text>ВОКБАНК-Общество с ограниченной ответственностью &quot;Медулла&quot;
+Cч.N:40702810619000210318
+Зачисление
+22.06.2016
+18 125.00 RUR
+Корр:Министерство финансов Нижегородской области (л/с 32001060150,ГАУЗ НО &quot;ОСП&quot;)</text>
+            
+            
+          </record><record>
+            <id>55232668921</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-07-06T12:00:31.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-06T12:00:35.000</dlv_status_at>
+            <address>79601951947</address>
+            <text>ВОКБАНК-ООО &quot;АвангардПЛАСТ-НН&quot;
+Cч.N:40702810100000210458
+Зачисление
+06.07.2016
+32 500.00 RUR
+Корр:ООО &quot;Завод нефтегазовой аппаратуры Анодъ&quot; в Пермском отделении № 6984 г.Пермь</text>
+            
+            
+          </record><record>
+            <id>77855114446</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-31T18:00:29.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2017-08-01T06:03:19.000</dlv_status_at>
+            <address>79023076555</address>
+            <text>ВОКБАНК-ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛОТОС ПЛЮС&quot;
+Cч.N:40702810419000212215
+Зачисление
+31.07.2017
+6 000.00 RUR
+Корр:ООО &quot;КОРПОРАЦИЯ &quot;ТЕЛЕПОРТАЦИЯ&quot;</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:49:42.883+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:49:42.883+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vocbank_$T{$VARSTRING}_cch_n_$STRING_spisanie_$LOCALDATE_$MONEY_korr_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vocbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cch" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korr" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>29378314542</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-12-05T12:02:41.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-05T12:02:59.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+05.12.2014
+6.51 RUR
+Korr:UFK po Nizhegorodskoj oblasti (Gosudarstvennoe uchrezhdenie - Nizhegorodskoe regional'noe otdelenie Fonda social'nogo strahovaniya RF)</text>
+            
+            
+          </record><record>
+            <id>42865908817</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-10-30T12:00:53.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-30T12:04:02.000</dlv_status_at>
+            <address>C318C786236B4DBCFC58EFC8E9CD6624</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+30.10.2015
+12.45 RUR
+Korr:Upravlenie Federal'nogo kaznachejstva po Nizhegorodskoj oblasti GU-Otdelenie PFR po Nizhegorodskoj oblasti (GU-Otdelenie PFR po Nizhegorodskoj oblasti)</text>
+            
+            
+          </record><record>
+            <id>50273170421</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-04T15:50:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-04T15:50:11.000</dlv_status_at>
+            <address>79200324545</address>
+            <text>VOCBANK-OOO &quot;EnergoMontazhProekt&quot;
+Cch.N:40702810100000016380
+Spisanie
+04.04.2016
+857.00 RUR
+Korr:UFK po Nizhegorodskoj oblasti (GU - Otdelenie pensionnogo fonda RF po Nizhegorodskoj oblasti)</text>
+            
+            
+          </record><record>
+            <id>26975212918</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-10-09T13:46:30.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2014-10-09T13:46:36.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+09.10.2014
+84.06 RUR
+Korr:UFK po Nizhegorodskoj oblasti (Gosudarstvennoe uchrezhdenie Nizhegorodskoe regional'noe otdelenie Fonda social'nogo strahovaniya Rossijskoj Federacii)</text>
+            
+            
+          </record><record>
+            <id>50195986777</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-01T10:14:00.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-01T10:14:09.000</dlv_status_at>
+            <address>79200324545</address>
+            <text>VOCBANK-OOO &quot;EnergoMontazhProekt&quot;
+Cch.N:40702810100000016380
+Spisanie
+01.04.2016
+146.17 RUR
+Korr:Komissiya, poluchennaya po kassovym operaciyam klientov - YUL</text>
+            
+            
+          </record><record>
+            <id>26298591300</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-09-23T13:47:13.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-23T13:47:18.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>VOCBANK-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Spisanie
+23.09.2014
+8 680.00 RUR
+Korr:Obschestvo s ogranichennoj otvetstvennost'yu &quot;Zona Zvuka&quot;</text>
+            
+            
+          </record><record>
+            <id>50437914477</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-06T11:38:15.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T11:38:37.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOCBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+06.04.2016
+2 750.00 RUR
+Korr:OOO &quot;MegaMaks&quot;</text>
+            
+            
+          </record><record>
+            <id>50273170423</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-04T15:50:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-04T15:50:20.000</dlv_status_at>
+            <address>79200324545</address>
+            <text>VOCBANK-OOO &quot;EnergoMontazhProekt&quot;
+Cch.N:40702810100000016380
+Spisanie
+04.04.2016
+2 183.00 RUR
+Korr:UFK po Nizhegorodskoj oblasti (IFNS Rossii po Sovetskomu rajonu g. N. Novgoroda)</text>
+            
+            
+          </record><record>
+            <id>50490224822</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-06T16:53:35.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T16:53:55.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOCBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+06.04.2016
+61.02 RUR
+Korr:Nalog na dobavlennuyu stoimost' poluchennyj (Dop. ofis &quot;Avtozavodskij&quot;)</text>
+            
+            
+          </record><record>
+            <id>25683711412</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-09-08T17:36:59.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-08T17:37:49.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+08.09.2014
+421.00 RUR
+Korr:UFK Ministerstva Finansov Rossii po Nizhegorodskoj oblasti (Mezhrajonnaya IFNS Rossii 6 po Nizhegorodskoj oblasti)</text>
+            
+            
+          </record><record>
+            <id>29406191795</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-12-05T16:57:36.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-05T16:57:43.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>VOCBANK-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Spisanie
+05.12.2014
+600.00 RUR
+Korr:Komissiya, poluchennaya za obsluzhivanie klientov po sisteme Klient - Bank</text>
+            
+            
+          </record><record>
+            <id>22727770332</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-06-24T15:11:59.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-24T15:12:05.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+24.06.2014
+22 887.42 RUR
+Korr:OOO &quot;5 KONTINENTOV.Nizhnij Novgorod&quot;</text>
+            
+            
+          </record><record>
+            <id>27857201935</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-10-30T11:41:11.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-10-30T11:41:29.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>VOCBANK-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Spisanie
+30.10.2014
+2 262.00 RUR
+Korr:Upravlenie Federal'nogo kaznachejstva po Nizhegorodskoj oblasti (IFNS Rossii po Borskomu rajonu Nizhegorodskoj oblasti)</text>
+            
+            
+          </record><record>
+            <id>20914862959</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-29T17:19:12.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-29T17:31:30.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+29.04.2014
+110 000.00 RUR
+Korr:OPERACIONNAYA KASSA DOP. OFIS &quot;AVTOZAVODSKIJ&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T09:52:58.752+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T09:52:58.752+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_ibank_$T{$STRING}_id_сессии_$T{$LONG}_одноразовый_пароль_$T{$STRING}_ip_$T{$URL}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ibank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="одноразовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="ip" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50810014353</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-13T10:00:29.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T10:00:42.000</dlv_status_at>
+            <address>79081699780</address>
+            <text>Вход в &quot;iBank 2&quot;.
+ID сессии: 260443
+Одноразовый пароль: 8821
+IP: 91.214.140.15</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:33:09.043+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:33:09.043+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_vokbank_$T{$VARSTRING}_cch_n_$STRING_zachislenie_$LOCALDATE_$MONEY_korr_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vokbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cch" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korr" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19361201966</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-03-21T09:44:24.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-21T09:44:28.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>ZAO &quot;VOKBANK&quot;-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Zachislenie
+21.03.2014
+35 000.00 RUR
+Korr:OOO &quot;Mark-Inzhiniring&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:11:29.130+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:11:29.130+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="p_p_n_$T{$LONG}_summa_$MONEY_poluchatel_$T{$VARSTRING}_bik_$STRING_schet_$STRING_id_sessii_$T{$LONG}_parol_$T{$STRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-PMT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="p" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="p" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="summa" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="poluchatel" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="bik" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="schet" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="sessii" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumLong" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="parol" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50395483012</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-05T12:23:42.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T12:23:57.000</dlv_status_at>
+            <address>79036002516</address>
+            <text>P/p N 6
+Summa 670000.00 rub.
+Poluchatel' OOO &quot;HAJVEJ-NN&quot; -raschety po pokupke-prodazhe inostrannoj valyuty
+BIK 042202722
+Schet 47405810100000213962
+ID sessii 464010
+Parol' 115867</text>
+            
+            
+          </record><record>
+            <id>32757289050</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-03-02T10:17:35.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-02T10:17:47.000</dlv_status_at>
+            <address>79200136601</address>
+            <text>P/p N 173
+Summa 600000.00 rub.
+Poluchatel' OOO &quot;OEK-Holding&quot;
+BIK 044525716
+Schet 40702810900000090783
+ID sessii 433987
+Parol' 841644</text>
+            
+            
+          </record><record>
+            <id>77855114274</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-07-31T16:24:25.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-07-31T16:24:26.000</dlv_status_at>
+            <address>79519069323</address>
+            <text>P/p N 4241
+Summa 236270.00 rub.
+Poluchatel' AO &quot;Rosagrolizing&quot;
+BIK 044525111
+Schet 40702810800000000045
+ID sessii 71577
+Parol' 334628</text>
+            
+            
+          </record><record>
+            <id>30336282321</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-12-25T17:03:36.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-12-25T17:03:39.000</dlv_status_at>
+            <address>79200210019</address>
+            <text>P/p N 327
+Summa 1362.90 rub.
+Poluchatel' OOO &quot;EVMkompleks&quot;
+BIK 042202603
+Schet 40702810142000007010
+ID sessii 183100
+Parol' 419935</text>
+            
+            
+          </record><record>
+            <id>50490224650</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-06T16:13:48.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T16:13:54.000</dlv_status_at>
+            <address>79043919958</address>
+            <text>P/p N 185
+Summa 185000.00 rub.
+Poluchatel' OOO &quot;Torgovaya Kompaniya &quot;MEGAPOLIS&quot;
+BIK 042202877
+Schet 40702810738000008747
+ID sessii 158956
+Parol' 485465</text>
+            
+            
+          </record><record>
+            <id>50437914787</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-06T12:51:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T12:51:17.000</dlv_status_at>
+            <address>79290470303</address>
+            <text>P/p N 99
+Summa 72000.00 rub.
+Poluchatel' OAO &quot;RZHD&quot; podsobnyj raschetnyj schet po mestu nahozhdeniya Gor'kovskogo TCFTO
+BIK 042202837
+Schet 40702810229241044426
+ID sessii 423586
+Parol' 576939</text>
+            
+            
+          </record><record>
+            <id>42275192830</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-10-16T13:26:48.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-16T13:26:52.000</dlv_status_at>
+            <address>79092948730</address>
+            <text>P/p N 574
+Summa 187500.00 rub.
+Poluchatel' OAO UM &quot;KSTOVSKOE&quot; Kstovskoe otdelenie N4345
+BIK 042202603
+Schet 40702810042190000360
+ID sessii 34350
+Parol' 229291</text>
+            
+            
+          </record><record>
+            <id>50810015093</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-13T13:08:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T13:08:13.000</dlv_status_at>
+            <address>79047808378</address>
+            <text>P/p N 64
+Summa 317.37 rub.
+Poluchatel' PAO &quot;VympelKom&quot;
+BIK 044525202
+Schet 40702810186617007389
+ID sessii 203646
+Parol' 740055</text>
+            
+            
+          </record><record>
+            <id>50437913739</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-06T08:18:09.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T08:18:14.000</dlv_status_at>
+            <address>79159428287</address>
+            <text>P/p N 97
+Summa 226310.77 rub.
+Poluchatel' Publichnoe akcionernoe obschestvo&quot;TNS energo Nizhnij Novgorod&quot;
+BIK 042202824
+Schet 40702810499910602932
+ID sessii 354904
+Parol' 840482</text>
+            
+            
+          </record><record>
+            <id>38663673194</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-07-22T11:39:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-22T11:39:26.000</dlv_status_at>
+            <address>79202508932</address>
+            <text>P/p N 94
+Summa 303035.00 rub.
+Poluchatel' OOO &quot;TEHKOMINVEST&quot;
+BIK 043602955
+Schet 40702810511500011931
+ID sessii 14361
+Parol' 766136</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-26T22:40:57.307+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-26T22:40:57.307+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вход_$T{в}_$T{$VARSTRING}_id_сессии_$T{$VARSTRING}_одноразовый_пароль_$T{$VARSTRING}_ip_$T{$URL}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Интернет-банк" paramName="Тип операции в интернет-банке" paramDecription="" value="PWD"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вход" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="в" directionOfUse="TreatAs" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="id" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="сессии" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="одноразовый" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="пароль" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="ip" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Интернет-банк" paramName="Устройство входа в интернет-банк" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumURL" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>19881484837</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-02T11:33:49.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-02T11:34:04.000</dlv_status_at>
+            <address>79107903251</address>
+            <text>Вход в &quot;iBank 2&quot;.
+ID сессии: 468932
+Одноразовый пароль: 898516
+IP: 37.235.71.77</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2015-11-29T12:24:01.950+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2015-11-29T12:24:01.950+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_vokbank_$T{$VARSTRING}_cch_n_$STRING_spisanie_$LOCALDATE_$MONEY_korr_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="vokbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cch" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korr" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>15777304544</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2013-12-04T16:19:11.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-04T16:19:31.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Individual'nyj predprinimatel' Belyankin Nikolaj Vasil'evich
+Cch.N:40802810718000017503
+Spisanie
+04.12.2013
+120 000.00 RUR
+Korr:OPERACIONNAYA KASSA DOP. OFIS &quot;AVTOZAVODSKIJ&quot;</text>
+            
+            
+          </record><record>
+            <id>18983746777</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-03-11T17:37:16.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-11T17:37:22.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>ZAO &quot;VOKBANK&quot;-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Spisanie
+11.03.2014
+106 000.00 RUR
+Korr:Obschestvo s ogranichennoj otvetstvennost'yu &quot;Trasta-Trejding&quot;</text>
+            
+            
+          </record><record>
+            <id>18217232711</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-18T17:23:43.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-18T17:24:25.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+18.02.2014
+32 439.00 RUR
+Korr:OOO &quot;Biblio-Globus Operator&quot;</text>
+            
+            
+          </record><record>
+            <id>17333490985</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-01-24T17:43:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-24T17:43:09.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+24.01.2014
+17 000.00 RUR
+Korr:OOO &quot;Klub puteshestvij Poputnyj veter&quot;</text>
+            
+            
+          </record><record>
+            <id>18182311779</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-17T18:02:00.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-17T18:02:11.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+17.02.2014
+20.00 RUR
+Korr:Komissiya, poluchennaya po raschetnym operaciyam, DOP. OFIS AVTOZAVODSKIJ</text>
+            
+            
+          </record><record>
+            <id>20460074012</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-16T18:00:20.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-16T18:00:40.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+16.04.2014
+31 000.00 RUR
+Korr:OOO &quot;Grand-Ekspress&quot;</text>
+            
+            
+          </record><record>
+            <id>20202492009</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-09T18:20:25.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-09T18:20:31.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+09.04.2014
+60 997.44 RUR
+Korr:OOO &quot;Turoperatorskaya Kompaniya &quot;Solveks&quot;</text>
+            
+            
+          </record><record>
+            <id>18529758439</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-27T12:03:08.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-27T12:03:14.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+27.02.2014
+1 750.00 RUR
+Korr:OOO &quot;CentrPriborServis-NN&quot;</text>
+            
+            
+          </record><record>
+            <id>18729462779</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-03-04T17:20:40.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-04T17:20:47.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>ZAO &quot;VOKBANK&quot;-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Spisanie
+04.03.2014
+600.00 RUR
+Korr:Komissiya, poluchennaya za obsluzhivanie klientov po sisteme Klient - Bank</text>
+            
+            
+          </record><record>
+            <id>17266988131</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-01-23T11:23:43.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-23T11:23:48.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+23.01.2014
+6 750.00 RUR
+Korr:OOO TK&quot;KAPITAL - TREVEL&quot;</text>
+            
+            
+          </record><record>
+            <id>17645141958</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-04T17:01:55.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-04T17:02:06.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+04.02.2014
+1 000.00 RUR
+Korr:Dohody za vedenie raschetnogo scheta d/o Avtozavodskij</text>
+            
+            
+          </record><record>
+            <id>17645141960</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-04T17:01:55.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-04T17:02:48.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>ZAO &quot;VOKBANK&quot;-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Spisanie
+04.02.2014
+600.00 RUR
+Korr:Komissiya, poluchennaya za obsluzhivanie klientov po sisteme Klient-Bank, DOP. OFIS AVTOZAVODSKIJ</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T09:59:21.580+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T09:59:21.580+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vocbank_$T{$VARSTRING}_cч_n_$STRING_зачисление_$LOCALDATE_$MONEY_корр_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vocbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачисление" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="корр" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>32646889832</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-02-25T12:45:06.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-02-25T12:45:17.000</dlv_status_at>
+            <address>79601954032</address>
+            <text>VOCBANK-ООО &quot;Астра&quot;
+Cч.N:40702810619000213331
+Зачисление
+25.02.2015
+42 500.00 RUR
+Корр:ООО &quot;Маркетинг-Медиа&quot;</text>
+            
+            
+          </record><record>
+            <id>45788121130</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-12-30T10:35:30.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-30T10:35:51.000</dlv_status_at>
+            <address>79200320122</address>
+            <text>VOCBANK-ООО &quot;Юнистаб&quot;
+Cч.N:40702810816000210111
+Зачисление
+30.12.2015
+5 000.00 RUR
+Корр:Санкт-Петербургский филиал публичного акционерного общества &quot;ТРАНСКАПИТАЛБАНК&quot; р/с 47416810500300000000 в Санкт-Петербургский филиал публичного акционерного общ</text>
+            
+            
+          </record><record>
+            <id>50810014191</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-13T09:32:02.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>U</dlv_status>
+            <dlv_status_at>2016-04-13T21:32:21.000</dlv_status_at>
+            <address>79519195812</address>
+            <text>VOCBANK-ООО ТД &quot;ДХПС&quot;
+Cч.N:40702810314000018323
+Зачисление
+13.04.2016
+900 728.60 RUR
+Корр:ООО &quot;ПРАЙД&quot;</text>
+            
+            <dlv_error>absent-subscriber</dlv_error>
+          </record><record>
+            <id>50516773251</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-07T17:14:25.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-07T17:14:33.000</dlv_status_at>
+            <address>79519181880</address>
+            <text>VOCBANK-ООО ЧОО &quot;Роза&quot;
+Cч.N:40702810100000211923
+Зачисление
+07.04.2016
+50 000.00 RUR
+Корр:ООО ЧОП &quot;КОМБАТ&quot;</text>
+            
+            
+          </record><record>
+            <id>33285872070</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-03-12T14:11:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-12T14:11:17.000</dlv_status_at>
+            <address>79202501926</address>
+            <text>VOCBANK-ООО &quot;Нижстрой&quot;
+Cч.N:40702810516000016974
+Зачисление
+12.03.2015
+1 590.00 RUR
+Корр:Общество с  ограниченной ответственностью &quot;Нижегородская горно-строительная компания&quot;</text>
+            
+            
+          </record><record>
+            <id>41478664922</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-09-28T18:18:10.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-28T18:18:18.000</dlv_status_at>
+            <address>79648318070</address>
+            <text>VOCBANK-ООО &quot;НОВЭК&quot;
+Cч.N:40702810424000212514
+Зачисление
+28.09.2015
+337 390.00 RUR
+Корр:ООО &quot;Мир Упаковки&quot;</text>
+            
+            
+          </record><record>
+            <id>21735275027</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-05-27T16:14:07.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-27T16:14:29.000</dlv_status_at>
+            <address>79202535658</address>
+            <text>VOCBANK-ООО &quot;Бетонный завод ЦЕНТР&quot;
+Cч.N:40702810600000210929
+Зачисление
+27.05.2014
+93 320.00 RUR
+Корр:ОПЕРУ ВОЛГО-ВЯТСКОГО БАНКА СБЕРБАНКА РОССИИ</text>
+            
+            
+          </record><record>
+            <id>39183202935</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-08-04T15:36:26.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-04T15:36:43.000</dlv_status_at>
+            <address>79082372492</address>
+            <text>VOCBANK-ООО &quot;ТК Алтея&quot;
+Cч.N:40702810219000213278
+Зачисление
+04.08.2015
+5 200.00 RUR
+Корр:Общество с ограниченной ответственностью &quot;Инженерно-Буровая Компания 52&quot;</text>
+            
+            
+          </record><record>
+            <id>38596439228</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-07-20T18:03:53.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-20T18:04:04.000</dlv_status_at>
+            <address>79036026595</address>
+            <text>VOCBANK-ООО &quot;МСГ&quot;
+Cч.N:40702810620000213223
+Зачисление
+20.07.2015
+18 220.00 RUR
+Корр:Общество с ограничееноой ответственностью &quot; Волго-Вятское Монтажно-Наладочное Управление&quot;</text>
+            
+            
+          </record><record>
+            <id>28650057506</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-11-18T16:14:52.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-11-18T16:15:02.000</dlv_status_at>
+            <address>79108944477</address>
+            <text>VOCBANK-ООО &quot;ПК НОРД&quot;
+Cч.N:40702810624000212589
+Зачисление
+18.11.2014
+770.00 RUR
+Корр:СУММЫ ДО ВЫЯСНЕНИЯ
+Cч.N:47416810507180240001</text>
+            
+            
+          </record><record>
+            <id>33445063715</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-03-16T13:58:12.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-03-16T13:58:17.000</dlv_status_at>
+            <address>79036026595</address>
+            <text>VOCBANK-ООО &quot;МСГ&quot;
+Cч.N:40702810620000213223
+Зачисление
+16.03.2015
+22 054.00 RUR
+Корр:ООО &quot;Восстановление&quot;</text>
+            
+            
+          </record><record>
+            <id>49586054154</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-03-21T16:52:56.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-03-21T16:53:29.000</dlv_status_at>
+            <address>79030407298</address>
+            <text>VOCBANK-Старов Сергей Александрович (ИП)
+Cч.N:40802810319000211588
+Зачисление
+21.03.2016
+4 500.00 RUR
+Корр:&quot;РЕКЛАМНОЕ АГЕНТСТВО &quot;КВАРТЕТ&quot;</text>
+            
+            
+          </record><record>
+            <id>51627291554</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-28T08:29:11.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-28T08:59:48.000</dlv_status_at>
+            <address>79047829660</address>
+            <text>VOCBANK-Валеулина Ольга Геннадьевна (ИП)
+Cч.N:40802810316000016841
+Зачисление
+27.04.2016
+6 750.00 RUR
+Корр:Открытое акционерное общество &quot;Уральский завод электрических соединителей &quot;Исеть&quot;</text>
+            
+            
+          </record><record>
+            <id>50810015071</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-13T13:02:16.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T13:02:29.000</dlv_status_at>
+            <address>79063582449</address>
+            <text>VOCBANK-НОЧУ ДПО &quot;Академия повышения квалификации и инновационных технологий&quot;
+Cч.N:40703810719000211672
+Зачисление
+13.04.2016
+20 000.00 RUR
+Корр:ФИЛИАЛ &quot;ЧЕЛНИНСКИЙ&quot; ОАО &quot;АИКБ &quot;ТАТФОНДБАНК&quot; //Федотов Артем Сергеевич//Респ Татарстан, г Набережные Челны, пр-к... сч.N 40911810011000001446 в ЧЕЛНИНСКИЙ ФИЛИАЛ</text>
+            
+            
+          </record><record>
+            <id>47307130291</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-02-03T15:08:25.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-02-03T15:08:37.000</dlv_status_at>
+            <address>79202537560</address>
+            <text>VOCBANK-ООО &quot;ДСК&quot;
+Cч.N:40702810719000213163
+Зачисление
+03.02.2016
+224 250.00 RUR
+Корр:ООО &quot;Строительные леса&quot;</text>
+            
+            
+          </record><record>
+            <id>36459857140</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-05-29T09:35:44.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-29T09:36:15.000</dlv_status_at>
+            <address>79519061696</address>
+            <text>VOCBANK-ООО &quot;СтройСбыт&quot;
+Cч.N:40702810221000211116
+Зачисление
+29.05.2015
+90 000.00 RUR
+Корр:ОПЕРАЦИОННАЯ КАССА ДОП.ОФИСА &quot;ДЗЕРЖИНСКИЙ-2&quot;</text>
+            
+            
+          </record><record>
+            <id>20749652020</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-24T16:14:44.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-24T16:15:54.000</dlv_status_at>
+            <address>79036022241</address>
+            <text>VOCBANK-ООО &quot;Продвижение-НН&quot;
+Cч.N:40702810619000017825
+Зачисление
+24.04.2014
+45 000.00 RUR
+Корр:ОПЕРАЦИОННАЯ КАССА ДОП. ОФИСА &quot;ПЕЧЕРСКИЙ&quot;</text>
+            
+            
+          </record><record>
+            <id>36413123675</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-05-27T17:18:22.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-05-27T17:18:27.000</dlv_status_at>
+            <address>79107904677</address>
+            <text>VOCBANK-ООО &quot;Компания &quot;ЭнергоСфера&quot;
+Cч.N:40702810216000211820
+Зачисление
+27.05.2015
+26 994.00 RUR
+Корр:ООО &quot;Компания &quot;ЭнергоСфера&quot;</text>
+            
+            
+          </record><record>
+            <id>36597297234</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-06-01T13:59:22.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-01T14:00:00.000</dlv_status_at>
+            <address>79023035279</address>
+            <text>VOCBANK-ООО &quot;ТСК&quot;
+Cч.N:40702810315000018827
+Зачисление
+01.06.2015
+3 597.53 RUR
+Корр:Страховое акционерное общество &quot;ВСК&quot; Р/С 40701810801300000756</text>
+            
+            
+          </record><record>
+            <id>21489770972</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-05-20T10:37:24.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-05-20T10:37:35.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>VOCBANK-ООО &quot;ПСК-Мебель&quot;
+Cч.N:40702810100000211952
+Зачисление
+20.05.2014
+101 417.00 RUR
+Корр:СУММЫ, ПОСТУПИВШИЕ НА КОРСЧЕТА ДО ВЫЯСНЕНИЯ</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:17:42.541+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:17:42.541+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vokbank_$T{$VARSTRING}_cch_n_$STRING_spisanie_$LOCALDATE_$MONEY_korr_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vokbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cch" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="spisanie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korr" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>78397737896</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-09T17:21:34.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-09T17:21:37.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOKBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+09.08.2017
+600.00 RUR
+Korr:YUL.Komissiya, poluchennaya za obsluzhivanie klientov po sisteme Klient-Bank, DOP. OFIS AVTOZAVODSKIJ</text>
+            
+            
+          </record><record>
+            <id>78397737898</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-09T17:21:34.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-09T17:21:35.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOKBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+09.08.2017
+1 000.00 RUR
+Korr:YUL.Dohody za vedenie raschetnogo scheta d/o Avtozavodskij</text>
+            
+            
+          </record><record>
+            <id>79057351501</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-18T11:21:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-18T11:21:29.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOKBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+18.08.2017
+2 700.00 RUR
+Korr:Akcionernoe obschestvo &quot;ER-Telekom Holding &quot;</text>
+            
+            
+          </record><record>
+            <id>79057351503</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-18T11:21:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-18T11:21:30.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOKBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+18.08.2017
+1 096.80 RUR
+Korr:OOO &quot;Servisnyj centr&quot;</text>
+            
+            
+          </record><record>
+            <id>79057351499</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-18T11:21:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-18T11:21:29.000</dlv_status_at>
+            <address>79063676922</address>
+            <text>VOKBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Spisanie
+18.08.2017
+3 506.19 RUR
+Korr:UFK po Nizhegorodskoj oblasti (IFNS Rossii po Avtozavodskomu rajonu) G.N.Novgorod</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:03:08.441+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:03:08.441+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vocbank_$T{$VARSTRING}_cч_n_$STRING_списание_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vocbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50437913109</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-05T15:29:37.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T15:29:51.000</dlv_status_at>
+            <address>79200188807</address>
+            <text>VOCBANK-ООО &quot;Делюкс Вояж&quot;
+Cч.N:40702810000000210082
+Списание
+05.04.2016
+15 462.00 RUR</text>
+            
+            
+          </record><record>
+            <id>30943815108</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-01-13T12:01:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-01-13T12:06:30.000</dlv_status_at>
+            <address>79200520886</address>
+            <text>VOCBANK-Добровольский Владимир Александрович (ИП)
+Cч.N:40802810400000017866
+Списание
+13.01.2015
+13 000.00 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:32:02.013+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:32:02.013+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="вокбанк_$T{$VARSTRING}_cч_n_$STRING_зачисление_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="вокбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачисление" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>60794431538</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-10-26T09:42:27.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-10-26T09:42:37.000</dlv_status_at>
+            <address>79200035215</address>
+            <text>ВОКБАНК-ООО &quot;Детали для автобусов&quot;
+Cч.N:40702810123000213555
+Зачисление
+26.10.2016
+42 991.00 RUR</text>
+            
+            
+          </record><record>
+            <id>77922646599</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2017-08-02T09:42:32.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2017-08-02T09:42:36.000</dlv_status_at>
+            <address>PEPSI_79870888988</address>
+            <text>ВОКБАНК-ООО &quot;Сеньор Потолок НН&quot;
+Cч.N:40702810819000214619
+Зачисление
+02.08.2017
+5 000.00 RUR</text>
+            
+            
+          </record><record>
+            <id>55863539115</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-07-19T12:21:45.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-07-19T12:21:52.000</dlv_status_at>
+            <address>79200188807</address>
+            <text>ВОКБАНК-ООО &quot;Делюкс Вояж&quot;
+Cч.N:40702810000000210082
+Зачисление
+19.07.2016
+108 300.00 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:29:13.559+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:29:13.559+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vocbank_$T{$VARSTRING}_cch_n_$STRING_zachislenie_$LOCALDATE_$MONEY_korr_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vocbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cch" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korr" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>41913815200</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-10-09T09:33:31.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-09T09:33:36.000</dlv_status_at>
+            <address>C318C786236B4DBCFC58EFC8E9CD6624</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Zachislenie
+09.10.2015
+360.00 RUR
+Korr:SUMMY, POSTUPIVSHIE NA KORSCHETA DO VYYASNENIYA</text>
+            
+            
+          </record><record>
+            <id>39279296730</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-08-06T18:06:17.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-06T18:06:35.000</dlv_status_at>
+            <address>C318C786236B4DBCFC58EFC8E9CD6624</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Zachislenie
+06.08.2015
+980.00 RUR
+Korr:Raschety po perevodam denezhnyh sredstv v pol'zu IP Belyankin N.V. dop/ofis &quot;Avtozavodskij&quot;</text>
+            
+            
+          </record><record>
+            <id>40425703382</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-09-03T18:00:53.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-09-03T18:01:53.000</dlv_status_at>
+            <address>C318C786236B4DBCFC58EFC8E9CD6624</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Zachislenie
+03.09.2015
+630.00 RUR
+Korr:Volgo-Vyatskij bank OAO &quot;Sberbank Rossii&quot;//BARANOVA ELENA VLADIMIROVNA//65186115972//603 r/s 30233810749000600001 v ZAPADNO-URAL'SKIJ BANK OAO &quot;SBERBANK ROSSII&quot;</text>
+            
+            
+          </record><record>
+            <id>50437914483</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-06T11:38:16.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-06T11:38:23.000</dlv_status_at>
+            <address>79200324545</address>
+            <text>VOCBANK-OOO &quot;EnergoMontazhProekt&quot;
+Cch.N:40702810100000016380
+Zachislenie
+06.04.2016
+9 000.00 RUR
+Korr:A-MC UL'TRAMED OBSCHESTVO S OGRANICHENNOJ OTVETSTVENNOST'YU</text>
+            
+            
+          </record><record>
+            <id>42844751374</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-10-29T17:16:38.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-29T17:17:24.000</dlv_status_at>
+            <address>C318C786236B4DBCFC58EFC8E9CD6624</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Zachislenie
+29.10.2015
+34 000.00 RUR
+Korr:OPERACIONNAYA KASSA DOP. OFIS &quot;AVTOZAVODSKIJ&quot;</text>
+            
+            
+          </record><record>
+            <id>26072855853</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-09-18T10:37:45.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-18T10:37:48.000</dlv_status_at>
+            <address>79200102555</address>
+            <text>VOCBANK-OOO &quot;Artek&quot;
+Cch.N:40702810016000212508
+Zachislenie
+18.09.2014
+16 700.00 RUR
+Korr:OOO &quot;Sluzhba avarijnyh komissarov Nizhegorodskoj oblasti&quot;</text>
+            
+            
+          </record><record>
+            <id>50861034934</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-13T17:56:33.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-13T17:56:43.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOCBANK-Belyankin Nikolaj Vasil'evich (IP)
+Cch.N:40802810718000017503
+Zachislenie
+13.04.2016
+900.00 RUR
+Korr:UFPS Nizhegorodskoj oblasti - Filial FGUP &quot;Pochta Rossii&quot;</text>
+            
+            
+          </record><record>
+            <id>50395482344</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-05T10:35:09.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T10:35:30.000</dlv_status_at>
+            <address>79200524750</address>
+            <text>VOCBANK-OOO &quot;Sodejstvie&quot;
+Cch.N:40702810500000210430
+Zachislenie
+05.04.2016
+40 000.00 RUR
+Korr:OOO &quot;Gruppa kompanij &quot;Torgovyj Dom 7 kubov&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:06:57.616+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:06:57.616+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vocbank_$T{$VARSTRING}_cч_n_$STRING_списание_$LOCALDATE_$MONEY_корр_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-MT"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vocbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="списание" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="корр" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>26566758277</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-09-29T17:37:12.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-29T17:37:37.000</dlv_status_at>
+            <address>79040592772</address>
+            <text>VOCBANK-ООО &quot;РОСМОРОЗ&quot;
+Cч.N:40702810920000211857
+Списание
+29.09.2014
+6 000.00 RUR
+Корр:ООО &quot;Нижегородский Дом Путешествий&quot;</text>
+            
+            
+          </record><record>
+            <id>37452717618</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-06-22T15:31:26.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-22T15:31:29.000</dlv_status_at>
+            <address>79290535819</address>
+            <text>VOCBANK-ООО &quot;ТРАНЗИТПАРТС&quot;
+Cч.N:40702810516000212121
+Списание
+22.06.2015
+3 120.00 RUR
+Корр:ООО &quot;Аэрозольная химия&quot;</text>
+            
+            
+          </record><record>
+            <id>45824788901</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-12-30T11:59:44.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-30T12:00:32.000</dlv_status_at>
+            <address>79199727777</address>
+            <text>VOCBANK-ООО &quot;АТЛАНТ&quot;
+Cч.N:40702810022000212259
+Списание
+30.12.2015
+90 000.00 RUR
+Корр:ООО &quot;Закупка-онлайн&quot;</text>
+            
+            
+          </record><record>
+            <id>39612873678</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-08-14T17:19:25.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-08-14T17:19:56.000</dlv_status_at>
+            <address>79107904677</address>
+            <text>VOCBANK-ООО &quot;Компания &quot;ЭнергоСфера&quot;
+Cч.N:40702810216000211820
+Списание
+14.08.2015
+5 003.99 RUR
+Корр:Закрытое акционерное общество &quot;Промвентэлектро&quot;</text>
+            
+            
+          </record><record>
+            <id>50395483124</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-05T13:02:24.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T13:03:26.000</dlv_status_at>
+            <address>79200265395</address>
+            <text>VOCBANK-ООО Компания &quot;АКТИВ&quot;
+Cч.N:40702810915000018683
+Списание
+05.04.2016
+20 660.00 RUR
+Корр:ООО фирма &quot; Магистральсервис&quot;  Кстовское отд.4345 г.Кстово</text>
+            
+            
+          </record><record>
+            <id>34146472630</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-04-02T15:34:11.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-04-02T15:34:18.000</dlv_status_at>
+            <address>79036026595</address>
+            <text>VOCBANK-ООО &quot;МСГ&quot;
+Cч.N:40702810620000213223
+Списание
+02.04.2015
+64 400.00 RUR
+Корр:АО &quot;Северсталь Дистрибуция&quot;</text>
+            
+            
+          </record><record>
+            <id>37585329340</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-06-25T17:19:09.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-25T17:19:25.000</dlv_status_at>
+            <address>79107904677</address>
+            <text>VOCBANK-ООО &quot;Компания &quot;ЭнергоСфера&quot;
+Cч.N:40702810216000211820
+Списание
+25.06.2015
+4 886.47 RUR
+Корр:Управление Федерального казначейства по Нижегородской области (Инспекция ФНС России по Нижегородскому району г. Нижнего Новгорода)</text>
+            
+            
+          </record><record>
+            <id>20526489900</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-18T13:04:31.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-18T13:04:59.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>VOCBANK-ООО &quot;ПСК-Мебель&quot;
+Cч.N:40702810100000211952
+Списание
+18.04.2014
+6 251.77 RUR
+Корр:ООО &quot;Глобал Трейдинг НН&quot;</text>
+            
+            
+          </record><record>
+            <id>45167049206</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-12-18T13:44:38.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-12-18T13:44:55.000</dlv_status_at>
+            <address>79199727777</address>
+            <text>VOCBANK-ООО &quot;АТЛАНТ&quot;
+Cч.N:40702810022000212259
+Списание
+18.12.2015
+8 785.00 RUR
+Корр:ООО &quot;Волжский крановый завод&quot;</text>
+            
+            
+          </record><record>
+            <id>50942513092</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-15T11:38:20.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-15T11:38:27.000</dlv_status_at>
+            <address>79056664176</address>
+            <text>VOCBANK-ООО &quot;Бизнес-Системы&quot;
+Cч.N:40702810217000017722
+Списание
+15.04.2016
+6 344.00 RUR
+Корр:Управление Федерального Казначейства МФ РФ по Нижегородской области (ИМНС России по Советскому району)</text>
+            
+            
+          </record><record>
+            <id>37540673994</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-06-25T08:10:20.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-06-25T08:10:43.000</dlv_status_at>
+            <address>79290461016</address>
+            <text>VOCBANK-ООО &quot;ПромТрейд&quot;
+Cч.N:40702810000000213979
+Списание
+25.06.2015
+1 000.00 RUR
+Корр:Комиссия, полученная за установку системы Клиент-Банк</text>
+            
+            
+          </record><record>
+            <id>20754158849</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-24T18:20:23.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-24T18:20:38.000</dlv_status_at>
+            <address>79036022241</address>
+            <text>VOCBANK-ООО &quot;Продвижение-НН&quot;
+Cч.N:40702810619000017825
+Списание
+24.04.2014
+4 710.00 RUR
+Корр:УФК по Нижегородской области(ИФНС России по Нижегородскому району г.Н.Новгорода)</text>
+            
+            
+          </record><record>
+            <id>41613451568</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-10-02T09:23:33.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-10-02T09:24:18.000</dlv_status_at>
+            <address>79290535819</address>
+            <text>VOCBANK-ООО &quot;ТРАНЗИТПАРТС&quot;
+Cч.N:40702810516000212121
+Списание
+02.10.2015
+1 000.00 RUR
+Корр:Доходы за ведение расчетного счета д/о Канавинский</text>
+            
+            
+          </record><record>
+            <id>20701881290</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-23T15:11:04.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-23T15:11:13.000</dlv_status_at>
+            <address>79036026595</address>
+            <text>VOCBANK-ООО &quot;МСГ-НН&quot;
+Cч.N:40702810920000211080
+Списание
+23.04.2014
+690.00 RUR
+Корр:ООО &quot;Сервисный Центр&quot;РЕСУРС&quot;</text>
+            
+            
+          </record><record>
+            <id>25403214205</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-09-01T11:58:47.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-09-01T11:58:59.000</dlv_status_at>
+            <address>79648318070</address>
+            <text>VOCBANK-ООО &quot;НОВЭК&quot;
+Cч.N:40702810424000212514
+Списание
+01.09.2014
+315.00 RUR
+Корр:Общество с ограниченной ответственностью &quot;Деловые Линии&quot;</text>
+            
+            
+          </record><record>
+            <id>20626605983</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-21T15:58:42.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-21T15:58:57.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>VOCBANK-ООО &quot;ПСК&quot;
+Cч.N:40702810800000210693
+Списание
+21.04.2014
+8 710.00 RUR
+Корр:ООО &quot;Зебра&quot;</text>
+            
+            
+          </record><record>
+            <id>38172676606</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-07-10T12:04:33.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-07-10T12:06:29.000</dlv_status_at>
+            <address>79601606041</address>
+            <text>VOCBANK-НОУ УМЦ  &quot;Курс-ИНФОРМ&quot;
+Cч.N:40703810500000015906
+Списание
+10.07.2015
+3 777.77 RUR
+Корр:УФК по Нижегородской области (Государственное учреждение - Отделение Пенсионного фонда РФ по Нижегородской области)</text>
+            
+            
+          </record><record>
+            <id>31355231363</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2015-01-23T15:10:56.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2015-01-23T15:11:05.000</dlv_status_at>
+            <address>79648318070</address>
+            <text>VOCBANK-ООО &quot;НОВЭК&quot;
+Cч.N:40702810424000212514
+Списание
+23.01.2015
+53.39 RUR
+Корр:Налог на добавленную стоимость полученный (Доп.офис &quot;Сормово&quot;)</text>
+            
+            
+          </record><record>
+            <id>20729238382</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-24T12:01:30.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-24T12:02:46.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>VOCBANK-ООО &quot;ПСК&quot;
+Cч.N:40702810800000210693
+Списание
+24.04.2014
+19 500.00 RUR
+Корр:Карточный счет для перечисления з/платы ООО &quot;ПСК&quot;</text>
+            
+            
+          </record><record>
+            <id>22039205850</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-06-05T14:30:19.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-06-05T14:32:46.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>VOCBANK-ООО &quot;ПСК&quot;
+Cч.N:40702810800000210693
+Списание
+05.06.2014
+12 610.96 RUR
+Корр:ЗАО &quot;Сталепромышленная компания&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:21:13.485+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:21:13.485+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vocbank_$T{$VARSTRING}_cч_n_$STRING_зачисление_$LOCALDATE_$MONEY" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vocbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачисление" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>50437913249</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-04-05T15:50:40.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-04-05T15:51:00.000</dlv_status_at>
+            <address>79200188807</address>
+            <text>VOCBANK-ООО &quot;Делюкс Вояж&quot;
+Cч.N:40702810000000210082
+Зачисление
+05.04.2016
+13 194.00 RUR</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:26:57.629+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:26:57.629+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="vokbank_$T{$VARSTRING}_cch_n_$STRING_zachislenie_$LOCALDATE_$MONEY_korr_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp lexem="vokbank" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cch" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="zachislenie" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="korr" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>62014146770</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2016-11-17T15:21:40.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2016-11-17T15:22:28.000</dlv_status_at>
+            <address>79534157313</address>
+            <text>VOKBANK-IP Belyankin Nikolaj Vasil'evich
+Cch.N:40802810718000017503
+Zachislenie
+17.11.2016
+400.00 RUR
+Korr:UFPS Nizhegorodskoj oblasti - filial FGUP &quot;Pochta Rossii&quot;</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:15:43.220+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:15:43.220+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+<fixedTmpl asString="$STRING_вокбанк_$T{$VARSTRING}_cч_n_$STRING_зачисление_$LOCALDATE_$MONEY_корр_$T{$VARSTRING}" isIgnoreData="false" isValidated="true">
+      
+      <paramDefaultValues>
+            <paramRefWValue category="Транзакционные данные" paramName="Тип транзакции" paramDecription="" value="C-T"/>
+          </paramDefaultValues>
+      <structure>
+        <atp>
+    
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="вокбанк" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Личные данные" paramName="Название ю.л." paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp><atp>
+    
+    <tp lexem="cч" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="n" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Номер счета" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumString" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="зачисление" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Дата операции из текста" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumLocalDate" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="Сумма транзакции" paramDescription=""/>
+    <tp directionOfUse="MustBe" type="TemplatePartTypeEnumMoney" structureType="SimplePart"/>
+  </atp><atp>
+    
+    <tp lexem="корр" directionOfUse="MustBe" type="TemplatePartTypeEnumLexem" structureType="SimplePart"/>
+  </atp><atp>
+    <paramRef category="Транзакционные данные" paramName="POS" paramDescription=""/>
+    <tp directionOfUse="TreatAs" type="TemplatePartTypeEnumString" structureType="VariableSeqPart"/>
+  </atp>
+      </structure>
+      <examples>
+          <record>
+            <id>16448406066</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2013-12-24T13:30:58.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-24T13:31:10.000</dlv_status_at>
+            <address>79202535658</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;Бетонный завод ЦЕНТР&quot;
+Cч.N:40702810600000210929
+Зачисление
+24.12.2013
+100 000.00 RUR
+Корр:ООО &quot;Предприятие &quot;Прогресс&quot;</text>
+            
+            
+          </record><record>
+            <id>17674539891</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-05T17:01:52.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-05T17:02:03.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;ПСК-Мебель&quot;
+Cч.N:40702810100000211952
+Зачисление
+05.02.2014
+2 142.00 RUR
+Корр:Общество с Ограниченной Ответственностью &quot;Бобров и Компания&quot;</text>
+            
+            
+          </record><record>
+            <id>17525588232</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-01-31T14:13:17.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-01-31T14:13:36.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;ПСК-Мебель&quot;
+Cч.N:40702810100000211952
+Зачисление
+31.01.2014
+37 250.00 RUR
+Корр:ЖИЛИЩНЫЙ СТРОИТЕЛЬНЫЙ ПОТРЕБИТЕЛЬСКИЙ КООПЕРАТИВ &quot;СВОБОДА 36&quot;</text>
+            
+            
+          </record><record>
+            <id>16257114259</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2013-12-19T14:36:34.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-19T14:37:51.000</dlv_status_at>
+            <address>79200320122</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;Юнистаб&quot;
+Cч.N:40702810816000210111
+Зачисление
+19.12.2013
+1 730.00 RUR
+Корр:ОАО &quot;Нижегородский институт технологии и организации производства&quot;</text>
+            
+            
+          </record><record>
+            <id>17649497609</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-04T18:25:44.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-04T18:25:57.000</dlv_status_at>
+            <address>79036026595</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;МСГ-НН&quot;
+Cч.N:40702810920000211080
+Зачисление
+04.02.2014
+7 107.20 RUR
+Корр:ООО &quot;Волжский Погрузчик&quot;</text>
+            
+            
+          </record><record>
+            <id>18064100098</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-14T21:54:56.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-14T21:55:08.000</dlv_status_at>
+            <address>79202501926</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;Нижстрой&quot;
+Cч.N:40702810516000016974
+Зачисление
+14.02.2014
+2 350.00 RUR
+Корр:ООО &quot;Нижегородское Аудиторское Партнерство&quot;</text>
+            
+            
+          </record><record>
+            <id>20460073958</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-04-16T18:00:13.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-04-16T18:00:24.000</dlv_status_at>
+            <address>79040592772</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;РОСМОРОЗ&quot;
+Cч.N:40702810920000211857
+Зачисление
+16.04.2014
+10 550.00 RUR
+Корр:ООО &quot;ТВОЕ&quot;</text>
+            
+            
+          </record><record>
+            <id>19670197689</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-03-28T14:08:16.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-03-28T14:08:21.000</dlv_status_at>
+            <address>79036026595</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;МСГ-НН&quot;
+Cч.N:40702810920000211080
+Зачисление
+28.03.2014
+25 780.00 RUR
+Корр:ООО ПКФ  &quot;Нейрон-Ком&quot;</text>
+            
+            
+          </record><record>
+            <id>18513563037</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-26T15:12:17.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-26T15:13:10.000</dlv_status_at>
+            <address>79648318070</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;НОВЭК&quot;
+Cч.N:40702810424000212514
+Зачисление
+26.02.2014
+18 990.00 RUR
+Корр:ООО &quot;Кварцевые пески&quot;</text>
+            
+            
+          </record><record>
+            <id>15777303922</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2013-12-04T15:11:22.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-12-04T15:12:45.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;ПСК-Мебель&quot;
+Cч.N:40702810100000211952
+Зачисление
+04.12.2013
+12 394.00 RUR
+Корр:&quot;Филиал ООО &quot;Выбери радио&quot; в г. Нижний Новгород</text>
+            
+            
+          </record><record>
+            <id>18182312569</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2014-02-17T21:29:54.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2014-02-17T21:30:10.000</dlv_status_at>
+            <address>79202533005</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;ПСК-Мебель&quot;
+Cч.N:40702810100000211952
+Зачисление
+17.02.2014
+1 546.00 RUR
+Корр:ООО &quot;Лысковский мясокомбинат&quot;</text>
+            
+            
+          </record><record>
+            <id>15643672780</id>
+            <cnr>1397</cnr>
+            <cnrCode>vocbank0</cnrCode>
+            <acn>327</acn>
+            <acnCode>vocbank</acnCode>
+            <timestamp>2013-11-29T13:09:21.000</timestamp>
+            <subject>VOCBANK</subject>
+            <dlv_status>D</dlv_status>
+            <dlv_status_at>2013-11-29T13:09:33.000</dlv_status_at>
+            <address>79050134244</address>
+            <text>ЗАО &quot;ВОКБАНК&quot;-ООО &quot;ЛигаВент&quot;
+Cч.N:40702810919000211994
+Зачисление
+29.11.2013
+1 604.00 RUR
+Корр:ОПЕРАЦИОННАЯ КАССА ДОП. ОФИСА &quot;ПЕЧЕРСКИЙ&quot;
+Cч.N:20202810119000000001</text>
+            
+            
+          </record>
+        </examples>
+      <history>
+        <created><ed user="lkovaleva" at="2017-11-27T10:38:35.220+03:00"/></created>
+        <edited><ed user="lkovaleva" at="2017-11-27T10:38:35.220+03:00"/></edited>
+      </history>
+    </fixedTmpl>
+</fixedTemplateHolder>
+</fixedTemplaterActor>
