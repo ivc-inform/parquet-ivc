@@ -262,12 +262,12 @@ public class ParquetWriter<T> implements Closeable {
           Configuration conf,
           int maxPaddingSize,
           ParquetProperties encodingProps,
-          int appendBlockSize) throws IOException {
+          int appendBufferSize) throws IOException {
 
     WriteSupport.WriteContext writeContext = writeSupport.init(conf);
     MessageType schema = writeContext.getSchema();
 
-    ParquetFileWriter fileWriter = new ParquetFileWriter(file, schema, mode, rowGroupSize, maxPaddingSize, appendBlockSize);
+    ParquetFileWriter fileWriter = new ParquetFileWriter(file, schema, mode, rowGroupSize, maxPaddingSize, appendBufferSize);
     fileWriter.start();
 
     this.codecFactory = new CodecFactory(conf, encodingProps.getPageSizeThreshold());
@@ -330,7 +330,7 @@ public class ParquetWriter<T> implements Closeable {
     private int rowGroupSize = DEFAULT_BLOCK_SIZE;
     private int maxPaddingSize = MAX_PADDING_SIZE_DEFAULT;
     //<editor-fold desc="Fixed by Y.Andrew">
-    private int appendBlockSize = APPEND_BUFFER_SIZE_DEFAULT;
+    private int appendBufferSize = APPEND_BUFFER_SIZE_DEFAULT;
     //</editor-fold>
     private boolean enableValidation = DEFAULT_IS_VALIDATING_ENABLED;
     private ParquetProperties.Builder encodingPropsBuilder =
@@ -400,8 +400,8 @@ public class ParquetWriter<T> implements Closeable {
       return self();
     }
 
-    public SELF withAppendBlockSize(int appendBlockSize) {
-      this.appendBlockSize = appendBlockSize;
+    public SELF withAppendBufferSize(int appendBufferSize) {
+      this.appendBufferSize = appendBufferSize;
       return self();
     }
 
@@ -518,12 +518,12 @@ public class ParquetWriter<T> implements Closeable {
       if (file != null) {
         return new ParquetWriter<>(file,
                 mode, getWriteSupport(conf), codecName, rowGroupSize, enableValidation, conf,
-                maxPaddingSize, encodingPropsBuilder.build(), appendBlockSize);
+                maxPaddingSize, encodingPropsBuilder.build(), appendBufferSize);
       } else {
         return new ParquetWriter<>(HadoopOutputFile.fromPath(path, conf),
                 mode, getWriteSupport(conf), codecName,
                 rowGroupSize, enableValidation, conf, maxPaddingSize,
-                encodingPropsBuilder.build(), appendBlockSize);
+                encodingPropsBuilder.build(), appendBufferSize);
       }
     }
   }
