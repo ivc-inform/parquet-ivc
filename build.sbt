@@ -38,7 +38,7 @@ lazy val common = Project(id = "common", base = file("common"))
   )
 
 lazy val parquetAvro = Project(id = "parquet-avro", base = file("parquet-avro"))
-  .dependsOn()
+  .dependsOn(common)
   .settings(
       libraryDependencies ++= Seq(
           CommonDeps.avro,
