@@ -2,9 +2,9 @@ package ru.simplesys.sbprocessing.sbtbuild
 
 object CommonSettings {
     object settingValues {
-        val name = "template-storage-service"
+        val name = "parquet-ivc"
         val scalaVersion = "2.12.4"
-        val organization = "ru.mfms.template-storage"
+        val organization = "ru.ivc-inform"
         val baseVersion = "0.12.4"
 
         val scalacOptions = Seq(
@@ -24,6 +24,4 @@ object CommonSettings {
             organization := settingValues.organization
         )
     }
-
-    val dockerGroupName = "mfmd"
 }
