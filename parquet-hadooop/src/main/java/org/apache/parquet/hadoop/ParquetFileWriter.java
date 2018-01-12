@@ -259,6 +259,7 @@ public class ParquetFileWriter {
       this.alignment = NoAlignment.get(rowGroupSize);
     }
 
+    //<editor-fold desc="Fixed by Y.Andrew">
     switch (mode) {
       case CREATE:
         file.create(blockSize);
@@ -270,6 +271,7 @@ public class ParquetFileWriter {
         file.createOrOverwrite(blockSize);
         break;
     }
+    //</editor-fold>
 
     if (mode == Mode.OVERWRITE) {
       this.out = file.createOrOverwrite(blockSize);
