@@ -33,7 +33,6 @@ object CommonDeps {
     val avro = "org.apache.avro" % "avro" % avroVersion
     val parquetAvro = "org.apache.parquet" % "parquet-avro" % parquetVersion
     val parquetColumn = "org.apache.parquet" % "parquet-column" % parquetVersion
-    val parquetHadoop = "org.apache.parquet" % "parquet-hadoop" % parquetVersion
     val parquetJackson = "org.apache.parquet" % "parquet-jackson" % parquetVersion
     val jackson = "org.codehaus.jackson" % "jackson-mapper-asl" % jacksonVersion
     val jacksonCore = "org.codehaus.jackson" % "jackson-core-asl" % jacksonVersion

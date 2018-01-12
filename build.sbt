@@ -50,13 +50,12 @@ lazy val parquetCommon = Project(id = "parquet-common", base = file("parquet-com
   )
 
 lazy val parquetAvro = Project(id = "parquet-avro", base = file("parquet-avro"))
-  .dependsOn(common)
+  .dependsOn(parquetHadoop)
   .settings(
       libraryDependencies ++= Seq(
           CommonDeps.avro,
           CommonDeps.fastUtil,
           CommonDeps.parquetColumn,
-          CommonDeps.parquetHadoop,
           CommonDeps.hadoopClient,
           CommonDeps.hadoopCommon,
           CommonDeps.scalaTest

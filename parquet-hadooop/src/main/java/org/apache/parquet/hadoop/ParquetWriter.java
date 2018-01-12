@@ -329,6 +329,9 @@ public class ParquetWriter<T> implements Closeable {
     private CompressionCodecName codecName = DEFAULT_COMPRESSION_CODEC_NAME;
     private int rowGroupSize = DEFAULT_BLOCK_SIZE;
     private int maxPaddingSize = MAX_PADDING_SIZE_DEFAULT;
+    //<editor-fold desc="Fixed by Y.Andrew">
+    private int appendBlockSize = APPEND_BLOCK_SIZE_DEFAULT;
+    //</editor-fold>
     private boolean enableValidation = DEFAULT_IS_VALIDATING_ENABLED;
     private ParquetProperties.Builder encodingPropsBuilder =
             ParquetProperties.builder();
@@ -394,6 +397,11 @@ public class ParquetWriter<T> implements Closeable {
      */
     public SELF withRowGroupSize(int rowGroupSize) {
       this.rowGroupSize = rowGroupSize;
+      return self();
+    }
+
+    public SELF withAppendBlockSize(int appendBlockSize) {
+      this.appendBlockSize = appendBlockSize;
       return self();
     }
 
@@ -510,12 +518,12 @@ public class ParquetWriter<T> implements Closeable {
       if (file != null) {
         return new ParquetWriter<>(file,
                 mode, getWriteSupport(conf), codecName, rowGroupSize, enableValidation, conf,
-                maxPaddingSize, encodingPropsBuilder.build(), APPEND_BLOCK_SIZE_DEFAULT);
+                maxPaddingSize, encodingPropsBuilder.build(), appendBlockSize);
       } else {
         return new ParquetWriter<>(HadoopOutputFile.fromPath(path, conf),
                 mode, getWriteSupport(conf), codecName,
                 rowGroupSize, enableValidation, conf, maxPaddingSize,
-                encodingPropsBuilder.build(), APPEND_BLOCK_SIZE_DEFAULT);
+                encodingPropsBuilder.build(), appendBlockSize);
       }
     }
   }
