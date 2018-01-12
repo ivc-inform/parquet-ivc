@@ -73,6 +73,9 @@ public class ParquetFileWriter {
   // File creation modes
   public static enum Mode {
     CREATE,
+    //<editor-fold desc="Fixed by Y.Andrew">
+    APPEND,
+    //</editor-fold>
     OVERWRITE
   }
 

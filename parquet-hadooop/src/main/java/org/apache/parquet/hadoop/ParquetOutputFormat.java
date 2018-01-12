@@ -1,4 +1,4 @@
-/* 
+/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -6,9 +6,9 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -43,11 +43,11 @@ import static org.apache.parquet.hadoop.util.ContextUtil.getConfiguration;
 
 /**
  * OutputFormat to write to a Parquet file
- *
+ * <p>
  * It requires a {@link WriteSupport} to convert the actual records to the underlying format.
  * It requires the schema of the incoming records. (provided by the write support)
  * It allows storing extra metadata in the footer (for example: for schema compatibility purpose when converting from a different schema language).
- *
+ * <p>
  * The format configuration settings in the job configuration:
  * <pre>
  * # The block size is the size of a row group being buffered in memory
@@ -82,19 +82,18 @@ import static org.apache.parquet.hadoop.util.ContextUtil.getConfiguration;
  * # This is also the minimum size of a row group. Default: 0
  * parquet.writer.max-padding=2097152 # 2 MB
  * </pre>
- *
+ * <p>
  * If parquet.compression is not set, the following properties are checked (FileOutputFormat behavior).
  * Note that we explicitely disallow custom Codecs
  * <pre>
  * mapred.output.compress=true
  * mapred.output.compression.codec=org.apache.hadoop.io.compress.SomeCodec # the codec must be one of Snappy, GZip or LZO
  * </pre>
- *
+ * <p>
  * if none of those is set the data is uncompressed.
  *
- * @author Julien Le Dem
- *
  * @param <T> the type of the materialized records
+ * @author Julien Le Dem
  */
 public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
   private static final Logger LOG = LoggerFactory.getLogger(ParquetOutputFormat.class);
@@ -120,23 +119,23 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
    * An alias for JOB_SUMMARY_LEVEL, where true means ALL and false means NONE
    */
   @Deprecated
-  public static final String ENABLE_JOB_SUMMARY   = "parquet.enable.summary-metadata";
+  public static final String ENABLE_JOB_SUMMARY = "parquet.enable.summary-metadata";
 
   /**
    * Must be one of the values in {@link JobSummaryLevel} (case insensitive)
    */
   public static final String JOB_SUMMARY_LEVEL = "parquet.summary.metadata.level";
-  public static final String BLOCK_SIZE           = "parquet.block.size";
-  public static final String PAGE_SIZE            = "parquet.page.size";
-  public static final String COMPRESSION          = "parquet.compression";
-  public static final String WRITE_SUPPORT_CLASS  = "parquet.write.support.class";
+  public static final String BLOCK_SIZE = "parquet.block.size";
+  public static final String PAGE_SIZE = "parquet.page.size";
+  public static final String COMPRESSION = "parquet.compression";
+  public static final String WRITE_SUPPORT_CLASS = "parquet.write.support.class";
   public static final String DICTIONARY_PAGE_SIZE = "parquet.dictionary.page.size";
-  public static final String ENABLE_DICTIONARY    = "parquet.enable.dictionary";
-  public static final String VALIDATION           = "parquet.validation";
-  public static final String WRITER_VERSION       = "parquet.writer.version";
-  public static final String MEMORY_POOL_RATIO    = "parquet.memory.pool.ratio";
+  public static final String ENABLE_DICTIONARY = "parquet.enable.dictionary";
+  public static final String VALIDATION = "parquet.validation";
+  public static final String WRITER_VERSION = "parquet.writer.version";
+  public static final String MEMORY_POOL_RATIO = "parquet.memory.pool.ratio";
   public static final String MIN_MEMORY_ALLOCATION = "parquet.memory.min.chunk.size";
-  public static final String MAX_PADDING_BYTES    = "parquet.writer.max-padding";
+  public static final String MAX_PADDING_BYTES = "parquet.writer.max-padding";
   public static final String MIN_ROW_COUNT_FOR_PAGE_SIZE_CHECK = "parquet.page.size.row.check.min";
   public static final String MAX_ROW_COUNT_FOR_PAGE_SIZE_CHECK = "parquet.page.size.row.check.max";
   public static final String ESTIMATE_PAGE_SIZE_CHECK = "parquet.page.size.check.estimate";
@@ -169,7 +168,7 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
   }
 
   public static void setWriteSupportClass(JobConf job, Class<?> writeSupportClass) {
-      job.set(WRITE_SUPPORT_CLASS, writeSupportClass.getName());
+    job.set(WRITE_SUPPORT_CLASS, writeSupportClass.getName());
   }
 
   public static Class<?> getWriteSupportClass(Configuration configuration) {
@@ -235,22 +234,22 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
 
   public static boolean getEnableDictionary(Configuration configuration) {
     return configuration.getBoolean(
-        ENABLE_DICTIONARY, ParquetProperties.DEFAULT_IS_DICTIONARY_ENABLED);
+            ENABLE_DICTIONARY, ParquetProperties.DEFAULT_IS_DICTIONARY_ENABLED);
   }
 
   public static int getMinRowCountForPageSizeCheck(Configuration configuration) {
     return configuration.getInt(MIN_ROW_COUNT_FOR_PAGE_SIZE_CHECK,
-        ParquetProperties.DEFAULT_MINIMUM_RECORD_COUNT_FOR_CHECK);
+            ParquetProperties.DEFAULT_MINIMUM_RECORD_COUNT_FOR_CHECK);
   }
 
   public static int getMaxRowCountForPageSizeCheck(Configuration configuration) {
     return configuration.getInt(MAX_ROW_COUNT_FOR_PAGE_SIZE_CHECK,
-        ParquetProperties.DEFAULT_MAXIMUM_RECORD_COUNT_FOR_CHECK);
+            ParquetProperties.DEFAULT_MAXIMUM_RECORD_COUNT_FOR_CHECK);
   }
 
   public static boolean getEstimatePageSizeCheck(Configuration configuration) {
     return configuration.getBoolean(ESTIMATE_PAGE_SIZE_CHECK,
-        ParquetProperties.DEFAULT_ESTIMATE_ROW_COUNT_FOR_PAGE_SIZE_CHECK);
+            ParquetProperties.DEFAULT_ESTIMATE_ROW_COUNT_FOR_PAGE_SIZE_CHECK);
   }
 
   @Deprecated
@@ -268,12 +267,12 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
 
   public static int getDictionaryPageSize(Configuration configuration) {
     return configuration.getInt(
-        DICTIONARY_PAGE_SIZE, ParquetProperties.DEFAULT_DICTIONARY_PAGE_SIZE);
+            DICTIONARY_PAGE_SIZE, ParquetProperties.DEFAULT_DICTIONARY_PAGE_SIZE);
   }
 
   public static WriterVersion getWriterVersion(Configuration configuration) {
     String writerVersion = configuration.get(
-        WRITER_VERSION, ParquetProperties.DEFAULT_WRITER_VERSION.toString());
+            WRITER_VERSION, ParquetProperties.DEFAULT_WRITER_VERSION.toString());
     return WriterVersion.fromString(writerVersion);
   }
 
@@ -314,6 +313,7 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
 
   /**
    * constructor used when this OutputFormat in wrapped in another one (In Pig for example)
+   *
    * @param writeSupport the class used to convert the incoming records
    */
   public <S extends WriteSupport<T>> ParquetOutputFormat(S writeSupport) {
@@ -332,7 +332,7 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
    */
   @Override
   public RecordWriter<Void, T> getRecordWriter(TaskAttemptContext taskAttemptContext)
-      throws IOException, InterruptedException {
+          throws IOException, InterruptedException {
 
     final Configuration conf = getConfiguration(taskAttemptContext);
 
@@ -343,23 +343,23 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
   }
 
   public RecordWriter<Void, T> getRecordWriter(TaskAttemptContext taskAttemptContext, Path file)
-      throws IOException, InterruptedException {
+          throws IOException, InterruptedException {
     return getRecordWriter(getConfiguration(taskAttemptContext), file, getCodec(taskAttemptContext));
   }
 
   public RecordWriter<Void, T> getRecordWriter(Configuration conf, Path file, CompressionCodecName codec)
-        throws IOException, InterruptedException {
+          throws IOException, InterruptedException {
     final WriteSupport<T> writeSupport = getWriteSupport(conf);
 
     ParquetProperties props = ParquetProperties.builder()
-        .withPageSize(getPageSize(conf))
-        .withDictionaryPageSize(getDictionaryPageSize(conf))
-        .withDictionaryEncoding(getEnableDictionary(conf))
-        .withWriterVersion(getWriterVersion(conf))
-        .estimateRowCountForPageSizeCheck(getEstimatePageSizeCheck(conf))
-        .withMinRowCountForPageSizeCheck(getMinRowCountForPageSizeCheck(conf))
-        .withMaxRowCountForPageSizeCheck(getMaxRowCountForPageSizeCheck(conf))
-        .build();
+            .withPageSize(getPageSize(conf))
+            .withDictionaryPageSize(getDictionaryPageSize(conf))
+            .withDictionaryEncoding(getEnableDictionary(conf))
+            .withWriterVersion(getWriterVersion(conf))
+            .estimateRowCountForPageSizeCheck(getEstimatePageSizeCheck(conf))
+            .withMinRowCountForPageSizeCheck(getMinRowCountForPageSizeCheck(conf))
+            .withMaxRowCountForPageSizeCheck(getMaxRowCountForPageSizeCheck(conf))
+            .build();
 
     long blockSize = getLongBlockSize(conf);
     int maxPaddingSize = getMaxPaddingSize(conf);
@@ -379,14 +379,11 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
     }
 
     WriteContext init = writeSupport.init(conf);
-    ParquetFileWriter w = new ParquetFileWriter(HadoopOutputFile.fromPath(file, conf),
-        init.getSchema(), Mode.CREATE, blockSize, maxPaddingSize);
+    ParquetFileWriter w = new ParquetFileWriter(HadoopOutputFile.fromPath(file, conf), init.getSchema(), Mode.CREATE, blockSize, maxPaddingSize);
     w.start();
 
-    float maxLoad = conf.getFloat(ParquetOutputFormat.MEMORY_POOL_RATIO,
-        MemoryManager.DEFAULT_MEMORY_POOL_RATIO);
-    long minAllocation = conf.getLong(ParquetOutputFormat.MIN_MEMORY_ALLOCATION,
-        MemoryManager.DEFAULT_MIN_MEMORY_ALLOCATION);
+    float maxLoad = conf.getFloat(ParquetOutputFormat.MEMORY_POOL_RATIO, MemoryManager.DEFAULT_MEMORY_POOL_RATIO);
+    long minAllocation = conf.getLong(ParquetOutputFormat.MIN_MEMORY_ALLOCATION, MemoryManager.DEFAULT_MIN_MEMORY_ALLOCATION);
     synchronized (ParquetOutputFormat.class) {
       if (memoryManager == null) {
         memoryManager = new MemoryManager(maxLoad, minAllocation);
@@ -394,20 +391,20 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
     }
     if (memoryManager.getMemoryPoolRatio() != maxLoad) {
       LOG.warn("The configuration " + MEMORY_POOL_RATIO + " has been set. It should not " +
-          "be reset by the new value: " + maxLoad);
+              "be reset by the new value: " + maxLoad);
     }
 
     return new ParquetRecordWriter<T>(
-        w,
-        writeSupport,
-        init.getSchema(),
-        init.getExtraMetaData(),
-        blockSize,
-        codec,
-        validating,
-        props,
-        memoryManager,
-        conf);
+            w,
+            writeSupport,
+            init.getSchema(),
+            init.getExtraMetaData(),
+            blockSize,
+            codec,
+            validating,
+            props,
+            memoryManager,
+            conf);
   }
 
   /**
@@ -415,11 +412,11 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
    * @return the configured write support
    */
   @SuppressWarnings("unchecked")
-  public WriteSupport<T> getWriteSupport(Configuration configuration){
+  public WriteSupport<T> getWriteSupport(Configuration configuration) {
     if (writeSupport != null) return writeSupport;
     Class<?> writeSupportClass = getWriteSupportClass(configuration);
     try {
-      return (WriteSupport<T>)checkNotNull(writeSupportClass, "writeSupportClass").newInstance();
+      return (WriteSupport<T>) checkNotNull(writeSupportClass, "writeSupportClass").newInstance();
     } catch (InstantiationException e) {
       throw new BadConfigurationException("could not instantiate write support class: " + writeSupportClass, e);
     } catch (IllegalAccessException e) {
@@ -429,7 +426,7 @@ public class ParquetOutputFormat<T> extends FileOutputFormat<Void, T> {
 
   @Override
   public OutputCommitter getOutputCommitter(TaskAttemptContext context)
-      throws IOException {
+          throws IOException {
     if (committer == null) {
       Path output = getOutputPath(context);
       committer = new ParquetOutputCommitter(output, context);
