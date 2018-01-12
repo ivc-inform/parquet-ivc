@@ -2,7 +2,7 @@ import com.typesafe.sbt.SbtGit.git
 import com.typesafe.sbt.packager.docker.Cmd
 import ru.simplesys.sbprocessing.sbtbuild.{CommonDeps, CommonSettings}
 
-lazy val templateSorage = (project in file("."))
+lazy val parquetIVC = (project in file("."))
   .enablePlugins(GitVersioning)
   .aggregate(
       common,
