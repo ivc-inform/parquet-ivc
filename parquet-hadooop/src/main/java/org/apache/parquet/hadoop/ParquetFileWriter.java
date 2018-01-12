@@ -242,9 +242,7 @@ public class ParquetFileWriter {
    * @param maxPaddingSize the maximum padding
    * @throws IOException if the file can not be created
    */
-  public ParquetFileWriter(OutputFile file, MessageType schema, Mode mode,
-                           long rowGroupSize, int maxPaddingSize)
-          throws IOException {
+  public ParquetFileWriter(OutputFile file, MessageType schema, Mode mode, long rowGroupSize, int maxPaddingSize) throws IOException {
     TypeUtil.checkValidWriteSchema(schema);
 
     this.schema = schema;
@@ -852,9 +850,7 @@ public class ParquetFileWriter {
    * @param mergedMetadata the reference metadata to merge into
    * @return the result of the merge
    */
-  static GlobalMetaData mergeInto(
-          FileMetaData toMerge,
-          GlobalMetaData mergedMetadata) {
+  static GlobalMetaData mergeInto(FileMetaData toMerge, GlobalMetaData mergedMetadata) {
     return mergeInto(toMerge, mergedMetadata, true);
   }
 
