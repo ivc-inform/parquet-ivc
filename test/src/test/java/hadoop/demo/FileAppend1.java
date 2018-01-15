@@ -1,71 +1,60 @@
 package hadoop.demo;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.URI;
-import java.security.PrivilegedExceptionAction;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.security.UserGroupInformation;
+
+import java.io.IOException;
 
 public class FileAppend1 {
 
   public static final String uri = "hdfs://localhost:9820/user/test/log.txt";
-
-  /**
-   * @param args
-   * @throws IOException
-   */
+  
   public static void main(String[] args) throws IOException, InterruptedException {
-    // TODO Auto-generated method stub
-
-    if (args.length == 0) {
-      System.err.println("wrong argument list");
-    }
-
-    // get the content user want to append
-    String content = args[0];
-
-    // instantiate a configuration class
+   
     Configuration conf = new Configuration();
-    conf.set("dfs.support.append", "true");
+    conf.setBoolean("dfs.support.append", true);
+    conf.set("fs.defaultFS", "hdfs://localhost:9820");
+    conf.setInt("dfs.replication", 3);
+    conf.setBoolean("dfs.permissions", false);
+    System.setProperty("HADOOP_USER_NAME", "hdfs");
 
     // get a HDFS filesystem instance
-    FileSystem fs = FileSystem.get(URI.create(uri), conf);
+    FileSystem fs = FileSystem.get(conf);
 
     //get if file append functionality is enabled
     boolean flag = Boolean.parseBoolean(fs.getConf().get("dfs.support.append"));
     System.out.println("dfs.support.append is set to be " + flag);
 
     if (flag) {
-      UserGroupInformation ugi = UserGroupInformation.createRemoteUser("hdfs");
-      ugi.doAs(
-              new PrivilegedExceptionAction<Object>() {
-                @Override
-                public Object run() throws Exception {
-                  FSDataOutputStream fsout;
-                  if (!fs.exists(new Path(uri)))
-                    fsout = fs.create(new Path(uri));
-                  else
-                    fsout = fs.append(new Path(uri));
+      Path p = new Path(uri);
+      fs.setReplication(p,(short) 1);
+      FSDataOutputStream fsout;
 
-                  // wrap the outputstream with a writer
-                  PrintWriter writer = new PrintWriter(fsout);
-                  writer.append(content);
-                  writer.close();
-                  return new Object();
-                }
-              }
-      );
+      if (!fs.exists(p)) {
+        fsout = fs.create(p);
+        fsout.writeBytes("creating and writing into file.\n");
+      }
+      else {
+        FileStatus status = fs.getFileStatus(p);
+        fsout = fs.append(p);
+        fsout.writeBytes("appending into file.\n");
+      }
+      
+      fsout.hsync();
 
-    } else {
-      System.err.println("please set the dfs.support.append to be true");
+     /* FSDataInputStream inputStream = fs.open(new Path(uri));
+      String out = IOUtils.toString(inputStream, "UTF-8");
+      System.out.println(out);
+      inputStream.close();*/
+
+      if (fs != null)
+        fs.close();
+      if (fsout != null)
+        fsout.close();
     }
-
-    fs.close();
   }
 
 }
