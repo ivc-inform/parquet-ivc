@@ -19,7 +19,7 @@ public class FileAppend1 {
    * @param args
    * @throws IOException
    */
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) throws IOException, InterruptedException {
     // TODO Auto-generated method stub
 
     if (args.length == 0) {
@@ -41,7 +41,7 @@ public class FileAppend1 {
     System.out.println("dfs.support.append is set to be " + flag);
 
     if (flag) {
-      UserGroupInformation ugi = UserGroupInformation.createRemoteUser("hdfs")
+      UserGroupInformation ugi = UserGroupInformation.createRemoteUser("hdfs");
       ugi.doAs(
               new PrivilegedExceptionAction<Object>() {
                 @Override
@@ -59,7 +59,7 @@ public class FileAppend1 {
                   return new Object();
                 }
               }
-      )
+      );
 
     } else {
       System.err.println("please set the dfs.support.append to be true");
