@@ -17,7 +17,7 @@ public class FileAppend1 {
     Configuration conf = new Configuration();
     conf.setBoolean("dfs.support.append", true);
     conf.set("fs.defaultFS", "hdfs://localhost:9820");
-    conf.setInt("dfs.replication", 3);
+    //conf.setInt("dfs.replication", 3);
     conf.setBoolean("dfs.permissions", false);
     System.setProperty("HADOOP_USER_NAME", "hdfs");
 
